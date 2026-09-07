@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ఎన్‌క్రిప్ట్</string>
+    <string name="tab_decrypt">డిక్రిప్ట్</string>
+    <string name="select_file">ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="no_file_selected">ఎటువంటి ఫైల్ ఎంచుకోబడలేదు</string>
+    <string name="password_label">పాస్‌వర్డ్</string>
+    <string name="encrypt_file">ఫైల్‌ను ఎన్‌క్రిప్ట్ చేయండి</string>
+    <string name="decrypt_file">ఫైల్‌ను డిక్రిప్ట్ చేయండి</string>
+    <string name="processing_progress">%1$d%% ప్రాసెస్ అవుతోంది...</string>
+    <string name="terminal_commands_title">టెర్మినల్ కమాండ్స్ (OpenSSL)</string>
+    <string name="encryption_cmd_label">ఎన్‌క్రిప్షన్ కమాండ్:</string>
+    <string name="decryption_cmd_label">డిక్రిప్షన్ కమాండ్:</string>
+    <string name="encryption_cmd_sub">[input.ext] స్థానంలో మీ ఫైల్ పేరు మరియు దాని ఎక్స్‌టెన్షన్‌ను నమోదు చేయండి</string>
+    <string name="decryption_cmd_sub">[output.ext] స్థానంలో అసలు ఫైల్ పేరు మరియు ఎక్స్‌టెన్షన్‌ను నమోదు చేయండి</string>
+    <string name="important_notice">భవిష్యత్తులో యాప్ అందుబాటులో లేకపోతే ఉపయోగించుకునేందుకు, పై కమాండ్‌లను కాపీ చేసి ఎక్కడైనా భద్రపరుచుకోండి. ఈ OpenSSL కమాండ్‌లను macOS, Linux, Windows (WSL లేదా Git Bash ద్వారా) లేదా కమాండ్-లైన్ ఇంటర్‌ఫేస్ మద్దతు ఉన్న Android వాతావరణాలలో నేరుగా అమలు చేయవచ్చు.</string>
+    <string name="copy_cmd_desc">కమాండ్‌ను కాపీ చేయండి</string>
+    <string name="toggle_theme">థీమ్‌ను మార్చండి</string>
+    <string name="toast_select_file">దయచేసి ముందుగా ఫైల్‌ను ఎంచుకోండి</string>
+    <string name="toast_enter_password">దయచేసి పాస్‌వర్డ్ నమోదు చేయండి</string>
+    <string name="toast_encrypt_success">విజయవంతంగా ఎన్‌క్రిప్ట్ చేయబడింది!</string>
+    <string name="toast_decrypt_success">విజయవంతంగా డిక్రిప్ట్ చేయబడింది!</string>
+    <string name="toast_operation_failed">ఆపరేషన్ విఫలమైంది: తప్పు పాస్‌వర్డ్ లేదా పాడైన ఫైల్.</string>
+    <string name="toast_invalid_file">తప్పు పాస్‌వర్డ్ లేదా చెల్లని OpenSSL ఫైల్ ఫార్మాట్.</string>
+    <string name="toast_enc_copied">ఎన్‌క్రిప్షన్ కమాండ్ కాపీ చేయబడింది!</string>
+    <string name="toast_dec_copied">డిక్రిప్షన్ కమాండ్ కాపీ చేయబడింది!</string>
+    <string name="toast_title_success">విజయం</string>
+    <string name="toast_title_notice">గమనిక</string>
+    <string name="toast_button_ok">ఓకే</string>
+    <string name="theme_system">సిస్టమ్ డిఫాల్ట్</string>
+    <string name="theme_light">లైట్ మోడ్</string>
+    <string name="theme_dark">డార్క్ మోడ్</string>
+    <string name="cd_switch_theme">థీమ్‌ను మార్చండి</string>
+    <string name="cd_switch_language">భాషను మార్చండి</string>
+    <string name="cd_show_password">పాస్‌వర్డ్ చూపించు</string>
+    <string name="cd_hide_password">పాస్‌వర్డ్ దాచు</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">FICHA</string>
+    <string name="tab_decrypt">FUNGUA</string>
+    <string name="select_file">Chagua Faili</string>
+    <string name="no_file_selected">Hakuna faili lililochaguliwa</string>
+    <string name="password_label">Nenosiri</string>
+    <string name="encrypt_file">Ficha Faili</string>
+    <string name="decrypt_file">Fungua Faili</string>
+    <string name="processing_progress">%1$d%% Inachakata...</string>
+    <string name="terminal_commands_title">Amri za Teminaili (OpenSSL)</string>
+    <string name="encryption_cmd_label">Amri ya Kuficha:</string>
+    <string name="decryption_cmd_label">Amri ya Kufungua:</string>
+    <string name="encryption_cmd_sub">Badilisha [input.ext] na jina la faili lako pamoja na kilezi chake</string>
+    <string name="decryption_cmd_sub">Badilisha [output.ext] na jina la faili pamoja na kilezi cha faili la asili</string>
+    <string name="important_notice">Nakili amri hizi hapo juu na uzihifadhi mahali fulani ili uweze kuzitumia ikiwa programu haitapatikana tena hapo baadaye. Amri hizi za OpenSSL zinaweza kutekelezwa moja kwa moja kwenye teminaili ya macOS, Linux, Windows (kupitia WSL au Git Bash), au mazingira ya Android yenye usaidizi wa kiolesura cha mstari wa amri.</string>
+    <string name="copy_cmd_desc">Nakili amri</string>
+    <string name="toggle_theme">Badilisha Mandhari</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Tafadhali chagua faili kwanza</string>
+    <string name="toast_enter_password">Tafadhali ingiza nenosiri</string>
+    <string name="toast_encrypt_success">Imefichwa kikamilifu!</string>
+    <string name="toast_decrypt_success">Imefunguliwa kikamilifu!</string>
+    <string name="toast_operation_failed">Oparesheni imefeli: Nenosiri si sahihi au faili limeharibika.</string>
+    <string name="toast_invalid_file">Nenosiri si sahihi au umbizo la faili la OpenSSL si sahihi.</string>
+    <string name="toast_enc_copied">Amri ya kuficha imenakiliwa!</string>
+    <string name="toast_dec_copied">Amri ya kufungua imenakiliwa!</string>
+    <string name="toast_title_success">MAFANIKIO</string>
+    <string name="toast_title_notice">TAARIFA</string>
+    <string name="toast_button_ok">SAWA</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Chaguo Msingi la Mfumo</string>
+    <string name="theme_light">Hali ya Mwangaza</string>
+    <string name="theme_dark">Hali ya Giza</string>
+    <string name="cd_switch_theme">Badilisha Mandhari</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Badilisha Lugha</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Onyesha nenosiri</string>
+    <string name="cd_hide_password">Ficha nenosiri</string>
+</resources>

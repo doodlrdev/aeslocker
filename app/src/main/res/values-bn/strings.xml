@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">এনক্রিপ্ট</string>
+    <string name="tab_decrypt">ডিক্রিপ্ট</string>
+    <string name="select_file">ফাইল নির্বাচন করুন</string>
+    <string name="no_file_selected">কোনো ফাইল নির্বাচিত হয়নি</string>
+    <string name="password_label">পাসওয়ার্ড</string>
+    <string name="encrypt_file">ফাইল এনক্রিপ্ট করুন</string>
+    <string name="decrypt_file">ফাইল ডিক্রিপ্ট করুন</string>
+    <string name="processing_progress">%1$d%% প্রসেসিং হচ্ছে...</string>
+    <string name="terminal_commands_title">টার্মিনাল কমান্ড (OpenSSL)</string>
+    <string name="encryption_cmd_label">এনক্রিপশন কমান্ড:</string>
+    <string name="decryption_cmd_label">ডিক্রিপশন কমান্ড:</string>
+    <string name="encryption_cmd_sub">[input.ext] এর জায়গায় আপনার ফাইলের নাম এবং এক্সটেনশন দিন</string>
+    <string name="decryption_cmd_sub">[output.ext] এর জায়গায় মূল ফাইলের নাম এবং এক্সটেনশন দিন</string>
+    <string name="important_notice">উপরের কমান্ডগুলো কপি করে কোথাও সংরক্ষণ করুন যাতে ভবিষ্যতে অ্যাপটি অনুপলব্ধ হলেও আপনি সেগুলো ব্যবহার করতে পারেন। এই OpenSSL কমান্ডগুলো macOS, Linux, Windows (WSL বা Git Bash এর মাধ্যমে), অথবা কমান্ড-লাইন ইন্টারফেস সমর্থিত Android পরিবেশে সরাসরি চালানো যেতে পারে।</string>
+    <string name="copy_cmd_desc">কমান্ড কপি করুন</string>
+    <string name="toggle_theme">থিম পরিবর্তন করুন</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">অনুগ্রহ করে প্রথমে একটি ফাইল নির্বাচন করুন</string>
+    <string name="toast_enter_password">অনুগ্রহ করে একটি পাসওয়ার্ড দিন</string>
+    <string name="toast_encrypt_success">সফলভাবে এনক্রিপ্ট করা হয়েছে!</string>
+    <string name="toast_decrypt_success">সফলভাবে ডিক্রিপ্ট করা হয়েছে!</string>
+    <string name="toast_operation_failed">অপারেশন ব্যর্থ হয়েছে: ভুল পাসওয়ার্ড অথবা ক্ষতিগ্রস্ত ফাইল।</string>
+    <string name="toast_invalid_file">ভুল পাসওয়ার্ড অথবা অকার্যকর OpenSSL ফাইল ফরম্যাট।</string>
+    <string name="toast_enc_copied">এনক্রিপশন কমান্ড কপি করা হয়েছে!</string>
+    <string name="toast_dec_copied">ডিক্রিপশন কমান্ড কপি করা হয়েছে!</string>
+    <string name="toast_title_success">সফল</string>
+    <string name="toast_title_notice">বিজ্ঞপ্তি</string>
+    <string name="toast_button_ok">ঠিক আছে</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">সিস্টেম ডিফল্ট</string>
+    <string name="theme_light">লাইট মোড</string>
+    <string name="theme_dark">ডার্ক মোড</string>
+    <string name="cd_switch_theme">থিম পরিবর্তন করুন</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">ভাষা পরিবর্তন করুন</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">পাসওয়ার্ড দেখান</string>
+    <string name="cd_hide_password">পাসওয়ার্ড লুকান</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ЗАШИФРОВАТЬ</string>
+    <string name="tab_decrypt">РАСШИФРОВАТЬ</string>
+    <string name="select_file">Выбрать файл</string>
+    <string name="no_file_selected">Файл не выбран</string>
+    <string name="password_label">Пароль</string>
+    <string name="encrypt_file">Зашифровать файл</string>
+    <string name="decrypt_file">Расшифровать файл</string>
+    <string name="processing_progress">%1$d%% Обработка...</string>
+    <string name="terminal_commands_title">Команды терминала (OpenSSL)</string>
+    <string name="encryption_cmd_label">Команда шифрования:</string>
+    <string name="decryption_cmd_label">Команда расшифровки:</string>
+    <string name="encryption_cmd_sub">Замените [input.ext] на имя вашего файла и его расширение</string>
+    <string name="decryption_cmd_sub">Замените [output.ext] на имя и расширение исходного файла</string>
+    <string name="important_notice">Скопируйте приведенные выше команды и сохраните их где-нибудь, чтобы вы могли использовать их, если приложение станет недоступным в будущем. Эти команды OpenSSL можно выполнить прямо в терминале на macOS, Linux, Windows (через WSL или Git Bash) или в средах Android с поддержкой командной строки.</string>
+    <string name="copy_cmd_desc">Скопировать команду</string>
+    <string name="toggle_theme">Переключить тему</string>
+    <string name="toast_select_file">Пожалуйста, сначала выберите файл</string>
+    <string name="toast_enter_password">Пожалуйста, введите пароль</string>
+    <string name="toast_encrypt_success">Успешно зашифровано!</string>
+    <string name="toast_decrypt_success">Успешно расшифровано!</string>
+    <string name="toast_operation_failed">Сбой операции: Неверный пароль или поврежденный файл.</string>
+    <string name="toast_invalid_file">Неверный пароль или недопустимый формат файла OpenSSL.</string>
+    <string name="toast_enc_copied">Команда шифрования скопирована!</string>
+    <string name="toast_dec_copied">Команда расшифровки скопирована!</string>
+    <string name="toast_title_success">УСПЕШНО</string>
+    <string name="toast_title_notice">УВЕДОМЛЕНИЕ</string>
+    <string name="toast_button_ok">ОК</string>
+    <string name="theme_system">Системная тема</string>
+    <string name="theme_light">Светлая тема</string>
+    <string name="theme_dark">Темная тема</string>
+    <string name="cd_switch_theme">Переключить тему</string>
+    <string name="cd_switch_language">Изменить язык</string>
+    <string name="cd_show_password">Показать пароль</string>
+    <string name="cd_hide_password">Скрыть пароль</string>
+</resources>

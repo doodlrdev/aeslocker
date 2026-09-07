@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">MÃ HÓA</string>
+    <string name="tab_decrypt">GIẢI MÃ</string>
+    <string name="select_file">Chọn Tệp</string>
+    <string name="no_file_selected">Chưa có tệp nào được chọn</string>
+    <string name="password_label">Mật khẩu</string>
+    <string name="encrypt_file">Mã hóa Tệp</string>
+    <string name="decrypt_file">Giải mã Tệp</string>
+    <string name="processing_progress">%1$d%% Đang xử lý...</string>
+    <string name="terminal_commands_title">Lệnh Terminal (OpenSSL)</string>
+    <string name="encryption_cmd_label">Lệnh Mã hóa:</string>
+    <string name="decryption_cmd_label">Lệnh Giải mã:</string>
+    <string name="encryption_cmd_sub">Thay thế [input.ext] bằng tên tệp và phần mở rộng của bạn</string>
+    <string name="decryption_cmd_sub">Thay thế [output.ext] bằng tên và phần mở rộng của tệp gốc</string>
+    <string name="important_notice">Hãy sao chép các lệnh trên và lưu chúng ở một nơi an toàn để bạn có thể sử dụng nếu ứng dụng không khả dụng trong tương lai. Các lệnh OpenSSL này có thể được chạy trực tiếp trong terminal trên macOS, Linux, Windows (thông qua WSL hoặc Git Bash), hoặc các môi trường Android có hỗ trợ giao diện dòng lệnh.</string>
+    <string name="copy_cmd_desc">Sao chép lệnh</string>
+    <string name="toggle_theme">Đổi Giao diện</string>
+    <string name="toast_select_file">Vui lòng chọn một tệp trước</string>
+    <string name="toast_enter_password">Vui lòng nhập mật khẩu</string>
+    <string name="toast_encrypt_success">Đã mã hóa thành công!</string>
+    <string name="toast_decrypt_success">Đã giải mã thành công!</string>
+    <string name="toast_operation_failed">Thao tác thất bại: Sai mật khẩu hoặc tệp bị hỏng.</string>
+    <string name="toast_invalid_file">Sai mật khẩu hoặc định dạng tệp OpenSSL không hợp lệ.</string>
+    <string name="toast_enc_copied">Đã sao chép lệnh mã hóa!</string>
+    <string name="toast_dec_copied">Đã sao chép lệnh giải mã!</string>
+    <string name="toast_title_success">THÀNH CÔNG</string>
+    <string name="toast_title_notice">THÔNG BÁO</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Mặc định Hệ thống</string>
+    <string name="theme_light">Chế độ Sáng</string>
+    <string name="theme_dark">Chế độ Tối</string>
+    <string name="cd_switch_theme">Đổi Giao diện</string>
+    <string name="cd_switch_language">Đổi Ngôn ngữ</string>
+    <string name="cd_show_password">Hiện mật khẩu</string>
+    <string name="cd_hide_password">Ẩn mật khẩu</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">គ្មានការផ្សាយពាណិជ្ជកម្ម</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro គឺមិនមានការផ្សាយពាណិជ្ជកម្មទាំងស្រុង។ វាមិនមានបណ្ណាល័យផ្សាយពាណិជ្ជកម្មទេ ដូច្នេះវាផ្តល់នូវភាពឯកជនដែលបានកែលម្អ និងបទពិសោធន៍ស្អាត ស្រាល និងគ្មានការរំខាន។</string>
+    <string name="btn_get_pro">ទទួលបាន PRO</string>
+    <string name="btn_cancel">បោះបង់</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">പരസ്യം വേണ്ട</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro-യിൽ പൂർണ്ണമായും പരസ്യങ്ങളില്ല. ഇതിൽ പരസ്യ ലൈബ്രറികൾ ഒന്നും അടങ്ങിയിട്ടില്ല, അതിനാൽ മികച്ച സ്വകാര്യതയും ലളിതവും ശ്രദ്ധ തിരിക്കാത്തതുമായ അനുഭവവും ഇത് നൽകുന്നു.</string>
+    <string name="btn_get_pro">PRO നേടുക</string>
+    <string name="btn_cancel">റദ്ദാക്കുക</string>
+</resources>

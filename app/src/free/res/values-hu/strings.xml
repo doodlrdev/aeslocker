@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">REKLÁMMENTES</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">Az AESLocker Pro teljesen reklámmentes. Nem tartalmaz reklámkönyvtárakat, így fokozott adatvédelmet, valamint letisztult, könnyű és zavartalan élményt kínál.</string>
+    <string name="btn_get_pro">PRO VERZIÓ</string>
+    <string name="btn_cancel">MÉGSE</string>
+
+</resources>

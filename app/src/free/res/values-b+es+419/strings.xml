@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">SIN ANUNCIOS</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro no tiene anuncios en absoluto. No contiene bibliotecas de anuncios, por lo que ofrece mayor privacidad y una experiencia limpia, ligera y sin distracciones.</string>
+    <string name="btn_get_pro">OBTENER PRO</string>
+    <string name="btn_cancel">CANCELAR</string>
+</resources>

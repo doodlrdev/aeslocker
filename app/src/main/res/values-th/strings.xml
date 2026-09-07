@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">เข้ารหัส</string>
+    <string name="tab_decrypt">ถอดรหัส</string>
+    <string name="select_file">เลือกไฟล์</string>
+    <string name="no_file_selected">ยังไม่ได้เลือกไฟล์</string>
+    <string name="password_label">รหัสผ่าน</string>
+    <string name="encrypt_file">เข้ารหัสไฟล์</string>
+    <string name="decrypt_file">ถอดรหัสไฟล์</string>
+    <string name="processing_progress">%1$d%% กำลังประมวลผล...</string>
+    <string name="terminal_commands_title">คำสั่งเทอร์มินัล (OpenSSL)</string>
+    <string name="encryption_cmd_label">คำสั่งเข้ารหัส:</string>
+    <string name="decryption_cmd_label">คำสั่งถอดรหัส:</string>
+    <string name="encryption_cmd_sub">แทนที่ [input.ext] ด้วยชื่อไฟล์และนามสกุลของคุณ</string>
+    <string name="decryption_cmd_sub">แทนที่ [output.ext] ด้วยชื่อและนามสกุลของไฟล์ต้นฉบับ</string>
+    <string name="important_notice">คัดลอกคำสั่งด้านบนและบันทึกไว้ในที่ปลอดภัย เพื่อให้คุณสามารถใช้งานได้หากแอปพลิเคชันไม่สามารถใช้งานได้ในอนาคต คำสั่ง OpenSSL เหล่านี้สามารถรันได้โดยตรงในเทอร์มินัลบน macOS, Linux, Windows (ผ่าน WSL หรือ Git Bash) หรือสภาพแวดล้อม Android ที่รองรับอินเทอร์เฟซบรรทัดคำสั่ง</string>
+    <string name="copy_cmd_desc">คัดลอกคำสั่ง</string>
+    <string name="toggle_theme">สลับธีม</string>
+    <string name="toast_select_file">โปรดเลือกไฟล์ก่อน</string>
+    <string name="toast_enter_password">โปรดใส่รหัสผ่าน</string>
+    <string name="toast_encrypt_success">เข้ารหัสสำเร็จ!</string>
+    <string name="toast_decrypt_success">ถอดรหัสสำเร็จ!</string>
+    <string name="toast_operation_failed">การดำเนินการล้มเหลว: รหัสผ่านไม่ถูกต้องหรือไฟล์เสียหาย</string>
+    <string name="toast_invalid_file">รหัสผ่านไม่ถูกต้องหรือรูปแบบไฟล์ OpenSSL ไม่ถูกต้อง</string>
+    <string name="toast_enc_copied">คัดลอกคำสั่งเข้ารหัสแล้ว!</string>
+    <string name="toast_dec_copied">คัดลอกคำสั่งถอดรหัสแล้ว!</string>
+    <string name="toast_title_success">สำเร็จ</string>
+    <string name="toast_title_notice">แจ้งเตือน</string>
+    <string name="toast_button_ok">ตกลง</string>
+    <string name="theme_system">ค่าเริ่มต้นของระบบ</string>
+    <string name="theme_light">โหมดสว่าง</string>
+    <string name="theme_dark">โหมดมืด</string>
+    <string name="cd_switch_theme">สลับธีม</string>
+    <string name="cd_switch_language">เปลี่ยนภาษา</string>
+    <string name="cd_show_password">แสดงรหัสผ่าน</string>
+    <string name="cd_hide_password">ซ่อนรหัสผ่าน</string>
+</resources>

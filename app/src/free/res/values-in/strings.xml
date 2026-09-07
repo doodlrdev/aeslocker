@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">BEBAS IKLAN</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro sepenuhnya bebas iklan. Aplikasi ini tidak berisi pustaka iklan, sehingga menawarkan privasi yang lebih baik serta pengalaman yang bersih, ringan, dan bebas gangguan.</string>
+    <string name="btn_get_pro">DAPATKAN PRO</string>
+    <string name="btn_cancel">BATAL</string>
+</resources>

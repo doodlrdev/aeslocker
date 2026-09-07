@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">TITKOSÍTÁS</string>
+    <string name="tab_decrypt">DEKÓDOLÁS</string>
+    <string name="select_file">Fájl kiválasztása</string>
+    <string name="no_file_selected">Nincs fájl kiválasztva</string>
+    <string name="password_label">Jelszó</string>
+    <string name="encrypt_file">Fájl titkosítása</string>
+    <string name="decrypt_file">Fájl dekódolása</string>
+    <string name="processing_progress">%1$d%% Feldolgozás...</string>
+    <string name="terminal_commands_title">Terminál parancsok (OpenSSL)</string>
+    <string name="encryption_cmd_label">Titkosítási parancs:</string>
+    <string name="decryption_cmd_label">Dekódolási parancs:</string>
+    <string name="encryption_cmd_sub">Cserélje ki az [input.ext] részt a fájl nevére és kiterjesztésére</string>
+    <string name="decryption_cmd_sub">Cserélje ki az [output.ext] részt az eredeti fájl nevére és kiterjesztésére</string>
+    <string name="important_notice">Másolja ki a fenti parancsokat, és mentse el egy biztonságos helyre, hogy használhassa őket, ha az alkalmazás a jövőben nem lenne elérhető. Ezek az OpenSSL parancsok közvetlenül futtathatók terminálban macOS, Linux, Windows (WSL-en vagy Git Bash-en keresztül) vagy parancssort támogató Android környezetben.</string>
+    <string name="copy_cmd_desc">Parancs másolása</string>
+    <string name="toggle_theme">Téma váltása</string>
+    <string name="toast_select_file">Kérjük, először válasszon ki egy fájlt</string>
+    <string name="toast_enter_password">Kérjük, adja meg a jelszót</string>
+    <string name="toast_encrypt_success">Sikeresen titkosítva!</string>
+    <string name="toast_decrypt_success">Sikeresen dekódolva!</string>
+    <string name="toast_operation_failed">A művelet sikertelen: Hibás jelszó vagy sérült fájl.</string>
+    <string name="toast_invalid_file">Hibás jelszó vagy érvénytelen OpenSSL fájlformátum.</string>
+    <string name="toast_enc_copied">Titkosítási parancs másolva!</string>
+    <string name="toast_dec_copied">Dekódolási parancs másolva!</string>
+    <string name="toast_title_success">SIKERES</string>
+    <string name="toast_title_notice">ÉRTESÍTÉS</string>
+    <string name="toast_button_ok">RENDBEN</string>
+    <string name="theme_system">Rendszeralapértelmezett</string>
+    <string name="theme_light">Világos mód</string>
+    <string name="theme_dark">Sötét mód</string>
+    <string name="cd_switch_theme">Téma váltása</string>
+    <string name="cd_switch_language">Nyelv váltása</string>
+    <string name="cd_show_password">Jelszó megjelenítése</string>
+    <string name="cd_hide_password">Jelszó elrejtése</string>
+</resources>

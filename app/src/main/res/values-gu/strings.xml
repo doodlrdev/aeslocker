@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">એન્ક્રિપ્ટ</string>
+    <string name="tab_decrypt">ડીક્રિપ્ટ</string>
+    <string name="select_file">ફાઇલ પસંદ કરો</string>
+    <string name="no_file_selected">કોઈ ફાઇલ પસંદ કરેલ નથી</string>
+    <string name="password_label">પાસવર્ડ</string>
+    <string name="encrypt_file">ફાઇલ એન્ક્રિપ્ટ કરો</string>
+    <string name="decrypt_file">ફાઇલ ડીક્રિપ્ટ કરો</string>
+    <string name="processing_progress">%1$d%% પ્રક્રિયા ચાલુ છે...</string>
+    <string name="terminal_commands_title">ટર્મિનલ કમાન્ડ્સ (OpenSSL)</string>
+    <string name="encryption_cmd_label">એન્ક્રિપ્શન કમાન્ડ:</string>
+    <string name="decryption_cmd_label">ડીક્રિપ્શન કમાન્ડ:</string>
+    <string name="encryption_cmd_sub">[input.ext] ની જગ્યાએ તમારી ફાઇલનું નામ અને એક્સ્ટેંશન લખો</string>
+    <string name="decryption_cmd_sub">[output.ext] ની જગ્યાએ મૂળ ફાઇલનું નામ અને એક્સ્ટેંશન લખો</string>
+    <string name="important_notice">ઉપરના કમાન્ડ્સ કોપી કરીને ક્યાંક સાચવી રાખો જેથી ભવિષ્યમાં એપ ઉપલબ્ધ ન હોય તો પણ તમે તેનો ઉપયોગ કરી શકો. આ OpenSSL કમાન્ડ્સ macOS, Linux, Windows (WSL અથવા Git Bash દ્વારા), અથવા કમાન્ડ-લાઇન ઇન્ટરફેસ સપોર્ટ ધરાવતા Android વાતાવરણમાં સીધા ચલાવી શકાય છે.</string>
+    <string name="copy_cmd_desc">કમાન્ડ કોપી કરો</string>
+    <string name="toggle_theme">થીમ બદલો</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">કૃપા કરીને પહેલાં એક ફાઇલ પસંદ કરો</string>
+    <string name="toast_enter_password">કૃપા કરીને પાસવર્ડ દાખલ કરો</string>
+    <string name="toast_encrypt_success">સફળતાપૂર્વક એન્ક્રિપ્ટ થયું!</string>
+    <string name="toast_decrypt_success">સફળતાપૂર્વક ડીક્રિપ્ટ થયું!</string>
+    <string name="toast_operation_failed">ઓપરેશન નિષ્ફળ: ખોટો પાસવર્ડ અથવા ક્ષતિગ્રસ્ત ફાઇલ.</string>
+    <string name="toast_invalid_file">ખોટો પાસવર્ડ અથવા અમાન્ય OpenSSL ફાઇલ ફોર્મેટ.</string>
+    <string name="toast_enc_copied">એન્ક્રિપ્શન કમાન્ડ કોપી થયો!</string>
+    <string name="toast_dec_copied">ડીક્રિપ્શન કમાન્ડ કોપી થયો!</string>
+    <string name="toast_title_success">સફળતા</string>
+    <string name="toast_title_notice">સૂચના</string>
+    <string name="toast_button_ok">બરાબર</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">સિસ્ટમ ડિફોલ્ટ</string>
+    <string name="theme_light">લાઇટ મોડ</string>
+    <string name="theme_dark">ડાર્ક મોડ</string>
+    <string name="cd_switch_theme">થીમ બદલો</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">ભાષા બદલો</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">પાસવર્ડ બતાવો</string>
+    <string name="cd_hide_password">પાસવર્ડ છુપાવો</string>
+</resources>

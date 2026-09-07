@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">RECLAMEVRIJ</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro is volledig reclamevrij. Het bevat geen reclamebibliotheken en biedt daardoor verbeterde privacy en een schone, lichte en afleidingsvrije ervaring.</string>
+    <string name="btn_get_pro">ONTVANG PRO</string>
+    <string name="btn_cancel">ANNULEREN</string>
+</resources>

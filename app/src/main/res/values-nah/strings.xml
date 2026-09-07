@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ICHTACATZAZ</string>
+    <string name="tab_decrypt">TLAMACHTILI</string>
+    <string name="select_file">Tlatlahtlaniliztli Tlahtolmatiliztli</string>
+    <string name="no_file_selected"> Ahtle tlahtolmatiliztli tlatlahtlaniltic</string>
+    <string name="password_label">Tlatlatilztli tlahtolli</string>
+    <string name="encrypt_file">Ichtacatzaz Tlahtolmatiliztli</string>
+    <string name="decrypt_file">Tlamachtili Tlahtolmatiliztli</string>
+    <string name="processing_progress">%1$d%% Tikchiwhtok...</string>
+    <string name="terminal_commands_title">Terminal Tlanehuiliztli (OpenSSL)</string>
+    <string name="encryption_cmd_label">Ichtacatzaz tlanehuiliztli:</string>
+    <string name="decryption_cmd_label">Tlamachtili tlanehuiliztli:</string>
+    <string name="encryption_cmd_sub">Ximati [input.ext] ica motequihua huan iyoliz</string>
+    <string name="decryption_cmd_sub">Ximati [output.ext] ica huehuehteyotl huan iyoliz</string>
+    <string name="important_notice">Xiquihcuilo nigan tlanehuiliztli huan xiquinyoloca ikin timocahuaz tla app axmo tlapopoloz. Nigi OpenSSL tlanehuiliztli ueli mochiwa ipan macOS, Linux, Windows (ica WSL noso Git Bash), noso Android tlen quipiya tlanehuiliztli tequichihualiztli.</string>
+    <string name="copy_cmd_desc">Xiquihcuilo tlanehuiliztli</string>
+    <string name="toggle_theme">Xipatla tema</string>
+    <string name="toast_select_file">Nigan xitlatlahtlani ce tlahtolmatiliztli achto</string>
+    <string name="toast_enter_password">Nigan xiquiza tlatlatilztli tlahtolli</string>
+    <string name="toast_encrypt_success"> ¡Ichtacatzaz omosehui!</string>
+    <string name="toast_decrypt_success"> ¡Tlamachtili omosehui!</string>
+    <string name="toast_operation_failed"> Axmo omocuep: Tlatlatilztli tlahtolli ahnozo tlahtolmatiliztli tlatotoctli.</string>
+    <string name="toast_invalid_file">Tlatlatilztli tlahtolli ahnozo OpenSSL format axmo cuali.</string>
+    <string name="toast_enc_copied"> ¡Ichtacatzaz tlanehuiliztli omocopi!</string>
+    <string name="toast_dec_copied"> ¡Tlamachtili tlanehuiliztli omocopi!</string>
+    <string name="toast_title_success">CUALI</string>
+    <string name="toast_title_notice">TLAIXIMACHTILIZTLI</string>
+    <string name="toast_button_ok">QUEMA</string>
+    <string name="theme_system">Sistema tlen nonmotequihui</string>
+    <string name="theme_light">Tlanesi Mode</string>
+    <string name="theme_dark">Yohualli Mode</string>
+    <string name="cd_switch_theme">Xipatla tema</string>
+    <string name="cd_switch_language">Xipatla tlahtolli</string>
+    <string name="cd_show_password">Xiquitati tlatlatilztli tlahtolli</string>
+    <string name="cd_hide_password">Xiquipacho tlatlatilztli tlahtolli</string>
+</resources>

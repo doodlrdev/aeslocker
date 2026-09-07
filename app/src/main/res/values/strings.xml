@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ENCRYPT</string>
+    <string name="tab_decrypt">DECRYPT</string>
+    <string name="select_file">Select File</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="password_label">Password</string>
+    <string name="encrypt_file">Encrypt File</string>
+    <string name="decrypt_file">Decrypt File</string>
+    <string name="processing_progress">%1$d%% Processing...</string>
+    <string name="terminal_commands_title">Terminal Commands (OpenSSL)</string>
+    <string name="encryption_cmd_label">Encryption Command:</string>
+    <string name="decryption_cmd_label">Decryption Command:</string>
+    <string name="encryption_cmd_for_copying">openssl enc -aes-256-cbc -salt -pbkdf2 -in [input.ext] -out output.aes</string>
+    <string name="decryption_cmd_for_copying">openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out [output.ext]</string>
+    <string name="encryption_cmd_sub">Replace [input.ext] with your filename and its extension</string>
+    <string name="decryption_cmd_sub">Replace [output.ext] with the filename and extension of the original file</string>
+    <string name="important_notice">Copy the above commands and save them somewhere so you can use them if the app becomes unavailable in the future. These OpenSSL commands can be executed directly in the terminal on macOS, Linux, Windows (via WSL or Git Bash), or Android environments with command-line interface support.</string>
+    <string name="copy_cmd_desc">Copy command</string>
+    <string name="toggle_theme">Toggle Theme</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Please select a file first</string>
+    <string name="toast_enter_password">Please enter a password</string>
+    <string name="toast_encrypt_success">Encrypted successfully!</string>
+    <string name="toast_decrypt_success">Decrypted successfully!</string>
+    <string name="toast_operation_failed">Operation failed: Incorrect password or corrupted file.</string>
+    <string name="toast_invalid_file">Incorrect password or invalid OpenSSL file format.</string>
+    <string name="toast_enc_copied">Encryption command copied!</string>
+    <string name="toast_dec_copied">Decryption command copied!</string>
+    <string name="toast_title_success">SUCCESS</string>
+    <string name="toast_title_notice">NOTICE</string>
+    <string name="toast_button_ok">OK</string>
+
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="cd_switch_theme">Switch Theme</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Switch Language</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Show password</string>
+    <string name="cd_hide_password">Hide password</string>
+
+
+</resources>

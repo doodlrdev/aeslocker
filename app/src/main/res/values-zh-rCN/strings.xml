@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">加密</string>
+    <string name="tab_decrypt">解密</string>
+    <string name="select_file">选择文件</string>
+    <string name="no_file_selected">未选择任何文件</string>
+    <string name="password_label">密码</string>
+    <string name="encrypt_file">加密文件</string>
+    <string name="decrypt_file">解密文件</string>
+    <string name="processing_progress">%1$d%% 处理中...</string>
+    <string name="terminal_commands_title">终端命令 (OpenSSL)</string>
+    <string name="encryption_cmd_label">加密命令:</string>
+    <string name="decryption_cmd_label">解密命令:</string>
+    <string name="encryption_cmd_sub">请将 [input.ext] 替换为您要加密的文件名及扩展名</string>
+    <string name="decryption_cmd_sub">请将 [output.ext] 替换为原始文件的文件名及扩展名</string>
+    <string name="important_notice">请复制以上命令并保存到安全的地方，以便在将来应用不可用时继续使用。这些 OpenSSL 命令可以直接在 macOS、Linux、Windows（通过 WSL 或 Git Bash）或支持命令行界面的 Android 环境中运行。</string>
+    <string name="copy_cmd_desc">复制命令</string>
+    <string name="toggle_theme">切换主题</string>
+    <string name="toast_select_file">请先选择一个文件</string>
+    <string name="toast_enter_password">请输入密码</string>
+    <string name="toast_encrypt_success">加密成功！</string>
+    <string name="toast_decrypt_success">解密成功！</string>
+    <string name="toast_operation_failed">操作失败：密码错误或文件已损坏。</string>
+    <string name="toast_invalid_file">密码错误或无效的 OpenSSL 文件格式。</string>
+    <string name="toast_enc_copied">已复制加密命令！</string>
+    <string name="toast_dec_copied">已复制解密命令！</string>
+    <string name="toast_title_success">成功</string>
+    <string name="toast_title_notice">提示</string>
+    <string name="toast_button_ok">确定</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="theme_light">浅色模式</string>
+    <string name="theme_dark">深色模式</string>
+    <string name="cd_switch_theme">切换主题</string>
+    <string name="cd_switch_language">切换语言</string>
+    <string name="cd_show_password">显示密码</string>
+    <string name="cd_hide_password">隐藏密码</string>
+</resources>

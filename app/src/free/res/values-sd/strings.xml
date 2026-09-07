@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">اشتهارن کان پاڪ</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro مڪمل طور تي اشتهارن کان پاڪ آهي. انهيءَ ۾ ڪابه اشتهاري لائبريري شامل ناهي، جنهن جي ڪري اهو وڌيڪ رازداري ۽ هڪ صاف، هلڪو ۽ بغير ڪنهن ڏکيائيءَ جو تجربو فراهم ڪري ٿو.</string>
+    <string name="btn_get_pro">PRO حاصل ڪريو</string>
+    <string name="btn_cancel">منسوخ ڪريو</string>
+</resources>
+
+

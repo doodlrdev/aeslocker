@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">विज्ञापन मुक्त</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro पूरी तरह से विज्ञापन-मुक्त है। इसमें कोई विज्ञापन लाइब्रेरी नहीं है, जिससे यह बेहतर निजता और एक साफ, हल्का और व्याकुलता-मुक्त अनुभव प्रदान करता है।</string>
+    <string name="btn_get_pro">PRO प्राप्त करें</string>
+    <string name="btn_cancel">रद्द करें</string>
+
+</resources>

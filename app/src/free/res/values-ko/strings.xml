@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">광고 없음</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro는 광고가 전혀 없습니다. 광고 라이브러리가 포함되어 있지 않아 향상된 개인정보 보호 기능과 깔끔하고 가벼우며 방해 없는 환경을 제공합니다.</string>
+    <string name="btn_get_pro">PRO 다운로드</string>
+    <string name="btn_cancel">취소</string>
+</resources>

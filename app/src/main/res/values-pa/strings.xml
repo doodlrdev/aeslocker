@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ਇਨਕ੍ਰਿਪਟ</string>
+    <string name="tab_decrypt">ਡਿਕ੍ਰਿਪਟ</string>
+    <string name="select_file">ਫਾਈਲ ਚੁਣੋ</string>
+    <string name="no_file_selected">ਕੁਝ ਵੀ ਚੁਣਿਆ ਨਹੀਂ ਗਿਆ</string>
+    <string name="password_label">ਪਾਸਵਰਡ</string>
+    <string name="encrypt_file">ਫਾਈਲ ਇਨਕ੍ਰਿਪਟ ਕਰੋ</string>
+    <string name="decrypt_file">ਫਾਈਲ ਡਿਕ੍ਰਿਪਟ ਕਰੋ</string>
+    <string name="processing_progress">%1$d%% ਕੰਮ ਚੱਲ ਰਿਹਾ ਹੈ...</string>
+    <string name="terminal_commands_title">ਟਰਮੀਨਲ ਕਮਾਂਡਾਂ (OpenSSL)</string>
+    <string name="encryption_cmd_label">ਇਨਕ੍ਰਿਪਸ਼ਨ ਕਮਾਂਡ:</string>
+    <string name="decryption_cmd_label">ਡਿਕ੍ਰਿਪਸ਼ਨ ਕਮਾਂਡ:</string>
+    <string name="encryption_cmd_sub">[input.ext] ਦੀ ਥਾਂ ਆਪਣੀ ਫਾਈਲ ਦਾ ਨਾਮ ਅਤੇ ਐਕਸਟੈਨਸ਼ਨ ਭਰੋ</string>
+    <string name="decryption_cmd_sub">[output.ext] ਦੀ ਥਾਂ ਅਸਲੀ ਫਾਈਲ ਦਾ ਨਾਮ ਅਤੇ ਐਕਸਟੈਨਸ਼ਨ ਭਰੋ</string>
+    <string name="important_notice">ਭਵਿੱਖ ਵਿੱਚ ਜੇਕਰ ਐਪ ਉਪਲਬਧ ਨਾ ਹੋਵੇ ਤਾਂ ਵਰਤਣ ਲਈ ਉਪਰੋਕਤ ਕਮਾਂਡਾਂ ਨੂੰ ਕਾਪੀ ਕਰਕੇ ਸੁਰੱਖਿਅਤ ਜਗ੍ਹਾ ਤੇ ਰੱਖੋ। ਇਹ OpenSSL ਕਮਾਂਡਾਂ macOS, Linux, Windows (WSL ਜਾਂ Git Bash ਰਾਹੀਂ) ਜਾਂ ਕਮਾਂਡ-ਲਾਇਨ ਸਪੋਰਟ ਵਾਲੇ Android ਵਾਤਾਵਰਣ ਵਿੱਚ ਸਿੱਧੀਆਂ ਚਲਾਈਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ।</string>
+    <string name="copy_cmd_desc">ਕਮਾਂਡ ਕਾਪੀ ਕਰੋ</string>
+    <string name="toggle_theme">ਥੀਮ ਬਦਲੋ</string>
+    <string name="toast_select_file">ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਫਾਈਲ ਚੁਣੋ</string>
+    <string name="toast_enter_password">ਕਿਰਪਾ ਕਰਕੇ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ</string>
+    <string name="toast_encrypt_success">ਸਫਲਤਾਪੂਰਵਕ ਇਨਕ੍ਰਿਪਟ ਹੋ ਗਿਆ!</string>
+    <string name="toast_decrypt_success">ਸਫਲਤਾਪੂਰਵਕ ਡਿਕ੍ਰਿਪਟ ਹੋ ਗਿਆ!</string>
+    <string name="toast_operation_failed">ਅਸਫਲ: ਗਲਤ ਪਾਸਵਰਡ ਜਾਂ ਖਰਾਬ ਫਾਈਲ।</string>
+    <string name="toast_invalid_file">ਗਲਤ ਪਾਸਵਰਡ ਜਾਂ ਅਵੈਧ OpenSSL ਫਾਈਲ ਫਾਰਮੈਟ।</string>
+    <string name="toast_enc_copied">ਇਨਕ੍ਰਿਪਸ਼ਨ ਕਮਾਂਡ ਕਾਪੀ ਕੀਤੀ ਗਈ!</string>
+    <string name="toast_dec_copied">ਡਿਕ੍ਰਿਪਸ਼ਨ ਕਮਾਂਡ ਕਾਪੀ ਕੀਤੀ ਗਈ!</string>
+    <string name="toast_title_success">ਸਫਲ</string>
+    <string name="toast_title_notice">ਸੂਚਨਾ</string>
+    <string name="toast_button_ok">ਠੀਕ ਹੈ</string>
+    <string name="theme_system">ਸਿਸਟਮ ਡਿਫਾਲਟ</string>
+    <string name="theme_light">ਲਾਈਟ ਮੋਡ</string>
+    <string name="theme_dark">ਡਾਰਕ ਮੋਡ</string>
+    <string name="cd_switch_theme">ਥੀਮ ਬਦਲੋ</string>
+    <string name="cd_switch_language">ਭਾਸ਼ਾ ਬਦਲੋ</string>
+    <string name="cd_show_password">ਪਾਸਵਰਡ ਦਿਖਾਓ</string>
+    <string name="cd_hide_password">ਪਾਸਵਰਡ ਲੁਕਾਓ</string>
+</resources>

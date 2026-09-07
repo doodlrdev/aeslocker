@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">KHÔNG QUẢNG CÁO</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro hoàn toàn không có quảng cáo. Ứng dụng không chứa thư viện quảng cáo nào, do đó mang lại quyền riêng tư nâng cao cùng trải nghiệm sạch sẽ, nhẹ nhàng và không bị xao nhãng.</string>
+    <string name="btn_get_pro">NÂNG CẤP PRO</string>
+    <string name="btn_cancel">HỦY</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">एनक्रिप्ट करा</string>
+    <string name="tab_decrypt">डिक्रिप्ट करा</string>
+    <string name="select_file">फाईल निवडा</string>
+    <string name="no_file_selected">कोणतीही फाईल निवडली नाही</string>
+    <string name="password_label">पासवर्ड</string>
+    <string name="encrypt_file">फाईल एनक्रिप्ट करा</string>
+    <string name="decrypt_file">फाईल डिक्रिप्ट करा</string>
+    <string name="processing_progress">%1$d%% प्रक्रिया सुरू आहे...</string>
+    <string name="terminal_commands_title">टर्मिनल कमांड्स (OpenSSL)</string>
+    <string name="encryption_cmd_label">एनक्रिप्शन कमांड:</string>
+    <string name="decryption_cmd_label">डिक्रिप्शन कमांड:</string>
+    <string name="encryption_cmd_sub">[input.ext] च्या जागी तुमच्या फाईलचे नाव आणि एक्स्टेंशन लिहा</string>
+    <string name="decryption_cmd_sub">[output.ext] च्या जागी मूळ फाईलचे नाव आणि एक्स्टेंशन लिहा</string>
+    <string name="important_notice">भविष्यात हे ॲप उपलब्ध नसल्यास वापरण्यासाठी वरील कमांड्स कॉपी करा आणि सुरक्षित जागी सेव्ह करा. या OpenSSL कमांड्स macOS, Linux, Windows (WSL किंवा Git Bash द्वारे), किंवा कमांड-लाईन इंटरफेस सपोर्ट असलेल्या Android प्रणालीमध्ये थेट चालवल्या जाऊ शकतात.</string>
+    <string name="copy_cmd_desc">कमांड कॉपी करा</string>
+    <string name="toggle_theme">थीम बदला</string>
+    <string name="toast_select_file">कृपया आधी फाईल निवडा</string>
+    <string name="toast_enter_password">कृपया पासवर्ड टाका</string>
+    <string name="toast_encrypt_success">यशस्वीरित्या एनक्रिप्ट केले!</string>
+    <string name="toast_decrypt_success">यशस्वीरित्या डिक्रिप्ट केले!</string>
+    <string name="toast_operation_failed">ऑपरेशन अयशस्वी: चुकीचा पासवर्ड किंवा खराब झालेली फाईल.</string>
+    <string name="toast_invalid_file">चुकीचा पासवर्ड किंवा अवैध OpenSSL फाईल फॉरमॅट.</string>
+    <string name="toast_enc_copied">एनक्रिप्शन कमांड कॉपी केली!</string>
+    <string name="toast_dec_copied">डिक्रिप्शन कमांड कॉपी केली!</string>
+    <string name="toast_title_success">यशस्वी</string>
+    <string name="toast_title_notice">सूचना</string>
+    <string name="toast_button_ok">ठीक आहे</string>
+    <string name="theme_system">सिस्टम डीफॉल्ट</string>
+    <string name="theme_light">लाईट मोड</string>
+    <string name="theme_dark">डार्क मोड</string>
+    <string name="cd_switch_theme">थीम बदला</string>
+    <string name="cd_switch_language">भाषा बदला</string>
+    <string name="cd_show_password">पासवर्ड दाखवा</string>
+    <string name="cd_hide_password">पासवर्ड लपवा</string>
+</resources>

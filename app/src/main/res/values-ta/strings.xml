@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">குறியாக்கம் (ENCRYPT)</string>
+    <string name="tab_decrypt">குறிவிலக்கம் (DECRYPT)</string>
+    <string name="select_file">கோப்பைத் தேர்ந்தெடு</string>
+    <string name="no_file_selected">கோப்பு எதுவும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="password_label">கடவுச்சொல்</string>
+    <string name="encrypt_file">கோப்பைக் குறியாக்கு</string>
+    <string name="decrypt_file">கோப்பைக் குறிவிலக்கு</string>
+    <string name="processing_progress">%1$d%% செயலாக்கப்படுகிறது...</string>
+    <string name="terminal_commands_title">முனையக் கட்டளைகள் (OpenSSL)</string>
+    <string name="encryption_cmd_label">குறியாக்கக் கட்டளை:</string>
+    <string name="decryption_cmd_label">குறிவிலக்கக் கட்டளை:</string>
+    <string name="encryption_cmd_sub">[input.ext] என்பதற்குப் பதிலாக உங்கள் கோப்பின் பெயரையும் நீட்டிப்பையும் (extension) உள்ளிடவும்</string>
+    <string name="decryption_cmd_sub">[output.ext] என்பதற்குப் பதிலாக அசல் கோப்பின் பெயரையும் நீட்டிப்பையும் உள்ளிடவும்</string>
+    <string name="important_notice">எதிர்காலத்தில் இந்த ஆப்ஸ் கிடைக்காமல் போனால் பயன்படுத்துவதற்கு, மேலே உள்ள கட்டளைகளை நகலெடுத்து பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும். இந்த OpenSSL கட்டளைகளை macOS, Linux, Windows (WSL அல்லது Git Bash மூலம்) அல்லது கமாண்ட்-லைன் இடைமுக ஆதரவு உள்ள Android சூழல்களில் நேரடியாகப் பயன்படுத்தலாம்.</string>
+    <string name="copy_cmd_desc">கட்டளையை நகலெடு</string>
+    <string name="toggle_theme">கருப்பொருளை மாற்று</string>
+    <string name="toast_select_file">முதலில் ஒரு கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="toast_enter_password">தயவுசெய்து கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="toast_encrypt_success">வெற்றிகரமாகக் குறியாக்கம் செய்யப்பட்டது!</string>
+    <string name="toast_decrypt_success">வெற்றிகரமாகக் குறிவிலக்கம் செய்யப்பட்டது!</string>
+    <string name="toast_operation_failed">செயல்பாடு தோல்வியடைந்தது: தவறான கடவுச்சொல் அல்லது பழுதடைந்த கோப்பு.</string>
+    <string name="toast_invalid_file">தவறான கடவுச்சொல் அல்லது செல்லாத OpenSSL கோப்பு வடிவம்.</string>
+    <string name="toast_enc_copied">குறியாக்கக் கட்டளை நகலெடுக்கப்பட்டது!</string>
+    <string name="toast_dec_copied">குறிவிலக்கக் கட்டளை நகலெடுக்கப்பட்டது!</string>
+    <string name="toast_title_success">வெற்றி</string>
+    <string name="toast_title_notice">அறிவிப்பு</string>
+    <string name="toast_button_ok">சரி</string>
+    <string name="theme_system">சிஸ்டம் இயல்புநிலை</string>
+    <string name="theme_light">லைட் மோட் (Light Mode)</string>
+    <string name="theme_dark">டார்க் மோட் (Dark Mode)</string>
+    <string name="cd_switch_theme">கருப்பொருளை மாற்று</string>
+    <string name="cd_switch_language">மொழியை மாற்று</string>
+    <string name="cd_show_password">கடவுச்சொல்லைக் காட்டு</string>
+    <string name="cd_hide_password">கடவுச்சொல்லை மறை</string>
+</resources>

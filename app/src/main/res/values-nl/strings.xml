@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">VERSLEUTELEN</string>
+    <string name="tab_decrypt">ONTSLEUTELEN</string>
+    <string name="select_file">Bestand selecteren</string>
+    <string name="no_file_selected">Geen bestand geselecteerd</string>
+    <string name="password_label">Wachtwoord</string>
+    <string name="encrypt_file">Bestand versleutelen</string>
+    <string name="decrypt_file">Bestand ontsleutelen</string>
+    <string name="processing_progress">%1$d%% Verwerken...</string>
+    <string name="terminal_commands_title">Terminalopdrachten (OpenSSL)</string>
+    <string name="encryption_cmd_label">Versleutelingsopdracht:</string>
+    <string name="decryption_cmd_label">Ontsleutelingsopdracht:</string>
+    <string name="encryption_cmd_sub">Vervang [input.ext] door uw bestandsnaam en de extensie</string>
+    <string name="decryption_cmd_sub">Vervang [output.ext] door de bestandsnaam en de extensie van het originele bestand</string>
+    <string name="important_notice">Kopieer de bovenstaande opdrachten en sla ze ergens op, zodat u ze kunt gebruiken als de app in de toekomst niet meer beschikbaar is. Deze OpenSSL-opdrachten kunnen rechtstreeks in de terminal worden uitgevoerd op macOS, Linux, Windows (via WSL of Git Bash) of Android-omgevingen met ondersteuning voor de opdrachtregel.</string>
+    <string name="copy_cmd_desc">Opdracht kopiëren</string>
+    <string name="toggle_theme">Thema wisselen</string>
+    <string name="toast_select_file">Selecteer eerst een bestand</string>
+    <string name="toast_enter_password">Voer een wachtwoord in</string>
+    <string name="toast_encrypt_success">Succesvol versleuteld!</string>
+    <string name="toast_decrypt_success">Succesvol ontsleuteld!</string>
+    <string name="toast_operation_failed">Bewerking mislukt: Onjuist wachtwoord of beschadigd bestand.</string>
+    <string name="toast_invalid_file">Onjuist wachtwoord of ongeldig OpenSSL-bestandsformaat.</string>
+    <string name="toast_enc_copied">Versleutelingsopdracht gekopieerd!</string>
+    <string name="toast_dec_copied">Ontsleutelingsopdracht gekopieerd!</string>
+    <string name="toast_title_success">SUCCES</string>
+    <string name="toast_title_notice">MELDING</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Systeemstandaard</string>
+    <string name="theme_light">Lichte modus</string>
+    <string name="theme_dark">Donkere modus</string>
+    <string name="cd_switch_theme">Thema wisselen</string>
+    <string name="cd_switch_language">Taal wisselen</string>
+    <string name="cd_show_password">Wachtwoord tonen</string>
+    <string name="cd_hide_password">Wachtwoord verbergen</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">ప్రకటనలు లేవు</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro పూర్తిగా ప్రకటనలు లేనిది. దీనిలో ఎటువంటి యాడ్ లైబ్రరీలు లేవు, కాబట్టి మెరుగైన గోప్యత మరియు పరిశుభ్రమైన, తేలికపాటి, పరధ్యానం లేని అనుభవాన్ని అందిస్తుంది.</string>
+    <string name="btn_get_pro">PRO పొందండి</string>
+    <string name="btn_cancel">రద్దు చేయి</string>
+</resources>

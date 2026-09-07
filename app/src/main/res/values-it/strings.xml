@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">CIFRA</string>
+    <string name="tab_decrypt">DECIFRA</string>
+    <string name="select_file">Seleziona File</string>
+    <string name="no_file_selected">Nessun file selezionato</string>
+    <string name="password_label">Password</string>
+    <string name="encrypt_file">Cifra File</string>
+    <string name="decrypt_file">Decifra File</string>
+    <string name="processing_progress">%1$d%% Elaborazione in corso...</string>
+    <string name="terminal_commands_title">Comandi Terminale (OpenSSL)</string>
+    <string name="encryption_cmd_label">Comando di Cifratura:</string>
+    <string name="decryption_cmd_label">Comando di Decifratura:</string>
+    <string name="encryption_cmd_sub">Sostituisci [input.ext] con il nome del tuo file e la sua estensione</string>
+    <string name="decryption_cmd_sub">Sostituisci [output.ext] con il nome e l\'estensione del file originale</string>
+    <string name="important_notice">Copia i comandi qui sopra e salvali in un luogo sicuro per poterli usare se l\'app non dovesse essere disponibile in futuro. Questi comandi OpenSSL possono essere eseguiti direttamente nel terminale su macOS, Linux, Windows (tramite WSL o Git Bash) o in ambienti Android con supporto per la riga di comando.</string>
+    <string name="copy_cmd_desc">Copia comando</string>
+    <string name="toggle_theme">Cambia Tema</string>
+    <string name="toast_select_file">Seleziona prima un file</string>
+    <string name="toast_enter_password">Inserisci una password</string>
+    <string name="toast_encrypt_success">Cifratura completata con successo!</string>
+    <string name="toast_decrypt_success">Decifratura completata con successo!</string>
+    <string name="toast_operation_failed">Operazione fallita: password errata o file danneggiato.</string>
+    <string name="toast_invalid_file">Password errata o formato file OpenSSL non valido.</string>
+    <string name="toast_enc_copied">Comando di cifratura copiato!</string>
+    <string name="toast_dec_copied">Comando di decifratura copiato!</string>
+    <string name="toast_title_success">SUCCESSO</string>
+    <string name="toast_title_notice">AVVISO</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Predefinito di Sistema</string>
+    <string name="theme_light">Modalità Chiara</string>
+    <string name="theme_dark">Modalità Scura</string>
+    <string name="cd_switch_theme">Cambia Tema</string>
+    <string name="cd_switch_language">Cambia Lingua</string>
+    <string name="cd_show_password">Mostra password</string>
+    <string name="cd_hide_password">Nascondi password</string>
+</resources>

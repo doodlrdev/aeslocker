@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">WALANG AD</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">Ang AESLocker Pro ay ganap na walang ad. Wala itong mga library ng ad, kaya nag-aalok ito ng mas pinahusay na privacy at isang malinis, magaan, at walang istorbo na karanasan.</string>
+    <string name="btn_get_pro">KUNIN ANG PRO</string>
+    <string name="btn_cancel">KANSELAHIN</string>
+</resources>

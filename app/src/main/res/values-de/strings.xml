@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">VERSCHLÜSSELN</string>
+    <string name="tab_decrypt">ENTSCHLÜSSELN</string>
+    <string name="select_file">Datei auswählen</string>
+    <string name="no_file_selected">Keine Datei ausgewählt</string>
+    <string name="password_label">Passwort</string>
+    <string name="encrypt_file">Datei verschlüsseln</string>
+    <string name="decrypt_file">Datei entschlüsseln</string>
+    <string name="processing_progress">%1$d%% Wird verarbeitet...</string>
+    <string name="terminal_commands_title">Terminal-Befehle (OpenSSL)</string>
+    <string name="encryption_cmd_label">Verschlüsselungsbefehl:</string>
+    <string name="decryption_cmd_label">Entschlüsselungsbefehl:</string>
+    <string name="encryption_cmd_sub">Ersetzen Sie [input.ext] durch Ihren Dateinamen und die Dateiendung</string>
+    <string name="decryption_cmd_sub">Ersetzen Sie [output.ext] durch den Dateinamen und die Dateiendung der Originaldatei</string>
+    <string name="important_notice">Kopieren Sie die obigen Befehle und speichern Sie sie an einem sicheren Ort, damit Sie sie verwenden können, falls die App in Zukunft nicht mehr verfügbar ist. Diese OpenSSL-Befehle können direkt im Terminal unter macOS, Linux, Windows (über WSL oder Git Bash) oder in Android-Umgebungen mit Befehlszeilenunterstützung ausgeführt werden.</string>
+    <string name="copy_cmd_desc">Befehl kopieren</string>
+    <string name="toggle_theme">Design wechseln</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Bitte wählen Sie zuerst eine Datei aus</string>
+    <string name="toast_enter_password">Bitte geben Sie ein Passwort ein</string>
+    <string name="toast_encrypt_success">Erfolgreich verschlüsselt!</string>
+    <string name="toast_decrypt_success">Erfolgreich entschlüsselt!</string>
+    <string name="toast_operation_failed">Vorgang fehlgeschlagen: Falsches Passwort oder beschädigte Datei.</string>
+    <string name="toast_invalid_file">Falsches Passwort oder ungültiges OpenSSL-Dateiformat.</string>
+    <string name="toast_enc_copied">Verschlüsselungsbefehl kopiert!</string>
+    <string name="toast_dec_copied">Entschlüsselungsbefehl kopiert!</string>
+    <string name="toast_title_success">ERFOLG</string>
+    <string name="toast_title_notice">HINWEIS</string>
+    <string name="toast_button_ok">OK</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Systemstandard</string>
+    <string name="theme_light">Helles Design</string>
+    <string name="theme_dark">Dunkles Design</string>
+    <string name="cd_switch_theme">Design wechseln</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Sprache wechseln</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Passwort anzeigen</string>
+    <string name="cd_hide_password">Passwort verbergen</string>
+</resources>

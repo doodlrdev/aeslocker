@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">CRIPTOGRAFAR</string>
+    <string name="tab_decrypt">DESCRIPTOGRAFAR</string>
+    <string name="select_file">Selecionar Arquivo</string>
+    <string name="no_file_selected">Nenhum arquivo selecionado</string>
+    <string name="password_label">Senha</string>
+    <string name="encrypt_file">Criptografar Arquivo</string>
+    <string name="decrypt_file">Descriptografar Arquivo</string>
+    <string name="processing_progress">%1$d%% Processando...</string>
+    <string name="terminal_commands_title">Comandos de Terminal (OpenSSL)</string>
+    <string name="encryption_cmd_label">Comando de Criptografia:</string>
+    <string name="decryption_cmd_label">Comando de Descriptografia:</string>
+    <string name="encryption_cmd_sub">Substitua [input.ext] pelo nome do seu arquivo e extensão</string>
+    <string name="decryption_cmd_sub">Substitua [output.ext] pelo nome e extensão do arquivo original</string>
+    <string name="important_notice">Copie os comandos acima e salve-os em algum lugar seguro para poder usá-los caso o aplicativo fique indisponível no futuro. Esses comandos OpenSSL podem ser executados diretamente no terminal no macOS, Linux, Windows (via WSL ou Git Bash) ou em ambientes Android com suporte a interface de linha de comando.</string>
+    <string name="copy_cmd_desc">Copiar comando</string>
+    <string name="toggle_theme">Alternar Tema</string>
+    <string name="toast_select_file">Por favor, selecione um arquivo primeiro</string>
+    <string name="toast_enter_password">Por favor, insira uma senha</string>
+    <string name="toast_encrypt_success">Criptografado com sucesso!</string>
+    <string name="toast_decrypt_success">Descriptografado com sucesso!</string>
+    <string name="toast_operation_failed">Falha na operação: Senha incorreta ou arquivo corrompido.</string>
+    <string name="toast_invalid_file">Senha incorreta ou formato de arquivo OpenSSL inválido.</string>
+    <string name="toast_enc_copied">Comando de criptografia copiado!</string>
+    <string name="toast_dec_copied">Comando de descriptografia copiado!</string>
+    <string name="toast_title_success">SUCESSO</string>
+    <string name="toast_title_notice">AVISO</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Padrão do Sistema</string>
+    <string name="theme_light">Modo Claro</string>
+    <string name="theme_dark">Modo Escuro</string>
+    <string name="cd_switch_theme">Alternar Tema</string>
+    <string name="cd_switch_language">Mudar Idioma</string>
+    <string name="cd_show_password">Mostrar senha</string>
+    <string name="cd_hide_password">Ocultar senha</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">ไม่มีโฆษณา</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro ไม่มีโฆษณาโดยสิ้นเชิง และไม่มีไลบรารีโฆษณาใดๆ ช่วยเพิ่มความเป็นส่วนตัวและมอบประสบการณ์ที่สะอาด น้ำหนักเบา และปราศจากการรบกวน</string>
+    <string name="btn_get_pro">รับ PRO</string>
+    <string name="btn_cancel">ยกเลิก</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pro Upgrade Dialog & Button -->
+    <string name="btn_ad_free">AD FREE</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro is completely ad-free. It contains no ad libraries, thus offering enhanced privacy and a clean, lightweight, and distraction-free experience.</string>
+    <string name="btn_get_pro">GET PRO</string>
+    <string name="btn_cancel">CANCEL</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">انڪريپٽ</string>
+    <string name="tab_decrypt">ڊڪريپٽ</string>
+    <string name="select_file">فائل چونڊيو</string>
+    <string name="no_file_selected">ڪابه فائل چونڊيل ناهي</string>
+    <string name="password_label">پاسورڊ</string>
+    <string name="encrypt_file">فائل انڪريپٽ ڪريو</string>
+    <string name="decrypt_file">فائل ڊڪريپٽ ڪريو</string>
+    <string name="processing_progress">%1$d%% پروسيسنگ ٿي رهي آهي...</string>
+    <string name="terminal_commands_title">ٽرمينل حڪم (OpenSSL)</string>
+    <string name="encryption_cmd_label">انڪريپشن ڪمانڊ:</string>
+    <string name="decryption_cmd_label">ڊڪريپشن ڪمانڊ:</string>
+    <string name="encryption_cmd_sub">[input.ext] جي جاءِ تي پنهنجي فائل جو نالو ۽ ان جو ايڪسٽେشن لکو</string>
+    <string name="decryption_cmd_sub">[output.ext] جي جاءِ تي اصل فائل جو نالو ۽ ايڪسٽେشن لکو</string>
+    <string name="important_notice">مٿين حڪمن (commands) کي ڪاپي ڪري محفوظ جڳهه تي رکو ته جيئن مستقبل ۾ ايپ جي دستياب نه هجڻ جي صورت ۾ ڪم اچن. اهي OpenSSL ڪمانڊز سڌو سنئون macOS، Linux، Windows (WSL يا Git Bash ذريعي) يا Android ٽرمينل تي هلائي سگهجن ٿا.</string>
+    <string name="copy_cmd_desc">ڪمانڊ ڪاپي ڪريو</string>
+    <string name="toggle_theme">ٿيم متبادل ڪريو</string>
+    <string name="toast_select_file">مهرباني ڪري پهرين فائل چونڊيو</string>
+    <string name="toast_enter_password">مهرباني ڪري پاسورڊ داخل ڪريو</string>
+    <string name="toast_encrypt_success">ڪاميابيءَ سان انڪريپٽ ٿي ويو!</string>
+    <string name="toast_decrypt_success">ڪاميابيءَ سان ڊڪريپٽ ٿي ويو!</string>
+    <string name="toast_operation_failed">عمل ناڪام ٿيو: غلط پاسورڊ يا خراب فائل.</string>
+    <string name="toast_invalid_file">غلط پاسورڊ يا غلط OpenSSL فائل فارميٽ.</string>
+    <string name="toast_enc_copied">انڪريپشن ڪمانڊ ڪاپي ٿي وئي!</string>
+    <string name="toast_dec_copied">ڊڪريپشن ڪمانڊ ڪاپي ٿي وئي!</string>
+    <string name="toast_title_success">ڪاميابي</string>
+    <string name="toast_title_notice">نوٽيس</string>
+    <string name="toast_button_ok">ٺيڪ آهي</string>
+    <string name="theme_system">سسٽମ ڊفالٽ</string>
+    <string name="theme_light">لائيٽ موڊ</string>
+    <string name="theme_dark">ڊارڪ موڊ</string>
+    <string name="cd_switch_theme">ٿيم تبديل ڪريو</string>
+    <string name="cd_switch_language">ٻولي تبديل ڪريو</string>
+    <string name="cd_show_password">پاسورڊ ڏيکاريو</string>
+    <string name="cd_hide_password">پاسورڊ لڪايو</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ЗАШИФРУВАТИ</string>
+    <string name="tab_decrypt">РОЗШИФРУВАТИ</string>
+    <string name="select_file">Вибрати файл</string>
+    <string name="no_file_selected">Файл не вибрано</string>
+    <string name="password_label">Пароль</string>
+    <string name="encrypt_file">Зашифрувати файл</string>
+    <string name="decrypt_file">Розшифрувати файл</string>
+    <string name="processing_progress">%1$d%% Обробка...</string>
+    <string name="terminal_commands_title">Команди термінала (OpenSSL)</string>
+    <string name="encryption_cmd_label">Команда шифрування:</string>
+    <string name="decryption_cmd_label">Команда розшифрування:</string>
+    <string name="encryption_cmd_sub">Замініть [input.ext] на ім’я та розширення вашого файлу</string>
+    <string name="decryption_cmd_sub">Замініть [output.ext] на ім’я та розширення вихідного файлу</string>
+    <string name="important_notice">Скопіюйте наведені вище команди та збережіть їх у безпечному місці, щоб використати, якщо додаток буде недоступний у майбутньому. Ці команди OpenSSL можна виконувати безпосередньо в терміналі на macOS, Linux, Windows (через WSL або Git Bash) або в середовищі Android із підтримкою командного рядка.</string>
+    <string name="copy_cmd_desc">Скопіювати команду</string>
+    <string name="toggle_theme">Змінити тему</string>
+    <string name="toast_select_file">Будь ласка, спочатку виберіть файл</string>
+    <string name="toast_enter_password">Будь ласка, введіть пароль</string>
+    <string name="toast_encrypt_success">Успішно зашифровано!</string>
+    <string name="toast_decrypt_success">Успішно розшифровано!</string>
+    <string name="toast_operation_failed">Помилка операції: Невірний пароль або пошкоджений файл.</string>
+    <string name="toast_invalid_file">Невірний пароль або недійсний формат файлу OpenSSL.</string>
+    <string name="toast_enc_copied">Команду шифрування скопійовано!</string>
+    <string name="toast_dec_copied">Команду розшифрування скопійовано!</string>
+    <string name="toast_title_success">УСПІХ</string>
+    <string name="toast_title_notice">ПОВІДОМЛЕННЯ</string>
+    <string name="toast_button_ok">ОК</string>
+    <string name="theme_system">Системна за замовчуванням</string>
+    <string name="theme_light">Світла тема</string>
+    <string name="theme_dark">Темна тема</string>
+    <string name="cd_switch_theme">Змінити тему</string>
+    <string name="cd_switch_language">Змінити мову</string>
+    <string name="cd_show_password">Показати пароль</string>
+    <string name="cd_hide_password">Сховати пароль</string>
+</resources>

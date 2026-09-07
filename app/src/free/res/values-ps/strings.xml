@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">بې له اشتهاره</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro په بشپړ ډول بې له اعلاناتو دی. دا د اعلاناتو هیڅ کتابتونونه نلري، نو له همدې امله غوره محرمیت او پاکه، سپکه او له اندېښنو پاکه تجربه وړاندې کوي.</string>
+    <string name="btn_get_pro">PRO ترلاسه کړئ</string>
+    <string name="btn_cancel">لغوه کول</string>
+</resources>

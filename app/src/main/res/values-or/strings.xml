@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ଏନକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
+    <string name="tab_decrypt">ଡିକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
+    <string name="select_file">ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ</string>
+    <string name="no_file_selected">କୌଣସି ଫାଇଲ୍ ଚୟନ କରାଯାଇ ନାହିଁ</string>
+    <string name="password_label">ପାସୱାର୍ଡ</string>
+    <string name="encrypt_file">ଫାଇଲ୍ ଏନକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
+    <string name="decrypt_file">ଫାଇଲ୍ ଡିକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
+    <string name="processing_progress">%1$d%% ପ୍ରକ୍ରିୟା ଚାଲିଛି...</string>
+    <string name="terminal_commands_title">ଟର୍ମିନାଲ୍ କମାଣ୍ଡ୍ (OpenSSL)</string>
+    <string name="encryption_cmd_label">ଏନକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍:</string>
+    <string name="decryption_cmd_label">ଡିକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍:</string>
+    <string name="encryption_cmd_sub">[input.ext] ବଦଳରେ ଆପଣଙ୍କ ଫାଇଲ୍ ନାମ ଏବଂ ଏହାର ଏକ୍ସଟେନ୍ସନ୍ ଲିଖନ୍ତୁ</string>
+    <string name="decryption_cmd_sub">[output.ext] ବଦଳରେ ମୂଳ ଫାଇଲ୍ ର ନାମ ଏବଂ ଏକ୍ସଟେନ୍ସନ୍ ଲିଖନ୍ତୁ</string>
+    <string name="important_notice">ଭବିଷ୍ୟତରେ ଆପ୍ ਉପଲବ୍ଧ ନହେଲେ ବ୍ୟବହାର କରିବା ପାଇଁ ଉପରୋକ୍ତ କମାଣ୍ଡଗୁଡ଼ିକୁ କପ୍ କରି ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଂରକ୍ଷଣ କରନ୍ତୁ। ଏହି OpenSSL କମାଣ୍ଡଗୁଡ଼ିକୁ macOS, Linux, Windows (WSL କିମ୍ବା Git Bash ମାଧ୍ୟମରେ) କିମ୍ବା Android ଟର୍ମିନାଲ୍ ରେ ସିଧାସଳଖ ଏକଜିକିଉଟ୍ କରାଯାଇପାରିବ।</string>
+    <string name="copy_cmd_desc">କମାଣ୍ଡ୍ କପ୍ କରନ୍ତୁ</string>
+    <string name="toggle_theme">ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="toast_select_file">ଦୟାکرି ପ୍ରଥମେ ଏକ ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ</string>
+    <string name="toast_enter_password">ଦୟାକରି ଏକ ପାସୱାର୍ଡ ପ୍ରବେଶ କରନ୍ତୁ</string>
+    <string name="toast_encrypt_success">ସଫଳତାସହ ଏନକ୍ରିପ୍ଟ ହେଲା!</string>
+    <string name="toast_decrypt_success">ସଫଳତାସହ ଡିକ୍ରିପ୍ଟ ହେଲା!</string>
+    <string name="toast_operation_failed">ଅପରେସନ୍ ବିଫଳ ହେଲା: ଭୁଲ୍ ପାସୱାର୍ଡ କିମ୍ବା କ୍ଷତିଗ୍ରସ୍ତ ଫାଇଲ୍।</string>
+    <string name="toast_invalid_file">ଭୁଲ୍ ପାସୱାର୍ଡ କିମ୍ବା ଅବୈଧ OpenSSL ଫାଇଲ୍ ଫର୍ମାଟ୍।</string>
+    <string name="toast_enc_copied">ଏନକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍ କପ୍ ହେଲା!</string>
+    <string name="toast_dec_copied">ଡିକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍ କପ୍ ହେଲା!</string>
+    <string name="toast_title_success">ସଫଳତା</string>
+    <string name="toast_title_notice">ସୂଚନା</string>
+    <string name="toast_button_ok">ଠିକ୍ ଅଛି</string>
+    <string name="theme_system">ସିଷ୍ଟମ୍ ଡିଫଲ୍ଟ</string>
+    <string name="theme_light">ଲାଇଟ୍ ମୋଡ୍</string>
+    <string name="theme_dark">ଡାର୍କ ମୋଡ୍</string>
+    <string name="cd_switch_theme">ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="cd_switch_language">ଭାଷା ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="cd_show_password">ପାସୱାର୍ଡ ଦେખાନ୍ତୁ</string>
+    <string name="cd_hide_password">ପାସୱାର୍ଡ لുକਾନ୍ତୁ</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">تشفير</string>
+    <string name="tab_decrypt">فك التشفير</string>
+    <string name="select_file">تحديد ملف</string>
+    <string name="no_file_selected">لم يتم تحديد أي ملف</string>
+    <string name="password_label">كلمة المرور</string>
+    <string name="encrypt_file">تشفير الملف</string>
+    <string name="decrypt_file">فك تشفير الملف</string>
+    <string name="processing_progress">%1$d%% جاري المعالجة...</string>
+    <string name="terminal_commands_title">أوامر الطرفية (OpenSSL)</string>
+    <string name="encryption_cmd_label">أمر التشفير:</string>
+    <string name="decryption_cmd_label">أمر فك التشفير:</string>
+    <string name="encryption_cmd_sub">استبدل [input.ext] باسم الملف وامتداده</string>
+    <string name="decryption_cmd_sub">استبدل [output.ext] باسم الملف الأصلي وامتداده</string>
+    <string name="important_notice">انسخ الأوامر أعلاه واحفظها في مكان ما حتى تتمكن من استخدامها إذا أصبح التطبيق غير متاح في المستقبل. يمكن تنفيذ أوامر OpenSSL هذه مباشرة في الطرفية على macOS أو Linux أو Windows (عبر WSL أو Git Bash) أو بيئات Android التي تدعم واجهة سطر الأوامر.</string>
+    <string name="copy_cmd_desc">نسخ الأمر</string>
+    <string name="toggle_theme">تبديل المظهر</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">يرجى تحديد ملف أولاً</string>
+    <string name="toast_enter_password">يرجى إدخال كلمة المرور</string>
+    <string name="toast_encrypt_success">تم التشفير بنجاح!</string>
+    <string name="toast_decrypt_success">تم فك التشفير بنجاح!</string>
+    <string name="toast_operation_failed">فشلت العملية: كلمة المرور غير صحيحة أو الملف تالف.</string>
+    <string name="toast_invalid_file">كلمة المرور غير صحيحة أو تنسيق ملف OpenSSL غير صالحة.</string>
+    <string name="toast_enc_copied">تم نسخ أمر التشفير!</string>
+    <string name="toast_dec_copied">تم نسخ أمر فك التشفير!</string>
+    <string name="toast_title_success">نجاح</string>
+    <string name="toast_title_notice">ملاحظة</string>
+    <string name="toast_button_ok">حسناً</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">الافتراضي للنظام</string>
+    <string name="theme_light">الوضع الفاتح</string>
+    <string name="theme_dark">الوضع الداكن</string>
+    <string name="cd_switch_theme">تغيير المظهر</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">تغيير اللغة</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">إظهار كلمة المرور</string>
+    <string name="cd_hide_password">إخفاء كلمة المرور</string>
+</resources>

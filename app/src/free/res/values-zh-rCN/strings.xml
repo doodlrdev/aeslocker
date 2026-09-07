@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">无广告</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro 完全无广告。它不包含任何广告库，从而提供更强的高隐私保护以及清爽、轻巧、无干扰的使用体验。</string>
+    <string name="btn_get_pro">获取 PRO</string>
+    <string name="btn_cancel">取消</string>
+</resources>

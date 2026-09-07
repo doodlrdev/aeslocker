@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">CIFRAR</string>
+    <string name="tab_decrypt">DESCIFRAR</string>
+    <string name="select_file">Seleccionar archivo</string>
+    <string name="no_file_selected">Ningún archivo seleccionado</string>
+    <string name="password_label">Contraseña</string>
+    <string name="encrypt_file">Cifrar archivo</string>
+    <string name="decrypt_file">Descifrar archivo</string>
+    <string name="processing_progress">%1$d%% Procesando...</string>
+    <string name="terminal_commands_title">Comandos de terminal (OpenSSL)</string>
+    <string name="encryption_cmd_label">Comando de cifrado:</string>
+    <string name="decryption_cmd_label">Comando de descifrado:</string>
+    <string name="encryption_cmd_sub">Reemplace [input.ext] con el nombre y la extensión de su archivo</string>
+    <string name="decryption_cmd_sub">Reemplace [output.ext] con el nombre y la extensión del archivo original</string>
+    <string name="important_notice">Copie los comandos anteriores y guárdelos en un lugar seguro para poder usarlos si la aplicación deja de estar disponible en el futuro. Estos comandos de OpenSSL se pueden ejecutar directamente en la terminal en macOS, Linux, Windows (a través de WSL o Git Bash) o entornos de Android con soporte de interfaz de línea de comandos.</string>
+    <string name="copy_cmd_desc">Copiar comando</string>
+    <string name="toggle_theme">Cambiar tema</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Por favor, seleccione un archivo primero</string>
+    <string name="toast_enter_password">Por favor, ingrese una contraseña</string>
+    <string name="toast_encrypt_success">¡Cifrado con éxito!</string>
+    <string name="toast_decrypt_success">¡Descifrado con éxito!</string>
+    <string name="toast_operation_failed">Error en la operación: Contraseña incorrecta o archivo dañado.</string>
+    <string name="toast_invalid_file">Contraseña incorrecta o formato de archivo OpenSSL no válido.</string>
+    <string name="toast_enc_copied">¡Comando de cifrado copiado!</string>
+    <string name="toast_dec_copied">¡Comando de descifrado copiado!</string>
+    <string name="toast_title_success">ÉXITO</string>
+    <string name="toast_title_notice">AVISO</string>
+    <string name="toast_button_ok">ACEPTAR</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="theme_light">Modo claro</string>
+    <string name="theme_dark">Modo oscuro</string>
+    <string name="cd_switch_theme">Cambiar tema</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Cambiar idioma</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Mostrar contraseña</string>
+    <string name="cd_hide_password">Ocultar contraseña</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">암호화</string>
+    <string name="tab_decrypt">복호화</string>
+    <string name="select_file">파일 선택</string>
+    <string name="no_file_selected">선택된 파일 없음</string>
+    <string name="password_label">비밀번호</string>
+    <string name="encrypt_file">파일 암호화</string>
+    <string name="decrypt_file">파일 복호화</string>
+    <string name="processing_progress">%1$d%% 처리 중...</string>
+    <string name="terminal_commands_title">터미널 명령어 (OpenSSL)</string>
+    <string name="encryption_cmd_label">암호화 명령어:</string>
+    <string name="decryption_cmd_label">복호화 명령어:</string>
+    <string name="encryption_cmd_sub">[input.ext]를 파일 이름 및 확장자로 변경하세요</string>
+    <string name="decryption_cmd_sub">[output.ext]를 원본 파일 이름 및 확장자로 변경하세요</string>
+    <string name="important_notice">나중에 앱을 사용할 수 없게 될 경우를 대비하여 위 명령어를 복사하여 안전한 곳에 저장하세요. 이 OpenSSL 명령어는 macOS, Linux, Windows(WSL 또는 Git Bash를 통해) 또는 명령줄 인터페이스를 지원하는 Android 환경의 터미널에서 직접 실행할 수 있습니다.</string>
+    <string name="copy_cmd_desc">명령어 복사</string>
+    <string name="toggle_theme">테마 변경</string>
+    <string name="toast_select_file">먼저 파일을 선택하세요</string>
+    <string name="toast_enter_password">비밀번호를 입력하세요</string>
+    <string name="toast_encrypt_success">암호화 성공!</string>
+    <string name="toast_decrypt_success">복호화 성공!</string>
+    <string name="toast_operation_failed">작업 실패: 비밀번호가 잘못되었거나 파일이 손상되었습니다.</string>
+    <string name="toast_invalid_file">잘못된 비밀번호이거나 유효하지 않은 OpenSSL 파일 형식입니다.</string>
+    <string name="toast_enc_copied">암호화 명령어가 복사되었습니다!</string>
+    <string name="toast_dec_copied">복호화 명령어가 복사되었습니다!</string>
+    <string name="toast_title_success">성공</string>
+    <string name="toast_title_notice">알림</string>
+    <string name="toast_button_ok">확인</string>
+    <string name="theme_system">시스템 기본값</string>
+    <string name="theme_light">라이트 모드</string>
+    <string name="theme_dark">다크 모드</string>
+    <string name="cd_switch_theme">테마 변경</string>
+    <string name="cd_switch_language">언어 변경</string>
+    <string name="cd_show_password">비밀번호 표시</string>
+    <string name="cd_hide_password">비밀번호 숨기기</string>
+</resources>

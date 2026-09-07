@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">ŠIFROVAT</string>
+    <string name="tab_decrypt">DEŠIFROVAT</string>
+    <string name="select_file">Vybrat soubor</string>
+    <string name="no_file_selected">Není vybrán žádný soubor</string>
+    <string name="password_label">Heslo</string>
+    <string name="encrypt_file">Šifrovat soubor</string>
+    <string name="decrypt_file">Dešifrovat soubor</string>
+    <string name="processing_progress">%1$d%% Zpracovává se...</string>
+    <string name="terminal_commands_title">Příkazy terminálu (OpenSSL)</string>
+    <string name="encryption_cmd_label">Šifrovací příkaz:</string>
+    <string name="decryption_cmd_label">Dešifrovací příkaz:</string>
+    <string name="encryption_cmd_sub">Nahraďte [input.ext] názvem a příponou vašeho souboru</string>
+    <string name="decryption_cmd_sub">Nahraďte [output.ext] názvem a příponou původního souboru</string>
+    <string name="important_notice">Zkopírujte výše uvedené příkazy a uložte je na bezpečné místo, abyste je mohli použít, pokud aplikace nebude v budoucnu dostupná. Tyto příkazy OpenSSL lze spustit přímo v terminálu v systému macOS, Linux, Windows (přes WSL nebo Git Bash) nebo v prostředí Android s podporou příkazového řádku.</string>
+    <string name="copy_cmd_desc">Kopírovat příkaz</string>
+    <string name="toggle_theme">Změnit motiv</string>
+    <string name="toast_select_file">Nejprve prosím vyberte soubor</string>
+    <string name="toast_enter_password">Zadejte prosím heslo</string>
+    <string name="toast_encrypt_success">Úspěšně zašifrováno!</string>
+    <string name="toast_decrypt_success">Úspěšně dešifrováno!</string>
+    <string name="toast_operation_failed">Operace selhala: Nesprávné heslo nebo poškozený soubor.</string>
+    <string name="toast_invalid_file">Nesprávné heslo nebo neplatný formát souboru OpenSSL.</string>
+    <string name="toast_enc_copied">Šifrovací příkaz zkopírován!</string>
+    <string name="toast_dec_copied">Dešifrovací příkaz zkopírován!</string>
+    <string name="toast_title_success">ÚSPĚCH</string>
+    <string name="toast_title_notice">UPOZORNĚNÍ</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Výchozí systém</string>
+    <string name="theme_light">Světlý režim</string>
+    <string name="theme_dark">Tmavý režim</string>
+    <string name="cd_switch_theme">Změnit motiv</string>
+    <string name="cd_switch_language">Změnit jazyk</string>
+    <string name="cd_show_password">Zobrazit heslo</string>
+    <string name="cd_hide_password">Skrýt heslo</string>
+</resources>

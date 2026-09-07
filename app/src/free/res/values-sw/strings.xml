@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">BILA MATANGAZO</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro haina matangazo kabisa. Haina maktaba yoyote ya matangazo, na hivyo kutoa faragha iliyoimarishwa na uzoefu safi, mwepesi na usio na usumbufu.</string>
+    <string name="btn_get_pro">PATA PRO</string>
+    <string name="btn_cancel">GHAILISHA</string>
+</resources>

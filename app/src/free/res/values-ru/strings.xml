@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">БЕЗ РЕКЛАМЫ</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro полностью свободен от рекламы. Он не содержит рекламных библиотек, обеспечивая повышенную конфиденциальность, а также чистый, легкий и не отвлекающий интерфейс.</string>
+    <string name="btn_get_pro">ПОЛУЧИТЬ PRO</string>
+    <string name="btn_cancel">ОТМЕНА</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">SANDI (ENCRYPT)</string>
+    <string name="tab_decrypt">BUKA SANDI (DECRYPT)</string>
+    <string name="select_file">Pilih Berkas</string>
+    <string name="no_file_selected">Ora ana berkas sing dipilih</string>
+    <string name="password_label">Tembung Sandi</string>
+    <string name="encrypt_file">Sandek Berkas (Encrypt)</string>
+    <string name="decrypt_file">Buka Sandi Berkas</string>
+    <string name="processing_progress">%1$d%% Diproses...</string>
+    <string name="terminal_commands_title">Perintah Terminal (OpenSSL)</string>
+    <string name="encryption_cmd_label">Perintah Enkripsi:</string>
+    <string name="decryption_cmd_label">Perintah Dekripsi:</string>
+    <string name="encryption_cmd_sub">Ganti [input.ext] karo jeneng berkas lan ekstensine</string>
+    <string name="decryption_cmd_sub">Ganti [output.ext] karo jeneng lan ekstensi berkas asli</string>
+    <string name="important_notice">Salin perintah ing dhuwur lan simpen ing papan sing aman supaya bisa digunakake yen aplikasi iki ora bisa diakses ing mangarep. Perintah OpenSSL iki bisa dieksekusi langsung ing terminal ing macOS, Linux, Windows (liwat WSL utawa Git Bash), utawa lingkungan Android sing ndhukung antarmuka baris perintah.</string>
+    <string name="copy_cmd_desc">Salin perintah</string>
+    <string name="toggle_theme">Ganti Tema</string>
+    <string name="toast_select_file">Mangga pilih berkas dhisik</string>
+    <string name="toast_enter_password">Mangga lebokake tembung sandi</string>
+    <string name="toast_encrypt_success">Sukses dienkripsi!</string>
+    <string name="toast_decrypt_success">Sukses didekripsi!</string>
+    <string name="toast_operation_failed">Operasi gagal: Tembung sandi salah utawa berkas rusak.</string>
+    <string name="toast_invalid_file">Tembung sandi salah utawa format berkas OpenSSL ora sah.</string>
+    <string name="toast_enc_copied">Perintah enkripsi disalin!</string>
+    <string name="toast_dec_copied">Perintah dekripsi disalin!</string>
+    <string name="toast_title_success">SUKSES</string>
+    <string name="toast_title_notice">KABAR</string>
+    <string name="toast_button_ok">OKE</string>
+    <string name="theme_system">Baku Sistem</string>
+    <string name="theme_light">Mode Terang</string>
+    <string name="theme_dark">Mode Peteng</string>
+    <string name="cd_switch_theme">Ganti Tema</string>
+    <string name="cd_switch_language">Ganti Basa</string>
+    <string name="cd_show_password">Tuduhake tembung sandi</string>
+    <string name="cd_hide_password"> Delikake tembung sandi</string>
+</resources>

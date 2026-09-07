@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">انکرپٹ</string>
+    <string name="tab_decrypt">ڈیکرپٹ</string>
+    <string name="select_file">فائل منتخب کریں</string>
+    <string name="no_file_selected">کوئی فائل منتخب نہیں کی گئی</string>
+    <string name="password_label">پاس ورڈ</string>
+    <string name="encrypt_file">فائل انکرپٹ کریں</string>
+    <string name="decrypt_file">فائل ڈیکرپٹ کریں</string>
+    <string name="processing_progress">%1$d%% پروسیسنگ ہو رہی ہے...</string>
+    <string name="terminal_commands_title">ٹرمنل کمانڈز (OpenSSL)</string>
+    <string name="encryption_cmd_label">انکرپشن کمانڈ:</string>
+    <string name="decryption_cmd_label">ڈیکرپشن کمانڈ:</string>
+    <string name="encryption_cmd_sub">[input.ext] کی جگہ اپنی فائل کا نام اور اس کی ایکسٹینشن لکھیں</string>
+    <string name="decryption_cmd_sub">[output.ext] کی جگہ اصل فائل کا نام اور ایکسٹینشن لکھیں</string>
+    <string name="important_notice">مذکورہ بالا کمانڈز کو کاپی کر کے کسی محفوظ جگہ پر محفوظ کر لیں تاکہ مستقبل میں ایپ دستیاب نہ ہونے کی صورت میں آپ انہیں استعمال کر سکیں۔ یہ OpenSSL کمانڈز براہ راست macOS، Linux، Windows (WSL یا Git Bash کے ذریعے)، یا کمانڈ لائن انٹرفیس سپورٹ والے Android ماحول میں چلائے جا سکتے ہیں۔</string>
+    <string name="copy_cmd_desc">کمانڈ کاپی کریں</string>
+    <string name="toggle_theme">تھیم تبدیل کریں</string>
+    <string name="toast_select_file">براہ کرم پہلے کوئی فائل منتخب کریں</string>
+    <string name="toast_enter_password">براہ کرم پاس ورڈ درج کریں</string>
+    <string name="toast_encrypt_success">کامیابی سے انکرپٹ ہو گیا!</string>
+    <string name="toast_decrypt_success">کامیابی سے ڈیکرپٹ ہو گیا!</string>
+    <string name="toast_operation_failed">آپریشن ناکام: غلط پاس ورڈ یا خراب فائل۔</string>
+    <string name="toast_invalid_file">غلط پاس ورڈ یا غیر معتبر OpenSSL فائل فارمیٹ۔</string>
+    <string name="toast_enc_copied">انکرپشن کمانڈ کاپی ہو گئی!</string>
+    <string name="toast_dec_copied">ڈیکرپشن کمانڈ کاپی ہو گئی!</string>
+    <string name="toast_title_success">کامیابی</string>
+    <string name="toast_title_notice">اطلاع</string>
+    <string name="toast_button_ok">ٹھیک ہے</string>
+    <string name="theme_system">سسٹم ڈیفالٹ</string>
+    <string name="theme_light">لائٹ موڈ</string>
+    <string name="theme_dark">ڈارک موڈ</string>
+    <string name="cd_switch_theme">تھیم تبدیل کریں</string>
+    <string name="cd_switch_language">زبان تبدیل کریں</string>
+    <string name="cd_show_password">پاس ورڈ دکھائیں</string>
+    <string name="cd_hide_password">پاس ورڈ چھپائیں</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">എൻക്രിപ്റ്റ്</string>
+    <string name="tab_decrypt">ഡീക്രിപ്റ്റ്</string>
+    <string name="select_file">ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="no_file_selected">ഫയലുകളൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="password_label">പാസ്‌വേഡ്</string>
+    <string name="encrypt_file">ഫയൽ എൻക്രിപ്റ്റ് ചെയ്യുക</string>
+    <string name="decrypt_file">ഫയൽ ഡീക്രിപ്റ്റ് ചെയ്യുക</string>
+    <string name="processing_progress">%1$d%% പുരോഗമിക്കുന്നു...</string>
+    <string name="terminal_commands_title">ടെർമിനൽ കമാൻഡുകൾ (OpenSSL)</string>
+    <string name="encryption_cmd_label">എൻക്രിപ്ഷൻ കമാൻഡ്:</string>
+    <string name="decryption_cmd_label">ഡീക്രിപ്ഷൻ കമാൻഡ്:</string>
+    <string name="encryption_cmd_sub">[input.ext]-ന് പകരം നിങ്ങളുടെ ഫയലിന്റെ പേരും എക്സ്റ്റൻഷനും നൽകുക</string>
+    <string name="decryption_cmd_sub">[output.ext]-ന് പകരം നിങ്ങളുടെ യഥാർത്ഥ ഫയലിന്റെ പേരും എക്സ്റ്റൻഷനും നൽകുക</string>
+    <string name="important_notice">ഭാവിയിൽ ഈ ആപ്പ് ലഭ്യമായില്ലെങ്കിലും ഉപയോഗിക്കാൻ മുകളിലുള്ള കമാൻഡുകൾ കോപ്പി ചെയ്ത് സൂക്ഷിക്കുക. macOS, Linux, Windows (WSL അല്ലെങ്കിൽ Git Bash വഴി), അല്ലെങ്കിൽ കമാൻഡ് ലൈൻ പിന്തുണയുള്ള Android പരിസ്ഥിതികളിൽ ഈ OpenSSL കമാൻഡുകൾ നേരിട്ട് പ്രവർത്തിപ്പിക്കാം.</string>
+    <string name="copy_cmd_desc">കമാൻഡ് കോപ്പി ചെയ്യുക</string>
+    <string name="toggle_theme">തീം മാറ്റുക</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">ദയവായി ആദ്യം ഒരു ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="toast_enter_password">ദയവായി ഒരു പാസ്‌വേഡ് നൽകുക</string>
+    <string name="toast_encrypt_success">എൻക്രിപ്ഷൻ വിജയിച്ചു!</string>
+    <string name="toast_decrypt_success">ഡീക്രിപ്ഷൻ വിജയിച്ചു!</string>
+    <string name="toast_operation_failed">പ്രവർത്തനം പരാജയപ്പെട്ടു: തെറ്റായ പാസ്‌വേഡ് അല്ലെങ്കിൽ തകരാറുള്ള ഫയൽ.</string>
+    <string name="toast_invalid_file">തെറ്റായ പാസ്‌വേഡ് അല്ലെങ്കിൽ അസാധുവായ OpenSSL ഫയൽ ഫോർമാറ്റ്.</string>
+    <string name="toast_enc_copied">എൻക്രിപ്ഷൻ കമാൻഡ് കോപ്പി ചെയ്തു!</string>
+    <string name="toast_dec_copied">ഡീക്രിപ്ഷൻ കമാൻഡ് കോപ്പി ചെയ്തു!</string>
+    <string name="toast_title_success">വിജയിച്ചിരിക്കുന്നു</string>
+    <string name="toast_title_notice">ശ്രദ്ധിക്കുക</string>
+    <string name="toast_button_ok">ശരി</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">സിസ്റ്റം ഡിഫോൾട്ട്</string>
+    <string name="theme_light">ലൈറ്റ് മോഡ്</string>
+    <string name="theme_dark">ഡാർക്ക് മോഡ്</string>
+    <string name="cd_switch_theme">തീം മാറ്റുക</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">ഭാഷ മാറ്റുക</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">പാസ്‌വേഡ് കാണിക്കുക</string>
+    <string name="cd_hide_password">പാസ്‌വേഡ് മറയ്ക്കുക</string>
+</resources>

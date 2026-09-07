@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">REKLAMSIZ</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro tamamen reklamsızdır. Hiçbir reklam kitaplığı içermez; böylece gelişmiş gizlilik ile temiz, hafif ve dikkat dağıtmayan bir deneyim sunar.</string>
+    <string name="btn_get_pro">PRO AL</string>
+    <string name="btn_cancel">İPTAL</string>
+</resources>

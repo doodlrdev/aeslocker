@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">SZYFRUJ</string>
+    <string name="tab_decrypt">ROZSZYFRUJ</string>
+    <string name="select_file">Wybierz plik</string>
+    <string name="no_file_selected">Nie wybrano pliku</string>
+    <string name="password_label">Hasło</string>
+    <string name="encrypt_file">Szyfruj plik</string>
+    <string name="decrypt_file">Rozszyfruj plik</string>
+    <string name="processing_progress">%1$d%% Przetwarzanie...</string>
+    <string name="terminal_commands_title">Polecenia terminala (OpenSSL)</string>
+    <string name="encryption_cmd_label">Polecenie szyfrowania:</string>
+    <string name="decryption_cmd_label">Polecenie odszyfrowania:</string>
+    <string name="encryption_cmd_sub">Zastąp [input.ext] nazwą i rozszerzeniem swojego pliku</string>
+    <string name="decryption_cmd_sub">Zastąp [output.ext] nazwą i rozszerzeniem pliku wynikowego</string>
+    <string name="important_notice">Skopiuj powyższe polecenia i zapisz je w bezpiecznym miejscu, aby móc ich użyć, jeśli aplikacja nie będzie dostępna w przyszłości. Te polecenia OpenSSL można wykonać bezpośrednio w terminalu w systemie macOS, Linux, Windows (przez WSL lub Git Bash) lub w środowisku Android z obsługą wiersza poleceń.</string>
+    <string name="copy_cmd_desc">Kopiuj polecenie</string>
+    <string name="toggle_theme">Zmień motyw</string>
+    <string name="toast_select_file">Najpierw wybierz plik</string>
+    <string name="toast_enter_password">Wprowadź hasło</string>
+    <string name="toast_encrypt_success">Pomyślnie zaszyfrowano!</string>
+    <string name="toast_decrypt_success">Pomyślnie odszyfrowano!</string>
+    <string name="toast_operation_failed">Operacja nie powiodła się: Błędne hasło lub uszkodzony plik.</string>
+    <string name="toast_invalid_file">Błędne hasło lub nieprawidłowy format pliku OpenSSL.</string>
+    <string name="toast_enc_copied">Skopiowano polecenie szyfrowania!</string>
+    <string name="toast_dec_copied">Skopiowano polecenie odszyfrowania!</string>
+    <string name="toast_title_success">SUKCES</string>
+    <string name="toast_title_notice">UWAGA</string>
+    <string name="toast_button_ok">OK</string>
+    <string name="theme_system">Domyślny systemowy</string>
+    <string name="theme_light">Tryb jasny</string>
+    <string name="theme_dark">Tryb ciemny</string>
+    <string name="cd_switch_theme">Zmień motyw</string>
+    <string name="cd_switch_language">Zmień język</string>
+    <string name="cd_show_password">Pokaż hasło</string>
+    <string name="cd_hide_password">Ukryj hasło</string>
+</resources>

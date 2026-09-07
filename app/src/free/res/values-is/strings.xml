@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_ad_free">AUGLÝSINGAFRÍTT</string>
+    <string name="dialog_pro_title">AESLocker Pro</string>
+    <string name="dialog_pro_desc">AESLocker Pro er algjörlega án auglýsinga. Það inniheldur engin auglýsingasöfn, sem veitir aukna persónuvernd og hreina, létta og truflanafría upplifun.</string>
+    <string name="btn_get_pro">FÁ PRO</string>
+    <string name="btn_cancel">HÆTTA VIÐ</string>
+</resources>

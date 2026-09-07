@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">پټول (ENCRYPT)</string>
+    <string name="tab_decrypt">خلاصول (DECRYPT)</string>
+    <string name="select_file">فایل وټاکئ</string>
+    <string name="no_file_selected">هیڅ فایل نه دی ټاکل شوی</string>
+    <string name="password_label">پټنوم</string>
+    <string name="encrypt_file">فایل پټ کړئ</string>
+    <string name="decrypt_file">فایل خلاص کړئ</string>
+    <string name="processing_progress">%1$d%% پروسس کیږي...</string>
+    <string name="terminal_commands_title">ټرمینل کمانډونه (OpenSSL)</string>
+    <string name="encryption_cmd_label">د پټولو کمانډ:</string>
+    <string name="decryption_cmd_label">د خلاصون کمانډ:</string>
+    <string name="encryption_cmd_sub">د [input.ext] پر ځای خپل د فایل نوم او پس منظر (extension) ولیکئ</string>
+    <string name="decryption_cmd_sub">د [output.ext] پر ځای د اصلي فایل نوم او پس منظر ولیکئ</string>
+    <string name="important_notice">پورته کمانډونه کاپي کړئ او په کوم خوندي ځای کې یې وساتئ ترڅو په راتلونکي کې که اپلیکیشن شتون ونلري، وکاروئ شي. دا د OpenSSL کمانډونه په macOS، Linux، Windows (د WSL یا Git Bash له لارې) یا د انډرایډ په ټرمینل کې په مستقیم ډول اجرا کیدی شي.</string>
+    <string name="copy_cmd_desc">کمانډ کاپي کړئ</string>
+    <string name="toggle_theme">تهیه بدله کړئ</string>
+    <string name="toast_select_file">لطفاً لومړی یو فایل وټاکئ</string>
+    <string name="toast_enter_password">لطفاً پټنوم دننه کړئ</string>
+    <string name="toast_encrypt_success">په بریالیتوب سره پټ شو!</string>
+    <string name="toast_decrypt_success">په بریالیتوب سره خلاص شو!</string>
+    <string name="toast_operation_failed">عمليات ناکام شو: تېروتنه پټنوم او که خراب فایل.</string>
+    <string name="toast_invalid_file">تېروتنه پټنوم یا د OpenSSL ناسم فایل فارمیټ.</string>
+    <string name="toast_enc_copied">د پټولو کمانډ کاپي شو!</string>
+    <string name="toast_dec_copied">د خلاصون کمانډ کاپي شو!</string>
+    <string name="toast_title_success">بریالیتوب</string>
+    <string name="toast_title_notice">خبرتیا</string>
+    <string name="toast_button_ok">سمه ده</string>
+    <string name="theme_system">د سیستم لومړنی حالت</string>
+    <string name="theme_light">روښانه حالت</string>
+    <string name="theme_dark">تاریک حالت</string>
+    <string name="cd_switch_theme">تهیه بدله کړئ</string>
+    <string name="cd_switch_language">ژبه بدله کړئ</string>
+    <string name="cd_show_password">پټنوم ښکاره کړئ</string>
+    <string name="cd_hide_password">پټنوم پټ کړئ</string>
+</resources>

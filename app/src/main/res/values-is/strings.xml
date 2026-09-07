@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AESLocker</string>
+    <string name="tab_encrypt">DULKÓÐA</string>
+    <string name="tab_decrypt">AFKÓÐA</string>
+    <string name="select_file">Veldu skrá</string>
+    <string name="no_file_selected">Engin skrá valin</string>
+    <string name="password_label">Lykilorð</string>
+    <string name="encrypt_file">Dulkóða skrá</string>
+    <string name="decrypt_file">Afkóða skrá</string>
+    <string name="processing_progress">%1$d%% Í vinnslu...</string>
+    <string name="terminal_commands_title">Skipanir í skjáskóli (OpenSSL)</string>
+    <string name="encryption_cmd_label">Dulkóðunarskipun:</string>
+    <string name="decryption_cmd_label">Afkóðunarskipun:</string>
+    <string name="encryption_cmd_sub">Skiptu [input.ext] út fyrir skráarheitið þitt og skráarendingu</string>
+    <string name="decryption_cmd_sub">Skiptu [output.ext] út fyrir skráarheiti og skráarendingu upphaflegu skráarinnar</string>
+    <string name="important_notice">Afritaðu skipanirnar hér að ofan og vistaðu þær á öruggum stað svo þú getir notað þær ef forritið verður ekki tiltækt í framtíðinni. Þessar OpenSSL-skipanir er hægt að keyra beint í skjáskóli á macOS, Linux, Windows (í gegnum WSL eða Git Bash) eða Android-umhverfi sem styðja skipanalínu.</string>
+    <string name="copy_cmd_desc">Afrita skipun</string>
+    <string name="toggle_theme">Skipta um þema</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Vinsamlegast veldu skrá fyrst</string>
+    <string name="toast_enter_password">Vinsamlegast sláðu inn lykilorð</string>
+    <string name="toast_encrypt_success">Dulkóðun tókst!</string>
+    <string name="toast_decrypt_success">Afkóðun tókst!</string>
+    <string name="toast_operation_failed">Aðgerð mistókst: Rangt lykilorð eða skemmd skrá.</string>
+    <string name="toast_invalid_file">Rangt lykilorð eða ógilt OpenSSL-skráarsnið.</string>
+    <string name="toast_enc_copied">Dulkóðunarskipun afrituð!</string>
+    <string name="toast_dec_copied">Afkóðunarskipun afrituð!</string>
+    <string name="toast_title_success">TÓKST</string>
+    <string name="toast_title_notice">TILKYNNING</string>
+    <string name="toast_button_ok">Í LAGI</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Sjálfgefið kerfis</string>
+    <string name="theme_light">Ljós hamur</string>
+    <string name="theme_dark">Dökkur hamur</string>
+    <string name="cd_switch_theme">Skipta um þema</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Skipta um tungumál</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Sýna lykilorð</string>
+    <string name="cd_hide_password">Fela lykilorð</string>
+</resources>
