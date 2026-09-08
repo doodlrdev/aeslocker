@@ -17,6 +17,8 @@
     <string name="important_notice">ಭವಿಷ್ಯದಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ ಬಳಸಲು ಮೇಲಿನ ಆಜ್ಞೆಗಳನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಉಳಿಸಿ. ಈ OpenSSL ಆಜ್ಞೆಗಳನ್ನು macOS, Linux, Windows (WSL ಅಥವಾ Git Bash ಮೂಲಕ) ಅಥವಾ ಕಮಾಂಡ್-ಲೈನ್ ಇಂಟರ್ಫೇಸ್ ಬೆಂಬಲವಿರುವ Android ಪರಿಸರದಲ್ಲಿ ನೇರವಾಗಿ ಚಲಾಯಿಸಬಹುದು.</string>
     <string name="copy_cmd_desc">ಆಜ್ಞೆಯನ್ನು ನಕಲಿಸಿ</string>
     <string name="toggle_theme">ಥೀಮ್ ಬದಲಾಯಿಸಿ</string>
+    <string name="share_button_label">ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="share_button_desc">ಆ್ಯಪ್ ಇಷ್ಟವಾಗಿದೆಯೇ? ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</string>
     <string name="toast_select_file">ದಯವಿಟ್ಟು ಮೊದಲು ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="toast_enter_password">ದಯವಿಟ್ಟು ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ</string>
     <string name="toast_encrypt_success">ಯಶಸ್ವಿಯಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗಿದೆ!</string>

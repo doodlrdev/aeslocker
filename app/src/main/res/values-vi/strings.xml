@@ -17,6 +17,8 @@
     <string name="important_notice">Hãy sao chép các lệnh trên và lưu chúng ở một nơi an toàn để bạn có thể sử dụng nếu ứng dụng không khả dụng trong tương lai. Các lệnh OpenSSL này có thể được chạy trực tiếp trong terminal trên macOS, Linux, Windows (thông qua WSL hoặc Git Bash), hoặc các môi trường Android có hỗ trợ giao diện dòng lệnh.</string>
     <string name="copy_cmd_desc">Sao chép lệnh</string>
     <string name="toggle_theme">Đổi Giao diện</string>
+    <string name="share_button_label">CHIA SẺ</string>
+    <string name="share_button_desc">Bạn thích ứng dụng này? Hãy chia sẻ với người khác.</string>
     <string name="toast_select_file">Vui lòng chọn một tệp trước</string>
     <string name="toast_enter_password">Vui lòng nhập mật khẩu</string>
     <string name="toast_encrypt_success">Đã mã hóa thành công!</string>

@@ -17,6 +17,8 @@
     <string name="important_notice">ចម្លងពាក្យបញ្ជាខាងលើ ហើយរក្សាទុកវា somewhere ដើម្បីប្រើប្រាស់ប្រសិនបើកម្មវិធីមិនអាចប្រើបាននាពេលអនាគត។ ពាក្យបញ្ជា OpenSSL ទាំងនេះអាចដំណើរការដោយផ្ទាល់នៅក្នុង terminal នៅលើ macOS, Linux, Windows (តាមរយៈ WSL ឬ Git Bash) ឬបរិស្ថាន Android ដែលគាំទ្រចំណុចប្រទាក់បន្ទាត់ពាក្យបញ្ជា។</string>
     <string name="copy_cmd_desc">ចម្លងពាក្យបញ្ជា</string>
     <string name="toggle_theme">ប្តូររូបរាង</string>
+    <string name="share_button_label">ចែករំលែក</string>
+    <string name="share_button_desc">ចូលចិត្តកម្មវិធីនេះមែនទេ? ចែករំលែកវាជាមួយអ្នកដទៃ។</string>
     <string name="toast_select_file">សូមជ្រើសរើសឯកសារជាមុនសិន</string>
     <string name="toast_enter_password">សូមបញ្ចូលពាក្យសម្ងាត់</string>
     <string name="toast_encrypt_success">បានเข้ารหัสដោយជោគជ័យ!</string>

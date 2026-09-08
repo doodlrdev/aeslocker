@@ -17,6 +17,8 @@
     <string name="important_notice">Copia i comandi qui sopra e salvali in un luogo sicuro per poterli usare se l\'app non dovesse essere disponibile in futuro. Questi comandi OpenSSL possono essere eseguiti direttamente nel terminale su macOS, Linux, Windows (tramite WSL o Git Bash) o in ambienti Android con supporto per la riga di comando.</string>
     <string name="copy_cmd_desc">Copia comando</string>
     <string name="toggle_theme">Cambia Tema</string>
+    <string name="share_button_label">CONDIVIDI</string>
+    <string name="share_button_desc">Ti piace l\'app? Condividila con altri.</string>
     <string name="toast_select_file">Seleziona prima un file</string>
     <string name="toast_enter_password">Inserisci una password</string>
     <string name="toast_encrypt_success">Cifratura completata con successo!</string>

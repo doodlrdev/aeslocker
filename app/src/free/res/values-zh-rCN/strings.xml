@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro 完全无广告。它不包含任何广告库，从而提供更强的高隐私保护以及清爽、轻巧、无干扰的使用体验。</string>
     <string name="btn_get_pro">获取 PRO</string>
     <string name="btn_cancel">取消</string>
+    <string name="share_message">试试 AESLocker — 直接在手机上使用 AES-256 加密和解密文件。\n\n%1$s</string>
 </resources>

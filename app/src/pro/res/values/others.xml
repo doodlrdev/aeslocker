@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="own_market_url">market://details?id=com.doodlr.aeslocker.pro</string>
+    <string name="own_playstore_url">https://play.google.com/store/apps/details?id=com.doodlr.aeslocker.pro</string>
+    <string name="github_url">https://github.com/doodlrdev/aeslocker</string>
+</resources>

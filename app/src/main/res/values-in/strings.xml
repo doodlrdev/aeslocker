@@ -17,6 +17,8 @@
     <string name="important_notice">Salin perintah di atas dan simpan di tempat aman agar Anda dapat menggunakannya jika aplikasi tidak tersedia di masa mendatang. Perintah OpenSSL ini dapat dijalankan langsung di terminal pada macOS, Linux, Windows (melalui WSL atau Git Bash), atau lingkungan Android dengan dukungan antarmuka baris perintah.</string>
     <string name="copy_cmd_desc">Salin perintah</string>
     <string name="toggle_theme">Ganti Tema</string>
+    <string name="share_button_label">BAGIKAN</string>
+    <string name="share_button_desc">Menyukai aplikasinya? Bagikan kepada orang lain.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Silakan pilih berkas terlebih dahulu</string>

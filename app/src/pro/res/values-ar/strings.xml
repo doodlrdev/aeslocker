@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">جرّب AESLocker Pro — لتشفير الملفات وفك تشفيرها باستخدام AES-256 مباشرةً على هاتفك.\n\n%1$s</string>
+    <string name="source_button_label">المصدر</string>
+    <string name="source_button_desc">عرض الكود المصدري على GitHub.</string>
+</resources>

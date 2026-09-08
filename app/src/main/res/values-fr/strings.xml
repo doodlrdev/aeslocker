@@ -17,6 +17,8 @@
     <string name="important_notice">Copiez les commandes ci-dessus et enregistrez-les quelque part afin de pouvoir les utiliser si l\'application n\'est plus disponible à l\'avenir. Ces commandes OpenSSL peuvent être exécutées directement dans le terminal sous macOS, Linux, Windows (via WSL ou Git Bash) ou les environnements Android prenant en charge l\'interface en ligne de commande.</string>
     <string name="copy_cmd_desc">Copier la commande</string>
     <string name="toggle_theme">Changer de thème</string>
+    <string name="share_button_label">PARTAGER</string>
+    <string name="share_button_desc">Vous aimez l’application ? Partagez-la avec d’autres personnes.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Veuillez d\'abord sélectionner un fichier</string>

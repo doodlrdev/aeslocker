@@ -17,6 +17,8 @@
     <string name="important_notice">Kopyahin ang mga command sa itaas at i-save ang mga ito saan man upang magamit mo ang mga ito kung hindi na available ang app sa hinaharap. Ang mga OpenSSL command na ito ay maaaring direktang patakbuhin sa terminal sa macOS, Linux, Windows (sa pamamagitan ng WSL o Git Bash), o mga Android environment na may suporta sa command-line interface.</string>
     <string name="copy_cmd_desc">Kopyahin ang command</string>
     <string name="toggle_theme">Palitan ang Tema</string>
+    <string name="share_button_label">IBAHAGI</string>
+    <string name="share_button_desc">Nagustuhan mo ang app? Ibahagi ito sa iba.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Mangyaring pumili muna ng file</string>

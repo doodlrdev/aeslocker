@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro-ஐ முயற்சித்துப் பாருங்கள் — உங்கள் தொலைபேசியிலேயே AES-256 மூலம் கோப்புகளை என்க்ரிப்ட் மற்றும் டிக்ரிப்ட் செய்யுங்கள்.\n\n%1$s</string>
+    <string name="source_button_label">மூலம்</string>
+    <string name="source_button_desc">GitHub-ல் மூலக் குறியீட்டைப் பார்க்கவும்.</string>
+</resources>

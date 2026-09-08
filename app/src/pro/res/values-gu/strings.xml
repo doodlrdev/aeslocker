@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro અજમાવી જુઓ — તમારા ફોન પર જ AES-256 વડે ફાઇલોને એન્ક્રિપ્ટ અને ડિક્રિપ્ટ કરો.\n\n%1$s</string>
+    <string name="source_button_label">સોર્સ</string>
+    <string name="source_button_desc">GitHub પર સોર્સ કોડ જુઓ.</string>
+</resources>

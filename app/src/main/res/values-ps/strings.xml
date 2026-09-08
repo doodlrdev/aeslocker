@@ -17,6 +17,8 @@
     <string name="important_notice">پورته کمانډونه کاپي کړئ او په کوم خوندي ځای کې یې وساتئ ترڅو په راتلونکي کې که اپلیکیشن شتون ونلري، وکاروئ شي. دا د OpenSSL کمانډونه په macOS، Linux، Windows (د WSL یا Git Bash له لارې) یا د انډرایډ په ټرمینل کې په مستقیم ډول اجرا کیدی شي.</string>
     <string name="copy_cmd_desc">کمانډ کاپي کړئ</string>
     <string name="toggle_theme">تهیه بدله کړئ</string>
+    <string name="share_button_label">شریکول</string>
+    <string name="share_button_desc">اپ مو خوښ شو؟ له نورو سره یې شریک کړئ.</string>
     <string name="toast_select_file">لطفاً لومړی یو فایل وټاکئ</string>
     <string name="toast_enter_password">لطفاً پټنوم دننه کړئ</string>
     <string name="toast_encrypt_success">په بریالیتوب سره پټ شو!</string>

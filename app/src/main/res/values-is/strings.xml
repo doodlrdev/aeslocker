@@ -17,6 +17,8 @@
     <string name="important_notice">Afritaðu skipanirnar hér að ofan og vistaðu þær á öruggum stað svo þú getir notað þær ef forritið verður ekki tiltækt í framtíðinni. Þessar OpenSSL-skipanir er hægt að keyra beint í skjáskóli á macOS, Linux, Windows (í gegnum WSL eða Git Bash) eða Android-umhverfi sem styðja skipanalínu.</string>
     <string name="copy_cmd_desc">Afrita skipun</string>
     <string name="toggle_theme">Skipta um þema</string>
+    <string name="share_button_label">DEILA</string>
+    <string name="share_button_desc">Líkar þér við appið? Deildu því með öðrum.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Vinsamlegast veldu skrá fyrst</string>

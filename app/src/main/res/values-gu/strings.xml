@@ -17,6 +17,8 @@
     <string name="important_notice">ઉપરના કમાન્ડ્સ કોપી કરીને ક્યાંક સાચવી રાખો જેથી ભવિષ્યમાં એપ ઉપલબ્ધ ન હોય તો પણ તમે તેનો ઉપયોગ કરી શકો. આ OpenSSL કમાન્ડ્સ macOS, Linux, Windows (WSL અથવા Git Bash દ્વારા), અથવા કમાન્ડ-લાઇન ઇન્ટરફેસ સપોર્ટ ધરાવતા Android વાતાવરણમાં સીધા ચલાવી શકાય છે.</string>
     <string name="copy_cmd_desc">કમાન્ડ કોપી કરો</string>
     <string name="toggle_theme">થીમ બદલો</string>
+    <string name="share_button_label">શેર કરો</string>
+    <string name="share_button_desc">એપ ગમી રહી છે? તેને અન્ય લોકો સાથે શેર કરો.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">કૃપા કરીને પહેલાં એક ફાઇલ પસંદ કરો</string>

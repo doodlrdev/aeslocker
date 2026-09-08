@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Proని ప్రయత్నించండి — మీ ఫోన్‌లోనే AES-256తో ఫైళ్లను ఎన్‌క్రిప్ట్ మరియు డీక్రిప్ట్ చేయండి.\n\n%1$s</string>
+    <string name="source_button_label">సోర్స్</string>
+    <string name="source_button_desc">GitHubలో సోర్స్ కోడ్‌ను చూడండి.</string>
+</resources>

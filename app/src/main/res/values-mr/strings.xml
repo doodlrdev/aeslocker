@@ -17,6 +17,8 @@
     <string name="important_notice">भविष्यात हे ॲप उपलब्ध नसल्यास वापरण्यासाठी वरील कमांड्स कॉपी करा आणि सुरक्षित जागी सेव्ह करा. या OpenSSL कमांड्स macOS, Linux, Windows (WSL किंवा Git Bash द्वारे), किंवा कमांड-लाईन इंटरफेस सपोर्ट असलेल्या Android प्रणालीमध्ये थेट चालवल्या जाऊ शकतात.</string>
     <string name="copy_cmd_desc">कमांड कॉपी करा</string>
     <string name="toggle_theme">थीम बदला</string>
+    <string name="share_button_label">शेअर करा</string>
+    <string name="share_button_desc">अॅप आवडत आहे? इतरांसोबत शेअर करा.</string>
     <string name="toast_select_file">कृपया आधी फाईल निवडा</string>
     <string name="toast_enter_password">कृपया पासवर्ड टाका</string>
     <string name="toast_encrypt_success">यशस्वीरित्या एनक्रिप्ट केले!</string>

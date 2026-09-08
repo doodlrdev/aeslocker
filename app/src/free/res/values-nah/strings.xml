@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro ahmo quipia tetlaiximachtiliztli. Ahmo quiquichihua amochpohualiztli, ic inin quitemaca cualli ichtacayo ihuan ce tlamahitiztli chipahuac ihuan ahmo etik.</string>
     <string name="btn_get_pro">XICANA PRO</string>
     <string name="btn_cancel">XICAHCAUHA</string>
+    <string name="share_message">Xicyehyeco AESLocker — xicchīhua ihuan xicpoloa in archivos ica AES-256, zan ipan moteléfono.\n\n%1$s</string>
 </resources>

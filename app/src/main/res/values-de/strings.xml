@@ -17,6 +17,8 @@
     <string name="important_notice">Kopieren Sie die obigen Befehle und speichern Sie sie an einem sicheren Ort, damit Sie sie verwenden können, falls die App in Zukunft nicht mehr verfügbar ist. Diese OpenSSL-Befehle können direkt im Terminal unter macOS, Linux, Windows (über WSL oder Git Bash) oder in Android-Umgebungen mit Befehlszeilenunterstützung ausgeführt werden.</string>
     <string name="copy_cmd_desc">Befehl kopieren</string>
     <string name="toggle_theme">Design wechseln</string>
+    <string name="share_button_label">TEILEN</string>
+    <string name="share_button_desc">Gefällt dir die App? Teile sie mit anderen.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Bitte wählen Sie zuerst eine Datei aus</string>

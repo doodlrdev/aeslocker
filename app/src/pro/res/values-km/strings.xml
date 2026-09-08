@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">សាកល្បង AESLocker Pro — អ៊ិនគ្រីប និងឌិគ្រីបឯកសារដោយប្រើ AES-256 ដោយផ្ទាល់លើទូរស័ព្ទរបស់អ្នក។\n\n%1$s</string>
+    <string name="source_button_label">កូដប្រភព</string>
+    <string name="source_button_desc">មើលកូដប្រភពនៅលើ GitHub។</string>
+</resources>

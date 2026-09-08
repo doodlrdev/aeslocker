@@ -17,6 +17,8 @@
     <string name="important_notice">Salin perintah ing dhuwur lan simpen ing papan sing aman supaya bisa digunakake yen aplikasi iki ora bisa diakses ing mangarep. Perintah OpenSSL iki bisa dieksekusi langsung ing terminal ing macOS, Linux, Windows (liwat WSL utawa Git Bash), utawa lingkungan Android sing ndhukung antarmuka baris perintah.</string>
     <string name="copy_cmd_desc">Salin perintah</string>
     <string name="toggle_theme">Ganti Tema</string>
+    <string name="share_button_label">BAGIKAN</string>
+    <string name="share_button_desc">Seneng karo aplikasi iki? Bagikna karo wong liya.</string>
     <string name="toast_select_file">Mangga pilih berkas dhisik</string>
     <string name="toast_enter_password">Mangga lebokake tembung sandi</string>
     <string name="toast_encrypt_success">Sukses dienkripsi!</string>

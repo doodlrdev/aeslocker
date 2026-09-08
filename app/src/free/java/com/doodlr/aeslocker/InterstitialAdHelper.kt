@@ -11,12 +11,20 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 private const val AD_COOLDOWN_MS = 2 * 60 * 1000L //two minutes interval between ads
 private const val MIN_OPERATION_COUNT_FOR_AD = 6 //at least 6 successful operations need to be completed before showing the ad
 
-class InterstitialAdHelper(private val context: Context) {
+class InterstitialAdHelper(context: Context) {
 
-    private val prefs = context.getSharedPreferences("ad_prefs", Context.MODE_PRIVATE)
+    // Loading an ad only ever needs a Context, not an Activity. Using the
+    // application context here means the load request's lifecycle is tied to
+    // the process, not to whichever Activity instance happened to construct
+    // this helper — so if that Activity instance is destroyed and recreated
+    // (locale change, quick relaunch, etc.) mid-load, the in-flight ad load
+    // has nothing stale to reference. show() below still correctly takes the
+    // live Activity it's asked to show against.
+    private val appContext = context.applicationContext
+    private val prefs = appContext.getSharedPreferences("ad_prefs", Context.MODE_PRIVATE)
     private var interstitialAd: InterstitialAd? = null
 
-    private val adUnitId = context.getString(R.string.admob_interstitial_ad_unit_id)
+    private val adUnitId = appContext.getString(R.string.admob_interstitial_ad_unit_id)
 
     init {
         loadAd()
@@ -24,7 +32,7 @@ class InterstitialAdHelper(private val context: Context) {
 
     private fun loadAd() {
         val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(context, adUnitId, adRequest, object : InterstitialAdLoadCallback() {
+        InterstitialAd.load(appContext, adUnitId, adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdLoaded(ad: InterstitialAd) {
                 interstitialAd = ad
                 interstitialAd?.fullScreenContentCallback = object: FullScreenContentCallback() {

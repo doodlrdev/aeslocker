@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro ବ୍ୟବହାର କରିଦେଖନ୍ତୁ — ଆପଣଙ୍କ ଫୋନରେ ହିଁ AES-256 ବ୍ୟବହାର କରି ଫାଇଲ୍ ଏନ୍କ୍ରିପ୍ଟ ଏବଂ ଡିକ୍ରିପ୍ଟ କରନ୍ତୁ।\n\n%1$s</string>
+    <string name="source_button_label">ସୋର୍ସ</string>
+    <string name="source_button_desc">GitHub ରେ ସୋର୍ସ କୋଡ୍ ଦେଖନ୍ତୁ।</string>
+</resources>

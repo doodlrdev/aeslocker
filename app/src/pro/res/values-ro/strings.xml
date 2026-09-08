@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Descoperă AESLocker Pro — criptează și decriptează fișiere cu AES-256, direct pe telefonul tău.\n\n%1$s</string>
+    <string name="source_button_label">SURSA</string>
+    <string name="source_button_desc">Vezi codul sursă pe GitHub.</string>
+</resources>

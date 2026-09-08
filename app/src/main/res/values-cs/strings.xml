@@ -17,6 +17,8 @@
     <string name="important_notice">Zkopírujte výše uvedené příkazy a uložte je na bezpečné místo, abyste je mohli použít, pokud aplikace nebude v budoucnu dostupná. Tyto příkazy OpenSSL lze spustit přímo v terminálu v systému macOS, Linux, Windows (přes WSL nebo Git Bash) nebo v prostředí Android s podporou příkazového řádku.</string>
     <string name="copy_cmd_desc">Kopírovat příkaz</string>
     <string name="toggle_theme">Změnit motiv</string>
+    <string name="share_button_label">SDÍLET</string>
+    <string name="share_button_desc">Líbí se vám aplikace? Sdílejte ji s ostatními.</string>
     <string name="toast_select_file">Nejprve prosím vyberte soubor</string>
     <string name="toast_enter_password">Zadejte prosím heslo</string>
     <string name="toast_encrypt_success">Úspěšně zašifrováno!</string>

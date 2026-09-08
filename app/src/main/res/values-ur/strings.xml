@@ -17,6 +17,8 @@
     <string name="important_notice">مذکورہ بالا کمانڈز کو کاپی کر کے کسی محفوظ جگہ پر محفوظ کر لیں تاکہ مستقبل میں ایپ دستیاب نہ ہونے کی صورت میں آپ انہیں استعمال کر سکیں۔ یہ OpenSSL کمانڈز براہ راست macOS، Linux، Windows (WSL یا Git Bash کے ذریعے)، یا کمانڈ لائن انٹرفیس سپورٹ والے Android ماحول میں چلائے جا سکتے ہیں۔</string>
     <string name="copy_cmd_desc">کمانڈ کاپی کریں</string>
     <string name="toggle_theme">تھیم تبدیل کریں</string>
+    <string name="share_button_label">شیئر کریں</string>
+    <string name="share_button_desc">ایپ پسند آ رہی ہے؟ اسے دوسروں کے ساتھ شیئر کریں۔</string>
     <string name="toast_select_file">براہ کرم پہلے کوئی فائل منتخب کریں</string>
     <string name="toast_enter_password">براہ کرم پاس ورڈ درج کریں</string>
     <string name="toast_encrypt_success">کامیابی سے انکرپٹ ہو گیا!</string>

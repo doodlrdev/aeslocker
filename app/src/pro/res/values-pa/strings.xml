@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro ਅਜ਼ਮਾਓ — ਆਪਣੇ ਫ਼ੋਨ \'ਤੇ ਹੀ AES-256 ਨਾਲ ਫ਼ਾਈਲਾਂ ਨੂੰ ਇਨਕ੍ਰਿਪਟ ਅਤੇ ਡਿਕ੍ਰਿਪਟ ਕਰੋ।\n\n%1$s</string>
+    <string name="source_button_label">ਸਰੋਤ</string>
+    <string name="source_button_desc">GitHub \'ਤੇ ਸਰੋਤ ਕੋਡ ਵੇਖੋ।</string>
+</resources>

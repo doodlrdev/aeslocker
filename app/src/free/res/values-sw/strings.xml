@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro haina matangazo kabisa. Haina maktaba yoyote ya matangazo, na hivyo kutoa faragha iliyoimarishwa na uzoefu safi, mwepesi na usio na usumbufu.</string>
     <string name="btn_get_pro">PATA PRO</string>
     <string name="btn_cancel">GHAILISHA</string>
+    <string name="share_message">Jaribu AESLocker — ficha na fungua faili kwa AES-256, moja kwa moja kwenye simu yako.\n\n%1$s</string>
 </resources>

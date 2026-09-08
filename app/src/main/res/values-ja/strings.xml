@@ -17,6 +17,8 @@
     <string name="important_notice">将来アプリが利用できなくなった場合に備えて、上記のコマンドをコピーしてどこかに保存してください。これらのOpenSSLコマンドは、macOS、Linux、Windows（WSLまたはGit Bash経由）、またはコマンドラインインターフェースをサポートするAndroid環境のターミナルで直接実行できます。</string>
     <string name="copy_cmd_desc">コマンドをコピー</string>
     <string name="toggle_theme">テーマを切り替え</string>
+    <string name="share_button_label">共有</string>
+    <string name="share_button_desc">アプリを気に入っていただけましたか？他の人にも共有しましょう。</string>
     <string name="toast_select_file">最初にファイルを選択してください</string>
     <string name="toast_enter_password">パスワードを入力してください</string>
     <string name="toast_encrypt_success">暗号化に成功しました！</string>

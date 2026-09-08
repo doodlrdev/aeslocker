@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="encryption_cmd_for_copying">openssl enc -aes-256-cbc -salt -pbkdf2 -in [input.ext] -out output.aes</string>
+    <string name="decryption_cmd_for_copying">openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out [output.ext]</string>
+</resources>

@@ -1,6 +1,7 @@
 package com.doodlr.aeslocker
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.OpenableColumns
@@ -158,16 +159,6 @@ class MainActivity : AppCompatActivity() {
 
         appUpdateHelper = AppUpdateHelper(this)
         appReviewHelper = AppReviewHelper(this)
-        interstitialAdHelper = InterstitialAdHelper(this)
-
-        if (!ProcessScopedInitGuard.flavorComponentsInitialized) {
-            ProcessScopedInitGuard.flavorComponentsInitialized = true
-            FlavorComponents.initialize(this)
-        }
-        if (!ProcessScopedInitGuard.updateCheckStarted) {
-            ProcessScopedInitGuard.updateCheckStarted = true
-            appUpdateHelper.checkForUpdate(this)
-        }
 
         setContent {
             val currentSavedTheme by ThemePreferences.getThemeMode(this@MainActivity)
@@ -193,10 +184,33 @@ class MainActivity : AppCompatActivity() {
                         },
                         onOperationSuccess = {
                             appReviewHelper.notifyOperationCompleted()
-                            interstitialAdHelper.notifyOperationCompleted(this@MainActivity)
+                            if (::interstitialAdHelper.isInitialized) {
+                                interstitialAdHelper.notifyOperationCompleted(this@MainActivity)
+                            }
                         }
                     )
                 }
+            }
+        }
+
+        // Everything below touches third-party SDKs (AdMob, UMP consent, Play Core
+        // update) that do their own async work and, in the case of AdMob/UMP, can
+        // show their own overlay UI. Starting that work before setContent() had
+        // installed the window's decor view meant an SDK callback could fire while
+        // PhoneWindow was still mid-setup — the actual cause of the intermittent
+        // "Window couldn't find content container view" crash on the free flavor.
+        // Posting it to the decor view's message queue guarantees it only runs once
+        // the window is fully installed, so there's nothing left for it to race with.
+        window.decorView.post {
+            interstitialAdHelper = InterstitialAdHelper(this)
+
+            if (!ProcessScopedInitGuard.flavorComponentsInitialized) {
+                ProcessScopedInitGuard.flavorComponentsInitialized = true
+                FlavorComponents.initialize(this)
+            }
+            if (!ProcessScopedInitGuard.updateCheckStarted) {
+                ProcessScopedInitGuard.updateCheckStarted = true
+                appUpdateHelper.checkForUpdate(this)
             }
         }
     }
@@ -282,7 +296,24 @@ fun MainScreen(
                 )
             )
         },
-        bottomBar = { BannerAdView() }
+        bottomBar = {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .navigationBarsPadding()
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 12.dp)
+                ) {
+                    ShareButton()
+                    Spacer(modifier = Modifier.height(16.dp))
+                    SourceButton()
+                }
+                BannerAdView()
+            }
+        }
     ) { paddingValues ->
         Column(
             modifier = Modifier
@@ -391,7 +422,6 @@ fun ThemeSwitcherButton(
 @Composable
 fun LanguageSwitcherButton() {
     var expanded by remember { mutableStateOf(false) }
-    val scope = rememberCoroutineScope()
 
     val allLanguages = sortedMapOf(
         "العربية" to "ar",
@@ -862,5 +892,40 @@ fun CommandBox(
                 )
             }
         }
+    }
+}
+
+
+@Composable
+fun ShareButton() {
+    val context = LocalContext.current
+
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        OutlinedButton(
+            onClick = {
+                val playStoreUrl = context.getString(R.string.own_playstore_url)
+                val shareText = context.getString(R.string.share_message, playStoreUrl)
+                val intent = Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, shareText)
+                }
+                context.startActivity(Intent.createChooser(intent, null))
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            shape = RoundedCornerShape(8.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.share_button_label),
+                style = MaterialTheme.typography.titleMedium
+            )
+        }
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = stringResource(R.string.share_button_desc),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+        )
     }
 }

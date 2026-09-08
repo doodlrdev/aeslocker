@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro പരീക്ഷിച്ചുനോക്കൂ — നിങ്ങളുടെ ഫോണിൽ തന്നെ AES-256 ഉപയോഗിച്ച് ഫയലുകൾ എൻക്രിപ്റ്റ് ചെയ്യുകയും ഡീക്രിപ്റ്റ് ചെയ്യുകയും ചെയ്യാം.\n\n%1$s</string>
+    <string name="source_button_label">സോഴ്സ്</string>
+    <string name="source_button_desc">GitHub-ൽ സോഴ്സ് കോഡ് കാണുക.</string>
+</resources>

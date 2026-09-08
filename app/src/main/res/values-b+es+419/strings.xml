@@ -17,6 +17,8 @@
     <string name="important_notice">Copie los comandos anteriores y guárdelos en un lugar seguro para poder usarlos si la aplicación deja de estar disponible en el futuro. Estos comandos de OpenSSL se pueden ejecutar directamente en la terminal en macOS, Linux, Windows (a través de WSL o Git Bash) o entornos de Android con soporte de interfaz de línea de comandos.</string>
     <string name="copy_cmd_desc">Copiar comando</string>
     <string name="toggle_theme">Cambiar tema</string>
+    <string name="share_button_label">COMPARTIR</string>
+    <string name="share_button_desc">¿Te gusta la aplicación? Compártela con otras personas.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Por favor, seleccione un archivo primero</string>

@@ -5,5 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro este complet fără reclame. Nu conține nicio bibliotecă de reclame, oferind astfel o confidențialitate sporită și o experiență curată, ușoară și fără distrageri.</string>
     <string name="btn_get_pro">OBȚINE PRO</string>
     <string name="btn_cancel">ANULEAZĂ</string>
-
+    <string name="share_message">Descoperă AESLocker — criptează și decriptează fișiere cu AES-256, direct pe telefonul tău.\n\n%1$s</string>
 </resources>

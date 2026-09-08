@@ -18,6 +18,8 @@
     <string name="important_notice">Kopioi yllä olevat komennot ja tallenna ne johonkin, jotta voit käyttää niitä, jos sovellus ei ole käytettävissä tulevaisuudessa. Nämä OpenSSL-komennot voidaan suorittaa suoraan päätteessä macOS-, Linux-, Windows- (WSL:n tai Git Bashin kautta) tai Android-ympäristöissä, joissa on komentorivituki.</string>
     <string name="copy_cmd_desc">Kopioi komento</string>
     <string name="toggle_theme">Vaihda teemaa</string>
+    <string name="share_button_label">JAA</string>
+    <string name="share_button_desc">Pidätkö sovelluksesta? Jaa se muiden kanssa.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Valitse ensin tiedosto</string>

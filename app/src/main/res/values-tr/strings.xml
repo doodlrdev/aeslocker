@@ -17,6 +17,8 @@
     <string name="important_notice">Yukarıdaki komutları kopyalayın ve uygulamanın gelecekte kullanılamaması ihtimaline karşı güvenli bir yere kaydedin. Bu OpenSSL komutları macOS, Linux, Windows (WSL veya Git Bash aracılığıyla) veya komut satırı arayüzü desteğine sahip Android ortamlarında doğrudan terminalde çalıştırılabilir.</string>
     <string name="copy_cmd_desc">Komutu kopyala</string>
     <string name="toggle_theme">Temayı Değiştir</string>
+    <string name="share_button_label">PAYLAŞ</string>
+    <string name="share_button_desc">Uygulamayı beğendiniz mi? Başkalarıyla paylaşın.</string>
     <string name="toast_select_file">Lütfen önce bir dosya seçin</string>
     <string name="toast_enter_password">Lütfen bir şifre girin</string>
     <string name="toast_encrypt_success">Başarıyla şifrelendi!</string>

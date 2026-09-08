@@ -17,6 +17,8 @@
     <string name="important_notice">ਭਵਿੱਖ ਵਿੱਚ ਜੇਕਰ ਐਪ ਉਪਲਬਧ ਨਾ ਹੋਵੇ ਤਾਂ ਵਰਤਣ ਲਈ ਉਪਰੋਕਤ ਕਮਾਂਡਾਂ ਨੂੰ ਕਾਪੀ ਕਰਕੇ ਸੁਰੱਖਿਅਤ ਜਗ੍ਹਾ ਤੇ ਰੱਖੋ। ਇਹ OpenSSL ਕਮਾਂਡਾਂ macOS, Linux, Windows (WSL ਜਾਂ Git Bash ਰਾਹੀਂ) ਜਾਂ ਕਮਾਂਡ-ਲਾਇਨ ਸਪੋਰਟ ਵਾਲੇ Android ਵਾਤਾਵਰਣ ਵਿੱਚ ਸਿੱਧੀਆਂ ਚਲਾਈਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ।</string>
     <string name="copy_cmd_desc">ਕਮਾਂਡ ਕਾਪੀ ਕਰੋ</string>
     <string name="toggle_theme">ਥੀਮ ਬਦਲੋ</string>
+    <string name="share_button_label">ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="share_button_desc">ਐਪ ਪਸੰਦ ਆ ਰਹੀ ਹੈ? ਇਸਨੂੰ ਹੋਰਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ।</string>
     <string name="toast_select_file">ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਫਾਈਲ ਚੁਣੋ</string>
     <string name="toast_enter_password">ਕਿਰਪਾ ਕਰਕੇ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ</string>
     <string name="toast_encrypt_success">ਸਫਲਤਾਪੂਰਵਕ ਇਨਕ੍ਰਿਪਟ ਹੋ ਗਿਆ!</string>

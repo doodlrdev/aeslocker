@@ -5,5 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro पूरी तरह से विज्ञापन-मुक्त है। इसमें कोई विज्ञापन लाइब्रेरी नहीं है, जिससे यह बेहतर निजता और एक साफ, हल्का और व्याकुलता-मुक्त अनुभव प्रदान करता है।</string>
     <string name="btn_get_pro">PRO प्राप्त करें</string>
     <string name="btn_cancel">रद्द करें</string>
-
+    <string name="share_message">AESLocker आज़माएँ — अपने फ़ोन पर ही AES-256 से फ़ाइलों को एन्क्रिप्ट और डिक्रिप्ट करें।\n\n%1$s</string>
 </resources>

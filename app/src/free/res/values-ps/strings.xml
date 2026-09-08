@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro په بشپړ ډول بې له اعلاناتو دی. دا د اعلاناتو هیڅ کتابتونونه نلري، نو له همدې امله غوره محرمیت او پاکه، سپکه او له اندېښنو پاکه تجربه وړاندې کوي.</string>
     <string name="btn_get_pro">PRO ترلاسه کړئ</string>
     <string name="btn_cancel">لغوه کول</string>
+    <string name="share_message">AESLocker وازمویئ — په خپل تلیفون کې د AES-256 په وسیله فایلونه کوډ او ډیکوډ کړئ.\n\n%1$s</string>
 </resources>

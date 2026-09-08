@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Спробуйте AESLocker Pro — шифруйте та розшифровуйте файли за допомогою AES-256 прямо на телефоні.\n\n%1$s</string>
+    <string name="source_button_label">КОД</string>
+    <string name="source_button_desc">Переглянути вихідний код на GitHub.</string>
+</resources>

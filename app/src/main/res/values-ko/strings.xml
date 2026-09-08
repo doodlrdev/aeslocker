@@ -17,6 +17,8 @@
     <string name="important_notice">나중에 앱을 사용할 수 없게 될 경우를 대비하여 위 명령어를 복사하여 안전한 곳에 저장하세요. 이 OpenSSL 명령어는 macOS, Linux, Windows(WSL 또는 Git Bash를 통해) 또는 명령줄 인터페이스를 지원하는 Android 환경의 터미널에서 직접 실행할 수 있습니다.</string>
     <string name="copy_cmd_desc">명령어 복사</string>
     <string name="toggle_theme">테마 변경</string>
+    <string name="share_button_label">공유</string>
+    <string name="share_button_desc">앱이 마음에 드시나요? 다른 사람들과 공유해 보세요.</string>
     <string name="toast_select_file">먼저 파일을 선택하세요</string>
     <string name="toast_enter_password">비밀번호를 입력하세요</string>
     <string name="toast_encrypt_success">암호화 성공!</string>

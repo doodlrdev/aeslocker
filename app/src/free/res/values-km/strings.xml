@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro គឺមិនមានការផ្សាយពាណិជ្ជកម្មទាំងស្រុង។ វាមិនមានបណ្ណាល័យផ្សាយពាណិជ្ជកម្មទេ ដូច្នេះវាផ្តល់នូវភាពឯកជនដែលបានកែលម្អ និងបទពិសោធន៍ស្អាត ស្រាល និងគ្មានការរំខាន។</string>
     <string name="btn_get_pro">ទទួលបាន PRO</string>
     <string name="btn_cancel">បោះបង់</string>
+    <string name="share_message">សាកល្បង AESLocker — អ៊ិនគ្រីប និងឌិគ្រីបឯកសារដោយប្រើ AES-256 ដោយផ្ទាល់លើទូរស័ព្ទរបស់អ្នក។\n\n%1$s</string>
 </resources>

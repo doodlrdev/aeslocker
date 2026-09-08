@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro повністю без реклами. Він не містить жодних рекламних бібліотек, що забезпечує підвищену конфіденційність, а також чистий, легкий та безвідволікаючий інтерфейс.</string>
     <string name="btn_get_pro">ОТРИМАТИ PRO</string>
     <string name="btn_cancel">СКАСУВАТИ</string>
+    <string name="share_message">Спробуйте AESLocker — шифруйте та розшифровуйте файли за допомогою AES-256 прямо на телефоні.\n\n%1$s</string>
 </resources>

@@ -17,6 +17,8 @@
     <string name="important_notice">Nakili amri hizi hapo juu na uzihifadhi mahali fulani ili uweze kuzitumia ikiwa programu haitapatikana tena hapo baadaye. Amri hizi za OpenSSL zinaweza kutekelezwa moja kwa moja kwenye teminaili ya macOS, Linux, Windows (kupitia WSL au Git Bash), au mazingira ya Android yenye usaidizi wa kiolesura cha mstari wa amri.</string>
     <string name="copy_cmd_desc">Nakili amri</string>
     <string name="toggle_theme">Badilisha Mandhari</string>
+    <string name="share_button_label">SHIRIKI</string>
+    <string name="share_button_desc">Unafurahia programu? Shiriki na wengine.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Tafadhali chagua faili kwanza</string>

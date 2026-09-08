@@ -17,6 +17,8 @@
     <string name="important_notice">Скопируйте приведенные выше команды и сохраните их где-нибудь, чтобы вы могли использовать их, если приложение станет недоступным в будущем. Эти команды OpenSSL можно выполнить прямо в терминале на macOS, Linux, Windows (через WSL или Git Bash) или в средах Android с поддержкой командной строки.</string>
     <string name="copy_cmd_desc">Скопировать команду</string>
     <string name="toggle_theme">Переключить тему</string>
+    <string name="share_button_label">ПОДЕЛИТЬСЯ</string>
+    <string name="share_button_desc">Вам нравится приложение? Поделитесь им с другими.</string>
     <string name="toast_select_file">Пожалуйста, сначала выберите файл</string>
     <string name="toast_enter_password">Пожалуйста, введите пароль</string>
     <string name="toast_encrypt_success">Успешно зашифровано!</string>

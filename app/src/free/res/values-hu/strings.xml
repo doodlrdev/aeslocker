@@ -5,5 +5,5 @@
     <string name="dialog_pro_desc">Az AESLocker Pro teljesen reklámmentes. Nem tartalmaz reklámkönyvtárakat, így fokozott adatvédelmet, valamint letisztult, könnyű és zavartalan élményt kínál.</string>
     <string name="btn_get_pro">PRO VERZIÓ</string>
     <string name="btn_cancel">MÉGSE</string>
-
+    <string name="share_message">Próbáld ki az AESLockert — titkosítsd és fejtsd vissza fájljaidat AES-256-tal közvetlenül a telefonodon.\n\n%1$s</string>
 </resources>

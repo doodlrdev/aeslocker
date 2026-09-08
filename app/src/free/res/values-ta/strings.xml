@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro முற்றிலும் விளம்பரங்கள் இல்லாதது. இதில் விளம்பர லைப்ரரிகள் எதுவும் இல்லை, இதனால் மேம்பட்ட தனியுரிமை மற்றும் தூய்மையான, இலகுவான, கவனச்சிதறல் இல்லாத அனுபவத்தை வழங்குகிறது.</string>
     <string name="btn_get_pro">PRO பெறுக</string>
     <string name="btn_cancel">ரத்துசெய்</string>
+    <string name="share_message">AESLocker-ஐ முயற்சித்துப் பாருங்கள் — உங்கள் தொலைபேசியிலேயே AES-256 மூலம் கோப்புகளை என்க்ரிப்ட் மற்றும் டிக்ரிப்ட் செய்யுங்கள்.\n\n%1$s</string>
 </resources>

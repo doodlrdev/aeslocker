@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro ಸಂಪೂರ್ಣವಾಗಿ ಜಾಹೀರಾತು ಮುಕ್ತವಾಗಿದೆ. ಇದು ಯಾವುದೇ ಜಾಹೀರಾತು ಲೈಬ್ರರಿಗಳನ್ನು ಹೊಂದಿಲ್ಲ, ಹೀಗಾಗಿ ವರ್ಧಿತ ಗೌಪ್ಯತೆ ಮತ್ತು ಶುದ್ಧ, ಹಗುರವಾದ ಮತ್ತು ಗಮನವನ್ನು ಬೇರೆಡೆ ಸೆಳೆಯದ ಅನುಭವವನ್ನು ನೀಡುತ್ತದೆ.</string>
     <string name="btn_get_pro">PRO ಪಡೆಯಿರಿ</string>
     <string name="btn_cancel">ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="share_message">AESLocker ಪ್ರಯತ್ನಿಸಿ — ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ AES-256 ಬಳಸಿ ಫೈಲ್‌ಗಳನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮತ್ತು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಿ.\n\n%1$s</string>
 </resources>

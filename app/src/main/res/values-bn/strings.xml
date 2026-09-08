@@ -17,6 +17,8 @@
     <string name="important_notice">উপরের কমান্ডগুলো কপি করে কোথাও সংরক্ষণ করুন যাতে ভবিষ্যতে অ্যাপটি অনুপলব্ধ হলেও আপনি সেগুলো ব্যবহার করতে পারেন। এই OpenSSL কমান্ডগুলো macOS, Linux, Windows (WSL বা Git Bash এর মাধ্যমে), অথবা কমান্ড-লাইন ইন্টারফেস সমর্থিত Android পরিবেশে সরাসরি চালানো যেতে পারে।</string>
     <string name="copy_cmd_desc">কমান্ড কপি করুন</string>
     <string name="toggle_theme">থিম পরিবর্তন করুন</string>
+    <string name="share_button_label">শেয়ার</string>
+    <string name="share_button_desc">অ্যাপটি ভালো লাগছে? অন্যদের সঙ্গে শেয়ার করুন।</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">অনুগ্রহ করে প্রথমে একটি ফাইল নির্বাচন করুন</string>

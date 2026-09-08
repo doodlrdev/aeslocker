@@ -17,6 +17,8 @@
     <string name="important_notice">คัดลอกคำสั่งด้านบนและบันทึกไว้ในที่ปลอดภัย เพื่อให้คุณสามารถใช้งานได้หากแอปพลิเคชันไม่สามารถใช้งานได้ในอนาคต คำสั่ง OpenSSL เหล่านี้สามารถรันได้โดยตรงในเทอร์มินัลบน macOS, Linux, Windows (ผ่าน WSL หรือ Git Bash) หรือสภาพแวดล้อม Android ที่รองรับอินเทอร์เฟซบรรทัดคำสั่ง</string>
     <string name="copy_cmd_desc">คัดลอกคำสั่ง</string>
     <string name="toggle_theme">สลับธีม</string>
+    <string name="share_button_label">แชร์</string>
+    <string name="share_button_desc">ชอบแอปนี้ไหม? แชร์ให้ผู้อื่นได้เลย</string>
     <string name="toast_select_file">โปรดเลือกไฟล์ก่อน</string>
     <string name="toast_enter_password">โปรดใส่รหัสผ่าน</string>
     <string name="toast_encrypt_success">เข้ารหัสสำเร็จ!</string>

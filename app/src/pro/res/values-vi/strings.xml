@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Khám phá AESLocker Pro — mã hóa và giải mã tệp bằng AES-256 ngay trên điện thoại của bạn.\n\n%1$s</string>
+    <string name="source_button_label">MÃ NGUỒN</string>
+    <string name="source_button_desc">Xem mã nguồn trên GitHub.</string>
+</resources>

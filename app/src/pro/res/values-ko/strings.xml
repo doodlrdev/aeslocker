@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro를 사용해 보세요 — 휴대폰에서 바로 AES-256으로 파일을 암호화하고 복호화할 수 있습니다.\n\n%1$s</string>
+    <string name="source_button_label">소스</string>
+    <string name="source_button_desc">GitHub에서 소스 코드를 확인하세요.</string>
+</resources>

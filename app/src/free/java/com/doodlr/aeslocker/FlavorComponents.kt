@@ -119,3 +119,8 @@ fun ProUpgradeButton() {
         )
     }
 }
+
+@Composable
+fun SourceButton() {
+    // No-op: Source link only shown in the Pro flavor
+}

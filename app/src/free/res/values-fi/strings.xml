@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro on täysin mainokseton. Se ei sisällä mitään mainoskirjastoja, mikä takaa parannetun yksityisyydensuojan sekä puhtaan, kevyen ja häiriöttömän käyttökokemuksen.</string>
     <string name="btn_get_pro">HANKI PRO</string>
     <string name="btn_cancel">PERUUTA</string>
+    <string name="share_message">Tutustu AESLockeriin — salaa ja pura tiedostojen salaus AES-256:lla suoraan puhelimellasi.\n\n%1$s</string>
 </resources>

@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro pancen tanpa iklan. Aplikasi iki ora ngemot perpustakaan iklan, dadi nawakake privasi sing luwih apik lan pengalaman sing resik, entheng, lan tanpa gangguan.</string>
     <string name="btn_get_pro">ENTOKAKE PRO</string>
     <string name="btn_cancel">BATAL</string>
+    <string name="share_message">Coba AESLocker — enkripsi lan dekripsi file nganggo AES-256 langsung ing telpon sampeyan.\n\n%1$s</string>
 </resources>

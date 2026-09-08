@@ -17,6 +17,8 @@
     <string name="important_notice">Skopiuj powyższe polecenia i zapisz je w bezpiecznym miejscu, aby móc ich użyć, jeśli aplikacja nie będzie dostępna w przyszłości. Te polecenia OpenSSL można wykonać bezpośrednio w terminalu w systemie macOS, Linux, Windows (przez WSL lub Git Bash) lub w środowisku Android z obsługą wiersza poleceń.</string>
     <string name="copy_cmd_desc">Kopiuj polecenie</string>
     <string name="toggle_theme">Zmień motyw</string>
+    <string name="share_button_label">UDOSTĘPNIJ</string>
+    <string name="share_button_desc">Podoba Ci się aplikacja? Udostępnij ją innym.</string>
     <string name="toast_select_file">Najpierw wybierz plik</string>
     <string name="toast_enter_password">Wprowadź hasło</string>
     <string name="toast_encrypt_success">Pomyślnie zaszyfrowano!</string>

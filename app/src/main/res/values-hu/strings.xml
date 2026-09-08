@@ -17,6 +17,8 @@
     <string name="important_notice">Másolja ki a fenti parancsokat, és mentse el egy biztonságos helyre, hogy használhassa őket, ha az alkalmazás a jövőben nem lenne elérhető. Ezek az OpenSSL parancsok közvetlenül futtathatók terminálban macOS, Linux, Windows (WSL-en vagy Git Bash-en keresztül) vagy parancssort támogató Android környezetben.</string>
     <string name="copy_cmd_desc">Parancs másolása</string>
     <string name="toggle_theme">Téma váltása</string>
+    <string name="share_button_label">MEGOSZTÁS</string>
+    <string name="share_button_desc">Tetszik az alkalmazás? Oszd meg másokkal is.</string>
     <string name="toast_select_file">Kérjük, először válasszon ki egy fájlt</string>
     <string name="toast_enter_password">Kérjük, adja meg a jelszót</string>
     <string name="toast_encrypt_success">Sikeresen titkosítva!</string>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Scopri AESLocker Pro — cifra e decifra i file con AES-256 direttamente sul tuo telefono.\n\n%1$s</string>
+    <string name="source_button_label">SORGENTE</string>
+    <string name="source_button_desc">Visualizza il codice sorgente su GitHub.</string>
+</resources>

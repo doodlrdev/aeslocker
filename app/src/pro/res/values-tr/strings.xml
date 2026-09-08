@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">AESLocker Pro\'yu keşfedin — dosyalarınızı doğrudan telefonunuzda AES-256 ile şifreleyin ve şifrelerini çözün.\n\n%1$s</string>
+    <string name="source_button_label">KAYNAK</string>
+    <string name="source_button_desc">GitHub\'da kaynak kodunu görüntüleyin.</string>
+</resources>

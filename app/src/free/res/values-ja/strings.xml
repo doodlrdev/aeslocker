@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Proは完全に広告なしです。広告ライブラリを含まないため、プライバシーが強化され、クリーンで軽量、そして気を散らすことのない体験を提供します。</string>
     <string name="btn_get_pro">PRO版を入手</string>
     <string name="btn_cancel">キャンセル</string>
+    <string name="share_message">AESLockerをお試しください — スマートフォン上でAES-256を使ってファイルを暗号化・復号できます。\n\n%1$s</string>
 </resources>

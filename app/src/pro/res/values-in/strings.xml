@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Coba AESLocker Pro — enkripsi dan dekripsi file dengan AES-256, langsung di ponsel Anda.\n\n%1$s</string>
+    <string name="source_button_label">SUMBER</string>
+    <string name="source_button_desc">Lihat kode sumber di GitHub.</string>
+</resources>
+

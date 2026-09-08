@@ -17,6 +17,8 @@
     <string name="important_notice">Copiați comenzile de mai sus și păstrați-le într-un loc sigur pentru a le putea folosi în cazul în care aplicația nu va mai fi disponibilă în viitor. Aceste comenzi OpenSSL pot fi rulate direct în terminal pe macOS, Linux, Windows (prin WSL sau Git Bash) sau într-un mediu Android care acceptă linia de comandă.</string>
     <string name="copy_cmd_desc">Copiați comanda</string>
     <string name="toggle_theme">Schimbă tema</string>
+    <string name="share_button_label">DISTRIBUIE</string>
+    <string name="share_button_desc">Îți place aplicația? Distribuie-o și altora.</string>
     <string name="toast_select_file">Vă rugăm să selectați mai întâi un fișier</string>
     <string name="toast_enter_password">Vă rugăm să introduceți parola</string>
     <string name="toast_encrypt_success">Criptat cu succes!</string>

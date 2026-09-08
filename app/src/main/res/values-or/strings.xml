@@ -17,6 +17,8 @@
     <string name="important_notice">ଭବିଷ୍ୟତରେ ଆପ୍ ਉପଲବ୍ଧ ନହେଲେ ବ୍ୟବହାର କରିବା ପାଇଁ ଉପରୋକ୍ତ କମାଣ୍ଡଗୁଡ଼ିକୁ କପ୍ କରି ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଂରକ୍ଷଣ କରନ୍ତୁ। ଏହି OpenSSL କମାଣ୍ଡଗୁଡ଼ିକୁ macOS, Linux, Windows (WSL କିମ୍ବା Git Bash ମାଧ୍ୟମରେ) କିମ୍ବା Android ଟର୍ମିନାଲ୍ ରେ ସିଧାସଳଖ ଏକଜିକିଉଟ୍ କରାଯାଇପାରିବ।</string>
     <string name="copy_cmd_desc">କମାଣ୍ଡ୍ କପ୍ କରନ୍ତୁ</string>
     <string name="toggle_theme">ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="share_button_label">ସେୟାର୍ କରନ୍ତୁ</string>
+    <string name="share_button_desc">ଆପ୍‌ଟି ଭଲ ଲାଗୁଛି କି? ଅନ୍ୟମାନଙ୍କ ସହିତ ସେୟାର୍ କରନ୍ତୁ।</string>
     <string name="toast_select_file">ଦୟାکرି ପ୍ରଥମେ ଏକ ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ</string>
     <string name="toast_enter_password">ଦୟାକରି ଏକ ପାସୱାର୍ଡ ପ୍ରବେଶ କରନ୍ତୁ</string>
     <string name="toast_encrypt_success">ସଫଳତାସହ ଏନକ୍ରିପ୍ଟ ହେଲା!</string>

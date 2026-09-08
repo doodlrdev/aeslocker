@@ -17,6 +17,8 @@
     <string name="important_notice">Kopieer de bovenstaande opdrachten en sla ze ergens op, zodat u ze kunt gebruiken als de app in de toekomst niet meer beschikbaar is. Deze OpenSSL-opdrachten kunnen rechtstreeks in de terminal worden uitgevoerd op macOS, Linux, Windows (via WSL of Git Bash) of Android-omgevingen met ondersteuning voor de opdrachtregel.</string>
     <string name="copy_cmd_desc">Opdracht kopiëren</string>
     <string name="toggle_theme">Thema wisselen</string>
+    <string name="share_button_label">DELEN</string>
+    <string name="share_button_desc">Bevalt de app je? Deel hem met anderen.</string>
     <string name="toast_select_file">Selecteer eerst een bestand</string>
     <string name="toast_enter_password">Voer een wachtwoord in</string>
     <string name="toast_encrypt_success">Succesvol versleuteld!</string>

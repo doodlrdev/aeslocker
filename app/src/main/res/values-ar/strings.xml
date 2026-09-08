@@ -17,6 +17,8 @@
     <string name="important_notice">انسخ الأوامر أعلاه واحفظها في مكان ما حتى تتمكن من استخدامها إذا أصبح التطبيق غير متاح في المستقبل. يمكن تنفيذ أوامر OpenSSL هذه مباشرة في الطرفية على macOS أو Linux أو Windows (عبر WSL أو Git Bash) أو بيئات Android التي تدعم واجهة سطر الأوامر.</string>
     <string name="copy_cmd_desc">نسخ الأمر</string>
     <string name="toggle_theme">تبديل المظهر</string>
+    <string name="share_button_label">مشاركة</string>
+    <string name="share_button_desc">هل تستمتع باستخدام التطبيق؟ شاركه مع الآخرين.</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">يرجى تحديد ملف أولاً</string>

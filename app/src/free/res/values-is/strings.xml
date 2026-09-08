@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro er algjörlega án auglýsinga. Það inniheldur engin auglýsingasöfn, sem veitir aukna persónuvernd og hreina, létta og truflanafría upplifun.</string>
     <string name="btn_get_pro">FÁ PRO</string>
     <string name="btn_cancel">HÆTTA VIÐ</string>
+    <string name="share_message">Prófaðu AESLocker — dulkóðaðu og afkóðaðu skrár með AES-256 beint í símanum þínum.\n\n%1$s</string>
 </resources>

@@ -5,6 +5,7 @@
     <string name="dialog_pro_desc">AESLocker Pro مڪمل طور تي اشتهارن کان پاڪ آهي. انهيءَ ۾ ڪابه اشتهاري لائبريري شامل ناهي، جنهن جي ڪري اهو وڌيڪ رازداري ۽ هڪ صاف، هلڪو ۽ بغير ڪنهن ڏکيائيءَ جو تجربو فراهم ڪري ٿو.</string>
     <string name="btn_get_pro">PRO حاصل ڪريو</string>
     <string name="btn_cancel">منسوخ ڪريو</string>
+    <string name="share_message">AESLocker آزمائي ڏسو — پنهنجي فون تي ئي AES-256 سان فائلن کي انڪرپٽ ۽ ڊڪرپٽ ڪريو.\n\n%1$s</string>
 </resources>
 
 

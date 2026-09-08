@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro sepenuhnya bebas iklan. Aplikasi ini tidak berisi pustaka iklan, sehingga menawarkan privasi yang lebih baik serta pengalaman yang bersih, ringan, dan bebas gangguan.</string>
     <string name="btn_get_pro">DAPATKAN PRO</string>
     <string name="btn_cancel">BATAL</string>
+    <string name="share_message">Coba AESLocker — enkripsi dan dekripsi file dengan AES-256, langsung di ponsel Anda.\n\n%1$s</string>
 </resources>

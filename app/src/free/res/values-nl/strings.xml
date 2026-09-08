@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">AESLocker Pro is volledig reclamevrij. Het bevat geen reclamebibliotheken en biedt daardoor verbeterde privacy en een schone, lichte en afleidingsvrije ervaring.</string>
     <string name="btn_get_pro">ONTVANG PRO</string>
     <string name="btn_cancel">ANNULEREN</string>
+    <string name="share_message">Ontdek AESLocker — versleutel en ontsleutel bestanden met AES-256, rechtstreeks op je telefoon.\n\n%1$s</string>
 </resources>

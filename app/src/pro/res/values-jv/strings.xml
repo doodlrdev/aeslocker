@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_message">Coba AESLocker Pro — enkripsi lan dekripsi file nganggo AES-256 langsung ing telpon sampeyan.\n\n%1$s</string>
+    <string name="source_button_label">SUMBER</string>
+    <string name="source_button_desc">Deleng kode sumber ing GitHub.</string>
+</resources>

@@ -5,4 +5,5 @@
     <string name="dialog_pro_desc">تطبيق AESLocker Pro خالٍ تمامًا من الإعلانات. لا يحتوي على أي مكتبات إعلانية، مما يوفر خصوصية محسنة وتجربة نظيفة وخفيفة الوزن وخالية من المشتتات.</string>
     <string name="btn_get_pro">احصل على PRO</string>
     <string name="btn_cancel">إلغاء</string>
+    <string name="share_message">جرّب AESLocker — لتشفير الملفات وفك تشفيرها باستخدام AES-256 مباشرةً على هاتفك.\n\n%1$s</string>
 </resources>

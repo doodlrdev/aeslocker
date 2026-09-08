@@ -17,6 +17,8 @@
     <string name="important_notice">请复制以上命令并保存到安全的地方，以便在将来应用不可用时继续使用。这些 OpenSSL 命令可以直接在 macOS、Linux、Windows（通过 WSL 或 Git Bash）或支持命令行界面的 Android 环境中运行。</string>
     <string name="copy_cmd_desc">复制命令</string>
     <string name="toggle_theme">切换主题</string>
+    <string name="share_button_label">分享</string>
+    <string name="share_button_desc">喜欢这款应用吗？分享给其他人吧。</string>
     <string name="toast_select_file">请先选择一个文件</string>
     <string name="toast_enter_password">请输入密码</string>
     <string name="toast_encrypt_success">加密成功！</string>
