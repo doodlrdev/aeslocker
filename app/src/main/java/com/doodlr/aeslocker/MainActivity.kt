@@ -62,18 +62,7 @@ import kotlinx.coroutines.withContext
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "user_preferences")
 
 /**
- * AppCompatDelegate.setApplicationLocales() does not apply immediately — it asynchronously
- * schedules an activity relaunch. If a second locale change is triggered before that relaunch
- * finishes, two relaunches can end up queued on the same activity instance, which can corrupt
- * the window's decor state and throw "Window couldn't find content container view".
- *
- * This flag is a process-wide (not per-Activity-instance) guard: it survives the relaunch
- * itself since only the Activity is destroyed/recreated, not the process, so it reliably blocks
- * any further locale-change requests until the new Activity instance actually reaches onCreate().
- */
-
-/**
- * FlavorComponents.initialize() (consent gathering + MobileAds init) and the Play Core
+ * FlavorComponents.initialize() (consent gathering + MobileAds init, both in the case of Free version only) and the Play Core
  * update check both kick off async work that captures whichever Activity instance is live
  * at the time, and both were being re-triggered on every single onCreate() — including
  * relaunches. If a relaunch happens while the previous instance's async callback is still
@@ -146,9 +135,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var interstitialAdHelper: InterstitialAdHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // A new onCreate means any pending locale-triggered relaunch has now completed,
-        // so it's safe to allow the next locale change to go through.
-//        LocaleChangeGuard.inProgress = false
 
         val savedThemeMode = runBlocking {
             ThemePreferences.getThemeMode(this@MainActivity).first()
@@ -194,7 +180,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Everything below touches third-party SDKs (AdMob, UMP consent, Play Core
-        // update) that do their own async work and, in the case of AdMob/UMP, can
+        // update, all in the case of Free version only; Pro version uses dummy calls)
+        // that do their own async work and, in the case of AdMob/UMP, can
         // show their own overlay UI. Starting that work before setContent() had
         // installed the window's decor view meant an SDK callback could fire while
         // PhoneWindow was still mid-setup — the actual cause of the intermittent
@@ -480,8 +467,8 @@ fun LanguageSwitcherButton() {
     Box(modifier = Modifier.wrapContentSize(Alignment.TopEnd)) {
         IconButton(onClick = { expanded = !expanded }) {
             Icon(
-                imageVector = Icons.Default.Language, //[cite: 1]
-                contentDescription = stringResource(R.string.cd_switch_language) //[cite: 1]
+                imageVector = Icons.Default.Language,
+                contentDescription = stringResource(R.string.cd_switch_language)
             )
         }
 
