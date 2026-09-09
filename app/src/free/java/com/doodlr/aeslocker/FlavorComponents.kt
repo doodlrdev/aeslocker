@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,6 +19,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
@@ -27,7 +29,16 @@ object FlavorComponents {
     fun initialize(activity: Activity) {
         val consentAndAgeManager = ConsentAndAgeManager(activity)
         consentAndAgeManager.gatherConsentAndAgeSignals {
-            MobileAds.initialize(activity)
+            // Play Services Ads has a long-documented quirk (reported as far back as
+            // Android 7, still surfaces on specific OEM/SDK-version combinations
+            // today) where SDK init/ad rendering can silently reset the Activity's
+            // Configuration.uiMode night bit back to light, without going through
+            // AppCompatDelegate. AppCompatDelegate never finds out, so it won't
+            // self-correct. Forcing applyDayNight() once init completes re-asserts
+            // whatever night mode the user actually has selected.
+            MobileAds.initialize(activity) {
+                (activity as? AppCompatActivity)?.delegate?.applyDayNight()
+            }
         }
     }
 }
@@ -51,6 +62,15 @@ fun BannerAdView() {
             AdView(ctx).apply {
                 setAdSize(adSize)
                 adUnitId = ctx.getString(R.string.admob_banner_ad_unit_id)
+                // Same reassertion here: this is the specific component the
+                // original bug reports call out, so re-apply night mode right
+                // after this particular ad actually loads too, as a second,
+                // more targeted safety net on top of the SDK-init one above.
+                adListener = object : AdListener() {
+                    override fun onAdLoaded() {
+                        (ctx as? AppCompatActivity)?.delegate?.applyDayNight()
+                    }
+                }
                 loadAd(AdRequest.Builder().build())
             }
         }

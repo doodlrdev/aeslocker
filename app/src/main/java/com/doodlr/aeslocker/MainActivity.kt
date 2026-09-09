@@ -208,9 +208,7 @@ class MainActivity : AppCompatActivity() {
             ThemePreferences.MODE_DARK -> AppCompatDelegate.MODE_NIGHT_YES
             else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
         }
-        if (AppCompatDelegate.getDefaultNightMode() != targetMode) {
-            AppCompatDelegate.setDefaultNightMode(targetMode)
-        }
+        AppCompatDelegate.setDefaultNightMode(targetMode)
     }
 }
 
@@ -228,6 +226,25 @@ fun getFileName(context: Context, uri: Uri): String {
         name = uri.path?.substringAfterLast('/') ?: "file"
     }
     return name
+}
+
+// Looks only at the final extension (everything after the last dot). If that
+// segment starts with "aes" or "enc", the whole segment is treated as the
+// encrypted-file marker and stripped — regardless of what a file
+// picker/manager appended after it ("(1)", "tuv", "_1", etc). Checking only
+// the last dot-segment (rather than searching the whole filename) avoids
+// false positives like "myfile.aesthetic.jpg", where the real extension is
+// ".jpg" and "aesthetic" is just a folder/word earlier in the name.
+fun deriveDecryptedFileName(originalFileName: String): String {
+    val lastDotIndex = originalFileName.lastIndexOf('.')
+    if (lastDotIndex <= 0) return "decrypted_$originalFileName"
+    val baseName = originalFileName.substring(0, lastDotIndex)
+    val extension = originalFileName.substring(lastDotIndex + 1)
+    return if (extension.startsWith("aes", ignoreCase = true) || extension.startsWith("enc", ignoreCase = true)) {
+        baseName
+    } else {
+        "decrypted_$originalFileName"
+    }
 }
 
 fun getFileSize(context: Context, uri: Uri): Long {
@@ -707,11 +724,7 @@ fun CryptoForm(
                                     isSuccessDialog = false
                                 } else {
                                     val originalFileName = getFileName(context, currentUri)
-                                    val suggestedName = when {
-                                        originalFileName.endsWith(".aes") -> originalFileName.removeSuffix(".aes")
-                                        originalFileName.endsWith(".enc") -> originalFileName.removeSuffix(".enc")
-                                        else -> "decrypted_$originalFileName"
-                                    }
+                                    val suggestedName = deriveDecryptedFileName(originalFileName)
                                     saveFileLauncher.launch(suggestedName)
                                 }
                             }
@@ -738,7 +751,7 @@ fun CryptoForm(
 
         val selectedFileName = inputUri?.let { getFileName(context, it) }
         val inputExt = selectedFileName ?: "[input.ext]"
-        val outputExt = selectedFileName?.removeSuffix(".aes")?.removeSuffix(".enc") ?: "[output.ext]"
+        val outputExt = selectedFileName?.let { deriveDecryptedFileName(it) } ?: "[output.ext]"
 
         val encryptCmd = "openssl enc -aes-256-cbc -salt -pbkdf2 -in $inputExt -out output.aes"
         val decryptCmd = "openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out $outputExt"
