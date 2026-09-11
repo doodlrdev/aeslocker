@@ -749,13 +749,6 @@ fun CryptoForm(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        val selectedFileName = inputUri?.let { getFileName(context, it) }
-        val inputExt = selectedFileName ?: "[input.ext]"
-        val outputExt = selectedFileName?.let { deriveDecryptedFileName(it) } ?: "[output.ext]"
-
-        val encryptCmd = "openssl enc -aes-256-cbc -salt -pbkdf2 -in $inputExt -out output.aes"
-        val decryptCmd = "openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out $outputExt"
-
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(10.dp),

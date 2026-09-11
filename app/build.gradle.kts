@@ -83,16 +83,12 @@ dependencies {
     // Extended Material Icons
     implementation("androidx.compose.material:material-icons-extended")
 
-    // In-App Updates (Shared by both flavors)
-    implementation(libs.app.update)
-    implementation(libs.app.update.ktx)
-
-    // Play Review (Shared by both flavors)
-    implementation(libs.play.review)
-    implementation(libs.play.review.ktx)
-
-    // Free-only dependencies (Omitted completely from Pro build)
+    // Free-only dependencies (Omitted completely from Pro build — keeps Pro fully offline)
     "freeImplementation"(libs.play.services.ads)
     "freeImplementation"(libs.user.messaging.platform)
     "freeImplementation"(libs.play.age.signals)
+    "freeImplementation"(libs.app.update)
+    "freeImplementation"(libs.app.update.ktx)
+    "freeImplementation"(libs.play.review)
+    "freeImplementation"(libs.play.review.ktx)
 }
