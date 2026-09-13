@@ -19,6 +19,9 @@
     <string name="toggle_theme">تهیه بدله کړئ</string>
     <string name="share_button_label">شریکول</string>
     <string name="share_button_desc">اپ مو خوښ شو؟ له نورو سره یې شریک کړئ.</string>
+    <string name="password_strength_weak">کمزوری</string>
+    <string name="password_strength_medium">منځنی</string>
+    <string name="password_strength_strong">قوي</string>
     <string name="toast_select_file">لطفاً لومړی یو فایل وټاکئ</string>
     <string name="toast_enter_password">لطفاً پټنوم دننه کړئ</string>
     <string name="toast_encrypt_success">په بریالیتوب سره پټ شو!</string>

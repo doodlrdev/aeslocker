@@ -19,6 +19,9 @@
     <string name="toggle_theme">ಥೀಮ್ ಬದಲಾಯಿಸಿ</string>
     <string name="share_button_label">ಹಂಚಿಕೊಳ್ಳಿ</string>
     <string name="share_button_desc">ಆ್ಯಪ್ ಇಷ್ಟವಾಗಿದೆಯೇ? ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.</string>
+    <string name="password_strength_weak">ದುರ್ಬಲ</string>
+    <string name="password_strength_medium">ಮಧ್ಯಮ</string>
+    <string name="password_strength_strong">ಬಲವಾದ</string>
     <string name="toast_select_file">ದಯವಿಟ್ಟು ಮೊದಲು ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="toast_enter_password">ದಯವಿಟ್ಟು ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ</string>
     <string name="toast_encrypt_success">ಯಶಸ್ವಿಯಾಗಿ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗಿದೆ!</string>

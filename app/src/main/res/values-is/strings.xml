@@ -19,6 +19,9 @@
     <string name="toggle_theme">Skipta um þema</string>
     <string name="share_button_label">DEILA</string>
     <string name="share_button_desc">Líkar þér við appið? Deildu því með öðrum.</string>
+    <string name="password_strength_weak">Veikt</string>
+    <string name="password_strength_medium">Meðal</string>
+    <string name="password_strength_strong">Sterkt</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Vinsamlegast veldu skrá fyrst</string>

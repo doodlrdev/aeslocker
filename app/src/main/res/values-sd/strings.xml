@@ -19,6 +19,9 @@
     <string name="toggle_theme">ٿيم متبادل ڪريو</string>
     <string name="share_button_label">شيئر ڪريو</string>
     <string name="share_button_desc">ايپ پسند آئي؟ ٻين سان شيئر ڪريو.</string>
+    <string name="password_strength_weak">كمزور</string>
+    <string name="password_strength_medium">درميانو</string>
+    <string name="password_strength_strong">مضبوط</string>
     <string name="toast_select_file">مهرباني ڪري پهرين فائل چونڊيو</string>
     <string name="toast_enter_password">مهرباني ڪري پاسورڊ داخل ڪريو</string>
     <string name="toast_encrypt_success">ڪاميابيءَ سان انڪريپٽ ٿي ويو!</string>

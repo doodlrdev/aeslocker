@@ -33,6 +33,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -258,6 +259,33 @@ fun getFileSize(context: Context, uri: Uri): Long {
         }
     }
     return size
+}
+
+enum class PasswordStrength { WEAK, MEDIUM, STRONG }
+
+// Lightweight, fully local heuristic — no dictionary lookups, no network calls.
+// Scores on length plus character-class variety (upper/lower/digit/symbol).
+// Not a substitute for a true entropy estimator, but gives a reasonable rough
+// signal without pulling in a bundled password-dictionary dependency.
+fun calculatePasswordStrength(password: String): PasswordStrength {
+    val length = password.length
+    var classes = 0
+    if (password.any { it.isUpperCase() }) classes++
+    if (password.any { it.isLowerCase() }) classes++
+    if (password.any { it.isDigit() }) classes++
+    if (password.any { !it.isLetterOrDigit() }) classes++
+
+    var score = 0
+    if (length >= 8) score++
+    if (length >= 12) score++
+    if (classes >= 2) score++
+    if (classes >= 3) score++
+
+    return when {
+        score <= 1 -> PasswordStrength.WEAK
+        score <= 3 -> PasswordStrength.MEDIUM
+        else -> PasswordStrength.STRONG
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -645,7 +673,22 @@ fun CryptoForm(
 
         OutlinedTextField(
             value = password,
-            onValueChange = { password = it },
+            onValueChange = { newValue ->
+                // Strip every whitespace character (regular space, non-breaking
+                // space, tab, etc.) as the user types. This guards against three
+                // real failure modes for a password field:
+                //  1. A trailing space the user doesn't notice, which silently
+                //     changes the password used for encryption vs. what they
+                //     believe they typed for decryption later.
+                //  2. Keyboards that auto-insert a space after a sentence-ending
+                //     period.
+                //  3. Keyboards that auto-insert a space after a closing quote
+                //     character following an opening quote.
+                // Filtering at the source means none of these can ever produce
+                // a space in the stored password, regardless of which keyboard
+                // or input method the user has.
+                password = newValue.filterNot { it.isWhitespace() }
+            },
             label = { Text(stringResource(R.string.password_label)) },
             visualTransformation = if (isPasswordVisible) VisualTransformation.None else PasswordVisualTransformation(),
             trailingIcon = {
@@ -663,11 +706,16 @@ fun CryptoForm(
             shape = RoundedCornerShape(8.dp),
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
+                autoCorrectEnabled = false,
                 platformImeOptions = PlatformImeOptions(
                     privateImeOptions = "com.google.android.inputmethod.latin.noPersonalizedLearning=true,nm"
                 )
             )
         )
+
+        if (isEncryptMode && password.isNotEmpty()) {
+            PasswordStrengthIndicator(password)
+        }
 
         Spacer(modifier = Modifier.height(20.dp))
 
@@ -846,6 +894,54 @@ fun CryptoForm(
                 }
             )
         }
+    }
+}
+
+@Composable
+fun PasswordStrengthIndicator(password: String) {
+    val strength = remember(password) { calculatePasswordStrength(password) }
+
+    // A single fixed palette (rather than switching per-theme) would fail
+    // contrast in one mode or the other — e.g. a light amber reads fine on
+    // this app's near-black dark background but nearly disappears on the
+    // light gray background, and vice versa for darker shades. Checking the
+    // actual background luminance keeps the chosen shade readable either way.
+    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
+
+    val (color, labelRes, progress) = when (strength) {
+        PasswordStrength.WEAK -> Triple(
+            if (isDark) Color(0xFFEF5350) else Color(0xFFC62828),
+            R.string.password_strength_weak,
+            0.33f
+        )
+        PasswordStrength.MEDIUM -> Triple(
+            if (isDark) Color(0xFFFFCA28) else Color(0xFFF9A825),
+            R.string.password_strength_medium,
+            0.66f
+        )
+        PasswordStrength.STRONG -> Triple(
+            if (isDark) Color(0xFF66BB6A) else Color(0xFF2E7D32),
+            R.string.password_strength_strong,
+            1f
+        )
+    }
+
+    Column(modifier = Modifier.fillMaxWidth().padding(top = 6.dp)) {
+        LinearProgressIndicator(
+            progress = { progress },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(6.dp)
+                .clip(RoundedCornerShape(3.dp)),
+            color = color,
+            trackColor = MaterialTheme.colorScheme.surfaceVariant
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = stringResource(labelRes),
+            style = MaterialTheme.typography.labelSmall,
+            color = color
+        )
     }
 }
 

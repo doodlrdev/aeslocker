@@ -19,6 +19,9 @@
     <string name="toggle_theme">切换主题</string>
     <string name="share_button_label">分享</string>
     <string name="share_button_desc">喜欢这款应用吗？分享给其他人吧。</string>
+    <string name="password_strength_weak">弱</string>
+    <string name="password_strength_medium">中</string>
+    <string name="password_strength_strong">强</string>
     <string name="toast_select_file">请先选择一个文件</string>
     <string name="toast_enter_password">请输入密码</string>
     <string name="toast_encrypt_success">加密成功！</string>

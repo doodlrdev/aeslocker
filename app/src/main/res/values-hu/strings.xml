@@ -19,6 +19,9 @@
     <string name="toggle_theme">Téma váltása</string>
     <string name="share_button_label">MEGOSZTÁS</string>
     <string name="share_button_desc">Tetszik az alkalmazás? Oszd meg másokkal is.</string>
+    <string name="password_strength_weak">Gyenge</string>
+    <string name="password_strength_medium">Közepes</string>
+    <string name="password_strength_strong">Erős</string>
     <string name="toast_select_file">Kérjük, először válasszon ki egy fájlt</string>
     <string name="toast_enter_password">Kérjük, adja meg a jelszót</string>
     <string name="toast_encrypt_success">Sikeresen titkosítva!</string>

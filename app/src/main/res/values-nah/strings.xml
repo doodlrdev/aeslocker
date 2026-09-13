@@ -19,6 +19,9 @@
     <string name="toggle_theme">Xipatla tema</string>
     <string name="share_button_label">XELHUIA</string>
     <string name="share_button_desc">¿Ticpactia in aplicación? Xicxelhui ihuan occequintin.</string>
+    <string name="password_strength_weak">Ahmo chicahuac</string>
+    <string name="password_strength_medium">Tlahco</string>
+    <string name="password_strength_strong">Chicahuac</string>
     <string name="toast_select_file">Nigan xitlatlahtlani ce tlahtolmatiliztli achto</string>
     <string name="toast_enter_password">Nigan xiquiza tlatlatilztli tlahtolli</string>
     <string name="toast_encrypt_success"> ¡Ichtacatzaz omosehui!</string>

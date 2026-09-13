@@ -19,6 +19,9 @@
     <string name="toggle_theme">สลับธีม</string>
     <string name="share_button_label">แชร์</string>
     <string name="share_button_desc">ชอบแอปนี้ไหม? แชร์ให้ผู้อื่นได้เลย</string>
+    <string name="password_strength_weak">คาดเดาง่าย</string>
+    <string name="password_strength_medium">ปานกลาง</string>
+    <string name="password_strength_strong">รัดกุม</string>
     <string name="toast_select_file">โปรดเลือกไฟล์ก่อน</string>
     <string name="toast_enter_password">โปรดใส่รหัสผ่าน</string>
     <string name="toast_encrypt_success">เข้ารหัสสำเร็จ!</string>

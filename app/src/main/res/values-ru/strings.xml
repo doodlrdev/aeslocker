@@ -19,6 +19,9 @@
     <string name="toggle_theme">Переключить тему</string>
     <string name="share_button_label">ПОДЕЛИТЬСЯ</string>
     <string name="share_button_desc">Вам нравится приложение? Поделитесь им с другими.</string>
+    <string name="password_strength_weak">Слабый</string>
+    <string name="password_strength_medium">Средний</string>
+    <string name="password_strength_strong">Надежный</string>
     <string name="toast_select_file">Пожалуйста, сначала выберите файл</string>
     <string name="toast_enter_password">Пожалуйста, введите пароль</string>
     <string name="toast_encrypt_success">Успешно зашифровано!</string>

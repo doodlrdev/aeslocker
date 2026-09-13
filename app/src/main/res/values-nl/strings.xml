@@ -19,6 +19,9 @@
     <string name="toggle_theme">Thema wisselen</string>
     <string name="share_button_label">DELEN</string>
     <string name="share_button_desc">Bevalt de app je? Deel hem met anderen.</string>
+    <string name="password_strength_weak">Zwak</string>
+    <string name="password_strength_medium">Gemiddeld</string>
+    <string name="password_strength_strong">Sterk</string>
     <string name="toast_select_file">Selecteer eerst een bestand</string>
     <string name="toast_enter_password">Voer een wachtwoord in</string>
     <string name="toast_encrypt_success">Succesvol versleuteld!</string>

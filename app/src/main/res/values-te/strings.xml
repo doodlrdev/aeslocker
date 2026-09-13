@@ -19,6 +19,9 @@
     <string name="toggle_theme">థీమ్‌ను మార్చండి</string>
     <string name="share_button_label">షేర్ చేయండి</string>
     <string name="share_button_desc">యాప్ నచ్చిందా? ఇతరులతో షేర్ చేయండి.</string>
+    <string name="password_strength_weak">బలహీనంగా ఉంది</string>
+    <string name="password_strength_medium">సగటు</string>
+    <string name="password_strength_strong">బలంగా ఉంది</string>
     <string name="toast_select_file">దయచేసి ముందుగా ఫైల్‌ను ఎంచుకోండి</string>
     <string name="toast_enter_password">దయచేసి పాస్‌వర్డ్ నమోదు చేయండి</string>
     <string name="toast_encrypt_success">విజయవంతంగా ఎన్‌క్రిప్ట్ చేయబడింది!</string>

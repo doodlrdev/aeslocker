@@ -19,6 +19,9 @@
     <string name="toggle_theme">ប្តូររូបរាង</string>
     <string name="share_button_label">ចែករំលែក</string>
     <string name="share_button_desc">ចូលចិត្តកម្មវិធីនេះមែនទេ? ចែករំលែកវាជាមួយអ្នកដទៃ។</string>
+    <string name="password_strength_weak">ខ្សោយ</string>
+    <string name="password_strength_medium">មធ្យម</string>
+    <string name="password_strength_strong">រឹងមាំ</string>
     <string name="toast_select_file">សូមជ្រើសរើសឯកសារជាមុនសិន</string>
     <string name="toast_enter_password">សូមបញ្ចូលពាក្យសម្ងាត់</string>
     <string name="toast_encrypt_success">បានเข้ารหัสដោយជោគជ័យ!</string>

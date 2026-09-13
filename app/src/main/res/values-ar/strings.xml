@@ -19,6 +19,9 @@
     <string name="toggle_theme">تبديل المظهر</string>
     <string name="share_button_label">مشاركة</string>
     <string name="share_button_desc">هل تستمتع باستخدام التطبيق؟ شاركه مع الآخرين.</string>
+    <string name="password_strength_weak">ضعيف</string>
+    <string name="password_strength_medium">متوسط</string>
+    <string name="password_strength_strong">قوي</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">يرجى تحديد ملف أولاً</string>

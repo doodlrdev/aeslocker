@@ -19,6 +19,9 @@
     <string name="toggle_theme">Změnit motiv</string>
     <string name="share_button_label">SDÍLET</string>
     <string name="share_button_desc">Líbí se vám aplikace? Sdílejte ji s ostatními.</string>
+    <string name="password_strength_weak">Slabé</string>
+    <string name="password_strength_medium">Střední</string>
+    <string name="password_strength_strong">Silné</string>
     <string name="toast_select_file">Nejprve prosím vyberte soubor</string>
     <string name="toast_enter_password">Zadejte prosím heslo</string>
     <string name="toast_encrypt_success">Úspěšně zašifrováno!</string>

@@ -19,6 +19,9 @@
     <string name="toggle_theme">Ganti Tema</string>
     <string name="share_button_label">BAGIKAN</string>
     <string name="share_button_desc">Seneng karo aplikasi iki? Bagikna karo wong liya.</string>
+    <string name="password_strength_weak">Ringkih</string>
+    <string name="password_strength_medium">Sedheng</string>
+    <string name="password_strength_strong">Kuat</string>
     <string name="toast_select_file">Mangga pilih berkas dhisik</string>
     <string name="toast_enter_password">Mangga lebokake tembung sandi</string>
     <string name="toast_encrypt_success">Sukses dienkripsi!</string>

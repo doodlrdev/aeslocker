@@ -19,6 +19,9 @@
     <string name="toggle_theme">थीम बदला</string>
     <string name="share_button_label">शेअर करा</string>
     <string name="share_button_desc">अॅप आवडत आहे? इतरांसोबत शेअर करा.</string>
+    <string name="password_strength_weak">कमकुवत</string>
+    <string name="password_strength_medium">मध्यम</string>
+    <string name="password_strength_strong">मजबूत</string>
     <string name="toast_select_file">कृपया आधी फाईल निवडा</string>
     <string name="toast_enter_password">कृपया पासवर्ड टाका</string>
     <string name="toast_encrypt_success">यशस्वीरित्या एनक्रिप्ट केले!</string>

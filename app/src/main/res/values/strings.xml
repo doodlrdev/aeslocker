@@ -18,6 +18,9 @@
     <string name="toggle_theme">Toggle Theme</string>
     <string name="share_button_label">SHARE</string>
     <string name="share_button_desc">Enjoying the app? Share it with others.</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Please select a file first</string>

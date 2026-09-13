@@ -20,8 +20,8 @@ configure<ApplicationExtension> {
     defaultConfig {
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -47,6 +47,9 @@ configure<ApplicationExtension> {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
         }
     }
 
@@ -57,6 +60,20 @@ configure<ApplicationExtension> {
 
     buildFeatures {
         compose = true
+    }
+
+    // Ships every language's resources in every install, instead of only the
+    // split matching the device's system locale. Without this, per-app language
+    // switching (AppCompatDelegate.setApplicationLocales) silently falls back to
+    // the default locale whenever the user picks a language whose resource split
+    // wasn't installed by Play — this only shows up on Play-Store/AAB installs,
+    // never on a directly-installed monolithic APK, which is why it looked
+    // inconsistent. String-only resources are small, so this has negligible
+    // impact on install size for this app.
+    bundle {
+        language {
+            enableSplit = false
+        }
     }
 }
 

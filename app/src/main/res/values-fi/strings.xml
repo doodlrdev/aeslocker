@@ -20,6 +20,9 @@
     <string name="toggle_theme">Vaihda teemaa</string>
     <string name="share_button_label">JAA</string>
     <string name="share_button_desc">Pidätkö sovelluksesta? Jaa se muiden kanssa.</string>
+    <string name="password_strength_weak">Heikko</string>
+    <string name="password_strength_medium">Kohtalainen</string>
+    <string name="password_strength_strong">Vahva</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Valitse ensin tiedosto</string>

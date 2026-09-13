@@ -19,6 +19,9 @@
     <string name="toggle_theme">Badilisha Mandhari</string>
     <string name="share_button_label">SHIRIKI</string>
     <string name="share_button_desc">Unafurahia programu? Shiriki na wengine.</string>
+    <string name="password_strength_weak">Dhaifu</string>
+    <string name="password_strength_medium">Kiasi</string>
+    <string name="password_strength_strong">Imara</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Tafadhali chagua faili kwanza</string>

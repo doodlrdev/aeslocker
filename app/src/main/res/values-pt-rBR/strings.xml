@@ -19,6 +19,9 @@
     <string name="toggle_theme">Alternar Tema</string>
     <string name="share_button_label">COMPARTILHAR</string>
     <string name="share_button_desc">Está gostando do app? Compartilhe com outras pessoas.</string>
+    <string name="password_strength_weak">Fraca</string>
+    <string name="password_strength_medium">Média</string>
+    <string name="password_strength_strong">Forte</string>
     <string name="toast_select_file">Por favor, selecione um arquivo primeiro</string>
     <string name="toast_enter_password">Por favor, insira uma senha</string>
     <string name="toast_encrypt_success">Criptografado com sucesso!</string>

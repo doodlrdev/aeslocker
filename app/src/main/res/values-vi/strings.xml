@@ -19,6 +19,9 @@
     <string name="toggle_theme">Đổi Giao diện</string>
     <string name="share_button_label">CHIA SẺ</string>
     <string name="share_button_desc">Bạn thích ứng dụng này? Hãy chia sẻ với người khác.</string>
+    <string name="password_strength_weak">Yếu</string>
+    <string name="password_strength_medium">Trung bình</string>
+    <string name="password_strength_strong">Mạnh</string>
     <string name="toast_select_file">Vui lòng chọn một tệp trước</string>
     <string name="toast_enter_password">Vui lòng nhập mật khẩu</string>
     <string name="toast_encrypt_success">Đã mã hóa thành công!</string>

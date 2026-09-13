@@ -19,6 +19,9 @@
     <string name="toggle_theme">Palitan ang Tema</string>
     <string name="share_button_label">IBAHAGI</string>
     <string name="share_button_desc">Nagustuhan mo ang app? Ibahagi ito sa iba.</string>
+    <string name="password_strength_weak">Mahina</string>
+    <string name="password_strength_medium">Katamtaman</string>
+    <string name="password_strength_strong">Matatag</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Mangyaring pumili muna ng file</string>

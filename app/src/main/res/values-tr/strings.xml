@@ -19,6 +19,9 @@
     <string name="toggle_theme">Temayı Değiştir</string>
     <string name="share_button_label">PAYLAŞ</string>
     <string name="share_button_desc">Uygulamayı beğendiniz mi? Başkalarıyla paylaşın.</string>
+    <string name="password_strength_weak">Zayıf</string>
+    <string name="password_strength_medium">Orta</string>
+    <string name="password_strength_strong">Güçlü</string>
     <string name="toast_select_file">Lütfen önce bir dosya seçin</string>
     <string name="toast_enter_password">Lütfen bir şifre girin</string>
     <string name="toast_encrypt_success">Başarıyla şifrelendi!</string>

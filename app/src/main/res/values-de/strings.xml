@@ -19,6 +19,9 @@
     <string name="toggle_theme">Design wechseln</string>
     <string name="share_button_label">TEILEN</string>
     <string name="share_button_desc">Gefällt dir die App? Teile sie mit anderen.</string>
+    <string name="password_strength_weak">Schwach</string>
+    <string name="password_strength_medium">Mittel</string>
+    <string name="password_strength_strong">Stark</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Bitte wählen Sie zuerst eine Datei aus</string>

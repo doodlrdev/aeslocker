@@ -19,6 +19,9 @@
     <string name="toggle_theme">تھیم تبدیل کریں</string>
     <string name="share_button_label">شیئر کریں</string>
     <string name="share_button_desc">ایپ پسند آ رہی ہے؟ اسے دوسروں کے ساتھ شیئر کریں۔</string>
+    <string name="password_strength_weak">کمزور</string>
+    <string name="password_strength_medium">درمیانہ</string>
+    <string name="password_strength_strong">مضبوط</string>
     <string name="toast_select_file">براہ کرم پہلے کوئی فائل منتخب کریں</string>
     <string name="toast_enter_password">براہ کرم پاس ورڈ درج کریں</string>
     <string name="toast_encrypt_success">کامیابی سے انکرپٹ ہو گیا!</string>
