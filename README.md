@@ -18,6 +18,8 @@ Both versions use the same underlying encryption and decryption implementation.
 
 ### Free
 
+[Get AESLocker Free on Google Play](https://play.google.com/store/apps/details?id=com.doodlr.aeslocker)
+
 The Free version provides the complete AESLocker functionality and is supported by advertising. It includes:
 
 * **Google AdMob** for advertising
@@ -25,6 +27,8 @@ The Free version provides the complete AESLocker functionality and is supported 
 * **Google Play Age Signals** for age-related signals
 
 ### Pro
+
+[Get AESLocker Pro on Google Play](https://play.google.com/store/apps/details?id=com.doodlr.aeslocker.pro)
 
 The Pro version provides the same encryption and decryption functionality without advertising.
 
