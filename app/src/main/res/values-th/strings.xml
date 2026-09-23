@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">เข้ารหัส</string>
@@ -9,35 +8,69 @@
     <string name="encrypt_file">เข้ารหัสไฟล์</string>
     <string name="decrypt_file">ถอดรหัสไฟล์</string>
     <string name="processing_progress">%1$d%% กำลังประมวลผล...</string>
-    <string name="terminal_commands_title">คำสั่งเทอร์มินัล (OpenSSL)</string>
-    <string name="encryption_cmd_label">คำสั่งเข้ารหัส:</string>
-    <string name="decryption_cmd_label">คำสั่งถอดรหัส:</string>
-    <string name="encryption_cmd_sub">แทนที่ [input.ext] ด้วยชื่อไฟล์และนามสกุลของคุณ</string>
-    <string name="decryption_cmd_sub">แทนที่ [output.ext] ด้วยชื่อและนามสกุลของไฟล์ต้นฉบับ</string>
-    <string name="important_notice">คัดลอกคำสั่งด้านบนและบันทึกไว้ในที่ปลอดภัย เพื่อให้คุณสามารถใช้งานได้หากแอปพลิเคชันไม่สามารถใช้งานได้ในอนาคต คำสั่ง OpenSSL เหล่านี้สามารถรันได้โดยตรงในเทอร์มินัลบน macOS, Linux, Windows (ผ่าน WSL หรือ Git Bash) หรือสภาพแวดล้อม Android ที่รองรับอินเทอร์เฟซบรรทัดคำสั่ง</string>
-    <string name="copy_cmd_desc">คัดลอกคำสั่ง</string>
-    <string name="toggle_theme">สลับธีม</string>
+    <string name="terminal_commands_title">กู้คืนโดยไม่ใช้แอป</string>
+
+    <string name="terminal_commands_explanation">ไฟล์จะถูกเข้ารหัสด้วย AES-256 และตรวจสอบความถูกต้องด้วย HMAC-SHA256 ดังนั้นการแก้ไขหรือความเสียหายจะถูกตรวจพบเสมอ ดาวน์โหลดชุดกู้คืนด้านล่างเพื่อเข้ารหัสหรือถอดรหัสไฟล์จากบรรทัดคำสั่ง โดยไม่ต้องติดตั้งแอป ใช้งานได้บน macOS, Linux, Windows (ผ่าน WSL หรือ Git Bash) และสภาพแวดล้อมเทอร์มินัลของ Android คำแนะนำการตั้งค่าและการใช้งานฉบับเต็มอยู่ใน README.txt ภายในไฟล์ที่ดาวน์โหลด</string>
+    <string name="download_kit_button">ดาวน์โหลดชุดกู้คืน</string>
+    <string name="download_kit_desc">ไฟล์ ZIP ที่มีสคริปต์กู้คืนและคำแนะนำฉบับเต็ม หลังจากดาวน์โหลดแล้ว ให้แตกไฟล์และอ่าน README.txt ก่อนเรียกใช้สคริปต์ ต้องใช้ OpenSSL 3.0 ขึ้นไป - เก็บชุดเครื่องมือนี้ไว้ในที่ปลอดภัยและแยกจากแอป</string>
+    <string name="github_repo_label">เผยแพร่ซอร์สโค้ดไว้ที่: %1$s</string>
+    <string name="important_notice_script">ดาวน์โหลดชุดกู้คืนและเก็บไว้ในที่ปลอดภัย - ไดรฟ์คลาวด์ แฟลชไดรฟ์ USB หรือที่ใดก็ตามที่คุณจะไม่ทำหาย - เพื่อให้คุณใช้งานได้หากแอปไม่พร้อมใช้งานในอนาคต</string>
+
+    <string name="readme_title">ชุดกู้คืน AESLocker</string>
+    <string name="readme_intro">ชุดนี้ช่วยให้คุณเข้ารหัสหรือถอดรหัสไฟล์ AESLocker จากบรรทัดคำสั่งได้โดยไม่ต้องติดตั้งแอป ประกอบด้วยไฟล์สองไฟล์: aeslocker_recover.sh (สคริปต์) และ README นี้</string>
+    <string name="readme_terminal_intro">คำสั่งทุกคำสั่งในคู่มือนี้ต้องพิมพ์ลงในเทอร์มินัล (เรียกอีกอย่างว่าบรรทัดคำสั่งหรือ shell) ไม่ใช่ดับเบิลคลิก บน macOS หรือ Linux ให้เปิดแอปชื่อ Terminal บน Windows ให้ใช้ WSL (Windows Subsystem for Linux) หรือ Git Bash แทน - Command Prompt และ PowerShell จะไม่สามารถเรียกใช้คำสั่งเหล่านี้ได้ แต่ละคำสั่งด้านล่างจะแสดงในบรรทัดของตัวเองโดยเริ่มด้วยเครื่องหมาย $ - ให้พิมพ์ทุกอย่างหลัง $ (ไม่ต้องพิมพ์เครื่องหมาย $)</string>
+    <string name="readme_requirements_title">ข้อกำหนด</string>
+    <string name="readme_requirements_body">"คุณต้องติดตั้ง OpenSSL 3.0 หรือใหม่กว่า หากต้องการตรวจสอบเวอร์ชัน OpenSSL ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s\n\nบน macOS \'openssl\' ที่ติดตั้งมาให้ไม่ใช่ OpenSSL จริงและจะไม่ทำงาน หากต้องการติดตั้งเวอร์ชันที่ใช้งานได้ ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">ขั้นตอนที่ 1: ทำให้สคริปต์สามารถเรียกใช้ได้</string>
+    <string name="readme_chmod_body">"ก่อนเรียกใช้สคริปต์เป็นครั้งแรก ระบบของคุณต้องได้รับอนุญาตให้เรียกใช้สคริปต์ ในโฟลเดอร์ที่คุณแตกไฟล์ชุดนี้ ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s\n\nคุณต้องทำขั้นตอนนี้เพียงครั้งเดียว"</string>
+    <string name="readme_usage_title">ขั้นตอนที่ 2: เรียกใช้สคริปต์</string>
+    <string name="readme_usage_encrypt">"หากต้องการเข้ารหัสไฟล์ ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"หากต้องการถอดรหัสไฟล์ ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">ระบบจะขอให้คุณพิมพ์รหัสผ่านโดยตรงในเทอร์มินัล รหัสผ่านจะไม่แสดงบนหน้าจอและจะไม่ถูกบันทึกไว้ที่ใด หากคุณลืมรหัสผ่าน สคริปต์นี้ไม่สามารถกู้คืนให้คุณได้ - ตามการออกแบบแล้วไม่มีวิธีหลีกเลี่ยงข้อจำกัดนี้</string>
+    <string name="readme_linux_note">"ผู้ใช้ Linux: ดิสทริบิวชันปัจจุบันส่วนใหญ่มี OpenSSL ที่เข้ากันได้ติดตั้งมาให้แล้ว หากต้องการตรวจสอบเวอร์ชัน OpenSSL ของคุณ ให้เรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s\n\nหากพบข้อผิดพลาด \'xxd: command not found\' ขณะเรียกใช้สคริปต์ ให้ติดตั้งโดยใช้ตัวจัดการแพ็กเกจของคุณ - ตัวอย่างเช่น บน Debian หรือ Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"ผู้ใช้ Android: สามารถเรียกใช้สคริปต์นี้ภายในแอปเทอร์มินัล เช่น Termux ได้ ติดตั้ง Termux จาก F-Droid (เวอร์ชันใน Google Play Store ล้าสมัยและไม่มีการดูแลรักษาอีกต่อไป) เปิดแอป จากนั้นติดตั้งเครื่องมือที่จำเป็นโดยเรียกใช้คำสั่งต่อไปนี้ในเทอร์มินัล:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"ผู้ใช้ Windows: เรียกใช้สคริปต์นี้ (aeslocker_recover.sh) ภายใน WSL (Windows Subsystem for Linux) หรือ Git Bash สคริปต์นี้จะไม่ทำงานโดยตรงใน Command Prompt หรือ PowerShell โดย Git Bash มีทุกสิ่งที่สคริปต์นี้ต้องใช้ WSL เรียกใช้ดิสทริบิวชัน Linux จริง ดังนั้นหากพบข้อผิดพลาด \'xxd: command not found\' ที่นั่น ให้ติดตั้งในลักษณะเดียวกับผู้ใช้ Linux - ตัวอย่างเช่น บน Debian หรือ Ubuntu:\n\n    $ %1$s"</string>
+
+
+    <string name="toggle_theme">เปลี่ยนธีม</string>
     <string name="share_button_label">แชร์</string>
-    <string name="share_button_desc">ชอบแอปนี้ไหม? แชร์ให้ผู้อื่นได้เลย</string>
-    <string name="password_strength_weak">คาดเดาง่าย</string>
+    <string name="share_button_desc">ชอบแอปนี้ไหม แชร์ให้ผู้อื่นได้เลย</string>
+    <string name="password_strength_weak">อ่อน</string>
     <string name="password_strength_medium">ปานกลาง</string>
-    <string name="password_strength_strong">รัดกุม</string>
+    <string name="password_strength_strong">แข็งแรง</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">โปรดเลือกไฟล์ก่อน</string>
-    <string name="toast_enter_password">โปรดใส่รหัสผ่าน</string>
+    <string name="toast_enter_password">โปรดป้อนรหัสผ่าน</string>
     <string name="toast_encrypt_success">เข้ารหัสสำเร็จ!</string>
     <string name="toast_decrypt_success">ถอดรหัสสำเร็จ!</string>
-    <string name="toast_operation_failed">การดำเนินการล้มเหลว: รหัสผ่านไม่ถูกต้องหรือไฟล์เสียหาย</string>
-    <string name="toast_invalid_file">รหัสผ่านไม่ถูกต้องหรือรูปแบบไฟล์ OpenSSL ไม่ถูกต้อง</string>
-    <string name="toast_enc_copied">คัดลอกคำสั่งเข้ารหัสแล้ว!</string>
-    <string name="toast_dec_copied">คัดลอกคำสั่งถอดรหัสแล้ว!</string>
+    <string name="toast_operation_failed">ดำเนินการไม่สำเร็จ: รหัสผ่านไม่ถูกต้องหรือไฟล์เสียหาย</string>
+
+    <string name="toast_invalid_file">รหัสผ่านไม่ถูกต้อง หรือไฟล์นี้ไม่ใช่ไฟล์ AESLocker ที่ถูกต้อง</string>
+    <string name="toast_kit_saved">บันทึกชุดกู้คืนแล้ว</string>
+    <string name="toast_kit_save_failed">ไม่สามารถบันทึกชุดกู้คืนได้ โปรดลองอีกครั้ง</string>
+
     <string name="toast_title_success">สำเร็จ</string>
     <string name="toast_title_notice">แจ้งเตือน</string>
     <string name="toast_button_ok">ตกลง</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">ค่าเริ่มต้นของระบบ</string>
     <string name="theme_light">โหมดสว่าง</string>
     <string name="theme_dark">โหมดมืด</string>
-    <string name="cd_switch_theme">สลับธีม</string>
+    <string name="cd_switch_theme">เปลี่ยนธีม</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">เปลี่ยนภาษา</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">แสดงรหัสผ่าน</string>
     <string name="cd_hide_password">ซ่อนรหัสผ่าน</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ดูโฆษณาเพื่อดาวน์โหลดชุดกู้คืน</string>
+    <string name="recovery_kit_pro_promo">รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณา - และไม่มีโฆษณาที่อื่นในแอป</string>
+    <string name="dialog_ad_unavailable_title">ไม่มีโฆษณาให้บริการ</string>
+    <string name="dialog_ad_unavailable_desc">ขณะนี้เราไม่สามารถโหลดโฆษณาได้ แต่คุณยังสามารถดาวน์โหลดชุดกู้คืนได้ฟรี รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณาอีกต่อไป</string>
+    <string name="btn_continue_download">ดำเนินการดาวน์โหลดต่อ</string>
 </resources>

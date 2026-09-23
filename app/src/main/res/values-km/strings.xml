@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">เข้ารหัส</string>
-    <string name="tab_decrypt">ถอดรหัส</string>
-    <string name="select_file">เลือกไฟล์</string>
-    <string name="no_file_selected">ไม่ได้เลือกไฟล์</string>
+    <string name="tab_encrypt">អ៊ិនគ្រីប</string>
+    <string name="tab_decrypt">ឌិគ្រីប</string>
+    <string name="select_file">ជ្រើសរើសឯកសារ</string>
+    <string name="no_file_selected">មិនបានជ្រើសរើសឯកសារ</string>
     <string name="password_label">ពាក្យសម្ងាត់</string>
-    <string name="encrypt_file">เข้ารหัสไฟล์</string>
-    <string name="decrypt_file">ถอดรหัสไฟล์</string>
+    <string name="encrypt_file">អ៊ិនគ្រីបឯកសារ</string>
+    <string name="decrypt_file">ឌិគ្រីបឯកសារ</string>
     <string name="processing_progress">%1$d%% កំពុងដំណើរការ...</string>
-    <string name="terminal_commands_title">ពាក្យបញ្ជា Terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">ពាក្យបញ្ជាเข้ารหัส:</string>
-    <string name="decryption_cmd_label">ពាក្យបញ្ហាถอดរหัส:</string>
-    <string name="encryption_cmd_sub">ជំនួស [input.ext] ជាមួយឈ្មោះឯកសារ និងนามสกุลរបស់អ្នក</string>
-    <string name="decryption_cmd_sub">ជំនួស [output.ext] ជាមួយឈ្មោះ និងนามสกุลនៃឯកសារដើម</string>
-    <string name="important_notice">ចម្លងពាក្យបញ្ជាខាងលើ ហើយរក្សាទុកវា somewhere ដើម្បីប្រើប្រាស់ប្រសិនបើកម្មវិធីមិនអាចប្រើបាននាពេលអនាគត។ ពាក្យបញ្ជា OpenSSL ទាំងនេះអាចដំណើរការដោយផ្ទាល់នៅក្នុង terminal នៅលើ macOS, Linux, Windows (តាមរយៈ WSL ឬ Git Bash) ឬបរិស្ថាន Android ដែលគាំទ្រចំណុចប្រទាក់បន្ទាត់ពាក្យបញ្ជា។</string>
-    <string name="copy_cmd_desc">ចម្លងពាក្យបញ្ជា</string>
-    <string name="toggle_theme">ប្តូររូបរាង</string>
+    <string name="terminal_commands_title">ស្ដារឡើងវិញដោយមិនប្រើកម្មវិធី</string>
+
+    <string name="terminal_commands_explanation">ឯកសារត្រូវបានអ៊ិនគ្រីបដោយ AES-256 និងផ្ទៀងផ្ទាត់ដោយ HMAC-SHA256 ដូច្នេះការកែប្រែ ឬការខូចខាតត្រូវបានរកឃើញជានិច្ច។ ទាញយកកញ្ចប់ស្ដារឡើងវិញខាងក្រោម ដើម្បីអ៊ិនគ្រីប ឬឌិគ្រីបឯកសារពីបន្ទាត់ពាក្យបញ្ជា ដោយមិនចាំបាច់ដំឡើងកម្មវិធី។ វាដំណើរការលើ macOS, Linux, Windows (តាមរយៈ WSL ឬ Git Bash) និងបរិស្ថានស្ថានីយ Android។ សេចក្ដីណែនាំពេញលេញសម្រាប់ការដំឡើង និងការប្រើប្រាស់មាននៅក្នុង README.txt ខាងក្នុងឯកសារដែលបានទាញយក។</string>
+    <string name="download_kit_button">ទាញយកកញ្ចប់ស្ដារឡើងវិញ</string>
+    <string name="download_kit_desc">ឯកសារ ZIP ដែលមានស្គ្រីបស្តារឡើងវិញ និងការណែនាំពេញលេញ។ បន្ទាប់ពីទាញយក សូមពន្លាឯកសារ ហើយអាន README.txt ជាមុនសិន មុនពេលដំណើរការស្គ្រីប។ ត្រូវការ OpenSSL 3.0 ឬថ្មីជាងនេះ - រក្សាទុកកញ្ចប់នេះនៅកន្លែងមានសុវត្ថិភាព ដែលដាច់ដោយឡែកពីកម្មវិធី។</string>
+    <string name="github_repo_label">កូដប្រភពក៏បានផ្សព្វផ្សាយនៅ: %1$s</string>
+    <string name="important_notice_script">ទាញយកកញ្ចប់ស្ដារឡើងវិញ ហើយរក្សាទុកវានៅកន្លែងមានសុវត្ថិភាព - ក្នុង cloud drive, USB stick ឬកន្លែងណាមួយដែលអ្នកមិនបាត់បង់វា - ដើម្បីឱ្យអ្នកអាចប្រើវាបាន ប្រសិនបើកម្មវិធីមិនអាចប្រើបាននៅពេលអនាគត។</string>
+
+    <string name="readme_title">កញ្ចប់ស្ដារឡើងវិញ AESLocker</string>
+    <string name="readme_intro">កញ្ចប់នេះអនុញ្ញាតឱ្យអ្នកអ៊ិនគ្រីប ឬឌិគ្រីបឯកសារ AESLocker ពីបន្ទាត់ពាក្យបញ្ជា ដោយមិនចាំបាច់ដំឡើងកម្មវិធី។ វាមានឯកសារពីរ: aeslocker_recover.sh (ស្គ្រីប) និង README នេះ។</string>
+    <string name="readme_terminal_intro">ពាក្យបញ្ជាទាំងអស់នៅក្នុងមគ្គុទ្ទេសក៍នេះត្រូវវាយបញ្ចូលទៅក្នុងស្ថានីយ (ហៅថាបន្ទាត់ពាក្យបញ្ជា ឬ shell ផងដែរ) មិនមែនចុចពីរដងទេ។ នៅលើ macOS ឬ Linux សូមបើកកម្មវិធីដែលមានឈ្មោះថា Terminal។ នៅលើ Windows សូមប្រើ WSL (Windows Subsystem for Linux) ឬ Git Bash ជំនួសវិញ - Command Prompt និង PowerShell មិនអាចដំណើរការពាក្យបញ្ជាទាំងនេះបានទេ។ ពាក្យបញ្ជានីមួយៗខាងក្រោមត្រូវបានបង្ហាញនៅលើបន្ទាត់ផ្ទាល់ខ្លួន ដោយចាប់ផ្ដើមដោយសញ្ញា $ - វាយបញ្ចូលអ្វីៗទាំងអស់បន្ទាប់ពី $ (មិនមែនសញ្ញា $ ទេ)។</string>
+    <string name="readme_requirements_title">តម្រូវការ</string>
+    <string name="readme_requirements_body">"អ្នកត្រូវដំឡើង OpenSSL 3.0 ឬថ្មីជាងនេះ។ ដើម្បីពិនិត្យកំណែ OpenSSL របស់អ្នក សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ:\n\n    $ %1$s\n\nនៅលើ macOS, \'openssl\' ដែលមានស្រាប់មិនមែនជា OpenSSL ពិតប្រាកដទេ ហើយនឹងមិនដំណើរការឡើយ។ ដើម្បីដំឡើងកំណែដែលអាចដំណើរការ សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">ជំហានទី 1: ធ្វើឱ្យស្គ្រីបអាចប្រតិបត្តិបាន</string>
+    <string name="readme_chmod_body">"មុនពេលអ្នកអាចដំណើរការស្គ្រីបជាលើកដំបូង ប្រព័ន្ធរបស់អ្នកត្រូវការសិទ្ធិដើម្បីប្រតិបត្តិវា។ នៅក្នុងថតដែលអ្នកបានពន្លាកញ្ចប់នេះ សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ:\n\n    $ %1$s\n\nអ្នកត្រូវធ្វើវាតែម្តងប៉ុណ្ណោះ។"</string>
+    <string name="readme_usage_title">ជំហានទី 2: ដំណើរការស្គ្រីប</string>
+    <string name="readme_usage_encrypt">"ដើម្បីអ៊ិនគ្រីបឯកសារ សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"ដើម្បីឌិគ្រីបឯកសារ សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">អ្នកនឹងត្រូវបានស្នើឱ្យវាយពាក្យសម្ងាត់របស់អ្នកដោយផ្ទាល់ទៅក្នុងស្ថានីយ។ វាមិនត្រូវបានបង្ហាញលើអេក្រង់ ឬរក្សាទុកនៅកន្លែងណាមួយឡើយ។ ប្រសិនបើអ្នកភ្លេចពាក្យសម្ងាត់ ស្គ្រីបនេះមិនអាចស្ដារវាឱ្យអ្នកបានទេ - មិនមានវិធីជៀសវាងចំណុចនេះទេ តាមការរចនា។</string>
+    <string name="readme_linux_note">"អ្នកប្រើប្រាស់ Linux៖ ការចែកចាយ Linux បច្ចុប្បន្នភាគច្រើនមាន OpenSSL ដែលអាចប្រើជាមួយគ្នាបានស្រាប់។ ដើម្បីពិនិត្យមើលកំណែ OpenSSL របស់អ្នក សូមប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ៖\n\n    $ %1$s\n\nប្រសិនបើអ្នកទទួលបានកំហុស \'xxd: command not found\' នៅពេលដំណើរការស្គ្រីប សូមដំឡើងវាដោយប្រើកម្មវិធីគ្រប់គ្រងកញ្ចប់របស់អ្នក - ឧទាហរណ៍ នៅលើ Debian ឬ Ubuntu៖\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"អ្នកប្រើប្រាស់ Android៖ ស្គ្រីបនេះអាចដំណើរការនៅក្នុងកម្មវិធីស្ថានីយដូចជា Termux។ សូមដំឡើង Termux ពី F-Droid (កំណែពី Google Play Store ហួសសម័យ ហើយលែងមានការថែទាំទៀតហើយ) បើកវា បន្ទាប់មកដំឡើងឧបករណ៍ដែលត្រូវការដោយប្រតិបត្តិពាក្យបញ្ជាខាងក្រោមនៅក្នុងស្ថានីយ៖\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"អ្នកប្រើប្រាស់ Windows៖ សូមដំណើរការស្គ្រីបនេះ (aeslocker_recover.sh) នៅក្នុង WSL (Windows Subsystem for Linux) ឬ Git Bash។ វាមិនអាចដំណើរការដោយផ្ទាល់នៅក្នុង Command Prompt ឬ PowerShell បានទេ។ Git Bash មានអ្វីៗគ្រប់យ៉ាងដែលស្គ្រីបនេះត្រូវការ។ WSL ដំណើរការការចែកចាយ Linux ពិតប្រាកដ ដូច្នេះប្រសិនបើអ្នកទទួលបានកំហុស \'xxd: command not found\' នៅទីនោះ សូមដំឡើងវាតាមវិធីដូចអ្នកប្រើប្រាស់ Linux - ឧទាហរណ៍ នៅលើ Debian ឬ Ubuntu៖\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">ប្ដូររូបរាង</string>
     <string name="share_button_label">ចែករំលែក</string>
     <string name="share_button_desc">ចូលចិត្តកម្មវិធីនេះមែនទេ? ចែករំលែកវាជាមួយអ្នកដទៃ។</string>
     <string name="password_strength_weak">ខ្សោយ</string>
     <string name="password_strength_medium">មធ្យម</string>
-    <string name="password_strength_strong">រឹងមាំ</string>
+    <string name="password_strength_strong">ខ្លាំង</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">សូមជ្រើសរើសឯកសារជាមុនសិន</string>
     <string name="toast_enter_password">សូមបញ្ចូលពាក្យសម្ងាត់</string>
-    <string name="toast_encrypt_success">បានเข้ารหัสដោយជោគជ័យ!</string>
-    <string name="toast_decrypt_success">បានถอดរหัสដោយជោគជ័យ!</string>
-    <string name="toast_operation_failed">ប្រតិបត្តិការបានបរាជ័យ៖ ពាក្យសម្ងាត់មិនត្រឹមត្រូវ ឬឯកសារខូច។</string>
-    <string name="toast_invalid_file">ពាក្យសម្ងាត់មិនត្រឹមត្រូវ ឬទម្រង់ឯកសារ OpenSSL មិនถูกต้อง។</string>
-    <string name="toast_enc_copied">បានចម្លងពាក្យបញ្ជាเข้ารหัส!</string>
-    <string name="toast_dec_copied">បានចម្លងពាក្យបញ្ជាถอดរหัส!</string>
+    <string name="toast_encrypt_success">អ៊ិនគ្រីបបានជោគជ័យ!</string>
+    <string name="toast_decrypt_success">ឌិគ្រីបបានជោគជ័យ!</string>
+    <string name="toast_operation_failed">ប្រតិបត្តិការបរាជ័យ: ពាក្យសម្ងាត់មិនត្រឹមត្រូវ ឬឯកសារខូច។</string>
+
+    <string name="toast_invalid_file">ពាក្យសម្ងាត់មិនត្រឹមត្រូវ ឬនេះមិនមែនជាឯកសារ AESLocker ត្រឹមត្រូវទេ។</string>
+    <string name="toast_kit_saved">បានរក្សាទុកកញ្ចប់ស្ដារឡើងវិញ។</string>
+    <string name="toast_kit_save_failed">មិនអាចរក្សាទុកកញ្ចប់ស្ដារឡើងវិញបានទេ។ សូមព្យាយាមម្តងទៀត។</string>
+
     <string name="toast_title_success">ជោគជ័យ</string>
-    <string name="toast_title_notice">សេចក្តីជូនដំណឹង</string>
+    <string name="toast_title_notice">សេចក្ដីជូនដំណឹង</string>
     <string name="toast_button_ok">យល់ព្រម</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">លំនាំដើមប្រព័ន្ធ</string>
     <string name="theme_light">របៀបភ្លឺ</string>
     <string name="theme_dark">របៀបងងឹត</string>
-    <string name="cd_switch_theme">ប្តូររូបរាង</string>
-    <string name="cd_switch_language">ប្តូរភាសា</string>
+    <string name="cd_switch_theme">ប្ដូររូបរាង</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">ប្ដូរភាសា</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">បង្ហាញពាក្យសម្ងាត់</string>
     <string name="cd_hide_password">លាក់ពាក្យសម្ងាត់</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">មើលការផ្សាយពាណិជ្ជកម្មដើម្បីទាញយកកញ្ចប់ស្ដារឡើងវិញ</string>
+    <string name="recovery_kit_pro_promo">ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្ម - និងគ្មានការផ្សាយពាណិជ្ជកម្មនៅកន្លែងផ្សេងទៀតក្នុងកម្មវិធី។</string>
+    <string name="dialog_ad_unavailable_title">មិនមានការផ្សាយពាណិជ្ជកម្ម</string>
+    <string name="dialog_ad_unavailable_desc">យើងមិនអាចផ្ទុកការផ្សាយពាណិជ្ជកម្មបានទេនៅពេលនេះ ប៉ុន្តែអ្នកនៅតែអាចទាញយកកញ្ចប់ស្ដារឡើងវិញដោយឥតគិតថ្លៃ។ ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្មជារៀងរហូត។</string>
+    <string name="btn_continue_download">បន្តទាញយក</string>
 </resources>

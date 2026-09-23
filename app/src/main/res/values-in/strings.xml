@@ -1,40 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">ENKRIPSI</string>
     <string name="tab_decrypt">DEKRIPSI</string>
-    <string name="select_file">Pilih Berkas</string>
-    <string name="no_file_selected">Tidak ada berkas yang dipilih</string>
+    <string name="select_file">Pilih File</string>
+    <string name="no_file_selected">Tidak ada file yang dipilih</string>
     <string name="password_label">Kata Sandi</string>
-    <string name="encrypt_file">Enkripsi Berkas</string>
-    <string name="decrypt_file">Dekripsi Berkas</string>
+    <string name="encrypt_file">Enkripsi File</string>
+    <string name="decrypt_file">Dekripsi File</string>
     <string name="processing_progress">%1$d%% Memproses...</string>
-    <string name="terminal_commands_title">Perintah Terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Perintah Enkripsi:</string>
-    <string name="decryption_cmd_label">Perintah Dekripsi:</string>
-    <string name="encryption_cmd_sub">Ganti [input.ext] dengan nama berkas dan ekstensi Anda</string>
-    <string name="decryption_cmd_sub">Ganti [output.ext] dengan nama berkas dan ekstensi asli</string>
-    <string name="important_notice">Salin perintah di atas dan simpan di tempat aman agar Anda dapat menggunakannya jika aplikasi tidak tersedia di masa mendatang. Perintah OpenSSL ini dapat dijalankan langsung di terminal pada macOS, Linux, Windows (melalui WSL atau Git Bash), atau lingkungan Android dengan dukungan antarmuka baris perintah.</string>
-    <string name="copy_cmd_desc">Salin perintah</string>
+    <string name="terminal_commands_title">Pulihkan Tanpa Aplikasi</string>
+
+    <string name="terminal_commands_explanation">File dienkripsi dengan AES-256 dan diautentikasi dengan HMAC-SHA256, sehingga manipulasi atau kerusakan selalu dapat terdeteksi. Unduh recovery kit di bawah ini untuk mengenkripsi atau mendekripsi file dari command line - tanpa perlu menginstal aplikasi. Kit ini berfungsi di macOS, Linux, Windows (melalui WSL atau Git Bash), dan lingkungan terminal Android. Petunjuk lengkap untuk penyiapan dan penggunaan tersedia dalam README.txt di dalam unduhan.</string>
+    <string name="download_kit_button">Unduh Recovery Kit</string>
+    <string name="download_kit_desc">File ZIP yang berisi skrip pemulihan dan petunjuk lengkap. Setelah mengunduh, ekstrak file tersebut dan baca README.txt terlebih dahulu sebelum menjalankan skrip. Memerlukan OpenSSL 3.0 atau yang lebih baru - simpan kit di tempat yang aman dan terpisah dari aplikasi.</string>
+    <string name="github_repo_label">Source juga dipublikasikan di: %1$s</string>
+    <string name="important_notice_script">Unduh recovery kit dan simpan di tempat yang aman - cloud drive, USB stick, atau di mana pun Anda tidak akan kehilangannya - agar dapat digunakan jika aplikasi tidak lagi tersedia di masa mendatang.</string>
+
+    <string name="readme_title">AESLocker Recovery Kit</string>
+    <string name="readme_intro">Kit ini memungkinkan Anda mengenkripsi atau mendekripsi file AESLocker dari command line, tanpa aplikasi terinstal. Kit ini berisi dua file: aeslocker_recover.sh (skrip) dan README ini.</string>
+    <string name="readme_terminal_intro">Setiap perintah dalam panduan ini harus diketik di terminal (juga disebut command line atau shell), bukan diklik dua kali. Di macOS atau Linux, buka aplikasi bernama Terminal. Di Windows, gunakan WSL (Windows Subsystem for Linux) atau Git Bash - Command Prompt dan PowerShell tidak dapat menjalankan perintah ini. Setiap perintah di bawah ditampilkan pada barisnya sendiri, diawali dengan tanda $ - ketik semua yang ada setelah $ (bukan tanda $ itu sendiri).</string>
+    <string name="readme_requirements_title">Persyaratan</string>
+    <string name="readme_requirements_body">"Anda perlu menginstal OpenSSL 3.0 atau yang lebih baru. Untuk memeriksa versi OpenSSL Anda, jalankan perintah berikut di terminal:\n\n    $ %1$s\n\nDi macOS, \'openssl\' bawaan bukan OpenSSL yang sebenarnya dan tidak akan berfungsi. Untuk menginstal versi yang dapat digunakan, jalankan perintah berikut di terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Langkah 1: Jadikan skrip dapat dieksekusi</string>
+    <string name="readme_chmod_body">"Sebelum dapat menjalankan skrip untuk pertama kali, sistem Anda perlu memberikan izin untuk menjalankannya. Di folder tempat Anda mengekstrak kit ini, jalankan perintah berikut di terminal:\n\n    $ %1$s\n\nAnda hanya perlu melakukan ini sekali."</string>
+    <string name="readme_usage_title">Langkah 2: Jalankan skrip</string>
+    <string name="readme_usage_encrypt">"Untuk mengenkripsi file, jalankan perintah berikut di terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Untuk mendekripsi file, jalankan perintah berikut di terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Anda akan diminta mengetikkan kata sandi langsung ke terminal. Kata sandi tidak pernah ditampilkan di layar atau disimpan di mana pun. Jika Anda lupa kata sandi, skrip ini tidak dapat memulihkannya untuk Anda - tidak ada cara untuk melewati hal ini, sesuai desain.</string>
+    <string name="readme_linux_note">"Pengguna Linux: sebagian besar distribusi saat ini sudah menyertakan OpenSSL yang kompatibel. Untuk memeriksa versi OpenSSL Anda, jalankan perintah berikut di terminal:\n\n    $ %1$s\n\nJika Anda mendapatkan error \'xxd: command not found\' saat menjalankan skrip, instal menggunakan package manager Anda - misalnya, pada Debian atau Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Pengguna Android: skrip ini dapat dijalankan di dalam aplikasi terminal seperti Termux. Instal Termux dari F-Droid (versi Google Play Store sudah usang dan tidak lagi dipelihara), buka aplikasi tersebut, lalu instal alat yang diperlukan dengan menjalankan perintah berikut di terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Pengguna Windows: jalankan skrip ini (aeslocker_recover.sh) di dalam WSL (Windows Subsystem for Linux) atau Git Bash. Skrip ini tidak dapat dijalankan langsung di Command Prompt atau PowerShell. Git Bash sudah menyertakan semua yang dibutuhkan skrip ini. WSL menjalankan distribusi Linux yang sebenarnya, jadi jika Anda mendapatkan error \'xxd: command not found\' di sana, instal dengan cara yang sama seperti pengguna Linux - misalnya, pada Debian atau Ubuntu:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Ganti Tema</string>
     <string name="share_button_label">BAGIKAN</string>
-    <string name="share_button_desc">Menyukai aplikasinya? Bagikan kepada orang lain.</string>
+    <string name="share_button_desc">Menikmati aplikasinya? Bagikan dengan orang lain.</string>
     <string name="password_strength_weak">Lemah</string>
     <string name="password_strength_medium">Sedang</string>
     <string name="password_strength_strong">Kuat</string>
 
     <!-- Toast Messages -->
-    <string name="toast_select_file">Silakan pilih berkas terlebih dahulu</string>
+    <string name="toast_select_file">Silakan pilih file terlebih dahulu</string>
     <string name="toast_enter_password">Silakan masukkan kata sandi</string>
     <string name="toast_encrypt_success">Berhasil dienkripsi!</string>
     <string name="toast_decrypt_success">Berhasil didekripsi!</string>
-    <string name="toast_operation_failed">Operasi gagal: Kata sandi salah atau berkas rusak.</string>
-    <string name="toast_invalid_file">Kata sandi salah atau format berkas OpenSSL tidak valid.</string>
-    <string name="toast_enc_copied">Perintah enkripsi disalin!</string>
-    <string name="toast_dec_copied">Perintah dekripsi disalin!</string>
+    <string name="toast_operation_failed">Operasi gagal: kata sandi salah atau file rusak.</string>
+
+    <string name="toast_invalid_file">Kata sandi salah, atau ini bukan file AESLocker yang valid.</string>
+    <string name="toast_kit_saved">Recovery kit berhasil disimpan.</string>
+    <string name="toast_kit_save_failed">Recovery kit tidak dapat disimpan. Silakan coba lagi.</string>
+
     <string name="toast_title_success">BERHASIL</string>
     <string name="toast_title_notice">PEMBERITAHUAN</string>
-    <string name="toast_button_ok">OKE</string>
+    <string name="toast_button_ok">OK</string>
 
     <!-- Theme Switcher -->
     <string name="theme_system">Default Sistem</string>
@@ -48,4 +65,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">Tampilkan kata sandi</string>
     <string name="cd_hide_password">Sembunyikan kata sandi</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Tonton Iklan untuk Mengunduh Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan - dan tanpa iklan di bagian lain aplikasi.</string>
+    <string name="dialog_ad_unavailable_title">Tidak Ada Iklan Tersedia</string>
+    <string name="dialog_ad_unavailable_desc">Kami tidak dapat memuat iklan saat ini, tetapi Anda tetap dapat mengunduh recovery kit secara gratis. Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan, selamanya.</string>
+    <string name="btn_continue_download">Lanjutkan ke Unduhan</string>
 </resources>

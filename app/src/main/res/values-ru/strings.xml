@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">ЗАШИФРОВАТЬ</string>
@@ -9,35 +8,68 @@
     <string name="encrypt_file">Зашифровать файл</string>
     <string name="decrypt_file">Расшифровать файл</string>
     <string name="processing_progress">%1$d%% Обработка...</string>
-    <string name="terminal_commands_title">Команды терминала (OpenSSL)</string>
-    <string name="encryption_cmd_label">Команда шифрования:</string>
-    <string name="decryption_cmd_label">Команда расшифровки:</string>
-    <string name="encryption_cmd_sub">Замените [input.ext] на имя вашего файла и его расширение</string>
-    <string name="decryption_cmd_sub">Замените [output.ext] на имя и расширение исходного файла</string>
-    <string name="important_notice">Скопируйте приведенные выше команды и сохраните их где-нибудь, чтобы вы могли использовать их, если приложение станет недоступным в будущем. Эти команды OpenSSL можно выполнить прямо в терминале на macOS, Linux, Windows (через WSL или Git Bash) или в средах Android с поддержкой командной строки.</string>
-    <string name="copy_cmd_desc">Скопировать команду</string>
-    <string name="toggle_theme">Переключить тему</string>
+    <string name="terminal_commands_title">Восстановление без приложения</string>
+
+    <string name="terminal_commands_explanation">Файлы шифруются с помощью AES-256 и проходят аутентификацию с помощью HMAC-SHA256, поэтому любые изменения или повреждения всегда обнаруживаются. Скачайте приведённый ниже комплект восстановления, чтобы шифровать или расшифровывать файлы из командной строки - установка приложения не требуется. Он работает в macOS, Linux, Windows (через WSL или Git Bash) и терминальных средах Android. Полные инструкции по настройке и использованию находятся в README.txt внутри загружаемого комплекта.</string>
+    <string name="download_kit_button">Скачать комплект восстановления</string>
+    <string name="download_kit_desc">ZIP-файл, содержащий скрипт восстановления и полные инструкции. После загрузки распакуйте его и сначала прочитайте README.txt перед запуском скрипта. Требуется OpenSSL 3.0 или новее - сохраните комплект в безопасном месте отдельно от приложения.</string>
+    <string name="github_repo_label">Исходный код также опубликован здесь: %1$s</string>
+    <string name="important_notice_script">Скачайте комплект восстановления и сохраните его в безопасном месте - на облачном диске, USB-накопителе или где-либо ещё, где вы его не потеряете - чтобы использовать его, если приложение в будущем станет недоступно.</string>
+
+    <string name="readme_title">Комплект восстановления AESLocker</string>
+    <string name="readme_intro">Этот комплект позволяет шифровать или расшифровывать файлы AESLocker из командной строки без установленного приложения. Он содержит два файла: aeslocker_recover.sh (скрипт) и этот README.</string>
+    <string name="readme_terminal_intro">Каждую команду из этого руководства необходимо вводить в терминале (также называемом командной строкой или shell), а не запускать двойным щелчком. В macOS или Linux откройте приложение Terminal. В Windows используйте WSL (Windows Subsystem for Linux) или Git Bash - Command Prompt и PowerShell не смогут выполнить эти команды. Каждая команда ниже показана в отдельной строке и начинается со знака $ - вводите всё после $ (сам знак $ вводить не нужно).</string>
+    <string name="readme_requirements_title">Требования</string>
+    <string name="readme_requirements_body">"У вас должен быть установлен OpenSSL 3.0 или более новой версии. Чтобы проверить версию OpenSSL, выполните следующую команду в терминале:\n\n    $ %1$s\n\nВ macOS встроенный \'openssl\' не является настоящим OpenSSL и работать не будет. Чтобы установить рабочую версию, выполните следующую команду в терминале:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Шаг 1: Сделайте скрипт исполняемым</string>
+    <string name="readme_chmod_body">"Прежде чем запускать скрипт в первый раз, системе необходимо разрешение на его выполнение. В папке, куда вы распаковали этот комплект, выполните в терминале следующую команду:\n\n    $ %1$s\n\nЭто нужно сделать только один раз."</string>
+    <string name="readme_usage_title">Шаг 2: Запустите скрипт</string>
+    <string name="readme_usage_encrypt">"Чтобы зашифровать файл, выполните в терминале следующую команду:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Чтобы расшифровать файл, выполните в терминале следующую команду:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Вам будет предложено ввести пароль непосредственно в терминале. Он никогда не отображается на экране и нигде не сохраняется. Если вы забудете пароль, этот скрипт не сможет восстановить его для вас - по задумке обойти это ограничение невозможно.</string>
+    <string name="readme_linux_note">"Пользователи Linux: большинство современных дистрибутивов уже включает совместимую версию OpenSSL. Чтобы проверить версию OpenSSL, выполните следующую команду в терминале:\n\n    $ %1$s\n\nЕсли при запуске скрипта вы получаете ошибку \'xxd: command not found\', установите его с помощью менеджера пакетов - например, в Debian или Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Пользователи Android: этот скрипт можно запустить в терминальном приложении, например Termux. Установите Termux из F-Droid (версия из Google Play Store устарела и больше не поддерживается), откройте его, а затем установите необходимые инструменты, выполнив следующую команду в терминале:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Пользователи Windows: запускайте этот скрипт (aeslocker_recover.sh) внутри WSL (Windows Subsystem for Linux) или Git Bash. Он не будет работать непосредственно в командной строке или PowerShell. Git Bash включает всё необходимое для этого скрипта. WSL запускает настоящий дистрибутив Linux, поэтому, если там вы получите ошибку \'xxd: command not found\', установите его так же, как это сделал бы пользователь Linux - например, в Debian или Ubuntu:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">Сменить тему</string>
     <string name="share_button_label">ПОДЕЛИТЬСЯ</string>
-    <string name="share_button_desc">Вам нравится приложение? Поделитесь им с другими.</string>
+    <string name="share_button_desc">Нравится приложение? Поделитесь им с другими.</string>
     <string name="password_strength_weak">Слабый</string>
     <string name="password_strength_medium">Средний</string>
-    <string name="password_strength_strong">Надежный</string>
-    <string name="toast_select_file">Пожалуйста, сначала выберите файл</string>
-    <string name="toast_enter_password">Пожалуйста, введите пароль</string>
+    <string name="password_strength_strong">Надёжный</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Сначала выберите файл</string>
+    <string name="toast_enter_password">Введите пароль</string>
     <string name="toast_encrypt_success">Успешно зашифровано!</string>
     <string name="toast_decrypt_success">Успешно расшифровано!</string>
-    <string name="toast_operation_failed">Сбой операции: Неверный пароль или поврежденный файл.</string>
-    <string name="toast_invalid_file">Неверный пароль или недопустимый формат файла OpenSSL.</string>
-    <string name="toast_enc_copied">Команда шифрования скопирована!</string>
-    <string name="toast_dec_copied">Команда расшифровки скопирована!</string>
+    <string name="toast_operation_failed">Операция не выполнена: неверный пароль или повреждённый файл.</string>
+
+    <string name="toast_invalid_file">Неверный пароль или это недействительный файл AESLocker.</string>
+    <string name="toast_kit_saved">Комплект восстановления сохранён.</string>
+    <string name="toast_kit_save_failed">Не удалось сохранить комплект восстановления. Попробуйте ещё раз.</string>
+
     <string name="toast_title_success">УСПЕШНО</string>
     <string name="toast_title_notice">УВЕДОМЛЕНИЕ</string>
     <string name="toast_button_ok">ОК</string>
-    <string name="theme_system">Системная тема</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Системная по умолчанию</string>
     <string name="theme_light">Светлая тема</string>
-    <string name="theme_dark">Темная тема</string>
-    <string name="cd_switch_theme">Переключить тему</string>
-    <string name="cd_switch_language">Изменить язык</string>
+    <string name="theme_dark">Тёмная тема</string>
+    <string name="cd_switch_theme">Сменить тему</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Сменить язык</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Показать пароль</string>
     <string name="cd_hide_password">Скрыть пароль</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Посмотрите рекламу, чтобы скачать комплект восстановления</string>
+    <string name="recovery_kit_pro_promo">Получите AESLocker Pro для мгновенных загрузок без рекламы - и без рекламы в других разделах приложения.</string>
+    <string name="dialog_ad_unavailable_title">Реклама недоступна</string>
+    <string name="dialog_ad_unavailable_desc">Сейчас не удалось загрузить рекламу, но вы всё равно можете бесплатно скачать комплект восстановления. Получите AESLocker Pro для мгновенных загрузок без рекламы.</string>
+    <string name="btn_continue_download">Продолжить загрузку</string>
 </resources>

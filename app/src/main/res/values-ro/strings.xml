@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">CRIPTARE</string>
-    <string name="tab_decrypt">DECRIPTARE</string>
-    <string name="select_file">Selectați fișierul</string>
+    <string name="tab_encrypt">CRIPTEAZĂ</string>
+    <string name="tab_decrypt">DECRIPTEAZĂ</string>
+    <string name="select_file">Selectează fișierul</string>
     <string name="no_file_selected">Niciun fișier selectat</string>
     <string name="password_label">Parolă</string>
     <string name="encrypt_file">Criptează fișierul</string>
     <string name="decrypt_file">Decriptează fișierul</string>
     <string name="processing_progress">%1$d%% Se procesează...</string>
-    <string name="terminal_commands_title">Comenzi terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Comandă de criptare:</string>
-    <string name="decryption_cmd_label">Comandă de decriptare:</string>
-    <string name="encryption_cmd_sub">Înlocuiți [input.ext] cu numele fișierului și extensia sa</string>
-    <string name="decryption_cmd_sub">Înlocuiți [output.ext] cu numele și extensia fișierului original</string>
-    <string name="important_notice">Copiați comenzile de mai sus și păstrați-le într-un loc sigur pentru a le putea folosi în cazul în care aplicația nu va mai fi disponibilă în viitor. Aceste comenzi OpenSSL pot fi rulate direct în terminal pe macOS, Linux, Windows (prin WSL sau Git Bash) sau într-un mediu Android care acceptă linia de comandă.</string>
-    <string name="copy_cmd_desc">Copiați comanda</string>
+    <string name="terminal_commands_title">Recuperează fără aplicație</string>
+
+    <string name="terminal_commands_explanation">Fișierele sunt criptate cu AES-256 și autentificate cu HMAC-SHA256, astfel încât orice modificare sau deteriorare este detectată întotdeauna. Descarcă kitul de recuperare de mai jos pentru a cripta sau decripta fișiere din linia de comandă - fără a instala aplicația. Funcționează pe macOS, Linux, Windows (prin WSL sau Git Bash) și în mediile de terminal Android. Instrucțiunile complete de configurare și utilizare sunt incluse în README.txt din descărcare.</string>
+    <string name="download_kit_button">Descarcă kitul de recuperare</string>
+    <string name="download_kit_desc">Un fișier ZIP care conține scriptul de recuperare și instrucțiunile complete. După descărcare, dezarhivează-l și citește mai întâi README.txt înainte de a rula scriptul. Necesită OpenSSL 3.0 sau o versiune ulterioară - păstrează kitul într-un loc sigur, independent de aplicație.</string>
+    <string name="github_repo_label">Codul sursă este publicat și la: %1$s</string>
+    <string name="important_notice_script">Descarcă kitul de recuperare și păstrează-l într-un loc sigur - pe un cloud drive, un stick USB sau oriunde nu îl vei pierde - pentru a-l putea folosi dacă aplicația devine indisponibilă în viitor.</string>
+
+    <string name="readme_title">Kit de recuperare AESLocker</string>
+    <string name="readme_intro">Acest kit îți permite să criptezi sau să decriptezi fișiere AESLocker din linia de comandă, fără ca aplicația să fie instalată. Conține două fișiere: aeslocker_recover.sh (scriptul) și acest README.</string>
+    <string name="readme_terminal_intro">Fiecare comandă din acest ghid trebuie introdusă într-un terminal (numit și linie de comandă sau shell), nu executată prin dublu clic. Pe macOS sau Linux, deschide aplicația numită Terminal. Pe Windows, folosește WSL (Windows Subsystem for Linux) sau Git Bash - Command Prompt și PowerShell nu vor executa aceste comenzi. Fiecare comandă de mai jos este afișată pe propria linie, începând cu semnul $ - tastează tot ce urmează după $ (nu și semnul $).</string>
+    <string name="readme_requirements_title">Cerințe</string>
+    <string name="readme_requirements_body">"Trebuie să ai instalat OpenSSL 3.0 sau o versiune mai nouă. Pentru a verifica versiunea OpenSSL, execută următoarea comandă în terminal:\n\n    $ %1$s\n\nPe macOS, \'openssl\' inclus în sistem nu este OpenSSL real și nu va funcționa. Pentru a instala o versiune funcțională, execută următoarea comandă în terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Pasul 1: Fă scriptul executabil</string>
+    <string name="readme_chmod_body">"Înainte de a putea rula scriptul pentru prima dată, sistemul tău trebuie să aibă permisiunea de a-l executa. În folderul în care ai extras acest kit, execută următoarea comandă în terminal:\n\n    $ %1$s\n\nTrebuie să faci acest lucru o singură dată."</string>
+    <string name="readme_usage_title">Pasul 2: Rulează scriptul</string>
+    <string name="readme_usage_encrypt">"Pentru a cripta un fișier, execută următoarea comandă în terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Pentru a decripta un fișier, execută următoarea comandă în terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Ți se va cere să introduci parola direct în terminal. Aceasta nu este afișată niciodată pe ecran și nu este salvată nicăieri. Dacă uiți parola, acest script nu o poate recupera pentru tine - prin proiectare, nu există nicio modalitate de a ocoli acest lucru.</string>
+    <string name="readme_linux_note">"Utilizatorii Linux: majoritatea distribuțiilor actuale includ deja o versiune compatibilă de OpenSSL. Pentru a verifica versiunea OpenSSL, executați următoarea comandă în terminal:\n\n    $ %1$s\n\nDacă primiți eroarea \'xxd: command not found\' atunci când rulați scriptul, instalați-l folosind managerul de pachete - de exemplu, pe Debian sau Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Utilizatorii Android: acest script poate fi rulat într-o aplicație de terminal precum Termux. Instalați Termux din F-Droid (versiunea din Google Play Store este învechită și nu mai este întreținută), deschideți-l, apoi instalați instrumentele necesare executând următoarea comandă în terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Utilizatorii Windows: rulați acest script (aeslocker_recover.sh) în WSL (Windows Subsystem for Linux) sau Git Bash. Nu va rula direct în Command Prompt sau PowerShell. Git Bash include tot ce este necesar pentru acest script. WSL rulează o distribuție Linux reală, așa că, dacă primiți eroarea \'xxd: command not found\' acolo, instalați-l în același mod ca un utilizator Linux - de exemplu, pe Debian sau Ubuntu:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Schimbă tema</string>
     <string name="share_button_label">DISTRIBUIE</string>
-    <string name="share_button_desc">Îți place aplicația? Distribuie-o și altora.</string>
+    <string name="share_button_desc">Îți place aplicația? Distribuie-o altora.</string>
     <string name="password_strength_weak">Slabă</string>
     <string name="password_strength_medium">Medie</string>
     <string name="password_strength_strong">Puternică</string>
-    <string name="toast_select_file">Vă rugăm să selectați mai întâi un fișier</string>
-    <string name="toast_enter_password">Vă rugăm să introduceți parola</string>
-    <string name="toast_encrypt_success">Criptat cu succes!</string>
-    <string name="toast_decrypt_success">Decriptat cu succes!</string>
-    <string name="toast_operation_failed">Operațiune eșuată: Parolă incorectă sau fișier corupt.</string>
-    <string name="toast_invalid_file">Parolă incorectă sau format de fișier OpenSSL nevalid.</string>
-    <string name="toast_enc_copied">Comanda de criptare a fost copiată!</string>
-    <string name="toast_dec_copied">Comanda de decriptare a fost copiată!</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Selectează mai întâi un fișier</string>
+    <string name="toast_enter_password">Introdu o parolă</string>
+    <string name="toast_encrypt_success">Criptare reușită!</string>
+    <string name="toast_decrypt_success">Decriptare reușită!</string>
+    <string name="toast_operation_failed">Operațiunea a eșuat: parolă incorectă sau fișier corupt.</string>
+
+    <string name="toast_invalid_file">Parolă incorectă sau acesta nu este un fișier AESLocker valid.</string>
+    <string name="toast_kit_saved">Kitul de recuperare a fost salvat.</string>
+    <string name="toast_kit_save_failed">Kitul de recuperare nu a putut fi salvat. Încearcă din nou.</string>
+
     <string name="toast_title_success">SUCCES</string>
     <string name="toast_title_notice">NOTIFICARE</string>
     <string name="toast_button_ok">OK</string>
-    <string name="theme_system">Implicit sistem</string>
-    <string name="theme_light">Mod deschis</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Implicit de sistem</string>
+    <string name="theme_light">Mod luminos</string>
     <string name="theme_dark">Mod întunecat</string>
     <string name="cd_switch_theme">Schimbă tema</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">Schimbă limba</string>
-    <string name="cd_show_password">Arată parola</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Afișează parola</string>
     <string name="cd_hide_password">Ascunde parola</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Urmărește o reclamă pentru a descărca kitul de recuperare</string>
+    <string name="recovery_kit_pro_promo">Obține AESLocker Pro pentru descărcări instantanee fără reclame - și fără reclame nicăieri în aplicație.</string>
+    <string name="dialog_ad_unavailable_title">Nicio reclamă disponibilă</string>
+    <string name="dialog_ad_unavailable_desc">Nu am putut încărca o reclamă acum, dar poți descărca în continuare kitul de recuperare gratuit. Obține AESLocker Pro pentru descărcări instantanee fără reclame, vreodată.</string>
+    <string name="btn_continue_download">Continuă descărcarea</string>
 </resources>

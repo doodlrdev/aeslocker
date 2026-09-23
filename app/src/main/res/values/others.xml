@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="encryption_cmd_for_copying">openssl enc -aes-256-cbc -salt -pbkdf2 -in [input.ext] -out output.aes</string>
-    <string name="decryption_cmd_for_copying">openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out [output.ext]</string>
+    <string name="github_repo_url">https://github.com/doodlrdev/aeslocker</string>
+
+    <!-- Literal terminal commands, interpolated into the translated
+         readme_* strings via %1$s/%2$s placeholders. Never translate
+         these - they are typed verbatim into a terminal. -->
+    <string name="cmd_openssl_version">openssl version</string>
+    <string name="cmd_brew_install_openssl">brew install openssl@3</string>
+    <string name="cmd_chmod">chmod +x aeslocker_recover.sh</string>
+    <string name="cmd_encrypt_example">./aeslocker_recover.sh encrypt myphoto.jpg myphoto.jpg.aes</string>
+    <string name="cmd_decrypt_example">./aeslocker_recover.sh decrypt myphoto.jpg.aes myphoto.jpg</string>
+    <string name="cmd_termux_install_openssl">pkg install openssl coreutils xxd</string>
+    <string name="cmd_apt_install_xxd">sudo apt install xxd</string>
 </resources>

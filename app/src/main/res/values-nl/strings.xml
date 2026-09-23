@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">VERSLEUTELEN</string>
-    <string name="tab_decrypt">ONTSLEUTELEN</string>
+    <string name="tab_decrypt">ONTGRENDELEN</string>
     <string name="select_file">Bestand selecteren</string>
     <string name="no_file_selected">Geen bestand geselecteerd</string>
     <string name="password_label">Wachtwoord</string>
     <string name="encrypt_file">Bestand versleutelen</string>
     <string name="decrypt_file">Bestand ontsleutelen</string>
     <string name="processing_progress">%1$d%% Verwerken...</string>
-    <string name="terminal_commands_title">Terminalopdrachten (OpenSSL)</string>
-    <string name="encryption_cmd_label">Versleutelingsopdracht:</string>
-    <string name="decryption_cmd_label">Ontsleutelingsopdracht:</string>
-    <string name="encryption_cmd_sub">Vervang [input.ext] door uw bestandsnaam en de extensie</string>
-    <string name="decryption_cmd_sub">Vervang [output.ext] door de bestandsnaam en de extensie van het originele bestand</string>
-    <string name="important_notice">Kopieer de bovenstaande opdrachten en sla ze ergens op, zodat u ze kunt gebruiken als de app in de toekomst niet meer beschikbaar is. Deze OpenSSL-opdrachten kunnen rechtstreeks in de terminal worden uitgevoerd op macOS, Linux, Windows (via WSL of Git Bash) of Android-omgevingen met ondersteuning voor de opdrachtregel.</string>
-    <string name="copy_cmd_desc">Opdracht kopiëren</string>
-    <string name="toggle_theme">Thema wisselen</string>
+    <string name="terminal_commands_title">Herstellen zonder de app</string>
+
+    <string name="terminal_commands_explanation">Bestanden worden versleuteld met AES-256 en geauthenticeerd met HMAC-SHA256, zodat manipulatie of beschadiging altijd wordt gedetecteerd. Download de herstelkit hieronder om bestanden vanaf de opdrachtregel te versleutelen of te ontsleutelen - installatie van de app is niet nodig. De kit werkt op macOS, Linux, Windows (via WSL of Git Bash) en Android-terminalomgevingen. Volledige instructies voor installatie en gebruik staan in README.txt in de download.</string>
+    <string name="download_kit_button">Herstelkit downloaden</string>
+    <string name="download_kit_desc">Een ZIP-bestand met het herstelscript en volledige instructies. Pak het na het downloaden uit en lees eerst README.txt voordat je het script uitvoert. Vereist OpenSSL 3.0 of hoger - bewaar de kit op een veilige plek, los van de app.</string>
+    <string name="github_repo_label">Broncode ook gepubliceerd op: %1$s</string>
+    <string name="important_notice_script">Download de herstelkit en bewaar deze op een veilige plaats - een cloudstation, USB-stick of waar je hem ook niet kwijtraakt - zodat je hem kunt gebruiken als de app in de toekomst niet meer beschikbaar is.</string>
+
+    <string name="readme_title">AESLocker Herstelkit</string>
+    <string name="readme_intro">Met deze kit kun je AESLocker-bestanden vanaf de opdrachtregel versleutelen of ontsleutelen zonder dat de app is geïnstalleerd. De kit bevat twee bestanden: aeslocker_recover.sh (het script) en deze README.</string>
+    <string name="readme_terminal_intro">Elk commando in deze handleiding moet in een terminal (ook wel opdrachtregel of shell genoemd) worden ingevoerd en niet worden dubbelgeklikt. Open op macOS of Linux de app met de naam Terminal. Gebruik op Windows WSL (Windows Subsystem for Linux) of Git Bash - Command Prompt en PowerShell voeren deze opdrachten niet uit. Elk commando hieronder staat op een eigen regel en begint met een $-teken - typ alles na $ (niet het $-teken zelf).</string>
+    <string name="readme_requirements_title">Vereisten</string>
+    <string name="readme_requirements_body">"Je hebt OpenSSL 3.0 of nieuwer nodig. Voer het volgende commando uit in de terminal om je OpenSSL-versie te controleren:\n\n    $ %1$s\n\nOp macOS is de ingebouwde \'openssl\' geen echte OpenSSL en werkt deze niet. Voer het volgende commando uit in de terminal om een werkende versie te installeren:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Stap 1: Maak het script uitvoerbaar</string>
+    <string name="readme_chmod_body">"Voordat je het script voor de eerste keer kunt uitvoeren, moet je systeem toestemming hebben om het uit te voeren. Voer in de map waarin je deze kit hebt uitgepakt het volgende commando uit in de terminal:\n\n    $ %1$s\n\nJe hoeft dit maar één keer te doen."</string>
+    <string name="readme_usage_title">Stap 2: Voer het script uit</string>
+    <string name="readme_usage_encrypt">"Voer het volgende commando uit in de terminal om een bestand te versleutelen:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Voer het volgende commando uit in de terminal om een bestand te ontsleutelen:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Je wordt gevraagd je wachtwoord rechtstreeks in de terminal in te voeren. Het wordt nooit op het scherm weergegeven en nergens opgeslagen. Als je je wachtwoord vergeet, kan dit script het niet voor je herstellen - daar is bewust geen mogelijkheid voor.</string>
+    <string name="readme_linux_note">"Linux-gebruikers: de meeste huidige distributies bevatten al een compatibele versie van OpenSSL. Voer de volgende opdracht uit in de terminal om uw OpenSSL-versie te controleren:\n\n    $ %1$s\n\nAls u de fout \'xxd: command not found\' krijgt bij het uitvoeren van het script, installeer het dan met uw pakketbeheerder - bijvoorbeeld op Debian of Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android-gebruikers: dit script kan worden uitgevoerd in een terminal-app zoals Termux. Installeer Termux vanuit F-Droid (de versie uit de Google Play Store is verouderd en wordt niet meer onderhouden), open het en installeer vervolgens de vereiste hulpprogramma's door de volgende opdracht in de terminal uit te voeren:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows-gebruikers: voer dit script (aeslocker_recover.sh) uit binnen WSL (Windows Subsystem for Linux) of Git Bash. Het werkt niet rechtstreeks in de opdrachtprompt of PowerShell. Git Bash bevat alles wat dit script nodig heeft. WSL voert een echte Linux-distributie uit. Als u daar de fout \'xxd: command not found\' krijgt, installeer het dan op dezelfde manier als een Linux-gebruiker - bijvoorbeeld op Debian of Ubuntu:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">Thema wijzigen</string>
     <string name="share_button_label">DELEN</string>
     <string name="share_button_desc">Bevalt de app je? Deel hem met anderen.</string>
     <string name="password_strength_weak">Zwak</string>
     <string name="password_strength_medium">Gemiddeld</string>
     <string name="password_strength_strong">Sterk</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">Selecteer eerst een bestand</string>
     <string name="toast_enter_password">Voer een wachtwoord in</string>
     <string name="toast_encrypt_success">Succesvol versleuteld!</string>
     <string name="toast_decrypt_success">Succesvol ontsleuteld!</string>
-    <string name="toast_operation_failed">Bewerking mislukt: Onjuist wachtwoord of beschadigd bestand.</string>
-    <string name="toast_invalid_file">Onjuist wachtwoord of ongeldig OpenSSL-bestandsformaat.</string>
-    <string name="toast_enc_copied">Versleutelingsopdracht gekopieerd!</string>
-    <string name="toast_dec_copied">Ontsleutelingsopdracht gekopieerd!</string>
-    <string name="toast_title_success">SUCCES</string>
-    <string name="toast_title_notice">MELDING</string>
+    <string name="toast_operation_failed">Bewerking mislukt: onjuist wachtwoord of beschadigd bestand.</string>
+
+    <string name="toast_invalid_file">Onjuist wachtwoord of dit is geen geldig AESLocker-bestand.</string>
+    <string name="toast_kit_saved">Herstelkit opgeslagen.</string>
+    <string name="toast_kit_save_failed">De herstelkit kon niet worden opgeslagen. Probeer het opnieuw.</string>
+
+    <string name="toast_title_success">GESLAAGD</string>
+    <string name="toast_title_notice">MEDEDELING</string>
     <string name="toast_button_ok">OK</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">Systeemstandaard</string>
     <string name="theme_light">Lichte modus</string>
     <string name="theme_dark">Donkere modus</string>
-    <string name="cd_switch_theme">Thema wisselen</string>
-    <string name="cd_switch_language">Taal wisselen</string>
+    <string name="cd_switch_theme">Thema wijzigen</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Taal wijzigen</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Wachtwoord tonen</string>
     <string name="cd_hide_password">Wachtwoord verbergen</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Bekijk een advertentie om de herstelkit te downloaden</string>
+    <string name="recovery_kit_pro_promo">Neem AESLocker Pro voor directe downloads zonder advertenties - en nergens anders in de app advertenties.</string>
+    <string name="dialog_ad_unavailable_title">Geen advertentie beschikbaar</string>
+    <string name="dialog_ad_unavailable_desc">We konden nu geen advertentie laden, maar je kunt de herstelkit nog steeds gratis downloaden. Neem AESLocker Pro voor directe downloads zonder ooit advertenties te zien.</string>
+    <string name="btn_continue_download">Doorgaan met downloaden</string>
 </resources>

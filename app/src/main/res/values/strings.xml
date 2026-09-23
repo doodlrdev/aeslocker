@@ -8,13 +8,29 @@
     <string name="encrypt_file">Encrypt File</string>
     <string name="decrypt_file">Decrypt File</string>
     <string name="processing_progress">%1$d%% Processing...</string>
-    <string name="terminal_commands_title">Terminal Commands (OpenSSL)</string>
-    <string name="encryption_cmd_label">Encryption Command:</string>
-    <string name="decryption_cmd_label">Decryption Command:</string>
-    <string name="encryption_cmd_sub">Replace [input.ext] with your filename and its extension</string>
-    <string name="decryption_cmd_sub">Replace [output.ext] with the filename and extension of the original file</string>
-    <string name="important_notice">Copy the above commands and save them somewhere so you can use them if the app becomes unavailable in the future. These OpenSSL commands can be executed directly in the terminal on macOS, Linux, Windows (via WSL or Git Bash), or Android environments with command-line interface support.</string>
-    <string name="copy_cmd_desc">Copy command</string>
+    <string name="terminal_commands_title">Recover Without The App</string>
+
+    <string name="terminal_commands_explanation">Files are encrypted with AES-256 and authenticated with HMAC-SHA256, so tampering or corruption is always detected. Download the recovery kit below to encrypt or decrypt files from the command line - no app install needed. It works on macOS, Linux, Windows (via WSL or Git Bash), and Android terminal environments. Full setup and usage instructions are included as README.txt inside the download.</string>
+    <string name="download_kit_button">Download Recovery Kit</string>
+    <string name="download_kit_desc">A zip file containing the recovery script and full instructions. After downloading, unzip it and read README.txt first before running the script. Requires OpenSSL 3.0+ - save the kit somewhere safe, independent of the app.</string>
+    <string name="github_repo_label">Source also published at: %1$s</string>
+    <string name="important_notice_script">Download the recovery kit and save it somewhere safe - a cloud drive, a USB stick, wherever you won\'t lose it - so you can use it if the app becomes unavailable in the future.</string>
+
+    <string name="readme_title">AESLocker Recovery Kit</string>
+    <string name="readme_intro">This kit lets you encrypt or decrypt AESLocker files from the command line, without the app installed. It contains two files: aeslocker_recover.sh (the script) and this README.</string>
+    <string name="readme_terminal_intro">Every command in this guide must be typed into a terminal (also called a command line or shell), not double-clicked. On macOS or Linux, open the app named Terminal. On Windows, use WSL (Windows Subsystem for Linux) or Git Bash instead - Command Prompt and PowerShell will not run these commands. Each command below is shown on its own line, starting with a $ sign - type everything after the $ (not the $ itself).</string>
+    <string name="readme_requirements_title">Requirements</string>
+    <string name="readme_requirements_body">"You need OpenSSL 3.0 or newer installed. To check your OpenSSL version, execute the following command in the terminal:\n\n    $ %1$s\n\nOn macOS, the built-in \'openssl\' is not real OpenSSL and will not work. To install a working copy, execute the following command in the terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Step 1: Make the script executable</string>
+    <string name="readme_chmod_body">"Before you can run the script for the first time, your system needs permission to execute it. In the folder where you extracted this kit, execute the following command in the terminal:\n\n    $ %1$s\n\nYou only need to do this once."</string>
+    <string name="readme_usage_title">Step 2: Run the script</string>
+    <string name="readme_usage_encrypt">"To encrypt a file, execute the following command in the terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"To decrypt a file, execute the following command in the terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">You will be asked to type your password directly into the terminal. It is never shown on screen or saved anywhere. If you forget your password, this script cannot recover it for you - there is no way around this, by design.</string>
+    <string name="readme_linux_note">"Linux users: most current distributions already include a compatible OpenSSL. To check your OpenSSL version, execute the following command in the terminal:\n\n    $ %1$s\n\nIf you get an \'xxd: command not found\' error when running the script, install it using your package manager - for example, on Debian or Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android users: this script can run inside a terminal app such as Termux. Install Termux from F-Droid (the Google Play Store version is outdated and no longer maintained), open it, then install the required tools by executing the following command in the terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows users: run this script (aeslocker_recover.sh) inside WSL (Windows Subsystem for Linux) or Git Bash. It will not run in Command Prompt or PowerShell directly. Git Bash includes everything this script needs. WSL runs a real Linux distribution, so if you get an \'xxd: command not found\' error there, install it the same way as a Linux user would - for example, on Debian or Ubuntu:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Toggle Theme</string>
     <string name="share_button_label">SHARE</string>
     <string name="share_button_desc">Enjoying the app? Share it with others.</string>
@@ -28,9 +44,11 @@
     <string name="toast_encrypt_success">Encrypted successfully!</string>
     <string name="toast_decrypt_success">Decrypted successfully!</string>
     <string name="toast_operation_failed">Operation failed: Incorrect password or corrupted file.</string>
-    <string name="toast_invalid_file">Incorrect password or invalid OpenSSL file format.</string>
-    <string name="toast_enc_copied">Encryption command copied!</string>
-    <string name="toast_dec_copied">Decryption command copied!</string>
+
+    <string name="toast_invalid_file">Incorrect password, or this isn\'t a valid AESLocker file.</string>
+    <string name="toast_kit_saved">Recovery kit saved.</string>
+    <string name="toast_kit_save_failed">Couldn\'t save the recovery kit. Please try again.</string>
+
     <string name="toast_title_success">SUCCESS</string>
     <string name="toast_title_notice">NOTICE</string>
     <string name="toast_button_ok">OK</string>
@@ -49,5 +67,12 @@
     <string name="cd_show_password">Show password</string>
     <string name="cd_hide_password">Hide password</string>
 
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Watch Ad to Download Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Get AESLocker Pro for instant, ad-free downloads - and no ads anywhere else in the app.</string>
+    <string name="dialog_ad_unavailable_title">No Ad Available</string>
+    <string name="dialog_ad_unavailable_desc">We couldn\'t load an ad right now, but you can still download the recovery kit for free. Get AESLocker Pro for instant downloads with no ads, ever.</string>
+    <string name="btn_continue_download">Continue to Download</string>
 
 </resources>

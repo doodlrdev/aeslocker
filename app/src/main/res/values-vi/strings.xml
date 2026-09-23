@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">MÃ HÓA</string>
     <string name="tab_decrypt">GIẢI MÃ</string>
-    <string name="select_file">Chọn Tệp</string>
-    <string name="no_file_selected">Chưa có tệp nào được chọn</string>
+    <string name="select_file">Chọn tệp</string>
+    <string name="no_file_selected">Chưa chọn tệp</string>
     <string name="password_label">Mật khẩu</string>
-    <string name="encrypt_file">Mã hóa Tệp</string>
-    <string name="decrypt_file">Giải mã Tệp</string>
+    <string name="encrypt_file">Mã hóa tệp</string>
+    <string name="decrypt_file">Giải mã tệp</string>
     <string name="processing_progress">%1$d%% Đang xử lý...</string>
-    <string name="terminal_commands_title">Lệnh Terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Lệnh Mã hóa:</string>
-    <string name="decryption_cmd_label">Lệnh Giải mã:</string>
-    <string name="encryption_cmd_sub">Thay thế [input.ext] bằng tên tệp và phần mở rộng của bạn</string>
-    <string name="decryption_cmd_sub">Thay thế [output.ext] bằng tên và phần mở rộng của tệp gốc</string>
-    <string name="important_notice">Hãy sao chép các lệnh trên và lưu chúng ở một nơi an toàn để bạn có thể sử dụng nếu ứng dụng không khả dụng trong tương lai. Các lệnh OpenSSL này có thể được chạy trực tiếp trong terminal trên macOS, Linux, Windows (thông qua WSL hoặc Git Bash), hoặc các môi trường Android có hỗ trợ giao diện dòng lệnh.</string>
-    <string name="copy_cmd_desc">Sao chép lệnh</string>
-    <string name="toggle_theme">Đổi Giao diện</string>
+    <string name="terminal_commands_title">Khôi phục không cần ứng dụng</string>
+
+    <string name="terminal_commands_explanation">Tệp được mã hóa bằng AES-256 và xác thực bằng HMAC-SHA256, vì vậy mọi hành vi can thiệp hoặc hỏng dữ liệu đều luôn được phát hiện. Hãy tải bộ công cụ khôi phục bên dưới để mã hóa hoặc giải mã tệp từ dòng lệnh — không cần cài đặt ứng dụng. Bộ công cụ hoạt động trên macOS, Linux, Windows (thông qua WSL hoặc Git Bash) và các môi trường terminal trên Android. Hướng dẫn thiết lập và sử dụng đầy đủ được cung cấp trong README.txt bên trong tệp tải xuống.</string>
+    <string name="download_kit_button">Tải bộ công cụ khôi phục</string>
+    <string name="download_kit_desc">Một tệp ZIP chứa tập lệnh khôi phục và hướng dẫn đầy đủ. Sau khi tải xuống, hãy giải nén và đọc README.txt trước khi chạy tập lệnh. Yêu cầu OpenSSL 3.0 trở lên - hãy lưu bộ công cụ ở một nơi an toàn, tách biệt với ứng dụng.</string>
+    <string name="github_repo_label">Mã nguồn cũng được công bố tại: %1$s</string>
+    <string name="important_notice_script">Hãy tải bộ công cụ khôi phục và lưu ở nơi an toàn — ổ đĩa đám mây, USB hoặc bất kỳ nơi nào bạn sẽ không làm mất nó — để có thể sử dụng nếu ứng dụng không còn khả dụng trong tương lai.</string>
+
+    <string name="readme_title">Bộ công cụ khôi phục AESLocker</string>
+    <string name="readme_intro">Bộ công cụ này cho phép bạn mã hóa hoặc giải mã các tệp AESLocker từ dòng lệnh mà không cần cài đặt ứng dụng. Bộ công cụ gồm hai tệp: aeslocker_recover.sh (tập lệnh) và README này.</string>
+    <string name="readme_terminal_intro">Mọi lệnh trong hướng dẫn này phải được nhập vào terminal (còn gọi là dòng lệnh hoặc shell), không phải nhấp đúp. Trên macOS hoặc Linux, hãy mở ứng dụng có tên Terminal. Trên Windows, hãy sử dụng WSL (Windows Subsystem for Linux) hoặc Git Bash — Command Prompt và PowerShell sẽ không chạy được các lệnh này. Mỗi lệnh bên dưới được hiển thị trên một dòng riêng, bắt đầu bằng dấu $ — hãy nhập mọi thứ sau dấu $ (không nhập chính dấu $).</string>
+    <string name="readme_requirements_title">Yêu cầu</string>
+    <string name="readme_requirements_body">"Bạn cần cài đặt OpenSSL 3.0 hoặc mới hơn. Để kiểm tra phiên bản OpenSSL, hãy thực thi lệnh sau trong terminal:\n\n    $ %1$s\n\nTrên macOS, \'openssl\' tích hợp sẵn không phải là OpenSSL thực sự và sẽ không hoạt động. Để cài đặt một bản hoạt động, hãy thực thi lệnh sau trong terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Bước 1: Cho phép tập lệnh thực thi</string>
+    <string name="readme_chmod_body">"Trước khi chạy tập lệnh lần đầu tiên, hệ thống cần được cấp quyền thực thi tập lệnh. Trong thư mục nơi bạn đã giải nén bộ công cụ này, hãy thực thi lệnh sau trong terminal:\n\n    $ %1$s\n\nBạn chỉ cần thực hiện việc này một lần."</string>
+    <string name="readme_usage_title">Bước 2: Chạy tập lệnh</string>
+    <string name="readme_usage_encrypt">"Để mã hóa một tệp, hãy thực thi lệnh sau trong terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Để giải mã một tệp, hãy thực thi lệnh sau trong terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Bạn sẽ được yêu cầu nhập mật khẩu trực tiếp vào terminal. Mật khẩu không bao giờ được hiển thị trên màn hình hoặc lưu ở bất kỳ đâu. Nếu bạn quên mật khẩu, tập lệnh này không thể khôi phục mật khẩu cho bạn — theo thiết kế, không có cách nào khác.</string>
+    <string name="readme_linux_note">"Người dùng Linux: hầu hết các bản phân phối hiện tại đã tích hợp sẵn OpenSSL tương thích. Để kiểm tra phiên bản OpenSSL, hãy thực thi lệnh sau trong terminal:\n\n    $ %1$s\n\nNếu bạn gặp lỗi \'xxd: command not found\' khi chạy script, hãy cài đặt nó bằng trình quản lý gói của bạn - ví dụ: trên Debian hoặc Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Người dùng Android: script này có thể chạy trong ứng dụng terminal như Termux. Hãy cài đặt Termux từ F-Droid (phiên bản trên Google Play Store đã lỗi thời và không còn được duy trì), mở ứng dụng, sau đó cài đặt các công cụ cần thiết bằng cách thực thi lệnh sau trong terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Người dùng Windows: hãy chạy script này (aeslocker_recover.sh) trong WSL (Windows Subsystem for Linux) hoặc Git Bash. Script sẽ không chạy trực tiếp trong Command Prompt hoặc PowerShell. Git Bash đã bao gồm mọi thứ mà script này cần. WSL chạy một bản phân phối Linux thực, vì vậy nếu bạn gặp lỗi \'xxd: command not found\' ở đó, hãy cài đặt nó theo cách tương tự như người dùng Linux - ví dụ: trên Debian hoặc Ubuntu:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">Chuyển đổi giao diện</string>
     <string name="share_button_label">CHIA SẺ</string>
-    <string name="share_button_desc">Bạn thích ứng dụng này? Hãy chia sẻ với người khác.</string>
+    <string name="share_button_desc">Bạn thích ứng dụng? Hãy chia sẻ với người khác.</string>
     <string name="password_strength_weak">Yếu</string>
     <string name="password_strength_medium">Trung bình</string>
     <string name="password_strength_strong">Mạnh</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">Vui lòng chọn một tệp trước</string>
     <string name="toast_enter_password">Vui lòng nhập mật khẩu</string>
     <string name="toast_encrypt_success">Đã mã hóa thành công!</string>
     <string name="toast_decrypt_success">Đã giải mã thành công!</string>
-    <string name="toast_operation_failed">Thao tác thất bại: Sai mật khẩu hoặc tệp bị hỏng.</string>
-    <string name="toast_invalid_file">Sai mật khẩu hoặc định dạng tệp OpenSSL không hợp lệ.</string>
-    <string name="toast_enc_copied">Đã sao chép lệnh mã hóa!</string>
-    <string name="toast_dec_copied">Đã sao chép lệnh giải mã!</string>
+    <string name="toast_operation_failed">Thao tác thất bại: Mật khẩu không chính xác hoặc tệp bị hỏng.</string>
+
+    <string name="toast_invalid_file">Mật khẩu không chính xác hoặc đây không phải là tệp AESLocker hợp lệ.</string>
+    <string name="toast_kit_saved">Đã lưu bộ công cụ khôi phục.</string>
+    <string name="toast_kit_save_failed">Không thể lưu bộ công cụ khôi phục. Vui lòng thử lại.</string>
+
     <string name="toast_title_success">THÀNH CÔNG</string>
     <string name="toast_title_notice">THÔNG BÁO</string>
     <string name="toast_button_ok">OK</string>
-    <string name="theme_system">Mặc định Hệ thống</string>
-    <string name="theme_light">Chế độ Sáng</string>
-    <string name="theme_dark">Chế độ Tối</string>
-    <string name="cd_switch_theme">Đổi Giao diện</string>
-    <string name="cd_switch_language">Đổi Ngôn ngữ</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Mặc định hệ thống</string>
+    <string name="theme_light">Chế độ sáng</string>
+    <string name="theme_dark">Chế độ tối</string>
+    <string name="cd_switch_theme">Chuyển đổi giao diện</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Chuyển đổi ngôn ngữ</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Hiện mật khẩu</string>
     <string name="cd_hide_password">Ẩn mật khẩu</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Xem quảng cáo để tải bộ công cụ khôi phục</string>
+    <string name="recovery_kit_pro_promo">Nhận AESLocker Pro để tải xuống tức thì không có quảng cáo — và không có quảng cáo ở bất kỳ nơi nào khác trong ứng dụng.</string>
+    <string name="dialog_ad_unavailable_title">Không có quảng cáo</string>
+    <string name="dialog_ad_unavailable_desc">Hiện không thể tải quảng cáo, nhưng bạn vẫn có thể tải miễn phí bộ công cụ khôi phục. Nhận AESLocker Pro để tải xuống tức thì mà không bao giờ có quảng cáo.</string>
+    <string name="btn_continue_download">Tiếp tục tải xuống</string>
 </resources>

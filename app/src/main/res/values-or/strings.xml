@@ -1,43 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">ଏନକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
-    <string name="tab_decrypt">ଡିକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
-    <string name="select_file">ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ</string>
-    <string name="no_file_selected">କୌଣସି ଫାଇଲ୍ ଚୟନ କରାଯାଇ ନାହିଁ</string>
+    <string name="tab_encrypt">ଏନକ୍ରିପ୍ଟ</string>
+    <string name="tab_decrypt">ଡିକ୍ରିପ୍ଟ</string>
+    <string name="select_file">ଫାଇଲ୍ ବାଛନ୍ତୁ</string>
+    <string name="no_file_selected">କୌଣସି ଫାଇଲ୍ ବଛାଯାଇନାହିଁ</string>
     <string name="password_label">ପାସୱାର୍ଡ</string>
     <string name="encrypt_file">ଫାଇଲ୍ ଏନକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
     <string name="decrypt_file">ଫାଇଲ୍ ଡିକ୍ରିପ୍ଟ କରନ୍ତୁ</string>
     <string name="processing_progress">%1$d%% ପ୍ରକ୍ରିୟା ଚାଲିଛି...</string>
-    <string name="terminal_commands_title">ଟର୍ମିନାଲ୍ କମାଣ୍ଡ୍ (OpenSSL)</string>
-    <string name="encryption_cmd_label">ଏନକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍:</string>
-    <string name="decryption_cmd_label">ଡିକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍:</string>
-    <string name="encryption_cmd_sub">[input.ext] ବଦଳରେ ଆପଣଙ୍କ ଫାଇଲ୍ ନାମ ଏବଂ ଏହାର ଏକ୍ସଟେନ୍ସନ୍ ଲିଖନ୍ତୁ</string>
-    <string name="decryption_cmd_sub">[output.ext] ବଦଳରେ ମୂଳ ଫାଇଲ୍ ର ନାମ ଏବଂ ଏକ୍ସଟେନ୍ସନ୍ ଲିଖନ୍ତୁ</string>
-    <string name="important_notice">ଭବିଷ୍ୟତରେ ଆପ୍ ਉପଲବ୍ଧ ନହେଲେ ବ୍ୟବହାର କରିବା ପାଇଁ ଉପରୋକ୍ତ କମାଣ୍ଡଗୁଡ଼ିକୁ କପ୍ କରି ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଂରକ୍ଷଣ କରନ୍ତୁ। ଏହି OpenSSL କମାଣ୍ଡଗୁଡ଼ିକୁ macOS, Linux, Windows (WSL କିମ୍ବା Git Bash ମାଧ୍ୟମରେ) କିମ୍ବା Android ଟର୍ମିନାଲ୍ ରେ ସିଧାସଳଖ ଏକଜିକିଉଟ୍ କରାଯାଇପାରିବ।</string>
-    <string name="copy_cmd_desc">କମାଣ୍ଡ୍ କପ୍ କରନ୍ତୁ</string>
-    <string name="toggle_theme">ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="terminal_commands_title">ଆପ୍ ବିନା ପୁନରୁଦ୍ଧାର କରନ୍ତୁ</string>
+
+    <string name="terminal_commands_explanation">ଫାଇଲଗୁଡ଼ିକୁ AES-256 ଦ୍ୱାରା ଏନକ୍ରିପ୍ଟ ଏବଂ HMAC-SHA256 ଦ୍ୱାରା ଅଥେଣ୍ଟିକେଟ୍ କରାଯାଏ, ତେଣୁ ଯେକୌଣସି ହସ୍ତକ୍ଷେପ କିମ୍ବା କ୍ଷତି ସବୁବେଳେ ଚିହ୍ନଟ ହୁଏ। ଆପ୍ ଇନଷ୍ଟଲ୍ ନକରି କମାଣ୍ଡ ଲାଇନ୍‌ରୁ ଫାଇଲ୍ ଏନକ୍ରିପ୍ଟ କିମ୍ବା ଡିକ୍ରିପ୍ଟ କରିବା ପାଇଁ ନିମ୍ନରୁ ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଏହା macOS, Linux, Windows (WSL କିମ୍ବା Git Bash ମାଧ୍ୟମରେ) ଏବଂ Android ଟର୍ମିନାଲ୍ ପରିବେଶରେ କାମ କରେ। ସମ୍ପୂର୍ଣ୍ଣ ସେଟଅପ୍ ଏବଂ ବ୍ୟବହାର ନିର୍ଦ୍ଦେଶାବଳୀ ଡାଉନଲୋଡ୍ ଭିତରେ ଥିବା README.txt ରେ ଦିଆଯାଇଛି।</string>
+    <string name="download_kit_button">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ</string>
+    <string name="download_kit_desc">ରିକଭରି ସ୍କ୍ରିପ୍ଟ ଏବଂ ସମ୍ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶାବଳୀ ଥିବା ଏକ ZIP ଫାଇଲ୍। ଡାଉନଲୋଡ୍ କରିବା ପରେ ଏହାକୁ ଅନଜିପ୍ କରନ୍ତୁ ଏବଂ ସ୍କ୍ରିପ୍ଟ ଚଲାଇବା ପୂର୍ବରୁ ପ୍ରଥମେ README.txt ପଢନ୍ତୁ। OpenSSL 3.0 କିମ୍ବା ପରବର୍ତ୍ତୀ ସଂସ୍କରଣ ଆବଶ୍ୟକ - କିଟ୍‌କୁ ଆପ୍‌ଠାରୁ ସ୍ୱାଧୀନ ଏକ ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଂରକ୍ଷଣ କରନ୍ତୁ।</string>
+    <string name="github_repo_label">ସୋର୍ସ କୋଡ୍ ମଧ୍ୟ ଏଠାରେ ପ୍ରକାଶିତ: %1$s</string>
+    <string name="important_notice_script">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରି ଏକ ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଞ୍ଚୟ କରନ୍ତୁ - କ୍ଲାଉଡ୍ ଡ୍ରାଇଭ୍, USB ଷ୍ଟିକ୍ କିମ୍ବା ଯେକୌଣସି ସ୍ଥାନ ଯେଉଁଠାରେ ଏହା ହଜିଯିବ ନାହିଁ - ଯାହାଦ୍ୱାରା ଭବିଷ୍ୟତରେ ଆପ୍ ଉପଲବ୍ଧ ନଥିଲେ ଆପଣ ଏହାକୁ ବ୍ୟବହାର କରିପାରିବେ।</string>
+
+    <string name="readme_title">AESLocker ରିକଭରି କିଟ୍</string>
+    <string name="readme_intro">ଏହି କିଟ୍ ଆପ୍ ଇନଷ୍ଟଲ୍ ନକରି କମାଣ୍ଡ ଲାଇନ୍‌ରୁ AESLocker ଫାଇଲଗୁଡ଼ିକୁ ଏନକ୍ରିପ୍ଟ କିମ୍ବା ଡିକ୍ରିପ୍ଟ କରିବାକୁ ଦିଏ। ଏଥିରେ ଦୁଇଟି ଫାଇଲ୍ ଅଛି: aeslocker_recover.sh (ସ୍କ୍ରିପ୍ଟ) ଏବଂ ଏହି README।</string>
+    <string name="readme_terminal_intro">ଏହି ଗାଇଡ୍‌ର ପ୍ରତ୍ୟେକ କମାଣ୍ଡକୁ ଟର୍ମିନାଲ୍‌ରେ (ଯାହାକୁ କମାଣ୍ଡ ଲାଇନ୍ କିମ୍ବା shell ମଧ୍ୟ କୁହାଯାଏ) ଟାଇପ୍ କରିବାକୁ ପଡିବ, ଡବଲ୍-କ୍ଲିକ୍ କରିବା ନୁହେଁ। macOS କିମ୍ବା Linux ରେ Terminal ନାମକ ଆପ୍ ଖୋଲନ୍ତୁ। Windows ରେ ଏହା ପରିବର୍ତ୍ତେ WSL (Windows Subsystem for Linux) କିମ୍ବା Git Bash ବ୍ୟବହାର କରନ୍ତୁ - Command Prompt ଏବଂ PowerShell ଏହି କମାଣ୍ଡଗୁଡ଼ିକୁ ଚଲାଇବ ନାହିଁ। ନିମ୍ନରେ ପ୍ରତ୍ୟେକ କମାଣ୍ଡ ନିଜସ୍ୱ ଲାଇନ୍‌ରେ $ ଚିହ୍ନରୁ ଆରମ୍ଭ ହୋଇ ଦେଖାଯାଇଛି - $ ପରେ ଥିବା ସବୁକିଛି ଟାଇପ୍ କରନ୍ତୁ ($ ନିଜେ ଟାଇପ୍ କରନ୍ତୁ ନାହିଁ)।</string>
+    <string name="readme_requirements_title">ଆବଶ୍ୟକତା</string>
+    <string name="readme_requirements_body">"ଆପଣଙ୍କ ସିଷ୍ଟମ୍‌ରେ OpenSSL 3.0 କିମ୍ବା ତା\'ଠାରୁ ନୂଆ ଇନଷ୍ଟଲ୍ ହୋଇଥିବା ଆବଶ୍ୟକ। ଆପଣଙ୍କ OpenSSL ସଂସ୍କରଣ ଯାଞ୍ଚ କରିବା ପାଇଁ ଟର୍ମିନାଲ୍‌ରେ ନିମ୍ନଲିଖିତ କମାଣ୍ଡ ଚଲାନ୍ତୁ:\n\n    $ %1$s\n\nmacOS ରେ ବିଲ୍ଟ-ଇନ୍ \'openssl\' ପ୍ରକୃତ OpenSSL ନୁହେଁ ଏବଂ କାମ କରିବ ନାହିଁ। ଏକ କାର୍ଯ୍ୟକ୍ଷମ କପି ଇନଷ୍ଟଲ୍ କରିବା ପାଇଁ ଟର୍ମିନାଲ୍‌ରେ ନିମ୍ନଲିଖିତ କମାଣ୍ଡ ଚଲାନ୍ତୁ:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">ପଦକ୍ଷେପ 1: ସ୍କ୍ରିପ୍ଟକୁ ଏକ୍ଜିକ୍ୟୁଟେବଲ୍ କରନ୍ତୁ</string>
+    <string name="readme_chmod_body">"ପ୍ରଥମ ଥର ସ୍କ୍ରିପ୍ଟ ଚଲାଇବା ପୂର୍ବରୁ, ଏହାକୁ ଏକ୍ଜିକ୍ୟୁଟ୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ସିଷ୍ଟମ୍‌କୁ ଅନୁମତି ଆବଶ୍ୟକ। ଯେଉଁ ଫୋଲ୍ଡର୍‌ରେ ଆପଣ ଏହି କିଟ୍ ଏକ୍ସଟ୍ରାକ୍ଟ କରିଛନ୍ତି, ସେଠାରେ ଟର୍ମିନାଲ୍‌ରେ ନିମ୍ନଲିଖିତ କମାଣ୍ଡ ଚଲାନ୍ତୁ:\n\n    $ %1$s\n\nଆପଣଙ୍କୁ ଏହା କେବଳ ଥରେ କରିବାକୁ ପଡିବ।"</string>
+    <string name="readme_usage_title">ପଦକ୍ଷେପ 2: ସ୍କ୍ରିପ୍ଟ ଚଲାନ୍ତୁ</string>
+    <string name="readme_usage_encrypt">"ଏକ ଫାଇଲ୍ ଏନକ୍ରିପ୍ଟ କରିବା ପାଇଁ ଟର୍ମିନାଲ୍‌ରେ ନିମ୍ନଲିଖିତ କମାଣ୍ଡ ଚଲାନ୍ତୁ:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"ଏକ ଫାଇଲ୍ ଡିକ୍ରିପ୍ଟ କରିବା ପାଇଁ ଟର୍ମିନାଲ୍‌ରେ ନିମ୍ନଲିଖିତ କମାଣ୍ଡ ଚଲାନ୍ତୁ:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">ଆପଣଙ୍କୁ ଟର୍ମିନାଲ୍‌ରେ ସିଧାସଳଖ ଆପଣଙ୍କ ପାସୱାର୍ଡ ଟାଇପ୍ କରିବାକୁ କୁହାଯିବ। ଏହା ସ୍କ୍ରିନ୍‌ରେ କେବେ ଦେଖାଯାଏ ନାହିଁ କିମ୍ବା କୌଣସି ସ୍ଥାନରେ ସଞ୍ଚୟ ହୁଏ ନାହିଁ। ଯଦି ଆପଣ ପାସୱାର୍ଡ ଭୁଲିଯାଆନ୍ତି, ଏହି ସ୍କ୍ରିପ୍ଟ ଏହାକୁ ଆପଣଙ୍କ ପାଇଁ ପୁନରୁଦ୍ଧାର କରିପାରିବ ନାହିଁ - ଡିଜାଇନ୍ ଅନୁସାରେ ଏହାକୁ ଏଡାଇବାର କୌଣସି ଉପାୟ ନାହିଁ।</string>
+    <string name="readme_linux_note">"Linux ବ୍ୟବହାରକାରୀ: ବର୍ତ୍ତମାନର ଅଧିକାଂଶ distribution ରେ ପୂର୍ବରୁ ଏକ ସୁସଙ୍ଗତ OpenSSL ଅନ୍ତର୍ଭୁକ୍ତ ଥାଏ। ଆପଣଙ୍କ OpenSSL ସଂସ୍କରଣ ଯାଞ୍ଚ କରିବା ପାଇଁ terminal ରେ ନିମ୍ନଲିଖିତ command ଚଲାନ୍ତୁ:\n\n    $ %1$s\n\nସ୍କ୍ରିପ୍ଟ ଚଲାଇବା ସମୟରେ ଯଦି \'xxd: command not found\' ତ୍ରୁଟି ଦେଖାଯାଏ, ତେବେ ଆପଣଙ୍କ package manager ବ୍ୟବହାର କରି ଏହାକୁ install କରନ୍ତୁ - ଉଦାହରଣ ସ୍ୱରୂପ, Debian କିମ୍ବା Ubuntu ରେ:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android ବ୍ୟବହାରକାରୀ: ଏହି ସ୍କ୍ରିପ୍ଟକୁ Termux ପରି ଏକ terminal app ଭିତରେ ଚଲାଯାଇପାରିବ। F-Droid ରୁ Termux install କରନ୍ତୁ (Google Play Store ର ସଂସ୍କରଣ ପୁରୁଣା ଏବଂ ଆଉ ରକ୍ଷଣାବେକ୍ଷଣ କରାଯାଉନାହିଁ), ଏହାକୁ ଖୋଲନ୍ତୁ, ତାପରେ terminal ରେ ନିମ୍ନଲିଖିତ command ଚଲାଇ ଆବଶ୍ୟକ tools install କରନ୍ତୁ:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows ବ୍ୟବହାରକାରୀ: ଏହି ସ୍କ୍ରିପ୍ଟ (aeslocker_recover.sh) କୁ WSL (Windows Subsystem for Linux) କିମ୍ବା Git Bash ଭିତରେ ଚଲାନ୍ତୁ। ଏହା Command Prompt କିମ୍ବା PowerShell ରେ ସିଧାସଳଖ ଚାଲିବ ନାହିଁ। Git Bash ରେ ଏହି ସ୍କ୍ରିପ୍ଟ ପାଇଁ ଆବଶ୍ୟକ ସମସ୍ତ ଜିନିଷ ଅଛି। WSL ଏକ ପ୍ରକୃତ Linux distribution ଚଲାଏ, ତେଣୁ ସେଠାରେ ଯଦି \'xxd: command not found\' ତ୍ରୁଟି ଦେଖାଯାଏ, ତେବେ Linux ବ୍ୟବହାରକାରୀଙ୍କ ପରି ସମାନ ଭାବରେ ଏହାକୁ install କରନ୍ତୁ - ଉଦାହରଣ ସ୍ୱରୂପ, Debian କିମ୍ବା Ubuntu ରେ:\n\n    $ %1$s"</string>
+
+
+    <string name="toggle_theme">ଥିମ୍ ବଦଳାନ୍ତୁ</string>
     <string name="share_button_label">ସେୟାର୍ କରନ୍ତୁ</string>
-    <string name="share_button_desc">ଆପ୍‌ଟି ଭଲ ଲାଗୁଛି କି? ଅନ୍ୟମାନଙ୍କ ସହିତ ସେୟାର୍ କରନ୍ତୁ।</string>
+    <string name="share_button_desc">ଆପ୍ ପସନ୍ଦ ହେଉଛି କି? ଅନ୍ୟମାନଙ୍କ ସହିତ ସେୟାର୍ କରନ୍ତୁ।</string>
     <string name="password_strength_weak">ଦୁର୍ବଳ</string>
     <string name="password_strength_medium">ମଧ୍ୟମ</string>
-    <string name="password_strength_strong">ମଜବୁତ</string>
-    <string name="toast_select_file">ଦୟାکرି ପ୍ରଥମେ ଏକ ଫାଇଲ୍ ଚୟନ କରନ୍ତୁ</string>
+    <string name="password_strength_strong">ଶକ୍ତିଶାଳୀ</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">ଦୟାକରି ପ୍ରଥମେ ଏକ ଫାଇଲ୍ ବାଛନ୍ତୁ</string>
     <string name="toast_enter_password">ଦୟାକରି ଏକ ପାସୱାର୍ଡ ପ୍ରବେଶ କରନ୍ତୁ</string>
-    <string name="toast_encrypt_success">ସଫଳତାସହ ଏନକ୍ରିପ୍ଟ ହେଲା!</string>
-    <string name="toast_decrypt_success">ସଫଳତାସହ ଡିକ୍ରିପ୍ଟ ହେଲା!</string>
-    <string name="toast_operation_failed">ଅପରେସନ୍ ବିଫଳ ହେଲା: ଭୁଲ୍ ପାସୱାର୍ଡ କିମ୍ବା କ୍ଷତିଗ୍ରସ୍ତ ଫାଇଲ୍।</string>
-    <string name="toast_invalid_file">ଭୁଲ୍ ପାସୱାର୍ଡ କିମ୍ବା ଅବୈଧ OpenSSL ଫାଇଲ୍ ଫର୍ମାଟ୍।</string>
-    <string name="toast_enc_copied">ଏନକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍ କପ୍ ହେଲା!</string>
-    <string name="toast_dec_copied">ଡିକ୍ରିପ୍ସନ୍ କମାଣ୍ଡ୍ କପ୍ ହେଲା!</string>
-    <string name="toast_title_success">ସଫଳତା</string>
+    <string name="toast_encrypt_success">ସଫଳତାର ସହିତ ଏନକ୍ରିପ୍ଟ ହୋଇଛି!</string>
+    <string name="toast_decrypt_success">ସଫଳତାର ସହିତ ଡିକ୍ରିପ୍ଟ ହୋଇଛି!</string>
+    <string name="toast_operation_failed">କାର୍ଯ୍ୟ ବିଫଳ: ଭୁଲ୍ ପାସୱାର୍ଡ କିମ୍ବା ନଷ୍ଟ ହୋଇଥିବା ଫାଇଲ୍।</string>
+
+    <string name="toast_invalid_file">ଭୁଲ୍ ପାସୱାର୍ଡ, କିମ୍ବା ଏହା ଏକ ବୈଧ AESLocker ଫାଇଲ୍ ନୁହେଁ।</string>
+    <string name="toast_kit_saved">ରିକଭରି କିଟ୍ ସଞ୍ଚୟ ହୋଇଛି।</string>
+    <string name="toast_kit_save_failed">ରିକଭରି କିଟ୍ ସଞ୍ଚୟ କରିହେଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+
+    <string name="toast_title_success">ସଫଳ</string>
     <string name="toast_title_notice">ସୂଚନା</string>
     <string name="toast_button_ok">ଠିକ୍ ଅଛି</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">ସିଷ୍ଟମ୍ ଡିଫଲ୍ଟ</string>
     <string name="theme_light">ଲାଇଟ୍ ମୋଡ୍</string>
     <string name="theme_dark">ଡାର୍କ ମୋଡ୍</string>
-    <string name="cd_switch_theme">ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
-    <string name="cd_switch_language">ଭାଷା ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
-    <string name="cd_show_password">ପାସୱାର୍ଡ ଦେખાନ୍ତୁ</string>
-    <string name="cd_hide_password">ପାସୱାର୍ଡ لുକਾନ୍ତୁ</string>
+    <string name="cd_switch_theme">ଥିମ୍ ବଦଳାନ୍ତୁ</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">ଭାଷା ବଦଳାନ୍ତୁ</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">ପାସୱାର୍ଡ ଦେଖାନ୍ତୁ</string>
+    <string name="cd_hide_password">ପାସୱାର୍ଡ ଲୁଚାନ୍ତୁ</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରିବା ପାଇଁ ବିଜ୍ଞାପନ ଦେଖନ୍ତୁ</string>
+    <string name="recovery_kit_pro_promo">ତୁରନ୍ତ, ବିଜ୍ଞାପନମୁକ୍ତ ଡାଉନଲୋଡ୍ ପାଇଁ AESLocker Pro ପାଆନ୍ତୁ - ଏବଂ ଆପ୍‌ର ଅନ୍ୟ କୌଣସି ସ୍ଥାନରେ ମଧ୍ୟ ବିଜ୍ଞାପନ ନାହିଁ।</string>
+    <string name="dialog_ad_unavailable_title">କୌଣସି ବିଜ୍ଞାପନ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="dialog_ad_unavailable_desc">ଆମେ ବର୍ତ୍ତମାନ ଏକ ବିଜ୍ଞାପନ ଲୋଡ୍ କରିପାରିଲୁ ନାହିଁ, କିନ୍ତୁ ଆପଣ ତଥାପି ରିକଭରି କିଟ୍ ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରିପାରିବେ। କେବେବି ବିଜ୍ଞାପନ ବିନା ତୁରନ୍ତ ଡାଉନଲୋଡ୍ ପାଇଁ AESLocker Pro ପାଆନ୍ତୁ।</string>
+    <string name="btn_continue_download">ଡାଉନଲୋଡ୍ ଜାରି ରଖନ୍ତୁ</string>
 </resources>

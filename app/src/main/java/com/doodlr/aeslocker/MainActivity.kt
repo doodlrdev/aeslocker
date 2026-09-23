@@ -20,7 +20,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.Language
 import androidx.compose.material.icons.filled.LightMode
@@ -34,10 +33,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
-import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -61,6 +58,57 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "user_preferences")
+
+// Single source of truth for every language this app ships translated
+// resources for. Used both by LanguageSwitcherButton (the in-app language
+// picker) and by buildMultilingualReadme (the recovery kit's README.txt) -
+// keeping this in one place means the recovery kit can never drift out of
+// sync with what languages the app actually supports.
+val SUPPORTED_LANGUAGES = linkedMapOf(
+    "العربية" to "ar",
+    "বাংলা" to "bn",
+    "Čeština" to "cs",
+    "Deutsch" to "de",
+    "English" to "en",
+    "Español" to "es",
+    "Español (Latinoamérica)" to "es-419",
+    "Filipino" to "fil",
+    "Français" to "fr",
+    "ગુજરાતી" to "gu",
+    "हिन्दी" to "hi",
+    "Magyar" to "hu",
+    "Bahasa Indonesia" to "id",
+    "Íslenska" to "is",
+    "Italiano" to "it",
+    "日本語" to "ja",
+    "Basa Jawa" to "jv",
+    "ខ្មែរ" to "km",
+    "ಕನ್ನಡ" to "kn",
+    "한국어" to "ko",
+    "Kiswahili" to "sw",
+    "മലയാളം" to "ml",
+    "मराठी" to "mr",
+    "Nāhuatl" to "nah",
+    "Nederlands" to "nl",
+    "ଓଡ଼ିଆ" to "or",
+    "ਪੰਜਾਬੀ" to "pa",
+    "Polski" to "pl",
+    "پښتو" to "ps",
+    "Português (Brasil)" to "pt-BR",
+    "Română" to "ro",
+    "Русский" to "ru",
+    "سنڌي" to "sd",
+    "Suomi" to "fi",
+    "தமிழ்" to "ta",
+    "తెలుగు" to "te",
+    "ไทย" to "th",
+    "Türkçe" to "tr",
+    "Українська" to "uk",
+    "اردو" to "ur",
+    "Tiếng Việt" to "vi",
+    "中文 (简体)" to "zh-CN"
+)
+
 
 /**
  * FlavorComponents.initialize() (consent gathering + MobileAds init, both in the case of Free version only) and the Play Core
@@ -455,57 +503,12 @@ fun ThemeSwitcherButton(
 fun LanguageSwitcherButton() {
     var expanded by remember { mutableStateOf(false) }
 
-    val allLanguages = sortedMapOf(
-        "العربية" to "ar",
-        "বাংলা" to "bn",
-        "Čeština" to "cs",
-        "Deutsch" to "de",
-        "English" to "en",
-        "Español" to "es",
-        "Español (Latinoamérica)" to "es-419",
-        "Filipino" to "fil",
-        "Français" to "fr",
-        "ગુજરાતી" to "gu",
-        "हिन्दी" to "hi",
-        "Magyar" to "hu",
-        "Bahasa Indonesia" to "id",
-        "Íslenska" to "is",
-        "Italiano" to "it",
-        "日本語" to "ja",
-        "Basa Jawa" to "jv",
-        "ខ្មែរ" to "km",
-        "ಕನ್ನಡ" to "kn",
-        "한국어" to "ko",
-        "Kiswahili" to "sw",
-        "മലയാളം" to "ml",
-        "मराठी" to "mr",
-        "Nāhuatl" to "nah",
-        "Nederlands" to "nl",
-        "ଓଡ଼ିଆ" to "or",
-        "ਪੰਜਾਬੀ" to "pa",
-        "Polski" to "pl",
-        "پښتو" to "ps",
-        "Português (Brasil)" to "pt-BR",
-        "Română" to "ro",
-        "Русский" to "ru",
-        "سنڌي" to "sd",
-        "Suomi" to "fi",
-        "தமிழ்" to "ta",
-        "తెలుగు" to "te",
-        "ไทย" to "th",
-        "Türkçe" to "tr",
-        "Українська" to "uk",
-        "اردو" to "ur",
-        "Tiếng Việt" to "vi",
-        "中文 (简体)" to "zh-CN"
-    )
-
     // 1. Create a map that always has a static "System Default" at the top
     val languages = LinkedHashMap<String, String>()
     languages["System Default"] = "" // An empty string signifies the system default
 
     // 2. Populate the rest of the languages
-    for ((name, code) in allLanguages) {
+    for ((name, code) in SUPPORTED_LANGUAGES.toSortedMap()) {
         languages[name] = code
     }
 
@@ -543,7 +546,6 @@ fun CryptoForm(
 ) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
-    val clipboardManager = LocalClipboardManager.current
 
     var inputUri by remember { mutableStateOf<Uri?>(null) }
     var password by remember { mutableStateOf("") }
@@ -557,6 +559,36 @@ fun CryptoForm(
     val filePickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.GetContent()
     ) { uri: Uri? -> inputUri = uri }
+
+    // Lets a user download a "recovery kit" (a .zip containing the offline
+    // script bundled as a raw resource, res/raw/aeslocker_recover.sh, plus
+    // a README.txt generated on the fly in every language this app ships)
+    // via the standard system file picker, so it's saved somewhere durable
+    // outside the app. The script is also published in the project's
+    // GitHub repo, so recovery doesn't depend on this app existing at all.
+    val saveKitLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.CreateDocument("application/zip")
+    ) { outputUri: Uri? ->
+        if (outputUri != null) {
+            runCatching {
+                context.contentResolver.openOutputStream(outputUri)?.use { output ->
+                    java.util.zip.ZipOutputStream(output).use { zip ->
+                        zip.putNextEntry(java.util.zip.ZipEntry("aeslocker_recover.sh"))
+                        context.resources.openRawResource(R.raw.aeslocker_recover).use { it.copyTo(zip) }
+                        zip.closeEntry()
+
+                        zip.putNextEntry(java.util.zip.ZipEntry("README.txt"))
+                        zip.write(buildMultilingualReadme(context).toByteArray(Charsets.UTF_8))
+                        zip.closeEntry()
+                    }
+                }
+            }.onSuccess {
+                Toast.makeText(context, context.getString(R.string.toast_kit_saved), Toast.LENGTH_SHORT).show()
+            }.onFailure {
+                Toast.makeText(context, context.getString(R.string.toast_kit_save_failed), Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 
     val saveFileLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.CreateDocument("*/*")
@@ -758,8 +790,9 @@ fun CryptoForm(
                         scope.launch(Dispatchers.IO) {
                             var isValid = false
                             try {
+                                val totalSize = getFileSize(context, currentUri)
                                 context.contentResolver.openInputStream(currentUri)?.use { stream ->
-                                    isValid = OpenSSLCrypto.validatePassword(stream, password.toCharArray())
+                                    isValid = OpenSSLCrypto.validatePassword(stream, password.toCharArray(), totalSize)
                                 }
                             } catch (e: Exception) {
                                 isValid = false
@@ -814,55 +847,39 @@ fun CryptoForm(
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Text(
-                    text = stringResource(R.string.encryption_cmd_label),
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    text = stringResource(R.string.terminal_commands_explanation),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.85f)
                 )
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                RecoveryKitButton(onDownload = { saveKitLauncher.launch("aeslocker_recovery_kit.zip") })
                 Spacer(modifier = Modifier.height(4.dp))
-                CommandBox(
-                    commandText = stringResource(R.string.encryption_cmd_for_copying),
-                    onCopy = {
-                        clipboardManager.setText(AnnotatedString(context.getString(R.string.encryption_cmd_for_copying)))
-                        Toast.makeText(context, context.getString(R.string.toast_enc_copied), Toast.LENGTH_SHORT).show()
-                    }
-                )
                 Text(
-                    text = stringResource(R.string.encryption_cmd_sub),
+                    text = stringResource(R.string.download_kit_desc),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                     modifier = Modifier.padding(start = 2.dp, top = 2.dp)
                 )
 
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(12.dp))
 
                 Text(
-                    text = stringResource(R.string.decryption_cmd_label),
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-                Spacer(modifier = Modifier.height(4.dp))
-                CommandBox(
-                    commandText = stringResource(R.string.decryption_cmd_for_copying),
-                    onCopy = {
-                        clipboardManager.setText(AnnotatedString(context.getString(R.string.decryption_cmd_for_copying)))
-                        Toast.makeText(context, context.getString(R.string.toast_dec_copied), Toast.LENGTH_SHORT).show()
-                    }
-                )
-                Text(
-                    text = stringResource(R.string.decryption_cmd_sub),
+                    text = stringResource(R.string.github_repo_label, stringResource(R.string.github_repo_url)),
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
-                    modifier = Modifier.padding(start = 2.dp, top = 2.dp)
+                    fontFamily = FontFamily.Monospace,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
                 )
+
+                RecoveryKitPromo()
             }
         }
 
         Spacer(modifier = Modifier.height(12.dp))
 
         Text(
-            text = stringResource(R.string.important_notice),
+            text = stringResource(R.string.important_notice_script),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
         )
@@ -945,45 +962,6 @@ fun PasswordStrengthIndicator(password: String) {
     }
 }
 
-@Composable
-fun CommandBox(
-    commandText: String,
-    onCopy: () -> Unit
-) {
-    Surface(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(6.dp),
-        color = MaterialTheme.colorScheme.surface
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 12.dp, top = 4.dp, bottom = 4.dp, end = 4.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            Text(
-                text = commandText,
-                fontFamily = FontFamily.Monospace,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurface,
-                modifier = Modifier.weight(1f)
-            )
-            IconButton(
-                onClick = onCopy,
-                modifier = Modifier.size(36.dp)
-            ) {
-                Icon(
-                    imageVector = Icons.Default.ContentCopy,
-                    contentDescription = stringResource(R.string.copy_cmd_desc),
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(18.dp)
-                )
-            }
-        }
-    }
-}
-
 
 @Composable
 fun ShareButton() {
@@ -1017,4 +995,94 @@ fun ShareButton() {
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
         )
     }
+}
+
+/**
+ * Builds README.txt content for the recovery kit, with one section per
+ * language this app ships resources for - so the file is useful to
+ * whoever opens it, regardless of which language their own device is set
+ * to (they may not even have this app installed anymore by the time they
+ * need this).
+ *
+ * Languages come from SUPPORTED_LANGUAGES (the same list the in-app
+ * language switcher uses), NOT from AssetManager.getLocales(). That was
+ * tried first but had to be dropped: it reflects every locale present
+ * anywhere in the compiled resource table, including ones pulled in by
+ * dependencies (Material Components, AppCompat, Play Services all ship
+ * their own translations for generic strings in languages this app never
+ * actually translated, e.g. "af", "az") - so those sections silently
+ * fell back to English with no way to tell they weren't real.
+ * SUPPORTED_LANGUAGES is the curated, authoritative list instead.
+ *
+ * Section order: English first (most widely understood, so whoever opens
+ * this can orient themselves immediately), then the rest alphabetically
+ * by display name.
+ */
+private fun buildMultilingualReadme(context: Context): String {
+    // Sorted by each language's ENGLISH name (Arabic, Bengali, Czech...),
+    // not its native name - sorting by native name technically is
+    // alphabetical too, but produces a Unicode-block grouping (all Latin-
+    // script languages first, then Cyrillic, then Arabic, then each Indic
+    // script...) rather than the true A-Z order a reader expects.
+    val orderedTags = SUPPORTED_LANGUAGES.values
+        .sortedBy { tag ->
+            if (tag == "en") "" // pin English first, ahead of every real name
+            else java.util.Locale.forLanguageTag(tag).getDisplayName(java.util.Locale.ENGLISH)
+        }
+
+    val sections = orderedTags.map { tag ->
+        val locale = java.util.Locale.forLanguageTag(tag)
+        val localizedContext = context.createConfigurationContext(
+            android.content.res.Configuration(context.resources.configuration).apply {
+                setLocale(locale)
+            }
+        )
+        val s = localizedContext.resources
+        val languageName = locale.getDisplayName(locale).replaceFirstChar { it.uppercase(locale) }
+
+        buildString {
+            appendLine("=".repeat(60))
+            appendLine("$languageName ($tag)")
+            appendLine("=".repeat(60))
+            appendLine()
+            appendLine(s.getString(R.string.readme_title))
+            appendLine()
+            appendLine(s.getString(R.string.readme_intro))
+            appendLine()
+            appendLine(s.getString(R.string.readme_terminal_intro))
+            appendLine()
+            appendLine(s.getString(R.string.readme_requirements_title))
+            appendLine(
+                s.getString(
+                    R.string.readme_requirements_body,
+                    s.getString(R.string.cmd_openssl_version),
+                    s.getString(R.string.cmd_brew_install_openssl)
+                )
+            )
+            appendLine()
+            appendLine(s.getString(R.string.readme_chmod_title))
+            appendLine(s.getString(R.string.readme_chmod_body, s.getString(R.string.cmd_chmod)))
+            appendLine()
+            appendLine(s.getString(R.string.readme_usage_title))
+            appendLine(s.getString(R.string.readme_usage_encrypt, s.getString(R.string.cmd_encrypt_example)))
+            appendLine()
+            appendLine(s.getString(R.string.readme_usage_decrypt, s.getString(R.string.cmd_decrypt_example)))
+            appendLine()
+            appendLine(s.getString(R.string.readme_password_note))
+            appendLine()
+            appendLine(
+                s.getString(
+                    R.string.readme_linux_note,
+                    s.getString(R.string.cmd_openssl_version),
+                    s.getString(R.string.cmd_apt_install_xxd)
+                )
+            )
+            appendLine()
+            appendLine(s.getString(R.string.readme_android_note, s.getString(R.string.cmd_termux_install_openssl)))
+            appendLine()
+            appendLine(s.getString(R.string.readme_windows_note, s.getString(R.string.cmd_apt_install_xxd)))
+        }
+    }
+
+    return sections.joinToString(separator = "\n\n")
 }

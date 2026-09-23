@@ -1,43 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">SANDI (ENCRYPT)</string>
-    <string name="tab_decrypt">BUKA SANDI (DECRYPT)</string>
-    <string name="select_file">Pilih Berkas</string>
-    <string name="no_file_selected">Ora ana berkas sing dipilih</string>
-    <string name="password_label">Tembung Sandi</string>
-    <string name="encrypt_file">Sandek Berkas (Encrypt)</string>
-    <string name="decrypt_file">Buka Sandi Berkas</string>
+    <string name="tab_encrypt">ENKRIPSI</string>
+    <string name="tab_decrypt">DEKRIPSI</string>
+    <string name="select_file">Pilih File</string>
+    <string name="no_file_selected">Ora ana file sing dipilih</string>
+    <string name="password_label">Sandi</string>
+    <string name="encrypt_file">Enkripsi File</string>
+    <string name="decrypt_file">Dekripsi File</string>
     <string name="processing_progress">%1$d%% Diproses...</string>
-    <string name="terminal_commands_title">Perintah Terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Perintah Enkripsi:</string>
-    <string name="decryption_cmd_label">Perintah Dekripsi:</string>
-    <string name="encryption_cmd_sub">Ganti [input.ext] karo jeneng berkas lan ekstensine</string>
-    <string name="decryption_cmd_sub">Ganti [output.ext] karo jeneng lan ekstensi berkas asli</string>
-    <string name="important_notice">Salin perintah ing dhuwur lan simpen ing papan sing aman supaya bisa digunakake yen aplikasi iki ora bisa diakses ing mangarep. Perintah OpenSSL iki bisa dieksekusi langsung ing terminal ing macOS, Linux, Windows (liwat WSL utawa Git Bash), utawa lingkungan Android sing ndhukung antarmuka baris perintah.</string>
-    <string name="copy_cmd_desc">Salin perintah</string>
+    <string name="terminal_commands_title">Pulihake Tanpa Aplikasi</string>
+
+    <string name="terminal_commands_explanation">File dienkripsi nganggo AES-256 lan diautentikasi nganggo HMAC-SHA256, mula manipulasi utawa kerusakan mesthi bisa dideteksi. Unduh recovery kit ing ngisor iki kanggo ngenkripsi utawa dekripsi file saka command line - ora perlu nginstal aplikasi. Bisa digunakake ing macOS, Linux, Windows (liwat WSL utawa Git Bash), lan lingkungan terminal Android. Pandhuan lengkap kanggo persiyapan lan panggunaan ana ing README.txt ing njero undhuhan.</string>
+    <string name="download_kit_button">Unduh Recovery Kit</string>
+    <string name="download_kit_desc">Berkas ZIP sing ngemot skrip pemulihan lan pandhuan lengkap. Sawise diundhuh, ekstrak lan wacanen README.txt luwih dhisik sadurunge mbukak skrip. Mbutuhake OpenSSL 3.0 utawa luwih anyar - simpen kit iki ing panggonan sing aman, kapisah saka aplikasi.</string>
+    <string name="github_repo_label">Source uga diterbitake ing: %1$s</string>
+    <string name="important_notice_script">Unduh recovery kit lan simpen ing panggonan sing aman - cloud drive, USB stick, utawa ing endi wae supaya ora ilang - supaya bisa digunakake yen aplikasi wis ora kasedhiya ing mangsa ngarep.</string>
+
+    <string name="readme_title">AESLocker Recovery Kit</string>
+    <string name="readme_intro">Kit iki ngidini sampeyan ngenkripsi utawa dekripsi file AESLocker saka command line, tanpa aplikasi diinstal. Isine rong file: aeslocker_recover.sh (skrip) lan README iki.</string>
+    <string name="readme_terminal_intro">Saben command ing pandhuan iki kudu diketik ing terminal (uga diarani command line utawa shell), dudu kanthi ngeklik kaping pindho. Ing macOS utawa Linux, bukak aplikasi sing jenenge Terminal. Ing Windows, gunakake WSL (Windows Subsystem for Linux) utawa Git Bash - Command Prompt lan PowerShell ora bakal bisa mbukak command kasebut. Saben command ing ngisor ditampilake ing baris dhewe lan diwiwiti nganggo tandha $ - ketik kabeh sawise $ (ora kalebu tandha $ dhewe).</string>
+    <string name="readme_requirements_title">Syarat</string>
+    <string name="readme_requirements_body">"Sampeyan kudu wis nginstal OpenSSL 3.0 utawa luwih anyar. Kanggo mriksa versi OpenSSL, jalanake command ing ngisor iki ing terminal:\n\n    $ %1$s\n\nIng macOS, \'openssl\' bawaan dudu OpenSSL sing sejatine lan ora bakal bisa digunakake. Kanggo nginstal versi sing bisa digunakake, jalanake command ing ngisor iki ing terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Langkah 1: Gawe skrip supaya bisa dieksekusi</string>
+    <string name="readme_chmod_body">"Sadurunge bisa mbukak skrip kaping pisanan, sistem sampeyan kudu menehi ijin kanggo ngeksekusi. Ing folder panggonan sampeyan ngekstrak kit iki, jalanake command ing ngisor iki ing terminal:\n\n    $ %1$s\n\nSampeyan mung perlu nindakake iki sapisan."</string>
+    <string name="readme_usage_title">Langkah 2: Jalanake skrip</string>
+    <string name="readme_usage_encrypt">"Kanggo ngenkripsi file, jalanake command ing ngisor iki ing terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Kanggo dekripsi file, jalanake command ing ngisor iki ing terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Sampeyan bakal dijaluk ngetik sandi langsung menyang terminal. Sandi ora bakal ditampilake ing layar utawa disimpen ing ngendi wae. Yen sampeyan lali sandi, skrip iki ora bisa mbalekake kanggo sampeyan - ora ana cara kanggo ngliwati iki, miturut desain.</string>
+    <string name="readme_linux_note">"Pangguna Linux: akèh distribusi saiki wis nyakup OpenSSL sing kompatibel. Kanggo mriksa versi OpenSSL sampeyan, jalanake printah ing ngisor iki ing terminal:\n\n    $ %1$s\n\nYèn nalika mbukak skrip sampeyan entuk kesalahan \'xxd: command not found\', instal nganggo package manager sampeyan - contoné, ing Debian utawa Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Pangguna Android: skrip iki bisa dilakokaké ing aplikasi terminal kaya Termux. Instal Termux saka F-Droid (versi saka Google Play Store wis lawas lan ora didhukung manèh), bukak, banjur instal piranti sing dibutuhaké kanthi nglakokaké printah ing ngisor iki ing terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Pangguna Windows: jalanake skrip iki (aeslocker_recover.sh) ing WSL (Windows Subsystem for Linux) utawa Git Bash. Skrip iki ora bisa langsung mlaku ing Command Prompt utawa PowerShell. Git Bash wis nyakup kabèh sing dibutuhaké skrip iki. WSL mbukak distribusi Linux sing nyata, mula yèn sampeyan entuk kesalahan \'xxd: command not found\' ing kana, instal kanthi cara sing padha karo pangguna Linux - contoné, ing Debian utawa Ubuntu:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">Ganti Tema</string>
-    <string name="share_button_label">BAGIKAN</string>
-    <string name="share_button_desc">Seneng karo aplikasi iki? Bagikna karo wong liya.</string>
-    <string name="password_strength_weak">Ringkih</string>
+    <string name="share_button_label">BAGIKAKE</string>
+    <string name="share_button_desc">Seneng karo aplikasi iki? Bagikake karo wong liya.</string>
+    <string name="password_strength_weak">Lemah</string>
     <string name="password_strength_medium">Sedheng</string>
-    <string name="password_strength_strong">Kuat</string>
-    <string name="toast_select_file">Mangga pilih berkas dhisik</string>
-    <string name="toast_enter_password">Mangga lebokake tembung sandi</string>
-    <string name="toast_encrypt_success">Sukses dienkripsi!</string>
-    <string name="toast_decrypt_success">Sukses didekripsi!</string>
-    <string name="toast_operation_failed">Operasi gagal: Tembung sandi salah utawa berkas rusak.</string>
-    <string name="toast_invalid_file">Tembung sandi salah utawa format berkas OpenSSL ora sah.</string>
-    <string name="toast_enc_copied">Perintah enkripsi disalin!</string>
-    <string name="toast_dec_copied">Perintah dekripsi disalin!</string>
+    <string name="password_strength_strong">Kuwat</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Mangga pilih file dhisik</string>
+    <string name="toast_enter_password">Mangga lebokake sandi</string>
+    <string name="toast_encrypt_success">Berhasil dienkripsi!</string>
+    <string name="toast_decrypt_success">Berhasil didekripsi!</string>
+    <string name="toast_operation_failed">Operasi gagal: sandi salah utawa file rusak.</string>
+
+    <string name="toast_invalid_file">Sandi salah, utawa iki dudu file AESLocker sing valid.</string>
+    <string name="toast_kit_saved">Recovery kit wis disimpen.</string>
+    <string name="toast_kit_save_failed">Recovery kit ora bisa disimpen. Mangga coba maneh.</string>
+
     <string name="toast_title_success">SUKSES</string>
-    <string name="toast_title_notice">KABAR</string>
-    <string name="toast_button_ok">OKE</string>
-    <string name="theme_system">Baku Sistem</string>
-    <string name="theme_light">Mode Terang</string>
+    <string name="toast_title_notice">PEMBERITAHUAN</string>
+    <string name="toast_button_ok">OK</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Default Sistem</string>
+    <string name="theme_light">Mode Cahya</string>
     <string name="theme_dark">Mode Peteng</string>
     <string name="cd_switch_theme">Ganti Tema</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">Ganti Basa</string>
-    <string name="cd_show_password">Tuduhake tembung sandi</string>
-    <string name="cd_hide_password"> Delikake tembung sandi</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Tampilake sandi</string>
+    <string name="cd_hide_password">Singidake sandi</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Nonton Iklan kanggo Ngunduh Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan - lan ora ana iklan ing bagean liyane saka aplikasi.</string>
+    <string name="dialog_ad_unavailable_title">Ora Ana Iklan sing Kasedhiya</string>
+    <string name="dialog_ad_unavailable_desc">Saiki kita ora bisa ngemot iklan, nanging sampeyan isih bisa ngunduh recovery kit kanthi gratis. Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan, saklawase.</string>
+    <string name="btn_continue_download">Terusake Ngunduh</string>
 </resources>

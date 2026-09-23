@@ -1,39 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">എൻക്രിപ്റ്റ്</string>
     <string name="tab_decrypt">ഡീക്രിപ്റ്റ്</string>
     <string name="select_file">ഫയൽ തിരഞ്ഞെടുക്കുക</string>
-    <string name="no_file_selected">ഫയലുകളൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല</string>
+    <string name="no_file_selected">ഫയൽ തിരഞ്ഞെടുത്തിട്ടില്ല</string>
     <string name="password_label">പാസ്‌വേഡ്</string>
     <string name="encrypt_file">ഫയൽ എൻക്രിപ്റ്റ് ചെയ്യുക</string>
     <string name="decrypt_file">ഫയൽ ഡീക്രിപ്റ്റ് ചെയ്യുക</string>
-    <string name="processing_progress">%1$d%% പുരോഗമിക്കുന്നു...</string>
-    <string name="terminal_commands_title">ടെർമിനൽ കമാൻഡുകൾ (OpenSSL)</string>
-    <string name="encryption_cmd_label">എൻക്രിപ്ഷൻ കമാൻഡ്:</string>
-    <string name="decryption_cmd_label">ഡീക്രിപ്ഷൻ കമാൻഡ്:</string>
-    <string name="encryption_cmd_sub">[input.ext]-ന് പകരം നിങ്ങളുടെ ഫയലിന്റെ പേരും എക്സ്റ്റൻഷനും നൽകുക</string>
-    <string name="decryption_cmd_sub">[output.ext]-ന് പകരം നിങ്ങളുടെ യഥാർത്ഥ ഫയലിന്റെ പേരും എക്സ്റ്റൻഷനും നൽകുക</string>
-    <string name="important_notice">ഭാവിയിൽ ഈ ആപ്പ് ലഭ്യമായില്ലെങ്കിലും ഉപയോഗിക്കാൻ മുകളിലുള്ള കമാൻഡുകൾ കോപ്പി ചെയ്ത് സൂക്ഷിക്കുക. macOS, Linux, Windows (WSL അല്ലെങ്കിൽ Git Bash വഴി), അല്ലെങ്കിൽ കമാൻഡ് ലൈൻ പിന്തുണയുള്ള Android പരിസ്ഥിതികളിൽ ഈ OpenSSL കമാൻഡുകൾ നേരിട്ട് പ്രവർത്തിപ്പിക്കാം.</string>
-    <string name="copy_cmd_desc">കമാൻഡ് കോപ്പി ചെയ്യുക</string>
+    <string name="processing_progress">%1$d%% പ്രോസസ്സ് ചെയ്യുന്നു...</string>
+    <string name="terminal_commands_title">ആപ്പ് ഇല്ലാതെ വീണ്ടെടുക്കുക</string>
+
+    <string name="terminal_commands_explanation">ഫയലുകൾ AES-256 ഉപയോഗിച്ച് എൻക്രിപ്റ്റ് ചെയ്യുകയും HMAC-SHA256 ഉപയോഗിച്ച് ഓതന്റിക്കേറ്റ് ചെയ്യുകയും ചെയ്യുന്നു. അതിനാൽ കൃത്രിമം കാണിക്കുകയോ കേടുപാടുകൾ സംഭവിക്കുകയോ ചെയ്താൽ അത് എല്ലായ്പ്പോഴും കണ്ടെത്താനാകും. ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാതെ കമാൻഡ് ലൈനിൽ നിന്ന് ഫയലുകൾ എൻക്രിപ്റ്റ് ചെയ്യാനോ ഡീക്രിപ്റ്റ് ചെയ്യാനോ താഴെയുള്ള റിക്കവറി കിറ്റ് ഡൗൺലോഡ് ചെയ്യുക. macOS, Linux, Windows (WSL അല്ലെങ്കിൽ Git Bash വഴി), Android ടെർമിനൽ പരിതസ്ഥിതികൾ എന്നിവയിൽ ഇത് പ്രവർത്തിക്കും. പൂർണ്ണമായ സജ്ജീകരണവും ഉപയോഗ നിർദ്ദേശങ്ങളും ഡൗൺലോഡിനുള്ളിലെ README.txt-ൽ ഉൾപ്പെടുത്തിയിട്ടുണ്ട്.</string>
+    <string name="download_kit_button">റിക്കവറി കിറ്റ് ഡൗൺലോഡ് ചെയ്യുക</string>
+    <string name="download_kit_desc">റിക്കവറി സ്ക്രിപ്റ്റും പൂർണ്ണമായ നിർദ്ദേശങ്ങളും അടങ്ങിയ ZIP ഫയൽ. ഡൗൺലോഡ് ചെയ്ത ശേഷം അത് അൺസിപ്പ് ചെയ്യുകയും സ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കുന്നതിന് മുമ്പ് ആദ്യം README.txt വായിക്കുകയും ചെയ്യുക. OpenSSL 3.0 അല്ലെങ്കിൽ അതിന് ശേഷമുള്ള പതിപ്പ് ആവശ്യമാണ് - കിറ്റ് ആപ്പിൽ നിന്ന് വേറിട്ട സുരക്ഷിതമായ സ്ഥലത്ത് സൂക്ഷിക്കുക.</string>    <string name="github_repo_label">സോഴ്സ് കോഡ് ഇവിടെയും പ്രസിദ്ധീകരിച്ചിട്ടുണ്ട്: %1$s</string>
+    <string name="important_notice_script">റിക്കവറി കിറ്റ് ഡൗൺലോഡ് ചെയ്ത് സുരക്ഷിതമായ സ്ഥലത്ത് സൂക്ഷിക്കുക - ക്ലൗഡ് ഡ്രൈവ്, USB സ്റ്റിക്ക്, അല്ലെങ്കിൽ നിങ്ങൾക്ക് നഷ്ടപ്പെടാത്ത മറ്റേതെങ്കിലും സ്ഥലത്ത് - ഭാവിയിൽ ആപ്പ് ലഭ്യമല്ലാതായാൽ അത് ഉപയോഗിക്കാൻ കഴിയുന്നതിനായി.</string>
+
+    <string name="readme_title">AESLocker റിക്കവറി കിറ്റ്</string>
+    <string name="readme_intro">ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാതെ തന്നെ കമാൻഡ് ലൈനിൽ നിന്ന് AESLocker ഫയലുകൾ എൻക്രിപ്റ്റ് ചെയ്യാനും ഡീക്രിപ്റ്റ് ചെയ്യാനും ഈ കിറ്റ് നിങ്ങളെ അനുവദിക്കുന്നു. ഇതിൽ രണ്ട് ഫയലുകളുണ്ട്: aeslocker_recover.sh (സ്ക്രിപ്റ്റ്), ഈ README.</string>
+    <string name="readme_terminal_intro">ഈ ഗൈഡിലെ എല്ലാ കമാൻഡുകളും ടെർമിനലിൽ (കമാൻഡ് ലൈൻ അല്ലെങ്കിൽ ഷെൽ എന്നും വിളിക്കുന്നു) ടൈപ്പ് ചെയ്യണം; ഡബിൾ ക്ലിക്ക് ചെയ്യരുത്. macOS അല്ലെങ്കിൽ Linux-ൽ Terminal എന്ന ആപ്പ് തുറക്കുക. Windows-ൽ WSL (Windows Subsystem for Linux) അല്ലെങ്കിൽ Git Bash ഉപയോഗിക്കുക - Command Prompt, PowerShell എന്നിവ ഈ കമാൻഡുകൾ പ്രവർത്തിപ്പിക്കില്ല. താഴെയുള്ള ഓരോ കമാൻഡും സ്വന്തം വരിയിൽ $ ചിഹ്നത്തോടെ ആരംഭിക്കുന്നു - $-ന് ശേഷമുള്ള എല്ലാം ടൈപ്പ് ചെയ്യുക ($ ചിഹ്നം തന്നെ ടൈപ്പ് ചെയ്യരുത്).</string>
+    <string name="readme_requirements_title">ആവശ്യകതകൾ</string>
+    <string name="readme_requirements_body">"OpenSSL 3.0 അല്ലെങ്കിൽ അതിനുശേഷമുള്ള പതിപ്പ് ഇൻസ്റ്റാൾ ചെയ്തിരിക്കണം. നിങ്ങളുടെ OpenSSL പതിപ്പ് പരിശോധിക്കാൻ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %1$s\n\nmacOS-ൽ ബിൽറ്റ്-ഇൻ \'openssl\' യഥാർത്ഥ OpenSSL അല്ല, അതിനാൽ അത് പ്രവർത്തിക്കില്ല. പ്രവർത്തിക്കുന്ന പതിപ്പ് ഇൻസ്റ്റാൾ ചെയ്യാൻ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">ഘട്ടം 1: സ്ക്രിപ്റ്റ് എക്സിക്യൂട്ട് ചെയ്യാവുന്നതാക്കുക</string>
+    <string name="readme_chmod_body">"ആദ്യമായി സ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കുന്നതിന് മുമ്പ്, അത് എക്സിക്യൂട്ട് ചെയ്യാൻ നിങ്ങളുടെ സിസ്റ്റത്തിന് അനുമതി ആവശ്യമാണ്. ഈ കിറ്റ് എക്സ്ട്രാക്ട് ചെയ്ത ഫോൾഡറിൽ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %1$s\n\nഇത് ഒരിക്കൽ മാത്രം ചെയ്താൽ മതി."</string>
+    <string name="readme_usage_title">ഘട്ടം 2: സ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കുക</string>
+    <string name="readme_usage_encrypt">"ഒരു ഫയൽ എൻക്രിപ്റ്റ് ചെയ്യാൻ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"ഒരു ഫയൽ ഡീക്രിപ്റ്റ് ചെയ്യാൻ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">നിങ്ങളുടെ പാസ്‌വേഡ് ടെർമിനലിൽ നേരിട്ട് ടൈപ്പ് ചെയ്യാൻ നിങ്ങളോട് ആവശ്യപ്പെടും. അത് സ്ക്രീനിൽ ഒരിക്കലും കാണിക്കുകയോ എവിടെയും സേവ് ചെയ്യുകയോ ഇല്ല. പാസ്‌വേഡ് മറന്നാൽ ഈ സ്ക്രിപ്റ്റിന് അത് വീണ്ടെടുക്കാൻ കഴിയില്ല - രൂപകൽപ്പന പ്രകാരം ഇതിന് മറികടക്കാനുള്ള മാർഗമില്ല.</string>
+    <string name="readme_linux_note">"Linux ഉപയോക്താക്കൾ: നിലവിലുള്ള മിക്ക വിതരണങ്ങളിലും അനുയോജ്യമായ OpenSSL ഇതിനകം ഉൾപ്പെടുത്തിയിട്ടുണ്ട്. നിങ്ങളുടെ OpenSSL പതിപ്പ് പരിശോധിക്കാൻ ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കുക:\n\n    $ %1$s\n\nസ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കുമ്പോൾ \'xxd: command not found\' എന്ന പിശക് ലഭിക്കുകയാണെങ്കിൽ, നിങ്ങളുടെ പാക്കേജ് മാനേജർ ഉപയോഗിച്ച് ഇത് ഇൻസ്റ്റാൾ ചെയ്യുക - ഉദാഹരണത്തിന്, Debian അല്ലെങ്കിൽ Ubuntu-ൽ:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android ഉപയോക്താക്കൾ: Termux പോലുള്ള ഒരു ടെർമിനൽ ആപ്പിനുള്ളിൽ ഈ സ്ക്രിപ്റ്റ് പ്രവർത്തിപ്പിക്കാം. F-Droid-ൽ നിന്ന് Termux ഇൻസ്റ്റാൾ ചെയ്യുക (Google Play Store-ലെ പതിപ്പ് കാലഹരണപ്പെട്ടതാണ്, ഇപ്പോൾ പരിപാലിക്കുന്നില്ല), അത് തുറന്ന് ടെർമിനലിൽ താഴെ പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിച്ച് ആവശ്യമായ ടൂളുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows ഉപയോക്താക്കൾ: ഈ സ്ക്രിപ്റ്റ് (aeslocker_recover.sh) WSL (Windows Subsystem for Linux) അല്ലെങ്കിൽ Git Bash-നുള്ളിൽ പ്രവർത്തിപ്പിക്കുക. Command Prompt-ലോ PowerShell-ലോ ഇത് നേരിട്ട് പ്രവർത്തിക്കില്ല. ഈ സ്ക്രിപ്റ്റിന് ആവശ്യമായതെല്ലാം Git Bash-ൽ ഉൾപ്പെടുത്തിയിട്ടുണ്ട്. WSL ഒരു യഥാർത്ഥ Linux വിതരണമാണ് പ്രവർത്തിപ്പിക്കുന്നത്, അതിനാൽ അവിടെ \'xxd: command not found\' എന്ന പിശക് ലഭിക്കുകയാണെങ്കിൽ, Linux ഉപയോക്താവ് ചെയ്യുന്നതുപോലെ തന്നെ ഇത് ഇൻസ്റ്റാൾ ചെയ്യുക - ഉദാഹരണത്തിന്, Debian അല്ലെങ്കിൽ Ubuntu-ൽ:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">തീം മാറ്റുക</string>
     <string name="share_button_label">പങ്കിടുക</string>
-    <string name="share_button_desc">ആപ്പ് ഇഷ്ടമായോ? മറ്റുള്ളവരുമായി പങ്കിടൂ.</string>
+    <string name="share_button_desc">ആപ്പ് ഇഷ്ടപ്പെട്ടോ? മറ്റുള്ളവരുമായി പങ്കിടുക.</string>
     <string name="password_strength_weak">ദുർബലം</string>
-    <string name="password_strength_medium">ഇടത്തരം</string>
+    <string name="password_strength_medium">മധ്യമം</string>
     <string name="password_strength_strong">ശക്തം</string>
 
     <!-- Toast Messages -->
-    <string name="toast_select_file">ദയവായി ആദ്യം ഒരു ഫയൽ തിരഞ്ഞെടുക്കുക</string>
-    <string name="toast_enter_password">ദയവായി ഒരു പാസ്‌വേഡ് നൽകുക</string>
-    <string name="toast_encrypt_success">എൻക്രിപ്ഷൻ വിജയിച്ചു!</string>
-    <string name="toast_decrypt_success">ഡീക്രിപ്ഷൻ വിജയിച്ചു!</string>
-    <string name="toast_operation_failed">പ്രവർത്തനം പരാജയപ്പെട്ടു: തെറ്റായ പാസ്‌വേഡ് അല്ലെങ്കിൽ തകരാറുള്ള ഫയൽ.</string>
-    <string name="toast_invalid_file">തെറ്റായ പാസ്‌വേഡ് അല്ലെങ്കിൽ അസാധുവായ OpenSSL ഫയൽ ഫോർമാറ്റ്.</string>
-    <string name="toast_enc_copied">എൻക്രിപ്ഷൻ കമാൻഡ് കോപ്പി ചെയ്തു!</string>
-    <string name="toast_dec_copied">ഡീക്രിപ്ഷൻ കമാൻഡ് കോപ്പി ചെയ്തു!</string>
-    <string name="toast_title_success">വിജയിച്ചിരിക്കുന്നു</string>
-    <string name="toast_title_notice">ശ്രദ്ധിക്കുക</string>
+    <string name="toast_select_file">ആദ്യം ഒരു ഫയൽ തിരഞ്ഞെടുക്കുക</string>
+    <string name="toast_enter_password">ഒരു പാസ്‌വേഡ് നൽകുക</string>
+    <string name="toast_encrypt_success">വിജയകരമായി എൻക്രിപ്റ്റ് ചെയ്തു!</string>
+    <string name="toast_decrypt_success">വിജയകരമായി ഡീക്രിപ്റ്റ് ചെയ്തു!</string>
+    <string name="toast_operation_failed">പ്രവർത്തനം പരാജയപ്പെട്ടു: തെറ്റായ പാസ്‌വേഡ് അല്ലെങ്കിൽ കേടായ ഫയൽ.</string>
+
+    <string name="toast_invalid_file">തെറ്റായ പാസ്‌വേഡ്, അല്ലെങ്കിൽ ഇത് സാധുവായ AESLocker ഫയൽ അല്ല.</string>
+    <string name="toast_kit_saved">റിക്കവറി കിറ്റ് സേവ് ചെയ്തു.</string>
+    <string name="toast_kit_save_failed">റിക്കവറി കിറ്റ് സേവ് ചെയ്യാനായില്ല. വീണ്ടും ശ്രമിക്കുക.</string>
+
+    <string name="toast_title_success">വിജയം</string>
+    <string name="toast_title_notice">അറിയിപ്പ്</string>
     <string name="toast_button_ok">ശരി</string>
 
     <!-- Theme Switcher -->
@@ -48,4 +64,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">പാസ്‌വേഡ് കാണിക്കുക</string>
     <string name="cd_hide_password">പാസ്‌വേഡ് മറയ്ക്കുക</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">റിക്കവറി കിറ്റ് ഡൗൺലോഡ് ചെയ്യാൻ പരസ്യം കാണുക</string>
+    <string name="recovery_kit_pro_promo">പരസ്യങ്ങളില്ലാതെ ഉടൻ ഡൗൺലോഡ് ചെയ്യാനും ആപ്പിന്റെ മറ്റിടങ്ങളിലും പരസ്യങ്ങളൊന്നും കാണാതിരിക്കാനും AESLocker Pro നേടുക.</string>
+    <string name="dialog_ad_unavailable_title">പരസ്യം ലഭ്യമല്ല</string>
+    <string name="dialog_ad_unavailable_desc">ഇപ്പോൾ ഒരു പരസ്യം ലോഡ് ചെയ്യാനായില്ല, പക്ഷേ നിങ്ങൾക്ക് റിക്കവറി കിറ്റ് സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യാം. പരസ്യങ്ങളൊന്നുമില്ലാതെ ഉടൻ ഡൗൺലോഡുകൾക്കായി AESLocker Pro നേടുക.</string>
+    <string name="btn_continue_download">ഡൗൺലോഡ് തുടരുക</string>
 </resources>

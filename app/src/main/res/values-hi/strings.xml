@@ -1,38 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">एन्क्रिप्ट</string>
     <string name="tab_decrypt">डिक्रिप्ट</string>
     <string name="select_file">फ़ाइल चुनें</string>
-    <string name="no_file_selected">कोई फ़ाइल नहीं चुनी गई</string>
+    <string name="no_file_selected">कोई फ़ाइल चयनित नहीं है</string>
     <string name="password_label">पासवर्ड</string>
     <string name="encrypt_file">फ़ाइल एन्क्रिप्ट करें</string>
     <string name="decrypt_file">फ़ाइल डिक्रिप्ट करें</string>
-    <string name="processing_progress">%1$d%% प्रगति पर है...</string>
-    <string name="terminal_commands_title">टर्मिनल कमांड्स (OpenSSL)</string>
-    <string name="encryption_cmd_label">एन्क्रिप्शन कमांड:</string>
-    <string name="decryption_cmd_label">डिक्रिप्शन कमांड:</string>
-    <string name="encryption_cmd_sub">[input.ext] के स्थान पर अपनी फ़ाइल का नाम और उसका एक्सटेंशन लिखें</string>
-    <string name="decryption_cmd_sub">[output.ext] के स्थान पर अपनी मूल फ़ाइल का नाम और एक्सटेंशन लिखें</string>
-    <string name="important_notice">उपरोक्त कमांड्स को कॉपी करके कहीं सुरक्षित रख लें ताकि भविष्य में ऐप उपलब्ध न होने पर भी आप इनका उपयोग कर सकें। इन OpenSSL कमांड्स को macOS, Linux, Windows (WSL या Git Bash के माध्यम से), या कमांड-लाइन इंटरफेस समर्थित Android वातावरण में सीधे चलाया जा सकता है।</string>
-    <string name="copy_cmd_desc">कमांड कॉपी करें</string>
+    <string name="processing_progress">%1$d%% प्रोसेसिंग...</string>
+    <string name="terminal_commands_title">ऐप के बिना रिकवर करें</string>
+
+    <string name="terminal_commands_explanation">फ़ाइलें AES-256 से एन्क्रिप्ट और HMAC-SHA256 से ऑथेंटिकेट की जाती हैं, इसलिए किसी भी छेड़छाड़ या खराबी का हमेशा पता चल जाता है। कमांड लाइन से फ़ाइलों को एन्क्रिप्ट या डिक्रिप्ट करने के लिए नीचे दिया गया रिकवरी किट डाउनलोड करें - ऐप इंस्टॉल करने की आवश्यकता नहीं है। यह macOS, Linux, Windows (WSL या Git Bash के माध्यम से) और Android टर्मिनल वातावरण में काम करता है। सेटअप और उपयोग के पूरे निर्देश डाउनलोड के अंदर README.txt में दिए गए हैं।</string>
+    <string name="download_kit_button">रिकवरी किट डाउनलोड करें</string>
+    <string name="download_kit_desc">रिकवरी स्क्रिप्ट और पूरी जानकारी वाली एक ZIP फ़ाइल। डाउनलोड करने के बाद इसे अनज़िप करें और स्क्रिप्ट चलाने से पहले README.txt को पढ़ें। OpenSSL 3.0 या उसके बाद का संस्करण आवश्यक है - किट को ऐप से अलग किसी सुरक्षित स्थान पर सेव करें।</string>
+    <string name="github_repo_label">सोर्स यहाँ भी प्रकाशित है: %1$s</string>
+    <string name="important_notice_script">रिकवरी किट डाउनलोड करें और इसे किसी सुरक्षित स्थान पर रखें - क्लाउड ड्राइव, USB स्टिक या ऐसी किसी भी जगह जहाँ आप इसे खोएँ नहीं - ताकि भविष्य में ऐप उपलब्ध न होने पर आप इसका उपयोग कर सकें।</string>
+
+    <string name="readme_title">AESLocker रिकवरी किट</string>
+    <string name="readme_intro">यह किट आपको ऐप इंस्टॉल किए बिना कमांड लाइन से AESLocker फ़ाइलों को एन्क्रिप्ट या डिक्रिप्ट करने देती है। इसमें दो फ़ाइलें हैं: aeslocker_recover.sh (स्क्रिप्ट) और यह README।</string>
+    <string name="readme_terminal_intro">इस गाइड में दिए गए प्रत्येक कमांड को टर्मिनल (जिसे कमांड लाइन या shell भी कहा जाता है) में टाइप करना होगा, डबल-क्लिक नहीं करना है। macOS या Linux पर Terminal नाम का ऐप खोलें। Windows पर WSL (Windows Subsystem for Linux) या Git Bash का उपयोग करें - Command Prompt और PowerShell इन कमांड को नहीं चला पाएँगे। नीचे प्रत्येक कमांड अपनी अलग लाइन में दिया गया है और $ चिन्ह से शुरू होता है - $ के बाद की हर चीज़ टाइप करें (स्वयं $ चिन्ह नहीं)।</string>
+    <string name="readme_requirements_title">आवश्यकताएँ</string>
+    <string name="readme_requirements_body">"आपके सिस्टम पर OpenSSL 3.0 या नया इंस्टॉल होना चाहिए। अपना OpenSSL संस्करण जाँचने के लिए टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %1$s\n\nmacOS पर बिल्ट-इन \'openssl\' वास्तविक OpenSSL नहीं है और काम नहीं करेगा। काम करने वाला संस्करण इंस्टॉल करने के लिए टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">चरण 1: स्क्रिप्ट को executable बनाएँ</string>
+    <string name="readme_chmod_body">"पहली बार स्क्रिप्ट चलाने से पहले, आपके सिस्टम को इसे चलाने की अनुमति देना आवश्यक है। जिस फ़ोल्डर में आपने यह किट एक्सट्रैक्ट की है, वहाँ टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %1$s\n\nआपको यह केवल एक बार करना होगा।"</string>
+    <string name="readme_usage_title">चरण 2: स्क्रिप्ट चलाएँ</string>
+    <string name="readme_usage_encrypt">"किसी फ़ाइल को एन्क्रिप्ट करने के लिए टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"किसी फ़ाइल को डिक्रिप्ट करने के लिए टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">आपसे अपना पासवर्ड सीधे टर्मिनल में टाइप करने के लिए कहा जाएगा। यह स्क्रीन पर कभी दिखाई नहीं देगा और न ही कहीं सेव किया जाएगा। यदि आप अपना पासवर्ड भूल जाते हैं, तो यह स्क्रिप्ट इसे आपके लिए रिकवर नहीं कर सकती - डिज़ाइन के अनुसार इसे बायपास करने का कोई तरीका नहीं है।</string>
+    <string name="readme_linux_note">"Linux उपयोगकर्ता: अधिकांश वर्तमान डिस्ट्रीब्यूशन में पहले से ही संगत OpenSSL शामिल होता है। अपने OpenSSL संस्करण की जाँच करने के लिए टर्मिनल में निम्न कमांड चलाएँ:\n\n    $ %1$s\n\nयदि स्क्रिप्ट चलाते समय आपको \'xxd: command not found\' त्रुटि मिलती है, तो अपने पैकेज मैनेजर का उपयोग करके इसे इंस्टॉल करें - उदाहरण के लिए, Debian या Ubuntu पर:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android उपयोगकर्ता: यह स्क्रिप्ट Termux जैसे टर्मिनल ऐप के अंदर चलाई जा सकती है। F-Droid से Termux इंस्टॉल करें (Google Play Store वाला संस्करण पुराना है और अब इसका रखरखाव नहीं किया जाता), इसे खोलें, फिर टर्मिनल में निम्न कमांड चलाकर आवश्यक टूल इंस्टॉल करें:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows उपयोगकर्ता: इस स्क्रिप्ट (aeslocker_recover.sh) को WSL (Windows Subsystem for Linux) या Git Bash के अंदर चलाएँ। यह सीधे Command Prompt या PowerShell में नहीं चलेगी। Git Bash में इस स्क्रिप्ट के लिए आवश्यक सभी चीज़ें शामिल हैं। WSL एक वास्तविक Linux डिस्ट्रीब्यूशन चलाता है, इसलिए यदि वहाँ आपको \'xxd: command not found\' त्रुटि मिलती है, तो इसे Linux उपयोगकर्ता की तरह ही इंस्टॉल करें - उदाहरण के लिए, Debian या Ubuntu पर:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">थीम बदलें</string>
-    <string name="share_button_label">शेयर करें</string>
-    <string name="share_button_desc">ऐप पसंद आ रहा है? इसे दूसरों के साथ शेयर करें।</string>
-    <string name="password_strength_weak">कमजोर</string>
+    <string name="share_button_label">शेयर</string>
+    <string name="share_button_desc">क्या आपको ऐप पसंद आ रहा है? इसे दूसरों के साथ शेयर करें।</string>
+    <string name="password_strength_weak">कमज़ोर</string>
     <string name="password_strength_medium">मध्यम</string>
-    <string name="password_strength_strong">मजबूत</string>
+    <string name="password_strength_strong">मज़बूत</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">कृपया पहले एक फ़ाइल चुनें</string>
-    <string name="toast_enter_password">कृपया एक पासवर्ड दर्ज करें</string>
+    <string name="toast_enter_password">कृपया पासवर्ड दर्ज करें</string>
     <string name="toast_encrypt_success">सफलतापूर्वक एन्क्रिप्ट किया गया!</string>
     <string name="toast_decrypt_success">सफलतापूर्वक डिक्रिप्ट किया गया!</string>
-    <string name="toast_operation_failed">ऑपरेशन विफल: गलत पासवर्ड या दूषित फ़ाइल।</string>
-    <string name="toast_invalid_file">गलत पासवर्ड या अमान्य OpenSSL फ़ाइल प्रारूप।</string>
-    <string name="toast_enc_copied">एन्क्रिप्शन कमांड कॉपी की गई!</string>
-    <string name="toast_dec_copied">डिक्रिप्शन कमांड कॉपी की गई!</string>
-    <string name="toast_title_success">सफल</string>
+    <string name="toast_operation_failed">ऑपरेशन विफल: गलत पासवर्ड या खराब फ़ाइल।</string>
+
+    <string name="toast_invalid_file">गलत पासवर्ड, या यह मान्य AESLocker फ़ाइल नहीं है।</string>
+    <string name="toast_kit_saved">रिकवरी किट सेव हो गई।</string>
+    <string name="toast_kit_save_failed">रिकवरी किट सेव नहीं हो सकी। कृपया फिर प्रयास करें।</string>
+
+    <string name="toast_title_success">सफलता</string>
     <string name="toast_title_notice">सूचना</string>
     <string name="toast_button_ok">ठीक है</string>
 
@@ -46,6 +64,13 @@
     <string name="cd_switch_language">भाषा बदलें</string>
 
     <!-- Password Visibility -->
-    <string name="cd_show_password">पासवर्ड दिखाएं</string>
-    <string name="cd_hide_password">पासवर्ड छुपाएं</string>
+    <string name="cd_show_password">पासवर्ड दिखाएँ</string>
+    <string name="cd_hide_password">पासवर्ड छिपाएँ</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">रिकवरी किट डाउनलोड करने के लिए विज्ञापन देखें</string>
+    <string name="recovery_kit_pro_promo">तुरंत, विज्ञापन-मुक्त डाउनलोड के लिए AESLocker Pro प्राप्त करें - और ऐप में कहीं भी कोई विज्ञापन नहीं।</string>
+    <string name="dialog_ad_unavailable_title">कोई विज्ञापन उपलब्ध नहीं</string>
+    <string name="dialog_ad_unavailable_desc">हम अभी विज्ञापन लोड नहीं कर सके, लेकिन आप अभी भी रिकवरी किट मुफ़्त में डाउनलोड कर सकते हैं। बिना किसी विज्ञापन के तुरंत डाउनलोड के लिए AESLocker Pro प्राप्त करें।</string>
+    <string name="btn_continue_download">डाउनलोड जारी रखें</string>
 </resources>

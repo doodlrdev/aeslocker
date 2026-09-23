@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">پټول (ENCRYPT)</string>
-    <string name="tab_decrypt">خلاصول (DECRYPT)</string>
+    <string name="tab_encrypt">کوډ کول</string>
+    <string name="tab_decrypt">کوډ خلاصول</string>
     <string name="select_file">فایل وټاکئ</string>
     <string name="no_file_selected">هیڅ فایل نه دی ټاکل شوی</string>
     <string name="password_label">پټنوم</string>
-    <string name="encrypt_file">فایل پټ کړئ</string>
-    <string name="decrypt_file">فایل خلاص کړئ</string>
-    <string name="processing_progress">%1$d%% پروسس کیږي...</string>
-    <string name="terminal_commands_title">ټرمینل کمانډونه (OpenSSL)</string>
-    <string name="encryption_cmd_label">د پټولو کمانډ:</string>
-    <string name="decryption_cmd_label">د خلاصون کمانډ:</string>
-    <string name="encryption_cmd_sub">د [input.ext] پر ځای خپل د فایل نوم او پس منظر (extension) ولیکئ</string>
-    <string name="decryption_cmd_sub">د [output.ext] پر ځای د اصلي فایل نوم او پس منظر ولیکئ</string>
-    <string name="important_notice">پورته کمانډونه کاپي کړئ او په کوم خوندي ځای کې یې وساتئ ترڅو په راتلونکي کې که اپلیکیشن شتون ونلري، وکاروئ شي. دا د OpenSSL کمانډونه په macOS، Linux، Windows (د WSL یا Git Bash له لارې) یا د انډرایډ په ټرمینل کې په مستقیم ډول اجرا کیدی شي.</string>
-    <string name="copy_cmd_desc">کمانډ کاپي کړئ</string>
-    <string name="toggle_theme">تهیه بدله کړئ</string>
+    <string name="encrypt_file">فایل کوډ کړئ</string>
+    <string name="decrypt_file">د فایل کوډ خلاص کړئ</string>
+    <string name="processing_progress">%1$d%% پروسس کېږي...</string>
+    <string name="terminal_commands_title">له اپ پرته بېرته ترلاسه کول</string>
+
+    <string name="terminal_commands_explanation">فایلونه د AES-256 په وسیله کوډ کېږي او د HMAC-SHA256 په وسیله تصدیق کېږي، نو لاسوهنه یا خرابوالی تل کشفېږي. لاندې د بیا ترلاسه کولو کټ ډاونلوډ کړئ څو د کمانډ لاین له لارې فایلونه کوډ یا کوډ خلاص کړئ - د اپ نصبولو اړتیا نشته. دا په macOS، Linux، Windows (د WSL یا Git Bash له لارې) او د Android ټرمینل چاپېریالونو کې کار کوي. د بشپړ تنظیم او کارولو لارښوونې د ډاونلوډ دننه په README.txt کې شاملې دي.</string>
+    <string name="download_kit_button">د بیا ترلاسه کولو کټ ډاونلوډ کړئ</string>
+    <string name="download_kit_desc">د ZIP فایل چې د بیا ترلاسه کولو سکریپټ او بشپړ لارښوونې پکې شاملې دي. له ډاونلوډ وروسته یې خلاص کړئ او د سکریپټ له چلولو مخکې لومړی README.txt ولولئ. OpenSSL 3.0 یا نوې نسخه ته اړتیا لري - کټ له اپلیکیشن څخه جلا په یوه خوندي ځای کې وساتئ.</string>
+    <string name="github_repo_label">د سرچینې کوډ دلته هم خپور شوی: %1$s</string>
+    <string name="important_notice_script">د بیا ترلاسه کولو کټ ډاونلوډ کړئ او په خوندي ځای کې یې وساتئ - کلاوډ ډرایو، USB سټیک یا هر هغه ځای کې چې له لاسه به یې ورنه کړئ - څو که په راتلونکي کې اپ موجود نه وي، تاسو یې وکارولی شئ.</string>
+
+    <string name="readme_title">د AESLocker د بیا ترلاسه کولو کټ</string>
+    <string name="readme_intro">دا کټ تاسو ته اجازه درکوي چې د اپ له نصبولو پرته د کمانډ لاین څخه د AESLocker فایلونه کوډ یا کوډ خلاص کړئ. دا دوه فایلونه لري: aeslocker_recover.sh (سکریپټ) او دا README.</string>
+    <string name="readme_terminal_intro">په دې لارښود کې هر کمانډ باید په ټرمینل (چې د کمانډ لاین یا shell په نوم هم یادېږي) کې ولیکل شي، نه دا چې دوه ځله پرې کلیک وشي. په macOS یا Linux کې د Terminal په نوم اپ پرانیزئ. په Windows کې پر ځای یې WSL (Windows Subsystem for Linux) یا Git Bash وکاروئ - Command Prompt او PowerShell دا کمانډونه نه شي چلولی. لاندې هر کمانډ په خپله کرښه کې د $ نښې څخه پیل ښودل شوی - له $ وروسته هر څه ولیکئ (د $ نښه مه لیکئ).</string>
+    <string name="readme_requirements_title">اړتیاوې</string>
+    <string name="readme_requirements_body">"تاسو باید OpenSSL 3.0 یا تر دې نوې نسخه نصب کړې وي. د خپل OpenSSL نسخه د کتلو لپاره په ټرمینل کې لاندې کمانډ اجرا کړئ:\n\n    $ %1$s\n\nپه macOS کې جوړ شوی \'openssl\' اصلي OpenSSL نه دی او کار به ونه کړي. د یوې کارکوونکې نسخې د نصبولو لپاره په ټرمینل کې لاندې کمانډ اجرا کړئ:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">لومړی ګام: سکریپټ د اجرا وړ کړئ</string>
+    <string name="readme_chmod_body">"مخکې له دې چې سکریپټ لومړی ځل وچلوئ، ستاسو سیسټم باید د هغه د اجرا اجازه ولري. په هغه فولډر کې چې تاسو دا کټ استخراج کړی، په ټرمینل کې لاندې کمانډ اجرا کړئ:\n\n    $ %1$s\n\nدا کار یوازې یو ځل کولو ته اړتیا لري."</string>
+    <string name="readme_usage_title">دوهم ګام: سکریپټ وچلوئ</string>
+    <string name="readme_usage_encrypt">"د یوه فایل د کوډ کولو لپاره په ټرمینل کې لاندې کمانډ اجرا کړئ:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"د یوه فایل د کوډ خلاصولو لپاره په ټرمینل کې لاندې کمانډ اجرا کړئ:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">له تاسو څخه به وغوښتل شي چې خپل پټنوم په مستقیم ډول په ټرمینل کې ولیکئ. دا هېڅکله پر سکرین نه ښودل کېږي او هېڅ ځای نه ساتل کېږي. که خپل پټنوم هېر کړئ، دا سکریپټ یې ستاسو لپاره بېرته نه شي ترلاسه کولی - د ډیزاین له مخې د دې لپاره هېڅ لاره نشته.</string>
+    <string name="readme_linux_note">"د Linux کاروونکي: د اوسنیو ډېرو وېشونو سره له وړاندې د OpenSSL یوه سازګاره نسخه شامله وي. د خپل OpenSSL نسخه د کتلو لپاره، په ټرمینل کې لاندې قومانده اجرا کړئ:\n\n    $ %1$s\n\nکه د سکریپټ د چلولو پر مهال د \'xxd: command not found\' تېروتنه ترلاسه کړئ، نو د خپل پکېج منېجر په کارولو سره یې نصب کړئ - د بېلګې په توګه، په Debian یا Ubuntu کې:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"د Android کاروونکي: دا سکریپټ د Termux په څېر د ټرمینل اپلېکېشن دننه چلول کېدای شي. Termux له F-Droid څخه نصب کړئ (د Google Play Store نسخه زړې شوې او نور نه ساتل کېږي)، هغه پرانیزئ، بیا په ټرمینل کې د لاندې قوماندې په اجرا کولو اړین وسایل نصب کړئ:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"د Windows کاروونکي: دا سکریپټ (aeslocker_recover.sh) د WSL (Windows Subsystem for Linux) یا Git Bash دننه اجرا کړئ. دا به په Command Prompt یا PowerShell کې په مستقیم ډول اجرا نه شي. Git Bash هر هغه څه لري چې دا سکریپټ ورته اړتیا لري. WSL یو اصلي Linux وېش چلوي، نو که هلته د \'xxd: command not found\' تېروتنه ترلاسه کړئ، هغه په هماغه ډول نصب کړئ چې د Linux کاروونکی یې نصبوي - د بېلګې په توګه، په Debian یا Ubuntu کې:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">موضوع بدله کړئ</string>
     <string name="share_button_label">شریکول</string>
     <string name="share_button_desc">اپ مو خوښ شو؟ له نورو سره یې شریک کړئ.</string>
     <string name="password_strength_weak">کمزوری</string>
     <string name="password_strength_medium">منځنی</string>
     <string name="password_strength_strong">قوي</string>
-    <string name="toast_select_file">لطفاً لومړی یو فایل وټاکئ</string>
-    <string name="toast_enter_password">لطفاً پټنوم دننه کړئ</string>
-    <string name="toast_encrypt_success">په بریالیتوب سره پټ شو!</string>
-    <string name="toast_decrypt_success">په بریالیتوب سره خلاص شو!</string>
-    <string name="toast_operation_failed">عمليات ناکام شو: تېروتنه پټنوم او که خراب فایل.</string>
-    <string name="toast_invalid_file">تېروتنه پټنوم یا د OpenSSL ناسم فایل فارمیټ.</string>
-    <string name="toast_enc_copied">د پټولو کمانډ کاپي شو!</string>
-    <string name="toast_dec_copied">د خلاصون کمانډ کاپي شو!</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">مهرباني وکړئ لومړی یو فایل وټاکئ</string>
+    <string name="toast_enter_password">مهرباني وکړئ پټنوم دننه کړئ</string>
+    <string name="toast_encrypt_success">په بریالیتوب سره کوډ شو!</string>
+    <string name="toast_decrypt_success">په بریالیتوب سره کوډ خلاص شو!</string>
+    <string name="toast_operation_failed">عملیات ناکام شول: ناسم پټنوم یا خراب شوی فایل.</string>
+
+    <string name="toast_invalid_file">ناسم پټنوم، یا دا د AESLocker معتبر فایل نه دی.</string>
+    <string name="toast_kit_saved">د بیا ترلاسه کولو کټ خوندي شو.</string>
+    <string name="toast_kit_save_failed">د بیا ترلاسه کولو کټ خوندي نه شو. مهرباني وکړئ بیا هڅه وکړئ.</string>
+
     <string name="toast_title_success">بریالیتوب</string>
     <string name="toast_title_notice">خبرتیا</string>
     <string name="toast_button_ok">سمه ده</string>
-    <string name="theme_system">د سیستم لومړنی حالت</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">د سیسټم اصلي حالت</string>
     <string name="theme_light">روښانه حالت</string>
-    <string name="theme_dark">تاریک حالت</string>
-    <string name="cd_switch_theme">تهیه بدله کړئ</string>
+    <string name="theme_dark">تیاره حالت</string>
+    <string name="cd_switch_theme">موضوع بدله کړئ</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">ژبه بدله کړئ</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">پټنوم ښکاره کړئ</string>
     <string name="cd_hide_password">پټنوم پټ کړئ</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">د بیا ترلاسه کولو کټ د ډاونلوډ لپاره اعلان وګورئ</string>
+    <string name="recovery_kit_pro_promo">AESLocker Pro واخلئ څو سمدستي او له اعلانونو پرته ډاونلوډونه ولرئ - او په اپ کې بل ځای هم اعلانونه نه وي.</string>
+    <string name="dialog_ad_unavailable_title">هیڅ اعلان موجود نه دی</string>
+    <string name="dialog_ad_unavailable_desc">موږ اوس مهال اعلان نه شو پورته کولی، خو تاسو لا هم کولی شئ د بیا ترلاسه کولو کټ وړیا ډاونلوډ کړئ. AESLocker Pro واخلئ څو سمدستي ډاونلوډونه ولرئ، هېڅکله له اعلانونو پرته.</string>
+    <string name="btn_continue_download">ډاونلوډ ته دوام ورکړئ</string>
 </resources>

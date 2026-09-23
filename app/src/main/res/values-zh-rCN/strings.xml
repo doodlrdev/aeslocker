@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">加密</string>
     <string name="tab_decrypt">解密</string>
     <string name="select_file">选择文件</string>
-    <string name="no_file_selected">未选择任何文件</string>
+    <string name="no_file_selected">未选择文件</string>
     <string name="password_label">密码</string>
     <string name="encrypt_file">加密文件</string>
     <string name="decrypt_file">解密文件</string>
-    <string name="processing_progress">%1$d%% 处理中...</string>
-    <string name="terminal_commands_title">终端命令 (OpenSSL)</string>
-    <string name="encryption_cmd_label">加密命令:</string>
-    <string name="decryption_cmd_label">解密命令:</string>
-    <string name="encryption_cmd_sub">请将 [input.ext] 替换为您要加密的文件名及扩展名</string>
-    <string name="decryption_cmd_sub">请将 [output.ext] 替换为原始文件的文件名及扩展名</string>
-    <string name="important_notice">请复制以上命令并保存到安全的地方，以便在将来应用不可用时继续使用。这些 OpenSSL 命令可以直接在 macOS、Linux、Windows（通过 WSL 或 Git Bash）或支持命令行界面的 Android 环境中运行。</string>
-    <string name="copy_cmd_desc">复制命令</string>
+    <string name="processing_progress">%1$d%% 正在处理...</string>
+    <string name="terminal_commands_title">无需应用即可恢复</string>
+
+    <string name="terminal_commands_explanation">文件使用 AES-256 加密，并通过 HMAC-SHA256 进行身份验证，因此任何篡改或损坏都会被检测到。下载下面的恢复工具包，即可通过命令行加密或解密文件，无需安装应用。它支持 macOS、Linux、Windows（通过 WSL 或 Git Bash）以及 Android 终端环境。完整的设置和使用说明包含在下载文件中的 README.txt 内。</string>
+    <string name="download_kit_button">下载恢复工具包</string>
+    <string name="download_kit_desc">一个包含恢复脚本和完整说明的 ZIP 文件。下载后，请先解压，并在运行脚本之前阅读 README.txt。需要 OpenSSL 3.0 或更高版本 - 请将此工具包保存在与应用分开的安全位置。</string>
+    <string name="github_repo_label">源代码也发布于：%1$s</string>
+    <string name="important_notice_script">下载恢复工具包并将其保存在安全的位置 — 云端硬盘、USB 闪存盘或任何不会遗失的地方 — 这样即使应用将来无法使用，您仍然可以使用它。</string>
+
+    <string name="readme_title">AESLocker 恢复工具包</string>
+    <string name="readme_intro">此工具包可以让您在未安装应用的情况下，通过命令行加密或解密 AESLocker 文件。它包含两个文件：aeslocker_recover.sh（脚本）和本 README 文件。</string>
+    <string name="readme_terminal_intro">本指南中的每条命令都必须输入到终端（也称为命令行或 shell）中，而不是双击运行。在 macOS 或 Linux 上，请打开名为 Terminal 的应用。在 Windows 上，请使用 WSL（Windows Subsystem for Linux）或 Git Bash — Command Prompt 和 PowerShell 无法运行这些命令。下面的每条命令都单独显示在一行，并以 $ 符号开头 — 输入 $ 后面的所有内容（不要输入 $ 本身）。</string>
+    <string name="readme_requirements_title">要求</string>
+    <string name="readme_requirements_body">"您需要安装 OpenSSL 3.0 或更高版本。要检查 OpenSSL 版本，请在终端中执行以下命令：\n\n    $ %1$s\n\n在 macOS 上，内置的 \'openssl\' 并不是真正的 OpenSSL，因此无法正常工作。要安装可用的版本，请在终端中执行以下命令：\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">步骤 1：使脚本可执行</string>
+    <string name="readme_chmod_body">"首次运行脚本之前，系统需要获得执行该脚本的权限。在您解压此工具包的文件夹中，在终端执行以下命令：\n\n    $ %1$s\n\n您只需要执行一次。"</string>
+    <string name="readme_usage_title">步骤 2：运行脚本</string>
+    <string name="readme_usage_encrypt">"要加密文件，请在终端中执行以下命令：\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"要解密文件，请在终端中执行以下命令：\n\n    $ %1$s"</string>
+    <string name="readme_password_note">系统会要求您直接在终端中输入密码。密码不会显示在屏幕上，也不会保存到任何地方。如果您忘记密码，此脚本无法为您恢复密码 — 这是设计如此，无法绕过。</string>
+    <string name="readme_linux_note">"Linux 用户：大多数当前发行版已经包含兼容的 OpenSSL。要检查您的 OpenSSL 版本，请在终端中执行以下命令：\n\n    $ %1$s\n\n如果运行脚本时出现 \'xxd: command not found\' 错误，请使用您的软件包管理器进行安装 - 例如，在 Debian 或 Ubuntu 上：\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android 用户：此脚本可以在 Termux 等终端应用中运行。请从 F-Droid 安装 Termux（Google Play 商店中的版本已经过时且不再维护），打开 Termux，然后在终端中执行以下命令以安装所需的工具：\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows 用户：请在 WSL（Windows Subsystem for Linux）或 Git Bash 中运行此脚本（aeslocker_recover.sh）。它无法直接在命令提示符或 PowerShell 中运行。Git Bash 已包含此脚本所需的所有内容。WSL 运行的是实际的 Linux 发行版，因此如果在那里出现 \'xxd: command not found\' 错误，请按照 Linux 用户的方式安装它 - 例如，在 Debian 或 Ubuntu 上：\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">切换主题</string>
     <string name="share_button_label">分享</string>
-    <string name="share_button_desc">喜欢这款应用吗？分享给其他人吧。</string>
+    <string name="share_button_desc">喜欢这个应用吗？分享给其他人吧。</string>
     <string name="password_strength_weak">弱</string>
     <string name="password_strength_medium">中</string>
     <string name="password_strength_strong">强</string>
-    <string name="toast_select_file">请先选择一个文件</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">请先选择文件</string>
     <string name="toast_enter_password">请输入密码</string>
     <string name="toast_encrypt_success">加密成功！</string>
     <string name="toast_decrypt_success">解密成功！</string>
     <string name="toast_operation_failed">操作失败：密码错误或文件已损坏。</string>
-    <string name="toast_invalid_file">密码错误或无效的 OpenSSL 文件格式。</string>
-    <string name="toast_enc_copied">已复制加密命令！</string>
-    <string name="toast_dec_copied">已复制解密命令！</string>
+
+    <string name="toast_invalid_file">密码错误，或者这不是有效的 AESLocker 文件。</string>
+    <string name="toast_kit_saved">恢复工具包已保存。</string>
+    <string name="toast_kit_save_failed">无法保存恢复工具包。请重试。</string>
+
     <string name="toast_title_success">成功</string>
     <string name="toast_title_notice">提示</string>
     <string name="toast_button_ok">确定</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">跟随系统</string>
     <string name="theme_light">浅色模式</string>
     <string name="theme_dark">深色模式</string>
     <string name="cd_switch_theme">切换主题</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">切换语言</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">显示密码</string>
     <string name="cd_hide_password">隐藏密码</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">观看广告以下载恢复工具包</string>
+    <string name="recovery_kit_pro_promo">获取 AESLocker Pro，即可即时下载且无广告 — 应用中的其他位置也不会显示广告。</string>
+    <string name="dialog_ad_unavailable_title">暂无广告</string>
+    <string name="dialog_ad_unavailable_desc">目前无法加载广告，但您仍然可以免费下载恢复工具包。获取 AESLocker Pro，即可即时下载，永远没有广告。</string>
+    <string name="btn_continue_download">继续下载</string>
 </resources>

@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">انڪريپٽ</string>
-    <string name="tab_decrypt">ڊڪريپٽ</string>
+    <string name="tab_encrypt">انڪرپٽ</string>
+    <string name="tab_decrypt">ڊيڪرپٽ</string>
     <string name="select_file">فائل چونڊيو</string>
-    <string name="no_file_selected">ڪابه فائل چونڊيل ناهي</string>
+    <string name="no_file_selected">ڪابه فائل منتخب ٿيل ناهي</string>
     <string name="password_label">پاسورڊ</string>
-    <string name="encrypt_file">فائل انڪريپٽ ڪريو</string>
-    <string name="decrypt_file">فائل ڊڪريپٽ ڪريو</string>
-    <string name="processing_progress">%1$d%% پروسيسنگ ٿي رهي آهي...</string>
-    <string name="terminal_commands_title">ٽرمينل حڪم (OpenSSL)</string>
-    <string name="encryption_cmd_label">انڪريپشن ڪمانڊ:</string>
-    <string name="decryption_cmd_label">ڊڪريپشن ڪمانڊ:</string>
-    <string name="encryption_cmd_sub">[input.ext] جي جاءِ تي پنهنجي فائل جو نالو ۽ ان جو ايڪسٽେشن لکو</string>
-    <string name="decryption_cmd_sub">[output.ext] جي جاءِ تي اصل فائل جو نالو ۽ ايڪسٽେشن لکو</string>
-    <string name="important_notice">مٿين حڪمن (commands) کي ڪاپي ڪري محفوظ جڳهه تي رکو ته جيئن مستقبل ۾ ايپ جي دستياب نه هجڻ جي صورت ۾ ڪم اچن. اهي OpenSSL ڪمانڊز سڌو سنئون macOS، Linux، Windows (WSL يا Git Bash ذريعي) يا Android ٽرمينل تي هلائي سگهجن ٿا.</string>
-    <string name="copy_cmd_desc">ڪمانڊ ڪاپي ڪريو</string>
-    <string name="toggle_theme">ٿيم متبادل ڪريو</string>
+    <string name="encrypt_file">فائل انڪرپٽ ڪريو</string>
+    <string name="decrypt_file">فائل ڊيڪرپٽ ڪريو</string>
+    <string name="processing_progress">%1$d%% پروسيسنگ...</string>
+    <string name="terminal_commands_title">ايپ کان سواءِ بحال ڪريو</string>
+
+    <string name="terminal_commands_explanation">فائلون AES-256 سان انڪرپٽ ۽ HMAC-SHA256 سان تصديق ٿيل آهن، تنهنڪري ڪنهن به ڇيڙڇاڙ يا خرابي جو هميشه پتو لڳي ويندو آهي. هيٺ ڏنل رڪوري ڪِٽ ڊائونلوڊ ڪريو ته جيئن ڪمانڊ لائن مان فائلن کي انڪرپٽ يا ڊيڪرپٽ ڪري سگهو - ايپ انسٽال ڪرڻ جي ضرورت ناهي. اهو macOS، Linux، Windows (WSL يا Git Bash ذريعي) ۽ Android ٽرمينل ماحولن تي ڪم ڪري ٿو. مڪمل سيٽ اپ ۽ استعمال جون هدايتون ڊائونلوڊ ۾ README.txt اندر شامل آهن.</string>
+    <string name="download_kit_button">رڪوري ڪِٽ ڊائونلوڊ ڪريو</string>
+    <string name="download_kit_desc">هڪ ZIP فائل جنهن ۾ بحالي وارو اسڪرپٽ ۽ مڪمل هدايتون شامل آهن. ڊائون لوڊ ڪرڻ کان پوءِ ان کي ان زپ ڪريو ۽ اسڪرپٽ هلائڻ کان اڳ پهرين README.txt پڙهو. OpenSSL 3.0 يا ان کان نئين ورزن جي ضرورت آهي - ڪٽ کي ايپ کان الڳ ڪنهن محفوظ هنڌ تي محفوظ ڪريو.</string>
+    <string name="github_repo_label">سورس ڪوڊ هتي پڻ شايع ٿيل آهي: %1$s</string>
+    <string name="important_notice_script">رڪوري ڪِٽ ڊائونلوڊ ڪريو ۽ ان کي ڪنهن محفوظ هنڌ تي محفوظ ڪريو - ڪلائوڊ ڊرائيو، USB اسٽڪ، يا اهڙي ڪنهن به جاءِ تي جتي توهان ان کي نه وڃايو - ته جيئن مستقبل ۾ ايپ دستياب نه هجي ته توهان ان کي استعمال ڪري سگهو.</string>
+
+    <string name="readme_title">AESLocker رڪوري ڪِٽ</string>
+    <string name="readme_intro">هي ڪِٽ توهان کي ايپ انسٽال ڪرڻ کان سواءِ ڪمانڊ لائن مان AESLocker فائلن کي انڪرپٽ يا ڊيڪرپٽ ڪرڻ جي اجازت ڏئي ٿي. ان ۾ ٻه فائلون شامل آهن: aeslocker_recover.sh (اسڪرپٽ) ۽ هي README.</string>
+    <string name="readme_terminal_intro">هن گائيڊ ۾ هر ڪمانڊ ٽرمينل (جنهن کي ڪمانڊ لائن يا shell پڻ چيو ويندو آهي) ۾ ٽائپ ڪرڻو آهي، ڊبل ڪلڪ نه ڪرڻو آهي. macOS يا Linux تي Terminal نالي ايپ کوليو. Windows تي ان جي بدران WSL (Windows Subsystem for Linux) يا Git Bash استعمال ڪريو - Command Prompt ۽ PowerShell اهي ڪمانڊ نه هلائيندا. هيٺ هر ڪمانڊ پنهنجي الڳ لائن تي $ نشان سان شروع ٿيندي ڏيکاريل آهي - $ کان پوءِ سڀ ڪجهه ٽائپ ڪريو ($ پاڻ نه).</string>
+    <string name="readme_requirements_title">گهربل شيون</string>
+    <string name="readme_requirements_body">"توهان وٽ OpenSSL 3.0 يا ان کان نئون انسٽال ٿيل هجڻ گهرجي. پنهنجي OpenSSL ورزن کي چيڪ ڪرڻ لاءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %1$s\n\nmacOS تي بلٽ اِن \'openssl\' حقيقي OpenSSL ناهي ۽ ڪم نه ڪندو. ڪم ڪندڙ ڪاپي انسٽال ڪرڻ لاءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">قدم 1: اسڪرپٽ کي هلائڻ لائق بڻايو</string>
+    <string name="readme_chmod_body">"پهريون ڀيرو اسڪرپٽ هلائڻ کان اڳ، توهان جي سسٽم کي ان کي هلائڻ جي اجازت گهربل آهي. جنهن فولڊر ۾ توهان هي ڪِٽ extract ڪيو آهي، اتي ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %1$s\n\nتوهان کي اهو صرف هڪ ڀيرو ڪرڻو پوندو."</string>
+    <string name="readme_usage_title">قدم 2: اسڪرپٽ هلائيو</string>
+    <string name="readme_usage_encrypt">"فائل کي انڪرپٽ ڪرڻ لاءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"فائل کي ڊيڪرپٽ ڪرڻ لاءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">توهان کي پنهنجو پاسورڊ سڌو ٽرمينل ۾ ٽائپ ڪرڻ لاءِ چيو ويندو. اهو اسڪرين تي ڪڏهن به ظاهر نه ٿيندو ۽ ڪٿي به محفوظ نه ڪيو ويندو. جيڪڏهن توهان پاسورڊ وساري ڇڏيو، ته هي اسڪرپٽ ان کي توهان لاءِ بحال نٿو ڪري سگهي - ڊزائن موجب ان کان بچڻ جو ڪو طريقو ناهي.</string>
+    <string name="readme_linux_note">"Linux استعمال ڪندڙ: موجوده اڪثر ڊسٽريبيوشنز ۾ اڳ ۾ ئي مطابقت رکندڙ OpenSSL شامل هوندو آهي. پنهنجي OpenSSL جو ورزن چيڪ ڪرڻ لاءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائيو:\n\n    $ %1$s\n\nجيڪڏهن اسڪرپٽ هلائڻ وقت توهان کي \'xxd: command not found\' جي غلطي ملي، ته پنهنجي پيڪيج مينيجر کي استعمال ڪندي ان کي انسٽال ڪريو - مثال طور، Debian يا Ubuntu تي:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android استعمال ڪندڙ: هي اسڪرپٽ Termux جهڙي ٽرمينل ايپ اندر هلائي سگهجي ٿي. F-Droid تان Termux انسٽال ڪريو (Google Play Store وارو ورزن پراڻو آهي ۽ هاڻي برقرار نه رکيو ويندو آهي)، ان کي کوليو، پوءِ ٽرمينل ۾ هيٺ ڏنل ڪمانڊ هلائي گهربل اوزار انسٽال ڪريو:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows استعمال ڪندڙ: هي اسڪرپٽ (aeslocker_recover.sh) WSL (Windows Subsystem for Linux) يا Git Bash اندر هلايو. هي Command Prompt يا PowerShell ۾ سڌو سنئون نه هلندو. Git Bash ۾ هن اسڪرپٽ لاءِ گهربل سڀ ڪجهه شامل آهي. WSL هڪ حقيقي Linux ڊسٽريبيوشن هلائي ٿو، تنهنڪري جيڪڏهن اتي توهان کي \'xxd: command not found\' جي غلطي ملي، ته ان کي بلڪل اهڙي طريقي سان انسٽال ڪريو جيئن Linux استعمال ڪندڙ ڪندو - مثال طور، Debian يا Ubuntu تي:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">ٿيم تبديل ڪريو</string>
     <string name="share_button_label">شيئر ڪريو</string>
     <string name="share_button_desc">ايپ پسند آئي؟ ٻين سان شيئر ڪريو.</string>
-    <string name="password_strength_weak">كمزور</string>
-    <string name="password_strength_medium">درميانو</string>
+    <string name="password_strength_weak">ڪمزور</string>
+    <string name="password_strength_medium">وچولو</string>
     <string name="password_strength_strong">مضبوط</string>
-    <string name="toast_select_file">مهرباني ڪري پهرين فائل چونڊيو</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">مهرباني ڪري پهريان فائل چونڊيو</string>
     <string name="toast_enter_password">مهرباني ڪري پاسورڊ داخل ڪريو</string>
-    <string name="toast_encrypt_success">ڪاميابيءَ سان انڪريپٽ ٿي ويو!</string>
-    <string name="toast_decrypt_success">ڪاميابيءَ سان ڊڪريپٽ ٿي ويو!</string>
-    <string name="toast_operation_failed">عمل ناڪام ٿيو: غلط پاسورڊ يا خراب فائل.</string>
-    <string name="toast_invalid_file">غلط پاسورڊ يا غلط OpenSSL فائل فارميٽ.</string>
-    <string name="toast_enc_copied">انڪريپشن ڪمانڊ ڪاپي ٿي وئي!</string>
-    <string name="toast_dec_copied">ڊڪريپشن ڪمانڊ ڪاپي ٿي وئي!</string>
+    <string name="toast_encrypt_success">ڪاميابي سان انڪرپٽ ٿي ويو!</string>
+    <string name="toast_decrypt_success">ڪاميابي سان ڊيڪرپٽ ٿي ويو!</string>
+    <string name="toast_operation_failed">آپريشن ناڪام ٿيو: غلط پاسورڊ يا خراب فائل.</string>
+
+    <string name="toast_invalid_file">غلط پاسورڊ، يا هي صحيح AESLocker فائل ناهي.</string>
+    <string name="toast_kit_saved">رڪوري ڪِٽ محفوظ ٿي وئي.</string>
+    <string name="toast_kit_save_failed">رڪوري ڪِٽ محفوظ نه ٿي سگهي. مهرباني ڪري ٻيهر ڪوشش ڪريو.</string>
+
     <string name="toast_title_success">ڪاميابي</string>
     <string name="toast_title_notice">نوٽيس</string>
-    <string name="toast_button_ok">ٺيڪ آهي</string>
-    <string name="theme_system">سسٽମ ڊفالٽ</string>
-    <string name="theme_light">لائيٽ موڊ</string>
-    <string name="theme_dark">ڊارڪ موڊ</string>
+    <string name="toast_button_ok">ٺيڪ</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">سسٽم ڊيفالٽ</string>
+    <string name="theme_light">هلڪو موڊ</string>
+    <string name="theme_dark">اونداهو موڊ</string>
     <string name="cd_switch_theme">ٿيم تبديل ڪريو</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">ٻولي تبديل ڪريو</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">پاسورڊ ڏيکاريو</string>
     <string name="cd_hide_password">پاسورڊ لڪايو</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">رڪوري ڪِٽ ڊائونلوڊ ڪرڻ لاءِ اشتهار ڏسو</string>
+    <string name="recovery_kit_pro_promo">فوري، اشتهار کان پاڪ ڊائونلوڊز لاءِ AESLocker Pro حاصل ڪريو - ۽ ايپ ۾ ڪٿي به اشتهار نه هوندا.</string>
+    <string name="dialog_ad_unavailable_title">ڪو اشتهار موجود ناهي</string>
+    <string name="dialog_ad_unavailable_desc">اسان هن وقت اشتهار لوڊ نه ڪري سگهياسين، پر توهان اڃا به رڪوري ڪِٽ مفت ۾ ڊائونلوڊ ڪري سگهو ٿا. AESLocker Pro حاصل ڪريو ته جيئن ڪڏهن به اشتهارن کان سواءِ فوري ڊائونلوڊز حاصل ڪري سگهو.</string>
+    <string name="btn_continue_download">ڊائونلوڊ جاري رکو</string>
 </resources>

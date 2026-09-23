@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">ŞİFRELE</string>
@@ -7,37 +6,70 @@
     <string name="no_file_selected">Dosya seçilmedi</string>
     <string name="password_label">Şifre</string>
     <string name="encrypt_file">Dosyayı Şifrele</string>
-    <string name="decrypt_file">Dosya Şifresini Çöz</string>
-    <string name="processing_progress">%%1$d İşleniyor...</string>
-    <string name="terminal_commands_title">Terminal Komutları (OpenSSL)</string>
-    <string name="encryption_cmd_label">Şifreleme Komutu:</string>
-    <string name="decryption_cmd_label">Şifre Çözme Komutu:</string>
-    <string name="encryption_cmd_sub">[input.ext] kısmını dosya adınız ve uzantısıyla değiştirin</string>
-    <string name="decryption_cmd_sub">[output.ext] kısmını orijinal dosya adı ve uzantısıyla değiştirin</string>
-    <string name="important_notice">Yukarıdaki komutları kopyalayın ve uygulamanın gelecekte kullanılamaması ihtimaline karşı güvenli bir yere kaydedin. Bu OpenSSL komutları macOS, Linux, Windows (WSL veya Git Bash aracılığıyla) veya komut satırı arayüzü desteğine sahip Android ortamlarında doğrudan terminalde çalıştırılabilir.</string>
-    <string name="copy_cmd_desc">Komutu kopyala</string>
+    <string name="decrypt_file">Dosyanın Şifresini Çöz</string>
+    <string name="processing_progress">%1$d%% İşleniyor...</string>
+    <string name="terminal_commands_title">Uygulama Olmadan Kurtar</string>
+
+    <string name="terminal_commands_explanation">Dosyalar AES-256 ile şifrelenir ve HMAC-SHA256 ile doğrulanır; böylece kurcalama veya bozulma her zaman tespit edilir. Uygulamayı yüklemeden komut satırından dosyaları şifrelemek veya şifrelerini çözmek için aşağıdaki kurtarma kitini indirin. macOS, Linux, Windows (WSL veya Git Bash aracılığıyla) ve Android terminal ortamlarında çalışır. Tam kurulum ve kullanım talimatları indirilen dosyanın içindeki README.txt dosyasında yer alır.</string>
+    <string name="download_kit_button">Kurtarma Kitini İndir</string>
+    <string name="download_kit_desc">Kurtarma betiğini ve tüm talimatları içeren bir ZIP dosyasıdır. İndirdikten sonra dosyayı açın ve betiği çalıştırmadan önce README.txt dosyasını okuyun. OpenSSL 3.0 veya üzeri gereklidir - kiti uygulamadan bağımsız, güvenli bir yerde saklayın.</string>
+    <string name="github_repo_label">Kaynak kodu ayrıca burada yayımlanmıştır: %1$s</string>
+    <string name="important_notice_script">Kurtarma kitini indirin ve güvenli bir yerde saklayın - bir bulut sürücüsünde, USB bellekte veya kaybetmeyeceğiniz herhangi bir yerde - böylece uygulama gelecekte kullanılamaz hâle gelirse kiti kullanabilirsiniz.</string>
+
+    <string name="readme_title">AESLocker Kurtarma Kiti</string>
+    <string name="readme_intro">Bu kit, uygulama yüklü olmadan AESLocker dosyalarını komut satırından şifrelemenize veya şifrelerini çözmenize olanak tanır. İki dosya içerir: aeslocker_recover.sh (komut dosyası) ve bu README.</string>
+    <string name="readme_terminal_intro">Bu kılavuzdaki her komut bir terminale (komut satırı veya shell olarak da adlandırılır) yazılmalıdır; çift tıklanmamalıdır. macOS veya Linux\'ta Terminal adlı uygulamayı açın. Windows\'ta bunun yerine WSL (Windows Subsystem for Linux) veya Git Bash kullanın - Command Prompt ve PowerShell bu komutları çalıştırmaz. Aşağıdaki her komut kendi satırında $ işaretiyle başlar - $ işaretinden sonraki her şeyi yazın ($ işaretinin kendisini yazmayın).</string>
+    <string name="readme_requirements_title">Gereksinimler</string>
+    <string name="readme_requirements_body">"OpenSSL 3.0 veya daha yeni bir sürümün yüklü olması gerekir. OpenSSL sürümünüzü kontrol etmek için terminalde aşağıdaki komutu çalıştırın:\n\n    $ %1$s\n\nmacOS'taki yerleşik \'openssl\' gerçek OpenSSL değildir ve çalışmaz. Çalışan bir sürüm yüklemek için terminalde aşağıdaki komutu çalıştırın:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">1. Adım: Komut dosyasını çalıştırılabilir hâle getirin</string>
+    <string name="readme_chmod_body">"Komut dosyasını ilk kez çalıştırmadan önce sisteminizin onu çalıştırma iznine sahip olması gerekir. Bu kiti çıkardığınız klasörde terminalde aşağıdaki komutu çalıştırın:\n\n    $ %1$s\n\nBunu yalnızca bir kez yapmanız gerekir."</string>
+    <string name="readme_usage_title">2. Adım: Komut dosyasını çalıştırın</string>
+    <string name="readme_usage_encrypt">"Bir dosyayı şifrelemek için terminalde aşağıdaki komutu çalıştırın:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Bir dosyanın şifresini çözmek için terminalde aşağıdaki komutu çalıştırın:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Şifrenizi doğrudan terminale yazmanız istenecektir. Şifreniz ekranda hiçbir zaman gösterilmez ve hiçbir yere kaydedilmez. Şifrenizi unutursanız bu komut dosyası onu sizin için kurtaramaz - tasarım gereği bunu aşmanın bir yolu yoktur.</string>
+    <string name="readme_linux_note">"Linux kullanıcıları: mevcut dağıtımların çoğu zaten uyumlu bir OpenSSL içerir. OpenSSL sürümünüzü kontrol etmek için terminalde aşağıdaki komutu çalıştırın:\n\n    $ %1$s\n\nKomut dosyasını çalıştırırken \'xxd: command not found\' hatası alırsanız, paket yöneticinizi kullanarak yükleyin - örneğin Debian veya Ubuntu'da:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android kullanıcıları: bu komut dosyası Termux gibi bir terminal uygulamasının içinde çalıştırılabilir. Termux'u F-Droid'den yükleyin (Google Play Store sürümü güncel değildir ve artık bakımı yapılmamaktadır), uygulamayı açın ve ardından terminalde aşağıdaki komutu çalıştırarak gerekli araçları yükleyin:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows kullanıcıları: bu komut dosyasını (aeslocker_recover.sh) WSL (Windows Subsystem for Linux) veya Git Bash içinde çalıştırın. Komut İstemi veya PowerShell'de doğrudan çalışmaz. Git Bash, bu komut dosyasının ihtiyaç duyduğu her şeyi içerir. WSL gerçek bir Linux dağıtımı çalıştırır; bu nedenle orada \'xxd: command not found\' hatası alırsanız, bir Linux kullanıcısının yapacağı şekilde yükleyin - örneğin Debian veya Ubuntu'da:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Temayı Değiştir</string>
     <string name="share_button_label">PAYLAŞ</string>
     <string name="share_button_desc">Uygulamayı beğendiniz mi? Başkalarıyla paylaşın.</string>
     <string name="password_strength_weak">Zayıf</string>
     <string name="password_strength_medium">Orta</string>
     <string name="password_strength_strong">Güçlü</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">Lütfen önce bir dosya seçin</string>
     <string name="toast_enter_password">Lütfen bir şifre girin</string>
     <string name="toast_encrypt_success">Başarıyla şifrelendi!</string>
-    <string name="toast_decrypt_success">Başarıyla şifresi çözüldü!</string>
+    <string name="toast_decrypt_success">Şifre başarıyla çözüldü!</string>
     <string name="toast_operation_failed">İşlem başarısız: Yanlış şifre veya bozuk dosya.</string>
-    <string name="toast_invalid_file">Yanlış şifre veya geçersiz OpenSSL dosya formatı.</string>
-    <string name="toast_enc_copied">Şifreleme komutu kopyalandı!</string>
-    <string name="toast_dec_copied">Şifre çözme komutu kopyalandı!</string>
+
+    <string name="toast_invalid_file">Yanlış şifre veya bu geçerli bir AESLocker dosyası değil.</string>
+    <string name="toast_kit_saved">Kurtarma kiti kaydedildi.</string>
+    <string name="toast_kit_save_failed">Kurtarma kiti kaydedilemedi. Lütfen tekrar deneyin.</string>
+
     <string name="toast_title_success">BAŞARILI</string>
     <string name="toast_title_notice">BİLDİRİM</string>
     <string name="toast_button_ok">TAMAM</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">Sistem Varsayılanı</string>
     <string name="theme_light">Açık Mod</string>
     <string name="theme_dark">Koyu Mod</string>
     <string name="cd_switch_theme">Temayı Değiştir</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">Dili Değiştir</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Şifreyi göster</string>
     <string name="cd_hide_password">Şifreyi gizle</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Kurtarma Kitini İndirmek İçin Reklam İzle</string>
+    <string name="recovery_kit_pro_promo">Anında, reklamsız indirmeler için AESLocker Pro\'yu edinin - ayrıca uygulamanın başka hiçbir yerinde reklam yoktur.</string>
+    <string name="dialog_ad_unavailable_title">Reklam Yok</string>
+    <string name="dialog_ad_unavailable_desc">Şu anda bir reklam yükleyemedik, ancak kurtarma kitini yine de ücretsiz olarak indirebilirsiniz. AESLocker Pro\'yu edinin ve reklamsız anında indirmelerin keyfini çıkarın.</string>
+    <string name="btn_continue_download">İndirmeye Devam Et</string>
 </resources>

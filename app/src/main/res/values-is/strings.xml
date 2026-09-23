@@ -1,45 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">DULKÓÐA</string>
-    <string name="tab_decrypt">AFKÓÐA</string>
-    <string name="select_file">Veldu skrá</string>
+    <string name="tab_decrypt">AFDULKÓÐA</string>
+    <string name="select_file">Velja skrá</string>
     <string name="no_file_selected">Engin skrá valin</string>
     <string name="password_label">Lykilorð</string>
     <string name="encrypt_file">Dulkóða skrá</string>
-    <string name="decrypt_file">Afkóða skrá</string>
-    <string name="processing_progress">%1$d%% Í vinnslu...</string>
-    <string name="terminal_commands_title">Skipanir í skjáskóli (OpenSSL)</string>
-    <string name="encryption_cmd_label">Dulkóðunarskipun:</string>
-    <string name="decryption_cmd_label">Afkóðunarskipun:</string>
-    <string name="encryption_cmd_sub">Skiptu [input.ext] út fyrir skráarheitið þitt og skráarendingu</string>
-    <string name="decryption_cmd_sub">Skiptu [output.ext] út fyrir skráarheiti og skráarendingu upphaflegu skráarinnar</string>
-    <string name="important_notice">Afritaðu skipanirnar hér að ofan og vistaðu þær á öruggum stað svo þú getir notað þær ef forritið verður ekki tiltækt í framtíðinni. Þessar OpenSSL-skipanir er hægt að keyra beint í skjáskóli á macOS, Linux, Windows (í gegnum WSL eða Git Bash) eða Android-umhverfi sem styðja skipanalínu.</string>
-    <string name="copy_cmd_desc">Afrita skipun</string>
+    <string name="decrypt_file">Afdulkóða skrá</string>
+    <string name="processing_progress">%1$d%% Vinnsla...</string>
+    <string name="terminal_commands_title">Endurheimt án forritsins</string>
+
+    <string name="terminal_commands_explanation">Skrár eru dulkóðaðar með AES-256 og sannreyndar með HMAC-SHA256, þannig að alltaf er greint hvort átt hafi verið við þær eða þær skemmst. Sæktu endurheimtarsettið hér að neðan til að dulkóða eða afkóða skrár úr skipanalínunni - ekki þarf að setja upp forrit. Það virkar á macOS, Linux, Windows (með WSL eða Git Bash) og Android-skipanaumhverfi. Allar leiðbeiningar um uppsetningu og notkun eru í README.txt inni í niðurhalinu.</string>
+    <string name="download_kit_button">Sækja endurheimtarsett</string>
+    <string name="download_kit_desc">ZIP-skrá sem inniheldur endurheimtuforskriftina og allar leiðbeiningar. Eftir niðurhal skaltu afþjappa hana og lesa README.txt fyrst áður en þú keyrir forskriftina. Krefst OpenSSL 3.0 eða nýrra - geymdu pakkann á öruggum stað, óháðum forritinu.</string>
+    <string name="github_repo_label">Frumkóði einnig birtur á: %1$s</string>
+    <string name="important_notice_script">Sæktu endurheimtarsettið og geymdu það á öruggum stað - í skýjageymslu, á USB-lykli eða hvar sem þú munt ekki týna því - svo þú getir notað það ef forritið verður óaðgengilegt í framtíðinni.</string>
+
+    <string name="readme_title">AESLocker endurheimtarsett</string>
+    <string name="readme_intro">Þetta sett gerir þér kleift að dulkóða eða afkóða AESLocker-skrár úr skipanalínunni án þess að forritið sé uppsett. Það inniheldur tvær skrár: aeslocker_recover.sh (forskriftina) og þetta README.</string>
+    <string name="readme_terminal_intro">Sérhver skipun í þessari handbók verður að vera slegin inn í terminal (einnig kallað skipanalína eða shell), ekki tvísmellt á hana. Á macOS eða Linux skaltu opna forritið Terminal. Á Windows skaltu nota WSL (Windows Subsystem for Linux) eða Git Bash í staðinn - Command Prompt og PowerShell geta ekki keyrt þessar skipanir. Hver skipun hér að neðan er sýnd á sinni eigin línu og byrjar á $-merki - sláðu inn allt eftir $ (ekki $-merkið sjálft).</string>
+    <string name="readme_requirements_title">Kröfur</string>
+    <string name="readme_requirements_body">"Þú þarft að hafa OpenSSL 3.0 eða nýrra uppsett. Til að athuga OpenSSL-útgáfuna þína skaltu keyra eftirfarandi skipun í terminal:\n\n    $ %1$s\n\nÁ macOS er innbyggt \'openssl\' ekki raunverulegt OpenSSL og mun ekki virka. Til að setja upp virka útgáfu skaltu keyra eftirfarandi skipun í terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Skref 1: Gerðu forskriftina keyranlega</string>
+    <string name="readme_chmod_body">"Áður en þú getur keyrt forskriftina í fyrsta sinn þarf kerfið þitt að hafa heimild til að keyra hana. Í möppunni þar sem þú tókst þetta sett út skaltu keyra eftirfarandi skipun í terminal:\n\n    $ %1$s\n\nÞú þarft aðeins að gera þetta einu sinni."</string>
+    <string name="readme_usage_title">Skref 2: Keyrðu forskriftina</string>
+    <string name="readme_usage_encrypt">"Til að dulkóða skrá skaltu keyra eftirfarandi skipun í terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Til að afkóða skrá skaltu keyra eftirfarandi skipun í terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Þú verður beðin(n) um að slá lykilorðið þitt beint inn í terminal. Það birtist aldrei á skjánum og er hvergi vistað. Ef þú gleymir lykilorðinu getur þessi forskrift ekki endurheimt það fyrir þig - það er engin leið framhjá þessu, samkvæmt hönnun.</string>
+    <string name="readme_linux_note">"Linux-notendur: Flestar núverandi dreifingar innihalda nú þegar samhæfa útgáfu af OpenSSL. Til að athuga OpenSSL-útgáfuna þína skaltu keyra eftirfarandi skipun í útstöðinni:\n\n    $ %1$s\n\nEf þú færð villuna \'xxd: command not found\' þegar skriftan er keyrð skaltu setja það upp með pakkastjóranum þínum - til dæmis á Debian eða Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android-notendur: Hægt er að keyra þessa skriftu í útstöðvarforriti á borð við Termux. Settu Termux upp frá F-Droid (útgáfan í Google Play Store er úrelt og henni er ekki lengur viðhaldið), opnaðu það og settu síðan upp nauðsynleg verkfæri með því að keyra eftirfarandi skipun í útstöðinni:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows-notendur: Keyrðu þessa skriftu (aeslocker_recover.sh) í WSL (Windows Subsystem for Linux) eða Git Bash. Hún mun ekki keyra beint í Command Prompt eða PowerShell. Git Bash inniheldur allt sem þessi skrifta þarf. WSL keyrir raunverulega Linux-dreifingu, þannig að ef þú færð villuna \'xxd: command not found\' þar skaltu setja það upp á sama hátt og Linux-notandi myndi gera - til dæmis á Debian eða Ubuntu:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Skipta um þema</string>
     <string name="share_button_label">DEILA</string>
-    <string name="share_button_desc">Líkar þér við appið? Deildu því með öðrum.</string>
+    <string name="share_button_desc">Líkar þér við forritið? Deildu því með öðrum.</string>
     <string name="password_strength_weak">Veikt</string>
-    <string name="password_strength_medium">Meðal</string>
+    <string name="password_strength_medium">Miðlungs</string>
     <string name="password_strength_strong">Sterkt</string>
 
     <!-- Toast Messages -->
-    <string name="toast_select_file">Vinsamlegast veldu skrá fyrst</string>
-    <string name="toast_enter_password">Vinsamlegast sláðu inn lykilorð</string>
+    <string name="toast_select_file">Veldu fyrst skrá</string>
+    <string name="toast_enter_password">Sláðu inn lykilorð</string>
     <string name="toast_encrypt_success">Dulkóðun tókst!</string>
-    <string name="toast_decrypt_success">Afkóðun tókst!</string>
+    <string name="toast_decrypt_success">Afdulkóðun tókst!</string>
     <string name="toast_operation_failed">Aðgerð mistókst: Rangt lykilorð eða skemmd skrá.</string>
-    <string name="toast_invalid_file">Rangt lykilorð eða ógilt OpenSSL-skráarsnið.</string>
-    <string name="toast_enc_copied">Dulkóðunarskipun afrituð!</string>
-    <string name="toast_dec_copied">Afkóðunarskipun afrituð!</string>
+
+    <string name="toast_invalid_file">Rangt lykilorð eða þetta er ekki gild AESLocker-skrá.</string>
+    <string name="toast_kit_saved">Endurheimtarsett vistað.</string>
+    <string name="toast_kit_save_failed">Ekki tókst að vista endurheimtarsettið. Reyndu aftur.</string>
+
     <string name="toast_title_success">TÓKST</string>
-    <string name="toast_title_notice">TILKYNNING</string>
+    <string name="toast_title_notice">ATHUGIÐ</string>
     <string name="toast_button_ok">Í LAGI</string>
 
     <!-- Theme Switcher -->
-    <string name="theme_system">Sjálfgefið kerfis</string>
-    <string name="theme_light">Ljós hamur</string>
-    <string name="theme_dark">Dökkur hamur</string>
+    <string name="theme_system">Sjálfgefið kerfi</string>
+    <string name="theme_light">Ljós stilling</string>
+    <string name="theme_dark">Dökk stilling</string>
     <string name="cd_switch_theme">Skipta um þema</string>
 
     <!-- Language Switcher -->
@@ -48,4 +65,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">Sýna lykilorð</string>
     <string name="cd_hide_password">Fela lykilorð</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Horfa á auglýsingu til að sækja endurheimtarsett</string>
+    <string name="recovery_kit_pro_promo">Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga - og engar auglýsingar annars staðar í forritinu.</string>
+    <string name="dialog_ad_unavailable_title">Engin auglýsing í boði</string>
+    <string name="dialog_ad_unavailable_desc">Ekki tókst að hlaða auglýsingu núna, en þú getur samt sótt endurheimtarsettið ókeypis. Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga, alltaf.</string>
+    <string name="btn_continue_download">Halda áfram að sækja</string>
 </resources>

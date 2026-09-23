@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">CIFRA</string>
-    <string name="tab_decrypt">DECIFRA</string>
-    <string name="select_file">Seleziona File</string>
+    <string name="tab_encrypt">CRITTA</string>
+    <string name="tab_decrypt">DECRITTA</string>
+    <string name="select_file">Seleziona file</string>
     <string name="no_file_selected">Nessun file selezionato</string>
     <string name="password_label">Password</string>
-    <string name="encrypt_file">Cifra File</string>
-    <string name="decrypt_file">Decifra File</string>
-    <string name="processing_progress">%1$d%% Elaborazione in corso...</string>
-    <string name="terminal_commands_title">Comandi Terminale (OpenSSL)</string>
-    <string name="encryption_cmd_label">Comando di Cifratura:</string>
-    <string name="decryption_cmd_label">Comando di Decifratura:</string>
-    <string name="encryption_cmd_sub">Sostituisci [input.ext] con il nome del tuo file e la sua estensione</string>
-    <string name="decryption_cmd_sub">Sostituisci [output.ext] con il nome e l\'estensione del file originale</string>
-    <string name="important_notice">Copia i comandi qui sopra e salvali in un luogo sicuro per poterli usare se l\'app non dovesse essere disponibile in futuro. Questi comandi OpenSSL possono essere eseguiti direttamente nel terminale su macOS, Linux, Windows (tramite WSL o Git Bash) o in ambienti Android con supporto per la riga di comando.</string>
-    <string name="copy_cmd_desc">Copia comando</string>
-    <string name="toggle_theme">Cambia Tema</string>
+    <string name="encrypt_file">Cripta file</string>
+    <string name="decrypt_file">Decritta file</string>
+    <string name="processing_progress">%1$d%% Elaborazione...</string>
+    <string name="terminal_commands_title">Recupera senza l\'app</string>
+
+    <string name="terminal_commands_explanation">I file sono crittografati con AES-256 e autenticati con HMAC-SHA256, quindi qualsiasi manomissione o corruzione viene sempre rilevata. Scarica il kit di recupero qui sotto per crittografare o decrittografare i file dalla riga di comando, senza bisogno di installare l\'app. Funziona su macOS, Linux, Windows (tramite WSL o Git Bash) e negli ambienti terminale di Android. Le istruzioni complete per la configurazione e l\'utilizzo sono incluse nel file README.txt all\'interno del download.</string>
+    <string name="download_kit_button">Scarica il kit di recupero</string>
+    <string name="download_kit_desc">Un file ZIP contenente lo script di ripristino e le istruzioni complete. Dopo averlo scaricato, decomprimilo e leggi prima README.txt prima di eseguire lo script. Richiede OpenSSL 3.0 o versione successiva - conserva il kit in un luogo sicuro, indipendente dall’app.</string>
+    <string name="github_repo_label">Codice sorgente pubblicato anche su: %1$s</string>
+    <string name="important_notice_script">Scarica il kit di recupero e conservalo in un luogo sicuro - un\'unità cloud, una chiavetta USB o qualsiasi altro luogo dove non rischi di perderlo - così potrai usarlo se l\'app non sarà più disponibile in futuro.</string>
+
+    <string name="readme_title">Kit di recupero AESLocker</string>
+    <string name="readme_intro">Questo kit ti consente di crittografare o decrittografare i file AESLocker dalla riga di comando, senza che l\'app sia installata. Contiene due file: aeslocker_recover.sh (lo script) e questo README.</string>
+    <string name="readme_terminal_intro">Ogni comando di questa guida deve essere digitato in un terminale (chiamato anche riga di comando o shell), non aperto con un doppio clic. Su macOS o Linux, apri l\'app chiamata Terminal. Su Windows, usa WSL (Windows Subsystem for Linux) o Git Bash; Command Prompt e PowerShell non eseguiranno questi comandi. Ogni comando qui sotto è mostrato su una riga separata e inizia con il simbolo $ - digita tutto ciò che segue il simbolo $ (non il simbolo $ stesso).</string>
+    <string name="readme_requirements_title">Requisiti</string>
+    <string name="readme_requirements_body">"Devi avere installato OpenSSL 3.0 o versione successiva. Per verificare la versione di OpenSSL, esegui il seguente comando nel terminale:\n\n    $ %1$s\n\nSu macOS, \'openssl\' integrato non è il vero OpenSSL e non funzionerà. Per installare una versione funzionante, esegui il seguente comando nel terminale:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Passaggio 1: Rendi eseguibile lo script</string>
+    <string name="readme_chmod_body">"Prima di poter eseguire lo script per la prima volta, il sistema deve avere l\'autorizzazione per eseguirlo. Nella cartella in cui hai estratto questo kit, esegui il seguente comando nel terminale:\n\n    $ %1$s\n\nDevi farlo una sola volta."</string>
+    <string name="readme_usage_title">Passaggio 2: Esegui lo script</string>
+    <string name="readme_usage_encrypt">"Per crittografare un file, esegui il seguente comando nel terminale:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Per decrittografare un file, esegui il seguente comando nel terminale:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Ti verrà chiesto di digitare la password direttamente nel terminale. Non verrà mai mostrata sullo schermo né salvata da nessuna parte. Se dimentichi la password, questo script non può recuperarla per te - non esiste alcun modo per aggirare questa limitazione, per progettazione.</string>
+    <string name="readme_linux_note">"Utenti Linux: la maggior parte delle distribuzioni attuali include già una versione compatibile di OpenSSL. Per verificare la versione di OpenSSL, esegui il seguente comando nel terminale:\n\n    $ %1$s\n\nSe viene visualizzato l'errore \'xxd: command not found\' durante l'esecuzione dello script, installalo utilizzando il gestore di pacchetti - ad esempio, su Debian o Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Utenti Android: questo script può essere eseguito all'interno di un'app terminale come Termux. Installa Termux da F-Droid (la versione del Google Play Store è obsoleta e non è più mantenuta), aprilo, quindi installa gli strumenti richiesti eseguendo il seguente comando nel terminale:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Utenti Windows: esegui questo script (aeslocker_recover.sh) all'interno di WSL (Windows Subsystem for Linux) o Git Bash. Non verrà eseguito direttamente nel Prompt dei comandi o in PowerShell. Git Bash include tutto ciò di cui questo script ha bisogno. WSL esegue una vera distribuzione Linux, quindi se viene visualizzato l'errore \'xxd: command not found\' al suo interno, installalo nello stesso modo in cui lo farebbe un utente Linux - ad esempio, su Debian o Ubuntu:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">Cambia tema</string>
     <string name="share_button_label">CONDIVIDI</string>
     <string name="share_button_desc">Ti piace l\'app? Condividila con altri.</string>
     <string name="password_strength_weak">Debole</string>
     <string name="password_strength_medium">Media</string>
     <string name="password_strength_strong">Forte</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">Seleziona prima un file</string>
     <string name="toast_enter_password">Inserisci una password</string>
-    <string name="toast_encrypt_success">Cifratura completata con successo!</string>
-    <string name="toast_decrypt_success">Decifratura completata con successo!</string>
-    <string name="toast_operation_failed">Operazione fallita: password errata o file danneggiato.</string>
-    <string name="toast_invalid_file">Password errata o formato file OpenSSL non valido.</string>
-    <string name="toast_enc_copied">Comando di cifratura copiato!</string>
-    <string name="toast_dec_copied">Comando di decifratura copiato!</string>
+    <string name="toast_encrypt_success">Crittografia completata!</string>
+    <string name="toast_decrypt_success">Decrittografia completata!</string>
+    <string name="toast_operation_failed">Operazione non riuscita: password errata o file danneggiato.</string>
+
+    <string name="toast_invalid_file">Password errata oppure questo non è un file AESLocker valido.</string>
+    <string name="toast_kit_saved">Kit di recupero salvato.</string>
+    <string name="toast_kit_save_failed">Impossibile salvare il kit di recupero. Riprova.</string>
+
     <string name="toast_title_success">SUCCESSO</string>
     <string name="toast_title_notice">AVVISO</string>
     <string name="toast_button_ok">OK</string>
-    <string name="theme_system">Predefinito di Sistema</string>
-    <string name="theme_light">Modalità Chiara</string>
-    <string name="theme_dark">Modalità Scura</string>
-    <string name="cd_switch_theme">Cambia Tema</string>
-    <string name="cd_switch_language">Cambia Lingua</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Predefinito di sistema</string>
+    <string name="theme_light">Modalità chiara</string>
+    <string name="theme_dark">Modalità scura</string>
+    <string name="cd_switch_theme">Cambia tema</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Cambia lingua</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Mostra password</string>
     <string name="cd_hide_password">Nascondi password</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Guarda un annuncio per scaricare il kit di recupero</string>
+    <string name="recovery_kit_pro_promo">Ottieni AESLocker Pro per download immediati senza pubblicità - e nessuna pubblicità in qualsiasi altra parte dell\'app.</string>
+    <string name="dialog_ad_unavailable_title">Nessun annuncio disponibile</string>
+    <string name="dialog_ad_unavailable_desc">Non è stato possibile caricare un annuncio al momento, ma puoi comunque scaricare gratuitamente il kit di recupero. Ottieni AESLocker Pro per download immediati senza pubblicità, mai.</string>
+    <string name="btn_continue_download">Continua il download</string>
 </resources>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">VERSCHLÜSSELN</string>
@@ -9,16 +8,33 @@
     <string name="encrypt_file">Datei verschlüsseln</string>
     <string name="decrypt_file">Datei entschlüsseln</string>
     <string name="processing_progress">%1$d%% Wird verarbeitet...</string>
-    <string name="terminal_commands_title">Terminal-Befehle (OpenSSL)</string>
-    <string name="encryption_cmd_label">Verschlüsselungsbefehl:</string>
-    <string name="decryption_cmd_label">Entschlüsselungsbefehl:</string>
-    <string name="encryption_cmd_sub">Ersetzen Sie [input.ext] durch Ihren Dateinamen und die Dateiendung</string>
-    <string name="decryption_cmd_sub">Ersetzen Sie [output.ext] durch den Dateinamen und die Dateiendung der Originaldatei</string>
-    <string name="important_notice">Kopieren Sie die obigen Befehle und speichern Sie sie an einem sicheren Ort, damit Sie sie verwenden können, falls die App in Zukunft nicht mehr verfügbar ist. Diese OpenSSL-Befehle können direkt im Terminal unter macOS, Linux, Windows (über WSL oder Git Bash) oder in Android-Umgebungen mit Befehlszeilenunterstützung ausgeführt werden.</string>
-    <string name="copy_cmd_desc">Befehl kopieren</string>
+    <string name="terminal_commands_title">Wiederherstellung ohne die App</string>
+
+    <string name="terminal_commands_explanation">Dateien werden mit AES-256 verschlüsselt und mit HMAC-SHA256 authentifiziert, sodass Manipulationen oder Beschädigungen immer erkannt werden. Laden Sie das untenstehende Wiederherstellungspaket herunter, um Dateien über die Befehlszeile zu verschlüsseln oder zu entschlüsseln - ohne dass die App installiert sein muss. Es funktioniert unter macOS, Linux, Windows (über WSL oder Git Bash) und in Android-Terminalumgebungen. Eine vollständige Anleitung zur Einrichtung und Verwendung befindet sich als README.txt im Download.</string>
+    <string name="download_kit_button">Wiederherstellungspaket herunterladen</string>
+    <string name="download_kit_desc">Eine ZIP-Datei mit dem Wiederherstellungsskript und vollständigen Anweisungen. Entpacken Sie sie nach dem Herunterladen und lesen Sie README.txt, bevor Sie das Skript ausführen. Erfordert OpenSSL 3.0 oder höher - speichern Sie das Kit an einem sicheren Ort, unabhängig von der App.</string>
+    <string name="github_repo_label">Quellcode auch veröffentlicht unter: %1$s</string>
+    <string name="important_notice_script">Laden Sie das Wiederherstellungspaket herunter und bewahren Sie es an einem sicheren Ort auf - auf einem Cloud-Laufwerk, einem USB-Stick oder an einem anderen Ort, an dem Sie es nicht verlieren - damit Sie es verwenden können, falls die App in Zukunft nicht mehr verfügbar ist.</string>
+
+    <string name="readme_title">AESLocker-Wiederherstellungspaket</string>
+    <string name="readme_intro">Mit diesem Paket können Sie AESLocker-Dateien über die Befehlszeile verschlüsseln oder entschlüsseln, ohne dass die App installiert sein muss. Es enthält zwei Dateien: aeslocker_recover.sh (das Skript) und diese README-Datei.</string>
+    <string name="readme_terminal_intro">Jeder Befehl in dieser Anleitung muss in ein Terminal (auch Befehlszeile oder Shell genannt) eingegeben werden und darf nicht per Doppelklick gestartet werden. Öffnen Sie unter macOS oder Linux die Anwendung Terminal. Verwenden Sie unter Windows stattdessen WSL (Windows Subsystem for Linux) oder Git Bash - Command Prompt und PowerShell können diese Befehle nicht ausführen. Jeder unten aufgeführte Befehl steht in einer eigenen Zeile und beginnt mit einem $-Zeichen - geben Sie alles nach dem $ ein, nicht das $-Zeichen selbst.</string>
+    <string name="readme_requirements_title">Voraussetzungen</string>
+    <string name="readme_requirements_body">"Sie benötigen OpenSSL 3.0 oder neuer. Um Ihre OpenSSL-Version zu überprüfen, führen Sie den folgenden Befehl im Terminal aus:\n\n    $ %1$s\n\nUnter macOS ist das integrierte \'openssl\' nicht das echte OpenSSL und wird nicht funktionieren. Um eine funktionierende Version zu installieren, führen Sie den folgenden Befehl im Terminal aus:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Schritt 1: Das Skript ausführbar machen</string>
+    <string name="readme_chmod_body">"Bevor Sie das Skript zum ersten Mal ausführen können, benötigt Ihr System die Berechtigung, es auszuführen. Führen Sie in dem Ordner, in den Sie dieses Paket entpackt haben, den folgenden Befehl im Terminal aus:\n\n    $ %1$s\n\nDies müssen Sie nur einmal tun."</string>
+    <string name="readme_usage_title">Schritt 2: Das Skript ausführen</string>
+    <string name="readme_usage_encrypt">"Um eine Datei zu verschlüsseln, führen Sie den folgenden Befehl im Terminal aus:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Um eine Datei zu entschlüsseln, führen Sie den folgenden Befehl im Terminal aus:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Sie werden aufgefordert, Ihr Passwort direkt im Terminal einzugeben. Es wird niemals auf dem Bildschirm angezeigt oder irgendwo gespeichert. Wenn Sie Ihr Passwort vergessen, kann dieses Skript es nicht für Sie wiederherstellen - es gibt absichtlich keine Möglichkeit, dies zu umgehen.</string>
+    <string name="readme_linux_note">"Linux-Benutzer: Die meisten aktuellen Distributionen enthalten bereits eine kompatible OpenSSL-Version. Um Ihre OpenSSL-Version zu überprüfen, führen Sie den folgenden Befehl im Terminal aus:\n\n    $ %1$s\n\nWenn beim Ausführen des Skripts der Fehler \'xxd: command not found\' angezeigt wird, installieren Sie es über Ihren Paketmanager - zum Beispiel unter Debian oder Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android-Benutzer: Dieses Skript kann in einer Terminal-App wie Termux ausgeführt werden. Installieren Sie Termux von F-Droid (die Version aus dem Google Play Store ist veraltet und wird nicht mehr gepflegt), öffnen Sie es und installieren Sie anschließend die erforderlichen Tools, indem Sie den folgenden Befehl im Terminal ausführen:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows-Benutzer: Führen Sie dieses Skript (aeslocker_recover.sh) innerhalb von WSL (Windows Subsystem for Linux) oder Git Bash aus. Es kann nicht direkt in der Eingabeaufforderung oder PowerShell ausgeführt werden. Git Bash enthält alles, was dieses Skript benötigt. WSL führt eine echte Linux-Distribution aus. Wenn dort der Fehler \'xxd: command not found\' angezeigt wird, installieren Sie es auf dieselbe Weise wie ein Linux-Benutzer - zum Beispiel unter Debian oder Ubuntu:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">Design wechseln</string>
     <string name="share_button_label">TEILEN</string>
-    <string name="share_button_desc">Gefällt dir die App? Teile sie mit anderen.</string>
+    <string name="share_button_desc">Gefällt Ihnen die App? Teilen Sie sie mit anderen.</string>
     <string name="password_strength_weak">Schwach</string>
     <string name="password_strength_medium">Mittel</string>
     <string name="password_strength_strong">Stark</string>
@@ -29,17 +45,19 @@
     <string name="toast_encrypt_success">Erfolgreich verschlüsselt!</string>
     <string name="toast_decrypt_success">Erfolgreich entschlüsselt!</string>
     <string name="toast_operation_failed">Vorgang fehlgeschlagen: Falsches Passwort oder beschädigte Datei.</string>
-    <string name="toast_invalid_file">Falsches Passwort oder ungültiges OpenSSL-Dateiformat.</string>
-    <string name="toast_enc_copied">Verschlüsselungsbefehl kopiert!</string>
-    <string name="toast_dec_copied">Entschlüsselungsbefehl kopiert!</string>
+
+    <string name="toast_invalid_file">Falsches Passwort oder dies ist keine gültige AESLocker-Datei.</string>
+    <string name="toast_kit_saved">Wiederherstellungspaket gespeichert.</string>
+    <string name="toast_kit_save_failed">Das Wiederherstellungspaket konnte nicht gespeichert werden. Bitte versuchen Sie es erneut.</string>
+
     <string name="toast_title_success">ERFOLG</string>
     <string name="toast_title_notice">HINWEIS</string>
     <string name="toast_button_ok">OK</string>
 
     <!-- Theme Switcher -->
     <string name="theme_system">Systemstandard</string>
-    <string name="theme_light">Helles Design</string>
-    <string name="theme_dark">Dunkles Design</string>
+    <string name="theme_light">Heller Modus</string>
+    <string name="theme_dark">Dunkler Modus</string>
     <string name="cd_switch_theme">Design wechseln</string>
 
     <!-- Language Switcher -->
@@ -47,5 +65,12 @@
 
     <!-- Password Visibility -->
     <string name="cd_show_password">Passwort anzeigen</string>
-    <string name="cd_hide_password">Passwort verbergen</string>
+    <string name="cd_hide_password">Passwort ausblenden</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Werbung ansehen, um das Wiederherstellungspaket herunterzuladen</string>
+    <string name="recovery_kit_pro_promo">Holen Sie sich AESLocker Pro für sofortige Downloads ohne Werbung - und ohne Werbung an irgendeiner anderen Stelle der App.</string>
+    <string name="dialog_ad_unavailable_title">Keine Werbung verfügbar</string>
+    <string name="dialog_ad_unavailable_desc">Die Werbung konnte gerade nicht geladen werden, aber Sie können das Wiederherstellungspaket trotzdem kostenlos herunterladen. Holen Sie sich AESLocker Pro für sofortige Downloads ohne Werbung - jemals.</string>
+    <string name="btn_continue_download">Download fortsetzen</string>
 </resources>

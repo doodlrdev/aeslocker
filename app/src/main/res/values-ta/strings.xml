@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">குறியாக்கம் (ENCRYPT)</string>
-    <string name="tab_decrypt">குறிவிலக்கம் (DECRYPT)</string>
-    <string name="select_file">கோப்பைத் தேர்ந்தெடு</string>
+    <string name="tab_encrypt">மறையாக்கு</string>
+    <string name="tab_decrypt">மறைவிலக்கு</string>
+    <string name="select_file">கோப்பைத் தேர்ந்தெடுக்கவும்</string>
     <string name="no_file_selected">கோப்பு எதுவும் தேர்ந்தெடுக்கப்படவில்லை</string>
     <string name="password_label">கடவுச்சொல்</string>
-    <string name="encrypt_file">கோப்பைக் குறியாக்கு</string>
-    <string name="decrypt_file">கோப்பைக் குறிவிலக்கு</string>
+    <string name="encrypt_file">கோப்பை மறையாக்கு</string>
+    <string name="decrypt_file">கோப்பை மறைவிலக்கு</string>
     <string name="processing_progress">%1$d%% செயலாக்கப்படுகிறது...</string>
-    <string name="terminal_commands_title">முனையக் கட்டளைகள் (OpenSSL)</string>
-    <string name="encryption_cmd_label">குறியாக்கக் கட்டளை:</string>
-    <string name="decryption_cmd_label">குறிவிலக்கக் கட்டளை:</string>
-    <string name="encryption_cmd_sub">[input.ext] என்பதற்குப் பதிலாக உங்கள் கோப்பின் பெயரையும் நீட்டிப்பையும் (extension) உள்ளிடவும்</string>
-    <string name="decryption_cmd_sub">[output.ext] என்பதற்குப் பதிலாக அசல் கோப்பின் பெயரையும் நீட்டிப்பையும் உள்ளிடவும்</string>
-    <string name="important_notice">எதிர்காலத்தில் இந்த ஆப்ஸ் கிடைக்காமல் போனால் பயன்படுத்துவதற்கு, மேலே உள்ள கட்டளைகளை நகலெடுத்து பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும். இந்த OpenSSL கட்டளைகளை macOS, Linux, Windows (WSL அல்லது Git Bash மூலம்) அல்லது கமாண்ட்-லைன் இடைமுக ஆதரவு உள்ள Android சூழல்களில் நேரடியாகப் பயன்படுத்தலாம்.</string>
-    <string name="copy_cmd_desc">கட்டளையை நகலெடு</string>
-    <string name="toggle_theme">கருப்பொருளை மாற்று</string>
+    <string name="terminal_commands_title">ஆப்ஸ் இல்லாமல் மீட்டெடுக்கவும்</string>
+
+    <string name="terminal_commands_explanation">கோப்புகள் AES-256 மூலம் மறையாக்கம் செய்யப்பட்டு HMAC-SHA256 மூலம் அங்கீகரிக்கப்படுகின்றன, எனவே எந்தவொரு மாற்றமும் அல்லது சேதமும் எப்போதும் கண்டறியப்படும். ஆப்பை நிறுவாமல் கட்டளை வரியிலிருந்து கோப்புகளை மறையாக்க அல்லது மறைவிலக்க கீழே உள்ள மீட்பு கருவித்தொகுப்பைப் பதிவிறக்கவும். இது macOS, Linux, Windows (WSL அல்லது Git Bash வழியாக) மற்றும் Android டெர்மினல் சூழல்களில் செயல்படும். முழுமையான அமைப்பு மற்றும் பயன்பாட்டு வழிமுறைகள் பதிவிறக்கத்திற்குள் உள்ள README.txt இல் சேர்க்கப்பட்டுள்ளன.</string>
+    <string name="download_kit_button">மீட்பு கருவித்தொகுப்பைப் பதிவிறக்கவும்</string>
+    <string name="download_kit_desc">மீட்பு ஸ்கிரிப்ட் மற்றும் முழுமையான வழிமுறைகளைக் கொண்ட ZIP கோப்பு. பதிவிறக்கிய பிறகு, அதை அன்சிப் செய்து ஸ்கிரிப்டை இயக்குவதற்கு முன் முதலில் README.txt ஐப் படிக்கவும். OpenSSL 3.0 அல்லது அதற்குப் பிந்தைய பதிப்பு தேவை - கிட்டை செயலியில் இருந்து தனியான பாதுகாப்பான இடத்தில் சேமிக்கவும்.</string>
+    <string name="github_repo_label">மூலக் குறியீடும் இங்கே வெளியிடப்பட்டுள்ளது: %1$s</string>
+    <string name="important_notice_script">மீட்பு கருவித்தொகுப்பைப் பதிவிறக்கி பாதுகாப்பான இடத்தில் சேமிக்கவும் - கிளவுட் டிரைவ், USB ஸ்டிக் அல்லது அதை இழக்காத வேறு எந்த இடத்திலும் - எதிர்காலத்தில் ஆப் கிடைக்காமல் போனால் அதை நீங்கள் பயன்படுத்த முடியும்.</string>
+
+    <string name="readme_title">AESLocker மீட்பு கருவித்தொகுப்பு</string>
+    <string name="readme_intro">இந்தக் கருவித்தொகுப்பு, ஆப் நிறுவப்படாமல் கட்டளை வரியிலிருந்து AESLocker கோப்புகளை மறையாக்கம் அல்லது மறைவிலக்கம் செய்ய உங்களை அனுமதிக்கிறது. இதில் இரண்டு கோப்புகள் உள்ளன: aeslocker_recover.sh (ஸ்கிரிப்ட்) மற்றும் இந்த README.</string>
+    <string name="readme_terminal_intro">இந்த வழிகாட்டியில் உள்ள ஒவ்வொரு கட்டளையும் டெர்மினலில் (கட்டளை வரி அல்லது shell என்றும் அழைக்கப்படுகிறது) தட்டச்சு செய்ய வேண்டும்; இருமுறை கிளிக் செய்யக்கூடாது. macOS அல்லது Linux-ல் Terminal என்ற ஆப்பைத் திறக்கவும். Windows-ல் அதற்குப் பதிலாக WSL (Windows Subsystem for Linux) அல்லது Git Bash-ஐப் பயன்படுத்தவும் - Command Prompt மற்றும் PowerShell இந்தக் கட்டளைகளை இயக்காது. கீழே உள்ள ஒவ்வொரு கட்டளையும் $ குறியுடன் தொடங்கி தனித்தனி வரியில் காட்டப்பட்டுள்ளது - $-க்குப் பிறகு உள்ள அனைத்தையும் தட்டச்சு செய்யவும் ($ குறியை மட்டும் தட்டச்சு செய்ய வேண்டாம்).</string>
+    <string name="readme_requirements_title">தேவைகள்</string>
+    <string name="readme_requirements_body">"OpenSSL 3.0 அல்லது அதற்குப் புதிய பதிப்பு நிறுவப்பட்டிருக்க வேண்டும். உங்கள் OpenSSL பதிப்பைச் சரிபார்க்க, டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %1$s\n\nmacOS-ல் உள்ளமைக்கப்பட்ட \'openssl\' உண்மையான OpenSSL அல்ல, எனவே அது இயங்காது. செயல்படும் பதிப்பை நிறுவ, டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">படி 1: ஸ்கிரிப்டை இயக்கக்கூடியதாக மாற்றவும்</string>
+    <string name="readme_chmod_body">"ஸ்கிரிப்டை முதல் முறையாக இயக்குவதற்கு முன், அதை இயக்க உங்கள் கணினிக்கு அனுமதி தேவை. இந்தக் கருவித்தொகுப்பை பிரித்தெடுத்த கோப்புறையில், டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %1$s\n\nஇதை ஒருமுறை மட்டும் செய்தால் போதும்."</string>
+    <string name="readme_usage_title">படி 2: ஸ்கிரிப்டை இயக்கவும்</string>
+    <string name="readme_usage_encrypt">"ஒரு கோப்பை மறையாக்கம் செய்ய, டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"ஒரு கோப்பை மறைவிலக்கம் செய்ய, டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">உங்கள் கடவுச்சொல்லை நேரடியாக டெர்மினலில் தட்டச்சு செய்யுமாறு கேட்கப்படுவீர்கள். அது திரையில் காட்டப்படுவதுமில்லை, எங்கும் சேமிக்கப்படுவதுமில்லை. உங்கள் கடவுச்சொல்லை மறந்துவிட்டால், இந்த ஸ்கிரிப்ட்டால் அதை மீட்டெடுக்க முடியாது - வடிவமைப்பின்படி இதைத் தவிர்க்க எந்த வழியும் இல்லை.</string>
+    <string name="readme_linux_note">"Linux பயனர்கள்: தற்போதைய பெரும்பாலான விநியோகங்களில் ஏற்கனவே இணக்கமான OpenSSL சேர்க்கப்பட்டுள்ளது. உங்கள் OpenSSL பதிப்பைச் சரிபார்க்க, டெர்மினலில் பின்வரும் கட்டளையை இயக்கவும்:\n\n    $ %1$s\n\nஸ்கிரிப்டை இயக்கும்போது \'xxd: command not found\' என்ற பிழை ஏற்பட்டால், உங்கள் package manager-ஐப் பயன்படுத்தி அதை நிறுவவும் - எடுத்துக்காட்டாக, Debian அல்லது Ubuntu-வில்:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android பயனர்கள்: இந்த ஸ்கிரிப்டை Termux போன்ற terminal app-இல் இயக்கலாம். F-Droid-இலிருந்து Termux-ஐ நிறுவவும் (Google Play Store-இல் உள்ள பதிப்பு காலாவதியானது மற்றும் இனி பராமரிக்கப்படுவதில்லை), அதைத் திறந்து, பின்னர் டெர்மினலில் பின்வரும் கட்டளையை இயக்குவதன் மூலம் தேவையான கருவிகளை நிறுவவும்:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows பயனர்கள்: இந்த ஸ்கிரிப்டை (aeslocker_recover.sh) WSL (Windows Subsystem for Linux) அல்லது Git Bash-க்குள் இயக்கவும். இது Command Prompt அல்லது PowerShell-ல் நேரடியாக இயங்காது. இந்த ஸ்கிரிப்டிற்குத் தேவையான அனைத்தும் Git Bash-ல் உள்ளன. WSL உண்மையான Linux விநியோகத்தை இயக்குகிறது, எனவே அங்கு \'xxd: command not found\' என்ற பிழை ஏற்பட்டால், Linux பயனர் செய்வதைப் போலவே அதை நிறுவவும் - எடுத்துக்காட்டாக, Debian அல்லது Ubuntu-வில்:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">தீமை மாற்றவும்</string>
     <string name="share_button_label">பகிர்</string>
-    <string name="share_button_desc">ஆப் பிடித்திருக்கிறதா? மற்றவர்களுடன் பகிருங்கள்.</string>
+    <string name="share_button_desc">ஆப் பிடித்திருக்கிறதா? மற்றவர்களுடன் பகிரவும்.</string>
     <string name="password_strength_weak">பலவீனமானது</string>
     <string name="password_strength_medium">நடுத்தரம்</string>
-    <string name="password_strength_strong">உறுதியானது</string>
+    <string name="password_strength_strong">வலுவானது</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">முதலில் ஒரு கோப்பைத் தேர்ந்தெடுக்கவும்</string>
-    <string name="toast_enter_password">தயவுசெய்து கடவுச்சொல்லை உள்ளிடவும்</string>
-    <string name="toast_encrypt_success">வெற்றிகரமாகக் குறியாக்கம் செய்யப்பட்டது!</string>
-    <string name="toast_decrypt_success">வெற்றிகரமாகக் குறிவிலக்கம் செய்யப்பட்டது!</string>
-    <string name="toast_operation_failed">செயல்பாடு தோல்வியடைந்தது: தவறான கடவுச்சொல் அல்லது பழுதடைந்த கோப்பு.</string>
-    <string name="toast_invalid_file">தவறான கடவுச்சொல் அல்லது செல்லாத OpenSSL கோப்பு வடிவம்.</string>
-    <string name="toast_enc_copied">குறியாக்கக் கட்டளை நகலெடுக்கப்பட்டது!</string>
-    <string name="toast_dec_copied">குறிவிலக்கக் கட்டளை நகலெடுக்கப்பட்டது!</string>
+    <string name="toast_enter_password">கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="toast_encrypt_success">வெற்றிகரமாக மறையாக்கப்பட்டது!</string>
+    <string name="toast_decrypt_success">வெற்றிகரமாக மறைவிலக்கப்பட்டது!</string>
+    <string name="toast_operation_failed">செயல்பாடு தோல்வியடைந்தது: தவறான கடவுச்சொல் அல்லது சேதமடைந்த கோப்பு.</string>
+
+    <string name="toast_invalid_file">தவறான கடவுச்சொல் அல்லது இது சரியான AESLocker கோப்பு அல்ல.</string>
+    <string name="toast_kit_saved">மீட்பு கருவித்தொகுப்பு சேமிக்கப்பட்டது.</string>
+    <string name="toast_kit_save_failed">மீட்பு கருவித்தொகுப்பைச் சேமிக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+
     <string name="toast_title_success">வெற்றி</string>
     <string name="toast_title_notice">அறிவிப்பு</string>
     <string name="toast_button_ok">சரி</string>
-    <string name="theme_system">சிஸ்டம் இயல்புநிலை</string>
-    <string name="theme_light">லைட் மோட் (Light Mode)</string>
-    <string name="theme_dark">டார்க் மோட் (Dark Mode)</string>
-    <string name="cd_switch_theme">கருப்பொருளை மாற்று</string>
-    <string name="cd_switch_language">மொழியை மாற்று</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">கணினி இயல்புநிலை</string>
+    <string name="theme_light">வெளிச்சப் பயன்முறை</string>
+    <string name="theme_dark">இருண்ட பயன்முறை</string>
+    <string name="cd_switch_theme">தீமை மாற்றவும்</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">மொழியை மாற்றவும்</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">கடவுச்சொல்லைக் காட்டு</string>
     <string name="cd_hide_password">கடவுச்சொல்லை மறை</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">மீட்பு கருவித்தொகுப்பைப் பதிவிறக்க விளம்பரத்தைப் பார்க்கவும்</string>
+    <string name="recovery_kit_pro_promo">விளம்பரமில்லாமல் உடனடி பதிவிறக்கங்களுக்கு AESLocker Pro-ஐப் பெறுங்கள் - மேலும் ஆப்பின் வேறு எந்தப் பகுதியிலும் விளம்பரங்கள் இருக்காது.</string>
+    <string name="dialog_ad_unavailable_title">விளம்பரம் எதுவும் கிடைக்கவில்லை</string>
+    <string name="dialog_ad_unavailable_desc">இப்போது விளம்பரத்தை ஏற்ற முடியவில்லை, ஆனால் நீங்கள் மீட்பு கருவித்தொகுப்பை இலவசமாகப் பதிவிறக்கலாம். எப்போதும் விளம்பரங்கள் இல்லாமல் உடனடி பதிவிறக்கங்களுக்கு AESLocker Pro-ஐப் பெறுங்கள்.</string>
+    <string name="btn_continue_download">பதிவிறக்கத்தைத் தொடரவும்</string>
 </resources>

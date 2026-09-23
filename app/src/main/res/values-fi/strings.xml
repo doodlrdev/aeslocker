@@ -1,40 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">SALAA</string>
-    <string name="tab_decrypt">PURA SALAUS</string>
+    <string name="tab_encrypt">SALAUS</string>
+    <string name="tab_decrypt">PURKU</string>
     <string name="select_file">Valitse tiedosto</string>
-    <string name="no_file_selected">Ei valittua tiedostoa</string>
+    <string name="no_file_selected">Tiedostoa ei ole valittu</string>
     <string name="password_label">Salasana</string>
     <string name="encrypt_file">Salaa tiedosto</string>
     <string name="decrypt_file">Pura tiedoston salaus</string>
     <string name="processing_progress">%1$d%% Käsitellään...</string>
-    <string name="terminal_commands_title">Päätekomennot (OpenSSL)</string>
-    <string name="encryption_cmd_label">Salauskomento:</string>
-    <string name="decryption_cmd_label">Purkukomento:</string>
-    <string name="encryption_cmd_sub">Korvaa [input.ext] tiedostosi nimellä ja tiedostotunnisteella</string>
-    <string name="decryption_cmd_sub">Korvaa [output.ext] alkuperäisen tiedoston nimellä ja tiedostotunnisteella</string>
-    <string name="important_notice">Kopioi yllä olevat komennot ja tallenna ne johonkin, jotta voit käyttää niitä, jos sovellus ei ole käytettävissä tulevaisuudessa. Nämä OpenSSL-komennot voidaan suorittaa suoraan päätteessä macOS-, Linux-, Windows- (WSL:n tai Git Bashin kautta) tai Android-ympäristöissä, joissa on komentorivituki.</string>
-    <string name="copy_cmd_desc">Kopioi komento</string>
+    <string name="terminal_commands_title">Palauta ilman sovellusta</string>
+
+    <string name="terminal_commands_explanation">Tiedostot salataan AES-256:lla ja todennetaan HMAC-SHA256:lla, joten luvaton muokkaus tai vioittuminen havaitaan aina. Lataa alla oleva palautuspaketti salataksesi tai purkaaksesi tiedostoja komentoriviltä - sovellusta ei tarvitse asentaa. Se toimii macOS-, Linux- ja Windows-järjestelmissä (WSL:n tai Git Bashin kautta) sekä Androidin pääteympäristöissä. Täydelliset asennus- ja käyttöohjeet sisältyvät ladattavan paketin README.txt-tiedostoon.</string>
+    <string name="download_kit_button">Lataa palautuspaketti</string>
+    <string name="download_kit_desc">ZIP-tiedosto, joka sisältää palautusskriptin ja täydelliset ohjeet. Kun olet ladannut tiedoston, pura se ja lue ensin README.txt ennen skriptin suorittamista. Vaatii OpenSSL 3.0:n tai uudemman - säilytä paketti turvallisessa paikassa erillään sovelluksesta.</string>
+    <string name="github_repo_label">Lähdekoodi on julkaistu myös osoitteessa: %1$s</string>
+    <string name="important_notice_script">Lataa palautuspaketti ja säilytä se turvallisessa paikassa - pilvipalvelussa, USB-muistitikulla tai missä tahansa paikassa, jossa et menetä sitä - jotta voit käyttää sitä, jos sovellus ei ole tulevaisuudessa saatavilla.</string>
+
+    <string name="readme_title">AESLocker-palautuspaketti</string>
+    <string name="readme_intro">Tämän paketin avulla voit salata tai purkaa AESLocker-tiedostojen salauksen komentoriviltä ilman, että sovellus on asennettuna. Se sisältää kaksi tiedostoa: aeslocker_recover.sh (skripti) ja tämä README.</string>
+    <string name="readme_terminal_intro">Jokainen tämän oppaan komento on kirjoitettava päätteeseen (jota kutsutaan myös komentoriviksi tai shelliksi), eikä sitä pidä käynnistää kaksoisnapsauttamalla. Avaa macOS:ssa tai Linuxissa Terminal-niminen sovellus. Windowsissa käytä sen sijaan WSL:ää (Windows Subsystem for Linux) tai Git Bashia - Command Prompt ja PowerShell eivät suorita näitä komentoja. Jokainen alla oleva komento näytetään omalla rivillään $-merkillä alkaen - kirjoita kaikki $-merkin jälkeen (älä itse $-merkkiä).</string>
+    <string name="readme_requirements_title">Vaatimukset</string>
+    <string name="readme_requirements_body">"Sinulla on oltava asennettuna OpenSSL 3.0 tai uudempi. Tarkista OpenSSL-versiosi suorittamalla seuraava komento päätteessä:\n\n    $ %1$s\n\nmacOS:n sisäänrakennettu \'openssl\' ei ole oikea OpenSSL eikä se toimi. Asenna toimiva versio suorittamalla seuraava komento päätteessä:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Vaihe 1: Tee skriptistä suoritettava</string>
+    <string name="readme_chmod_body">"Ennen kuin voit suorittaa skriptin ensimmäisen kerran, järjestelmäsi tarvitsee luvan sen suorittamiseen. Suorita seuraava komento päätteessä kansiossa, johon purit tämän paketin:\n\n    $ %1$s\n\nTämä tarvitsee tehdä vain kerran."</string>
+    <string name="readme_usage_title">Vaihe 2: Suorita skripti</string>
+    <string name="readme_usage_encrypt">"Salaaksesi tiedoston suorita seuraava komento päätteessä:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Puraksesi tiedoston salauksen suorita seuraava komento päätteessä:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Sinua pyydetään kirjoittamaan salasanasi suoraan päätteeseen. Sitä ei koskaan näytetä näytöllä eikä tallenneta mihinkään. Jos unohdat salasanasi, tämä skripti ei voi palauttaa sitä - tätä ei ole suunnittelun vuoksi mahdollista kiertää.</string>
+    <string name="readme_linux_note">"Linux-käyttäjät: useimmat nykyiset jakelut sisältävät jo yhteensopivan OpenSSL:n. Tarkista OpenSSL-versiosi suorittamalla seuraava komento päätelaitteessa:\n\n    $ %1$s\n\nJos saat komentosarjaa suoritettaessa virheen \'xxd: command not found\', asenna se paketinhallinnan avulla - esimerkiksi Debianissa tai Ubuntussa:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android-käyttäjät: tämän komentosarjan voi suorittaa Termuxin kaltaisessa päätesovelluksessa. Asenna Termux F-Droidista (Google Play Storen versio on vanhentunut eikä sitä enää ylläpidetä), avaa se ja asenna tarvittavat työkalut suorittamalla seuraava komento päätteessä:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows-käyttäjät: suorita tämä komentosarja (aeslocker_recover.sh) WSL:ssä (Windows Subsystem for Linux) tai Git Bashissa. Se ei toimi suoraan komentokehotteessa tai PowerShellissä. Git Bash sisältää kaiken, mitä tämä komentosarja tarvitsee. WSL suorittaa varsinaista Linux-jakelua, joten jos saat siellä virheen \'xxd: command not found\', asenna se samalla tavalla kuin Linux-käyttäjä - esimerkiksi Debianissa tai Ubuntussa:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Vaihda teemaa</string>
     <string name="share_button_label">JAA</string>
     <string name="share_button_desc">Pidätkö sovelluksesta? Jaa se muiden kanssa.</string>
     <string name="password_strength_weak">Heikko</string>
-    <string name="password_strength_medium">Kohtalainen</string>
+    <string name="password_strength_medium">Keskivahva</string>
     <string name="password_strength_strong">Vahva</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Valitse ensin tiedosto</string>
-    <string name="toast_enter_password">Syötä salasana</string>
+    <string name="toast_enter_password">Anna salasana</string>
     <string name="toast_encrypt_success">Salaus onnistui!</string>
-    <string name="toast_decrypt_success">Salaus purettu onnistuneesti!</string>
-    <string name="toast_operation_failed">Toiminto epäonnistui: Virheellinen salasana tai vioittunut tiedosto.</string>
-    <string name="toast_invalid_file">Virheellinen salasana tai virheellinen OpenSSL-tiedostomuoto.</string>
-    <string name="toast_enc_copied">Salauskomento kopioitu!</string>
-    <string name="toast_dec_copied">Purkukomento kopioitu!</string>
+    <string name="toast_decrypt_success">Salauksen purku onnistui!</string>
+    <string name="toast_operation_failed">Toiminto epäonnistui: väärä salasana tai vioittunut tiedosto.</string>
+
+    <string name="toast_invalid_file">Väärä salasana tai tämä ei ole kelvollinen AESLocker-tiedosto.</string>
+    <string name="toast_kit_saved">Palautuspaketti tallennettu.</string>
+    <string name="toast_kit_save_failed">Palautuspaketin tallentaminen epäonnistui. Yritä uudelleen.</string>
+
     <string name="toast_title_success">ONNISTUI</string>
-    <string name="toast_title_notice">ILMOITUS</string>
+    <string name="toast_title_notice">HUOMAUTUS</string>
     <string name="toast_button_ok">OK</string>
 
     <!-- Theme Switcher -->
@@ -50,5 +66,10 @@
     <string name="cd_show_password">Näytä salasana</string>
     <string name="cd_hide_password">Piilota salasana</string>
 
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Katso mainos ladataksesi palautuspaketin</string>
+    <string name="recovery_kit_pro_promo">Hanki AESLocker Pro välittömiä mainoksettomia latauksia varten - eikä sovelluksessa ole mainoksia muuallakaan.</string>
+    <string name="dialog_ad_unavailable_title">Mainosta ei ole saatavilla</string>
+    <string name="dialog_ad_unavailable_desc">Mainosta ei voitu ladata juuri nyt, mutta voit silti ladata palautuspaketin ilmaiseksi. Hanki AESLocker Pro välittömiä latauksia varten ilman mainoksia.</string>
+    <string name="btn_continue_download">Jatka lataamista</string>
 </resources>
-

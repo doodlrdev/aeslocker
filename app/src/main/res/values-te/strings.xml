@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">ఎన్‌క్రిప్ట్</string>
-    <string name="tab_decrypt">డిక్రిప్ట్</string>
+    <string name="tab_decrypt">డీక్రిప్ట్</string>
     <string name="select_file">ఫైల్‌ను ఎంచుకోండి</string>
-    <string name="no_file_selected">ఎటువంటి ఫైల్ ఎంచుకోబడలేదు</string>
+    <string name="no_file_selected">ఫైల్ ఏదీ ఎంచుకోలేదు</string>
     <string name="password_label">పాస్‌వర్డ్</string>
     <string name="encrypt_file">ఫైల్‌ను ఎన్‌క్రిప్ట్ చేయండి</string>
-    <string name="decrypt_file">ఫైల్‌ను డిక్రిప్ట్ చేయండి</string>
-    <string name="processing_progress">%1$d%% ప్రాసెస్ అవుతోంది...</string>
-    <string name="terminal_commands_title">టెర్మినల్ కమాండ్స్ (OpenSSL)</string>
-    <string name="encryption_cmd_label">ఎన్‌క్రిప్షన్ కమాండ్:</string>
-    <string name="decryption_cmd_label">డిక్రిప్షన్ కమాండ్:</string>
-    <string name="encryption_cmd_sub">[input.ext] స్థానంలో మీ ఫైల్ పేరు మరియు దాని ఎక్స్‌టెన్షన్‌ను నమోదు చేయండి</string>
-    <string name="decryption_cmd_sub">[output.ext] స్థానంలో అసలు ఫైల్ పేరు మరియు ఎక్స్‌టెన్షన్‌ను నమోదు చేయండి</string>
-    <string name="important_notice">భవిష్యత్తులో యాప్ అందుబాటులో లేకపోతే ఉపయోగించుకునేందుకు, పై కమాండ్‌లను కాపీ చేసి ఎక్కడైనా భద్రపరుచుకోండి. ఈ OpenSSL కమాండ్‌లను macOS, Linux, Windows (WSL లేదా Git Bash ద్వారా) లేదా కమాండ్-లైన్ ఇంటర్‌ఫేస్ మద్దతు ఉన్న Android వాతావరణాలలో నేరుగా అమలు చేయవచ్చు.</string>
-    <string name="copy_cmd_desc">కమాండ్‌ను కాపీ చేయండి</string>
-    <string name="toggle_theme">థీమ్‌ను మార్చండి</string>
+    <string name="decrypt_file">ఫైల్‌ను డీక్రిప్ట్ చేయండి</string>
+    <string name="processing_progress">%1$d%% ప్రాసెస్ చేస్తోంది...</string>
+    <string name="terminal_commands_title">యాప్ లేకుండా రికవర్ చేయండి</string>
+
+    <string name="terminal_commands_explanation">ఫైళ్లు AES-256తో ఎన్‌క్రిప్ట్ చేయబడతాయి మరియు HMAC-SHA256తో ఆథెంటికేట్ చేయబడతాయి, కాబట్టి ఏదైనా తారుమారు లేదా నష్టం ఎల్లప్పుడూ గుర్తించబడుతుంది. యాప్‌ను ఇన్‌స్టాల్ చేయకుండా కమాండ్ లైన్ నుండి ఫైళ్లను ఎన్‌క్రిప్ట్ లేదా డీక్రిప్ట్ చేయడానికి దిగువ రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయండి. ఇది macOS, Linux, Windows (WSL లేదా Git Bash ద్వారా) మరియు Android టెర్మినల్ పరిసరాల్లో పనిచేస్తుంది. పూర్తి సెటప్ మరియు వినియోగ సూచనలు డౌన్‌లోడ్‌లోని README.txtలో ఉన్నాయి.</string>
+    <string name="download_kit_button">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయండి</string>
+    <string name="download_kit_desc">రికవరీ స్క్రిప్ట్ మరియు పూర్తి సూచనలను కలిగి ఉన్న ZIP ఫైల్. డౌన్‌లోడ్ చేసిన తర్వాత దాన్ని అన్‌జిప్ చేసి, స్క్రిప్ట్‌ను అమలు చేయడానికి ముందు ముందుగా README.txt చదవండి. OpenSSL 3.0 లేదా తదుపరి వెర్షన్ అవసరం - కిట్‌ను యాప్‌కు స్వతంత్రంగా సురక్షితమైన ప్రదేశంలో భద్రపరచండి.</string>
+    <string name="github_repo_label">సోర్స్ కోడ్ ఇక్కడ కూడా ప్రచురించబడింది: %1$s</string>
+    <string name="important_notice_script">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేసి సురక్షితమైన ప్రదేశంలో సేవ్ చేయండి - క్లౌడ్ డ్రైవ్, USB స్టిక్ లేదా మీరు దాన్ని పోగొట్టుకోని ఎక్కడైనా - భవిష్యత్తులో యాప్ అందుబాటులో లేకపోతే దాన్ని ఉపయోగించడానికి.</string>
+
+    <string name="readme_title">AESLocker రికవరీ కిట్</string>
+    <string name="readme_intro">యాప్ ఇన్‌స్టాల్ చేయకుండానే కమాండ్ లైన్ నుండి AESLocker ఫైళ్లను ఎన్‌క్రిప్ట్ లేదా డీక్రిప్ట్ చేయడానికి ఈ కిట్ మిమ్మల్ని అనుమతిస్తుంది. ఇందులో రెండు ఫైళ్లు ఉన్నాయి: aeslocker_recover.sh (స్క్రిప్ట్) మరియు ఈ README.</string>
+    <string name="readme_terminal_intro">ఈ గైడ్‌లోని ప్రతి కమాండ్‌ను టెర్మినల్‌లో (కమాండ్ లైన్ లేదా shell అని కూడా పిలుస్తారు) టైప్ చేయాలి, డబుల్-క్లిక్ చేయకూడదు. macOS లేదా Linuxలో Terminal అనే యాప్‌ను తెరవండి. Windowsలో బదులుగా WSL (Windows Subsystem for Linux) లేదా Git Bash ఉపయోగించండి - Command Prompt మరియు PowerShell ఈ కమాండ్‌లను అమలు చేయవు. దిగువ ప్రతి కమాండ్ ప్రత్యేక లైన్‌లో $ గుర్తుతో ప్రారంభమై ఉంటుంది - $ తర్వాత ఉన్న ప్రతిదీ టైప్ చేయండి ($ గుర్తును మాత్రం టైప్ చేయకండి).</string>
+    <string name="readme_requirements_title">అవసరాలు</string>
+    <string name="readme_requirements_body">"మీరు OpenSSL 3.0 లేదా అంతకంటే కొత్త వెర్షన్‌ను ఇన్‌స్టాల్ చేసి ఉండాలి. మీ OpenSSL వెర్షన్‌ను తనిఖీ చేయడానికి టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %1$s\n\nmacOSలో అంతర్నిర్మిత \'openssl\' నిజమైన OpenSSL కాదు మరియు పనిచేయదు. పనిచేసే కాపీని ఇన్‌స్టాల్ చేయడానికి టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">దశ 1: స్క్రిప్ట్‌ను ఎగ్జిక్యూట్ చేయగలిగేలా చేయండి</string>
+    <string name="readme_chmod_body">"మీరు మొదటిసారి స్క్రిప్ట్‌ను అమలు చేయడానికి ముందు, దాన్ని ఎగ్జిక్యూట్ చేయడానికి మీ సిస్టమ్‌కు అనుమతి అవసరం. మీరు ఈ కిట్‌ను ఎక్స్‌ట్రాక్ట్ చేసిన ఫోల్డర్‌లో టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %1$s\n\nమీరు దీన్ని ఒక్కసారి మాత్రమే చేయాలి."</string>
+    <string name="readme_usage_title">దశ 2: స్క్రిప్ట్‌ను అమలు చేయండి</string>
+    <string name="readme_usage_encrypt">"ఫైల్‌ను ఎన్‌క్రిప్ట్ చేయడానికి టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"ఫైల్‌ను డీక్రిప్ట్ చేయడానికి టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">మీ పాస్‌వర్డ్‌ను నేరుగా టెర్మినల్‌లో టైప్ చేయమని మిమ్మల్ని అడుగుతారు. అది ఎప్పుడూ స్క్రీన్‌పై చూపబడదు లేదా ఎక్కడా సేవ్ చేయబడదు. మీరు మీ పాస్‌వర్డ్‌ను మర్చిపోతే, ఈ స్క్రిప్ట్ దాన్ని మీ కోసం రికవర్ చేయలేదు - డిజైన్ ప్రకారం దీన్ని అధిగమించడానికి మార్గం లేదు.</string>
+    <string name="readme_linux_note">"Linux వినియోగదారులు: ప్రస్తుతమున్న చాలా distributionsలో ఇప్పటికే అనుకూలమైన OpenSSL ఉంటుంది. మీ OpenSSL వెర్షన్‌ను తనిఖీ చేయడానికి టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయండి:\n\n    $ %1$s\n\nస్క్రిప్ట్‌ను అమలు చేస్తున్నప్పుడు \'xxd: command not found\' అనే లోపం వస్తే, మీ package managerను ఉపయోగించి దాన్ని ఇన్‌స్టాల్ చేయండి - ఉదాహరణకు, Debian లేదా Ubuntuలో:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android వినియోగదారులు: ఈ స్క్రిప్ట్‌ను Termux వంటి terminal appలో అమలు చేయవచ్చు. F-Droid నుంచి Termuxను ఇన్‌స్టాల్ చేయండి (Google Play Storeలోని వెర్షన్ పాతది మరియు ఇకపై నిర్వహించబడటం లేదు), దాన్ని తెరిచి, టెర్మినల్‌లో కింది కమాండ్‌ను అమలు చేయడం ద్వారా అవసరమైన toolsను ఇన్‌స్టాల్ చేయండి:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows వినియోగదారులు: ఈ స్క్రిప్ట్‌ను (aeslocker_recover.sh) WSL (Windows Subsystem for Linux) లేదా Git Bashలో అమలు చేయండి. ఇది Command Prompt లేదా PowerShellలో నేరుగా అమలు కాదు. ఈ స్క్రిప్ట్‌కు అవసరమైనవన్నీ Git Bashలో ఉన్నాయి. WSL నిజమైన Linux distributionను అమలు చేస్తుంది, కాబట్టి అక్కడ \'xxd: command not found\' అనే లోపం వస్తే, Linux వినియోగదారు చేసే విధంగానే దాన్ని ఇన్‌స్టాల్ చేయండి - ఉదాహరణకు, Debian లేదా Ubuntuలో:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">థీమ్ మార్చండి</string>
     <string name="share_button_label">షేర్ చేయండి</string>
     <string name="share_button_desc">యాప్ నచ్చిందా? ఇతరులతో షేర్ చేయండి.</string>
-    <string name="password_strength_weak">బలహీనంగా ఉంది</string>
-    <string name="password_strength_medium">సగటు</string>
-    <string name="password_strength_strong">బలంగా ఉంది</string>
+    <string name="password_strength_weak">బలహీనమైనది</string>
+    <string name="password_strength_medium">మధ్యస్థం</string>
+    <string name="password_strength_strong">బలమైనది</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">దయచేసి ముందుగా ఫైల్‌ను ఎంచుకోండి</string>
-    <string name="toast_enter_password">దయచేసి పాస్‌వర్డ్ నమోదు చేయండి</string>
+    <string name="toast_enter_password">దయచేసి పాస్‌వర్డ్‌ను నమోదు చేయండి</string>
     <string name="toast_encrypt_success">విజయవంతంగా ఎన్‌క్రిప్ట్ చేయబడింది!</string>
-    <string name="toast_decrypt_success">విజయవంతంగా డిక్రిప్ట్ చేయబడింది!</string>
+    <string name="toast_decrypt_success">విజయవంతంగా డీక్రిప్ట్ చేయబడింది!</string>
     <string name="toast_operation_failed">ఆపరేషన్ విఫలమైంది: తప్పు పాస్‌వర్డ్ లేదా పాడైన ఫైల్.</string>
-    <string name="toast_invalid_file">తప్పు పాస్‌వర్డ్ లేదా చెల్లని OpenSSL ఫైల్ ఫార్మాట్.</string>
-    <string name="toast_enc_copied">ఎన్‌క్రిప్షన్ కమాండ్ కాపీ చేయబడింది!</string>
-    <string name="toast_dec_copied">డిక్రిప్షన్ కమాండ్ కాపీ చేయబడింది!</string>
+
+    <string name="toast_invalid_file">తప్పు పాస్‌వర్డ్, లేదా ఇది చెల్లుబాటు అయ్యే AESLocker ఫైల్ కాదు.</string>
+    <string name="toast_kit_saved">రికవరీ కిట్ సేవ్ చేయబడింది.</string>
+    <string name="toast_kit_save_failed">రికవరీ కిట్‌ను సేవ్ చేయలేకపోయాము. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+
     <string name="toast_title_success">విజయం</string>
     <string name="toast_title_notice">గమనిక</string>
-    <string name="toast_button_ok">ఓకే</string>
+    <string name="toast_button_ok">సరే</string>
+
+    <!-- Theme Switcher -->
     <string name="theme_system">సిస్టమ్ డిఫాల్ట్</string>
     <string name="theme_light">లైట్ మోడ్</string>
     <string name="theme_dark">డార్క్ మోడ్</string>
-    <string name="cd_switch_theme">థీమ్‌ను మార్చండి</string>
-    <string name="cd_switch_language">భాషను మార్చండి</string>
-    <string name="cd_show_password">పాస్‌వర్డ్ చూపించు</string>
-    <string name="cd_hide_password">పాస్‌వర్డ్ దాచు</string>
+    <string name="cd_switch_theme">థీమ్ మార్చండి</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">భాష మార్చండి</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">పాస్‌వర్డ్‌ను చూపించండి</string>
+    <string name="cd_hide_password">పాస్‌వర్డ్‌ను దాచండి</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయడానికి ప్రకటనను చూడండి</string>
+    <string name="recovery_kit_pro_promo">తక్షణ, ప్రకటన రహిత డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి - మరియు యాప్‌లో మరెక్కడా కూడా ప్రకటనలు ఉండవు.</string>
+    <string name="dialog_ad_unavailable_title">ప్రకటన అందుబాటులో లేదు</string>
+    <string name="dialog_ad_unavailable_desc">ప్రస్తుతం మేము ప్రకటనను లోడ్ చేయలేకపోయాము, కానీ మీరు ఇప్పటికీ రికవరీ కిట్‌ను ఉచితంగా డౌన్‌లోడ్ చేసుకోవచ్చు. ఎప్పటికీ ప్రకటనలు లేకుండా తక్షణ డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి.</string>
+    <string name="btn_continue_download">డౌన్‌లోడ్ కొనసాగించండి</string>
 </resources>

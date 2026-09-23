@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">I-ENCRYPT</string>
@@ -9,38 +8,58 @@
     <string name="encrypt_file">I-encrypt ang File</string>
     <string name="decrypt_file">I-decrypt ang File</string>
     <string name="processing_progress">%1$d%% Pinoproseso...</string>
-    <string name="terminal_commands_title">Mga Command sa Terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Command sa Pag-encrypt:</string>
-    <string name="decryption_cmd_label">Command sa Pag-decrypt:</string>
-    <string name="encryption_cmd_sub">Palitan ang [input.ext] ng pangalan at extension ng iyong file</string>
-    <string name="decryption_cmd_sub">Palitan ang [output.ext] ng pangalan at extension ng orihinal na file</string>
-    <string name="important_notice">Kopyahin ang mga command sa itaas at i-save ang mga ito saan man upang magamit mo ang mga ito kung hindi na available ang app sa hinaharap. Ang mga OpenSSL command na ito ay maaaring direktang patakbuhin sa terminal sa macOS, Linux, Windows (sa pamamagitan ng WSL o Git Bash), o mga Android environment na may suporta sa command-line interface.</string>
-    <string name="copy_cmd_desc">Kopyahin ang command</string>
-    <string name="toggle_theme">Palitan ang Tema</string>
-    <string name="share_button_label">IBAHAGI</string>
-    <string name="share_button_desc">Nagustuhan mo ang app? Ibahagi ito sa iba.</string>
+    <string name="terminal_commands_title">Mag-recover Nang Walang App</string>
+
+    <string name="terminal_commands_explanation">Ang mga file ay ine-encrypt gamit ang AES-256 at ina-authenticate gamit ang HMAC-SHA256, kaya palaging natutukoy ang anumang pakikialam o pagkasira. I-download ang recovery kit sa ibaba para mag-encrypt o mag-decrypt ng mga file mula sa command line - hindi kailangan ng pag-install ng app. Gumagana ito sa macOS, Linux, Windows (sa pamamagitan ng WSL o Git Bash), at mga terminal environment sa Android. Ang kumpletong mga tagubilin sa pag-setup at paggamit ay kasama sa README.txt sa loob ng download.</string>
+    <string name="download_kit_button">I-download ang Recovery Kit</string>
+    <string name="download_kit_desc">Isang ZIP file na naglalaman ng recovery script at kumpletong mga tagubilin. Pagkatapos i-download, i-unzip ito at basahin muna ang README.txt bago patakbuhin ang script. Nangangailangan ng OpenSSL 3.0 o mas bago - i-save ang kit sa isang ligtas na lugar na hiwalay sa app.</string>
+    <string name="github_repo_label">Nai-publish din ang source sa: %1$s</string>
+    <string name="important_notice_script">I-download ang recovery kit at itago ito sa isang ligtas na lugar - cloud drive, USB stick, o kahit saan na hindi mo ito mawawala - para magamit mo ito kung hindi na available ang app sa hinaharap.</string>
+
+    <string name="readme_title">AESLocker Recovery Kit</string>
+    <string name="readme_intro">Hinahayaan ka ng kit na ito na mag-encrypt o mag-decrypt ng mga AESLocker file mula sa command line, nang hindi naka-install ang app. Naglalaman ito ng dalawang file: aeslocker_recover.sh (ang script) at ang README na ito.</string>
+    <string name="readme_terminal_intro">Ang bawat command sa gabay na ito ay dapat i-type sa isang terminal (tinatawag ding command line o shell), hindi i-double-click. Sa macOS o Linux, buksan ang app na tinatawag na Terminal. Sa Windows, gamitin ang WSL (Windows Subsystem for Linux) o Git Bash - hindi tatakbo ang mga command na ito sa Command Prompt at PowerShell. Ang bawat command sa ibaba ay ipinapakita sa sarili nitong linya, na nagsisimula sa $ sign - i-type ang lahat pagkatapos ng $ (hindi ang $ mismo).</string>
+    <string name="readme_requirements_title">Mga Kinakailangan</string>
+    <string name="readme_requirements_body">"Kailangan mong naka-install ang OpenSSL 3.0 o mas bago. Para tingnan ang iyong bersyon ng OpenSSL, isagawa ang sumusunod na command sa terminal:\n\n    $ %1$s\n\nSa macOS, ang built-in na \'openssl\' ay hindi tunay na OpenSSL at hindi gagana. Para mag-install ng gumaganang bersyon, isagawa ang sumusunod na command sa terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Hakbang 1: Gawing executable ang script</string>
+    <string name="readme_chmod_body">"Bago mo patakbuhin ang script sa unang pagkakataon, kailangang bigyan ito ng iyong system ng pahintulot na ma-execute. Sa folder kung saan mo in-extract ang kit na ito, isagawa ang sumusunod na command sa terminal:\n\n    $ %1$s\n\nIsang beses mo lang kailangang gawin ito."</string>
+    <string name="readme_usage_title">Hakbang 2: Patakbuhin ang script</string>
+    <string name="readme_usage_encrypt">"Para mag-encrypt ng file, isagawa ang sumusunod na command sa terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Para mag-decrypt ng file, isagawa ang sumusunod na command sa terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Hihilingin sa iyong i-type ang iyong password nang direkta sa terminal. Hindi ito kailanman ipapakita sa screen o ise-save kahit saan. Kung makalimutan mo ang iyong password, hindi ito maibabalik ng script na ito para sa iyo - walang paraan para malampasan ito, ayon sa disenyo.</string>
+    <string name="readme_linux_note">"Mga gumagamit ng Linux: karamihan sa mga kasalukuyang distribution ay mayroon nang compatible na OpenSSL. Para tingnan ang bersyon ng iyong OpenSSL, isagawa ang sumusunod na command sa terminal:\n\n    $ %1$s\n\nKung makuha mo ang error na \'xxd: command not found\' kapag pinapatakbo ang script, i-install ito gamit ang iyong package manager - halimbawa, sa Debian o Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Mga gumagamit ng Android: maaaring patakbuhin ang script na ito sa loob ng isang terminal app gaya ng Termux. I-install ang Termux mula sa F-Droid (luma na ang bersyon mula sa Google Play Store at hindi na ito pinapanatili), buksan ito, pagkatapos ay i-install ang mga kinakailangang tool sa pamamagitan ng pagsasagawa ng sumusunod na command sa terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Mga gumagamit ng Windows: patakbuhin ang script na ito (aeslocker_recover.sh) sa loob ng WSL (Windows Subsystem for Linux) o Git Bash. Hindi ito direktang gagana sa Command Prompt o PowerShell. Kasama sa Git Bash ang lahat ng kailangan ng script na ito. Nagpapatakbo ang WSL ng aktuwal na Linux distribution, kaya kung makuha mo roon ang error na \'xxd: command not found\', i-install ito sa parehong paraan na gagawin ng isang gumagamit ng Linux - halimbawa, sa Debian o Ubuntu:\n\n    $ %1$s"</string>
+
+
+
+    <string name="toggle_theme">Palitan ang Theme</string>
+    <string name="share_button_label">I-SHARE</string>
+    <string name="share_button_desc">Nae-enjoy mo ba ang app? I-share ito sa iba.</string>
     <string name="password_strength_weak">Mahina</string>
     <string name="password_strength_medium">Katamtaman</string>
-    <string name="password_strength_strong">Matatag</string>
+    <string name="password_strength_strong">Malakas</string>
 
     <!-- Toast Messages -->
-    <string name="toast_select_file">Mangyaring pumili muna ng file</string>
-    <string name="toast_enter_password">Mangyaring maglagay ng password</string>
+    <string name="toast_select_file">Pumili muna ng file</string>
+    <string name="toast_enter_password">Maglagay ng password</string>
     <string name="toast_encrypt_success">Matagumpay na na-encrypt!</string>
     <string name="toast_decrypt_success">Matagumpay na na-decrypt!</string>
-    <string name="toast_operation_failed">Pumalya ang operasyon: Mali ang password o sira ang file.</string>
-    <string name="toast_invalid_file">Mali ang password o hindi balidong format ng OpenSSL file.</string>
-    <string name="toast_enc_copied">Na-kopya na ang command sa pag-encrypt!</string>
-    <string name="toast_dec_copied">Na-kopya na ang command sa pag-decrypt!</string>
+    <string name="toast_operation_failed">Nabigo ang operasyon: Maling password o sirang file.</string>
+
+    <string name="toast_invalid_file">Maling password, o hindi ito isang valid na AESLocker file.</string>
+    <string name="toast_kit_saved">Na-save ang recovery kit.</string>
+    <string name="toast_kit_save_failed">Hindi ma-save ang recovery kit. Pakisubukang muli.</string>
+
     <string name="toast_title_success">TAGUMPAY</string>
     <string name="toast_title_notice">PAUNAWA</string>
     <string name="toast_button_ok">OK</string>
 
     <!-- Theme Switcher -->
-    <string name="theme_system">Default ng Sistema</string>
+    <string name="theme_system">Default ng System</string>
     <string name="theme_light">Light Mode</string>
     <string name="theme_dark">Dark Mode</string>
-    <string name="cd_switch_theme">Palitan ang Tema</string>
+    <string name="cd_switch_theme">Palitan ang Theme</string>
 
     <!-- Language Switcher -->
     <string name="cd_switch_language">Palitan ang Wika</string>
@@ -48,4 +67,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">Ipakita ang password</string>
     <string name="cd_hide_password">Itago ang password</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Manood ng Ad para I-download ang Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Kunin ang AESLocker Pro para sa agarang, walang-ad na mga download - at walang ads saanman sa app.</string>
+    <string name="dialog_ad_unavailable_title">Walang Available na Ad</string>
+    <string name="dialog_ad_unavailable_desc">Hindi kami makapag-load ng ad ngayon, pero maaari mo pa ring i-download nang libre ang recovery kit. Kunin ang AESLocker Pro para sa agarang download na walang ads, kailanman.</string>
+    <string name="btn_continue_download">Magpatuloy sa Pag-download</string>
 </resources>

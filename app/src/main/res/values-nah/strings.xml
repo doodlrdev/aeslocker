@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">ICHTACATZAZ</string>
-    <string name="tab_decrypt">TLAMACHTILI</string>
-    <string name="select_file">Tlatlahtlaniliztli Tlahtolmatiliztli</string>
-    <string name="no_file_selected"> Ahtle tlahtolmatiliztli tlatlahtlaniltic</string>
-    <string name="password_label">Tlatlatilztli tlahtolli</string>
-    <string name="encrypt_file">Ichtacatzaz Tlahtolmatiliztli</string>
-    <string name="decrypt_file">Tlamachtili Tlahtolmatiliztli</string>
-    <string name="processing_progress">%1$d%% Tikchiwhtok...</string>
-    <string name="terminal_commands_title">Terminal Tlanehuiliztli (OpenSSL)</string>
-    <string name="encryption_cmd_label">Ichtacatzaz tlanehuiliztli:</string>
-    <string name="decryption_cmd_label">Tlamachtili tlanehuiliztli:</string>
-    <string name="encryption_cmd_sub">Ximati [input.ext] ica motequihua huan iyoliz</string>
-    <string name="decryption_cmd_sub">Ximati [output.ext] ica huehuehteyotl huan iyoliz</string>
-    <string name="important_notice">Xiquihcuilo nigan tlanehuiliztli huan xiquinyoloca ikin timocahuaz tla app axmo tlapopoloz. Nigi OpenSSL tlanehuiliztli ueli mochiwa ipan macOS, Linux, Windows (ica WSL noso Git Bash), noso Android tlen quipiya tlanehuiliztli tequichihualiztli.</string>
-    <string name="copy_cmd_desc">Xiquihcuilo tlanehuiliztli</string>
-    <string name="toggle_theme">Xipatla tema</string>
-    <string name="share_button_label">XELHUIA</string>
-    <string name="share_button_desc">¿Ticpactia in aplicación? Xicxelhui ihuan occequintin.</string>
-    <string name="password_strength_weak">Ahmo chicahuac</string>
-    <string name="password_strength_medium">Tlahco</string>
-    <string name="password_strength_strong">Chicahuac</string>
-    <string name="toast_select_file">Nigan xitlatlahtlani ce tlahtolmatiliztli achto</string>
-    <string name="toast_enter_password">Nigan xiquiza tlatlatilztli tlahtolli</string>
-    <string name="toast_encrypt_success"> ¡Ichtacatzaz omosehui!</string>
-    <string name="toast_decrypt_success"> ¡Tlamachtili omosehui!</string>
-    <string name="toast_operation_failed"> Axmo omocuep: Tlatlatilztli tlahtolli ahnozo tlahtolmatiliztli tlatotoctli.</string>
-    <string name="toast_invalid_file">Tlatlatilztli tlahtolli ahnozo OpenSSL format axmo cuali.</string>
-    <string name="toast_enc_copied"> ¡Ichtacatzaz tlanehuiliztli omocopi!</string>
-    <string name="toast_dec_copied"> ¡Tlamachtili tlanehuiliztli omocopi!</string>
-    <string name="toast_title_success">CUALI</string>
-    <string name="toast_title_notice">TLAIXIMACHTILIZTLI</string>
-    <string name="toast_button_ok">QUEMA</string>
-    <string name="theme_system">Sistema tlen nonmotequihui</string>
-    <string name="theme_light">Tlanesi Mode</string>
-    <string name="theme_dark">Yohualli Mode</string>
-    <string name="cd_switch_theme">Xipatla tema</string>
-    <string name="cd_switch_language">Xipatla tlahtolli</string>
-    <string name="cd_show_password">Xiquitati tlatlatilztli tlahtolli</string>
-    <string name="cd_hide_password">Xiquipacho tlatlatilztli tlahtolli</string>
+    <string name="tab_encrypt">TLAKUILOA</string>
+    <string name="tab_decrypt">TLAKUILOĀ</string>
+    <string name="select_file">Xicpōhua tlahcuilōlli</string>
+    <string name="no_file_selected">Ahmo tlahcuilōlli xicpōhua</string>
+    <string name="password_label">Tlahtōl tlatzintli</string>
+    <string name="encrypt_file">Xictlakuiloa in tlahcuilōlli</string>
+    <string name="decrypt_file">Xictlakuiloā in tlahcuilōlli</string>
+    <string name="processing_progress">%1$d%% Motēchihua...</string>
+    <string name="terminal_commands_title">Xicmopalehui ahmo ica in aplicación</string>
+
+    <string name="terminal_commands_explanation">In tlahcuilōlmej tlatzintli ica AES-256 ihuan HMAC-SHA256, huāncān nochipa momachilia intla quipōhua noso mococoa. Xictemō in kit de recuperación tlatzintli para xictlakuiloa noso xictlakuiloā in tlahcuilōlmej ica línea de comandos - ahmo monequi xictlālia in aplicación. Tequiti ipan macOS, Linux, Windows (ica WSL noso Git Bash), ihuan Android terminal. Nochtin tlamachiliztli para tlatlālia ihuan quenin motequitia mocahua ipan README.txt.</string>
+    <string name="download_kit_button">Xictemō kit de recuperación</string>
+    <string name="download_kit_desc">Se ZIP tlamamali tlen kipia in tlahtōlli tlen ika ticuepas ihuan nochi tlanonotzal. Ipan timochihua in temohua, xiccuepa in archivo ihuan xicmomachti README.txt achto tlen tictequitis in tlahtōlli. Monequi OpenSSL 3.0 o achi hueyi - xicpia in kit ipan ce tlatzintli temachtia, tlen amo ihuan in aplicación.</string>
+    <string name="github_repo_label">In código fuente no ihuan mopanoltia ipan: %1$s</string>
+    <string name="important_notice_script">Xictemō in kit de recuperación ihuan xicpīya ipan cē lugar cuali - ipan cloud, USB stick, noso campa ahmo ticpolōz - para hueliz tictequitis intla in aplicación ahmo occepa motēnēhua.</string>
+
+    <string name="readme_title">AESLocker Kit de Recuperación</string>
+    <string name="readme_intro">In kit mitzmaca hueliz ticlakuiloa noso ticlakuiloā in tlahcuilōlmej AESLocker ica línea de comandos, ahmo ica in aplicación instalada. Quipia ome tlahcuilōlmej: aeslocker_recover.sh (in script) ihuan in README.</string>
+    <string name="readme_terminal_intro">Nochi comando ipan in tlamachiliztli monequi ticpohua ipan terminal (noihqui motenehua línea de comandos noso shell), ahmo ica doble clic. Ipan macOS noso Linux, xictlapo in aplicación Terminal. Ipan Windows, xictequiti WSL (Windows Subsystem for Linux) noso Git Bash - Command Prompt ihuan PowerShell ahmo quichīhuazque in comandos. Cada comando nican motēixpana ipan inīn tlācatl, quīza ica $ - xictlālia nochi tlen ca ixcoyan $ (ahmo in $).</string>
+    <string name="readme_requirements_title">Tlamonequiliztli</string>
+    <string name="readme_requirements_body">"Monequi ticpia OpenSSL 3.0 noso ocachi yancuic. Para ticmati tlein versión OpenSSL ticpia, xicchīhua in comando nican ipan terminal:\n\n    $ %1$s\n\nIpan macOS, in \'openssl\' tlen ya onca ahmo nelia OpenSSL ihuan ahmo tequitiz. Para ticpiyas cē versión tlen tequiti, xicchīhua in comando nican ipan terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Tlapōlli 1: Xicchīhua in script hueliz motēquipanōlti</string>
+    <string name="readme_chmod_body">"Achto ticchīhuaz in script, in sistema monequi quimacas permiso para motēquipanōlti. Ipan in carpeta campa ticpōhua in kit, xicchīhua in comando nican ipan terminal:\n\n    $ %1$s\n\nSan ceppa monequi ticchīhua."</string>
+    <string name="readme_usage_title">Tlapōlli 2: Xictequiti in script</string>
+    <string name="readme_usage_encrypt">"Para xictlakuiloa cē tlahcuilōlli, xicchīhua in comando nican ipan terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Para xictlakuiloā cē tlahcuilōlli, xicchīhua in comando nican ipan terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Mitzilhuiaz para ticpohua in contraseña monechico ipan terminal. Ahmo quēman motēixpana ipan pantalla noso mocahua campa. Intla ticpolōa in contraseña, in script ahmo hueliz quicēntiliz - ahmo onca ohtli para mopanoltia, ica in tlamachiliztli.</string>
+    <string name="readme_linux_note">"Linux tlacame: miek in yancuic distribuciones ya kipia se OpenSSL tlen cuali motekiua. Ipan ticnequi ticmati canin version OpenSSL ticpia, xicchihua in siguiente comando ipan terminal:\n\n    $ %1$s\n\nTla, quema tictequiua in script, ticselecia in error \'xxd: command not found\', xicinstala ica in paquete administrador - nican se ejemplo, ipan Debian o Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android tlacame: ni script hueli motequiua ipan se terminal app quen Termux. Xicinstala Termux ica F-Droid (in version tlen onca ipan Google Play Store ya huecauh, auh ayacmo moquichihua), xicapo, niman xicinstala in herramientas tlen monequi ica in siguiente comando ipan terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows tlacame: xicchihua ni script (aeslocker_recover.sh) ipan WSL (Windows Subsystem for Linux) o Git Bash. Amo hueli motequiua ipan Command Prompt o PowerShell san ica iselti. Git Bash kipia nochi tlen ni script monequi. WSL quitequiua se Linux distribución nelia, ica non, tla ticselecia in error \'xxd: command not found\' nican, xicinstala quen se Linux tlacatl quichihua - nican se ejemplo, ipan Debian o Ubuntu:\n\n    $ %1$s"</string>
+
+    <string name="toggle_theme">Xicpatla tema</string>
+    <string name="share_button_label">XICTEQUIHUI</string>
+    <string name="share_button_desc">¿Ticpactia in aplicación? Xicxelo ica occequīntin.</string>
+    <string name="password_strength_weak">Ahmo chicāhuac</string>
+    <string name="password_strength_medium">Tlācatl</string>
+    <string name="password_strength_strong">Chicāhuac</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Achto xicpōhua cē tlahcuilōlli</string>
+    <string name="toast_enter_password">Xictlāli cē contraseña</string>
+    <string name="toast_encrypt_success">¡Ompa tlatzintli!</string>
+    <string name="toast_decrypt_success">¡Ompa tlakuilōlli!</string>
+    <string name="toast_operation_failed">Ahmo ompa in tequitl: contraseña ahmo cuali noso tlahcuilōlli mococoa.</string>
+
+    <string name="toast_invalid_file">Contraseña ahmo cuali, noso in ahmo cē tlahcuilōlli AESLocker cuali.</string>
+    <string name="toast_kit_saved">Kit de recuperación omocahua.</string>
+    <string name="toast_kit_save_failed">Ahmo hueliz mocahua in kit de recuperación. Xicchīhua occeppa.</string>
+
+    <string name="toast_title_success">OMPA</string>
+    <string name="toast_title_notice">TLAMACHILIZTLI</string>
+    <string name="toast_button_ok">CUALI</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Sistema default</string>
+    <string name="theme_light">Modo tlāhuīlli</string>
+    <string name="theme_dark">Modo yayāuhqui</string>
+    <string name="cd_switch_theme">Xicpatla tema</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Xicpatla tlahtōlli</string>
+
+    <!-- Password Visibility -->
+    <string name="cd_show_password">Xicnextia contraseña</string>
+    <string name="cd_hide_password">Xictlāti contraseña</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Xictlachia anuncio para xictemō kit de recuperación</string>
+    <string name="recovery_kit_pro_promo">Xicpīya AESLocker Pro para descargas niman, ahmo ica anuncios - ihuan ahmo onca anuncios occepa ipan aplicación.</string>
+    <string name="dialog_ad_unavailable_title">Ahmo onca anuncio</string>
+    <string name="dialog_ad_unavailable_desc">Axcan ahmo hueliz tictemōz cē anuncio, pero no hueliz tictemō in kit de recuperación gratis. Xicpīya AESLocker Pro para descargas niman, ahmo quēman ica anuncios.</string>
+    <string name="btn_continue_download">Xicchīhua descarga</string>
 </resources>

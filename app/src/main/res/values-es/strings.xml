@@ -1,40 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">CIFRAR</string>
     <string name="tab_decrypt">DESCIFRAR</string>
     <string name="select_file">Seleccionar archivo</string>
-    <string name="no_file_selected">Ningún archivo seleccionado</string>
+    <string name="no_file_selected">No se ha seleccionado ningún archivo</string>
     <string name="password_label">Contraseña</string>
     <string name="encrypt_file">Cifrar archivo</string>
     <string name="decrypt_file">Descifrar archivo</string>
     <string name="processing_progress">%1$d%% Procesando...</string>
-    <string name="terminal_commands_title">Comandos de terminal (OpenSSL)</string>
-    <string name="encryption_cmd_label">Comando de cifrado:</string>
-    <string name="decryption_cmd_label">Comando de descifrado:</string>
-    <string name="encryption_cmd_sub">Reemplace [input.ext] con el nombre y la extensión de su archivo</string>
-    <string name="decryption_cmd_sub">Reemplace [output.ext] con el nombre y la extensión del archivo original</string>
-    <string name="important_notice">Copie los comandos anteriores y guárdelos en un lugar seguro para poder usarlos si la aplicación deja de estar disponible en el futuro. Estos comandos de OpenSSL se pueden ejecutar directamente en la terminal en macOS, Linux, Windows (a través de WSL o Git Bash) o entornos de Android con soporte de interfaz de línea de comandos.</string>
-    <string name="copy_cmd_desc">Copiar comando</string>
+    <string name="terminal_commands_title">Recuperar sin la aplicación</string>
+
+    <string name="terminal_commands_explanation">Los archivos se cifran con AES-256 y se autentican con HMAC-SHA256, por lo que cualquier manipulación o corrupción se detecta siempre. Descarga el kit de recuperación que aparece a continuación para cifrar o descifrar archivos desde la línea de comandos, sin necesidad de instalar la aplicación. Funciona en macOS, Linux, Windows (mediante WSL o Git Bash) y entornos de terminal de Android. Las instrucciones completas de configuración y uso están incluidas en el archivo README.txt dentro de la descarga.</string>
+    <string name="download_kit_button">Descargar kit de recuperación</string>
+    <string name="download_kit_desc">Un archivo ZIP que contiene el script de recuperación y las instrucciones completas. Después de descargarlo, descomprímelo y lee primero README.txt antes de ejecutar el script. Requiere OpenSSL 3.0 o posterior - guarda el kit en un lugar seguro, independiente de la aplicación.</string>
+    <string name="github_repo_label">Código fuente publicado también en: %1$s</string>
+    <string name="important_notice_script">Descarga el kit de recuperación y guárdalo en un lugar seguro - una unidad en la nube, una memoria USB o cualquier otro lugar donde no lo pierdas - para poder usarlo si la aplicación deja de estar disponible en el futuro.</string>
+
+    <string name="readme_title">Kit de recuperación de AESLocker</string>
+    <string name="readme_intro">Este kit te permite cifrar o descifrar archivos de AESLocker desde la línea de comandos, sin tener instalada la aplicación. Contiene dos archivos: aeslocker_recover.sh (el script) y este README.</string>
+    <string name="readme_terminal_intro">Todos los comandos de esta guía deben escribirse en un terminal (también llamado línea de comandos o shell), no deben abrirse con un doble clic. En macOS o Linux, abre la aplicación llamada Terminal. En Windows, utiliza WSL (Windows Subsystem for Linux) o Git Bash; Command Prompt y PowerShell no ejecutarán estos comandos. Cada comando aparece en su propia línea y comienza con el signo $; escribe todo lo que aparece después de $ (no el propio signo $).</string>
+    <string name="readme_requirements_title">Requisitos</string>
+    <string name="readme_requirements_body">"Necesitas tener instalado OpenSSL 3.0 o una versión posterior. Para comprobar tu versión de OpenSSL, ejecuta el siguiente comando en el terminal:\n\n    $ %1$s\n\nEn macOS, el \'openssl\' integrado no es OpenSSL real y no funcionará. Para instalar una versión funcional, ejecuta el siguiente comando en el terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Paso 1: Hacer que el script sea ejecutable</string>
+    <string name="readme_chmod_body">"Antes de poder ejecutar el script por primera vez, tu sistema necesita permiso para ejecutarlo. En la carpeta donde hayas extraído este kit, ejecuta el siguiente comando en el terminal:\n\n    $ %1$s\n\nSolo necesitas hacer esto una vez."</string>
+    <string name="readme_usage_title">Paso 2: Ejecutar el script</string>
+    <string name="readme_usage_encrypt">"Para cifrar un archivo, ejecuta el siguiente comando en el terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Para descifrar un archivo, ejecuta el siguiente comando en el terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Se te pedirá que escribas tu contraseña directamente en el terminal. Nunca se mostrará en pantalla ni se guardará en ningún lugar. Si olvidas tu contraseña, este script no puede recuperarla por ti; no existe ninguna forma de evitarlo, por diseño.</string>
+    <string name="readme_linux_note">"Usuarios de Linux: la mayoría de las distribuciones actuales ya incluyen una versión compatible de OpenSSL. Para comprobar su versión de OpenSSL, ejecute el siguiente comando en la terminal:\n\n    $ %1$s\n\nSi aparece el error \'xxd: command not found\' al ejecutar el script, instálelo mediante el gestor de paquetes - por ejemplo, en Debian o Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Usuarios de Android: este script puede ejecutarse dentro de una aplicación de terminal como Termux. Instale Termux desde F-Droid (la versión de Google Play Store está desactualizada y ya no recibe mantenimiento), ábralo y, a continuación, instale las herramientas necesarias ejecutando el siguiente comando en la terminal:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Usuarios de Windows: ejecute este script (aeslocker_recover.sh) dentro de WSL (Windows Subsystem for Linux) o Git Bash. No se ejecutará directamente en el Símbolo del sistema ni en PowerShell. Git Bash incluye todo lo que necesita este script. WSL ejecuta una distribución real de Linux, por lo que si aparece el error \'xxd: command not found\' allí, instálelo de la misma manera que lo haría un usuario de Linux - por ejemplo, en Debian o Ubuntu:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">Cambiar tema</string>
     <string name="share_button_label">COMPARTIR</string>
-    <string name="share_button_desc">¿Te gusta la aplicación? Compártela con otras personas.</string>
+    <string name="share_button_desc">¿Te gusta la aplicación? Compártela con otros.</string>
     <string name="password_strength_weak">Débil</string>
     <string name="password_strength_medium">Media</string>
     <string name="password_strength_strong">Fuerte</string>
 
     <!-- Toast Messages -->
-    <string name="toast_select_file">Por favor, seleccione un archivo primero</string>
-    <string name="toast_enter_password">Por favor, ingrese una contraseña</string>
-    <string name="toast_encrypt_success">¡Cifrado con éxito!</string>
-    <string name="toast_decrypt_success">¡Descifrado con éxito!</string>
-    <string name="toast_operation_failed">Error en la operación: Contraseña incorrecta o archivo dañado.</string>
-    <string name="toast_invalid_file">Contraseña incorrecta o formato de archivo OpenSSL no válido.</string>
-    <string name="toast_enc_copied">¡Comando de cifrado copiado!</string>
-    <string name="toast_dec_copied">¡Comando de descifrado copiado!</string>
+    <string name="toast_select_file">Selecciona primero un archivo</string>
+    <string name="toast_enter_password">Introduce una contraseña</string>
+    <string name="toast_encrypt_success">¡Cifrado correctamente!</string>
+    <string name="toast_decrypt_success">¡Descifrado correctamente!</string>
+    <string name="toast_operation_failed">Error en la operación: contraseña incorrecta o archivo dañado.</string>
+
+    <string name="toast_invalid_file">Contraseña incorrecta o este no es un archivo AESLocker válido.</string>
+    <string name="toast_kit_saved">Kit de recuperación guardado.</string>
+    <string name="toast_kit_save_failed">No se pudo guardar el kit de recuperación. Inténtalo de nuevo.</string>
+
     <string name="toast_title_success">ÉXITO</string>
     <string name="toast_title_notice">AVISO</string>
-    <string name="toast_button_ok">ACEPTAR</string>
+    <string name="toast_button_ok">OK</string>
 
     <!-- Theme Switcher -->
     <string name="theme_system">Predeterminado del sistema</string>
@@ -48,4 +66,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">Mostrar contraseña</string>
     <string name="cd_hide_password">Ocultar contraseña</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Ver anuncio para descargar el kit de recuperación</string>
+    <string name="recovery_kit_pro_promo">Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios y sin anuncios en ningún otro lugar de la aplicación.</string>
+    <string name="dialog_ad_unavailable_title">No hay ningún anuncio disponible</string>
+    <string name="dialog_ad_unavailable_desc">No hemos podido cargar un anuncio en este momento, pero aún puedes descargar el kit de recuperación gratis. Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios, nunca.</string>
+    <string name="btn_continue_download">Continuar con la descarga</string>
 </resources>

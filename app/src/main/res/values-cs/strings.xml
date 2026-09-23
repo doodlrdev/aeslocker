@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">ŠIFROVAT</string>
@@ -6,38 +5,72 @@
     <string name="select_file">Vybrat soubor</string>
     <string name="no_file_selected">Není vybrán žádný soubor</string>
     <string name="password_label">Heslo</string>
-    <string name="encrypt_file">Šifrovat soubor</string>
+    <string name="encrypt_file">Zašifrovat soubor</string>
     <string name="decrypt_file">Dešifrovat soubor</string>
-    <string name="processing_progress">%1$d%% Zpracovává se...</string>
-    <string name="terminal_commands_title">Příkazy terminálu (OpenSSL)</string>
-    <string name="encryption_cmd_label">Šifrovací příkaz:</string>
-    <string name="decryption_cmd_label">Dešifrovací příkaz:</string>
-    <string name="encryption_cmd_sub">Nahraďte [input.ext] názvem a příponou vašeho souboru</string>
-    <string name="decryption_cmd_sub">Nahraďte [output.ext] názvem a příponou původního souboru</string>
-    <string name="important_notice">Zkopírujte výše uvedené příkazy a uložte je na bezpečné místo, abyste je mohli použít, pokud aplikace nebude v budoucnu dostupná. Tyto příkazy OpenSSL lze spustit přímo v terminálu v systému macOS, Linux, Windows (přes WSL nebo Git Bash) nebo v prostředí Android s podporou příkazového řádku.</string>
-    <string name="copy_cmd_desc">Kopírovat příkaz</string>
-    <string name="toggle_theme">Změnit motiv</string>
+    <string name="processing_progress">%1$d%% Zpracování...</string>
+    <string name="terminal_commands_title">Obnovení bez aplikace</string>
+
+    <string name="terminal_commands_explanation">Soubory jsou šifrovány pomocí AES-256 a autentizovány pomocí HMAC-SHA256, takže jakákoli manipulace nebo poškození jsou vždy odhaleny. Stáhněte si níže uvedený balíček pro obnovení a šifrujte nebo dešifrujte soubory z příkazového řádku - bez nutnosti instalovat aplikaci. Funguje v prostředích macOS, Linux, Windows (prostřednictvím WSL nebo Git Bash) a v terminálech Androidu. Kompletní pokyny k nastavení a použití jsou součástí souboru README.txt uvnitř staženého balíčku.</string>
+    <string name="download_kit_button">Stáhnout balíček pro obnovení</string>
+    <string name="download_kit_desc">Soubor ZIP obsahující skript pro obnovení a kompletní pokyny. Po stažení jej rozbalte a před spuštěním skriptu si nejprve přečtěte README.txt. Vyžaduje OpenSSL 3.0 nebo novější - sadu nástrojů uložte na bezpečné místo nezávisle na aplikaci.</string>
+    <string name="github_repo_label">Zdrojový kód je také zveřejněn na: %1$s</string>
+    <string name="important_notice_script">Stáhněte si balíček pro obnovení a uložte jej na bezpečné místo - do cloudového úložiště, na USB flash disk nebo kamkoli, kde jej neztratíte - abyste jej mohli použít, pokud aplikace v budoucnu přestane být dostupná.</string>
+
+    <string name="readme_title">Balíček pro obnovení AESLocker</string>
+    <string name="readme_intro">Tento balíček umožňuje šifrovat nebo dešifrovat soubory AESLocker z příkazového řádku bez nainstalované aplikace. Obsahuje dva soubory: aeslocker_recover.sh (skript) a tento README.</string>
+    <string name="readme_terminal_intro">Každý příkaz v této příručce musí být zadán do terminálu (také nazývaného příkazový řádek nebo shell), nikoli spuštěn dvojklikem. V systému macOS nebo Linux otevřete aplikaci Terminal. Ve Windows místo toho použijte WSL (Windows Subsystem for Linux) nebo Git Bash - Command Prompt a PowerShell tyto příkazy nespustí. Každý příkaz níže je uveden na vlastním řádku a začíná znakem $ - zadejte vše za znakem $ (nikoli samotný znak $).</string>
+    <string name="readme_requirements_title">Požadavky</string>
+    <string name="readme_requirements_body">"Musíte mít nainstalovaný OpenSSL 3.0 nebo novější. Verzi OpenSSL zjistíte spuštěním následujícího příkazu v terminálu:\n\n    $ %1$s\n\nV systému macOS není vestavěný \'openssl\' skutečným OpenSSL a nebude fungovat. Chcete-li nainstalovat funkční verzi, spusťte v terminálu následující příkaz:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Krok 1: Nastavení skriptu jako spustitelného</string>
+    <string name="readme_chmod_body">"Než budete moci skript poprvé spustit, váš systém mu musí povolit spuštění. Ve složce, do které jste tento balíček rozbalili, spusťte v terminálu následující příkaz:\n\n    $ %1$s\n\nToto stačí provést pouze jednou."</string>
+    <string name="readme_usage_title">Krok 2: Spuštění skriptu</string>
+    <string name="readme_usage_encrypt">"Chcete-li zašifrovat soubor, spusťte v terminálu následující příkaz:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Chcete-li dešifrovat soubor, spusťte v terminálu následující příkaz:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Budete vyzváni k zadání hesla přímo do terminálu. Nikdy se nezobrazí na obrazovce ani se nikam neuloží. Pokud heslo zapomenete, tento skript jej za vás nedokáže obnovit - záměrně neexistuje žádný způsob, jak to obejít.</string>
+    <string name="readme_linux_note">"Uživatelé Linuxu: většina současných distribucí již obsahuje kompatibilní OpenSSL. Verzi OpenSSL zjistíte spuštěním následujícího příkazu v terminálu:\n\n    $ %1$s\n\nPokud se při spuštění skriptu zobrazí chyba \'xxd: command not found\', nainstalujte jej pomocí správce balíčků - například v Debianu nebo Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Uživatelé Androidu: tento skript lze spustit v terminálové aplikaci, jako je Termux. Nainstalujte Termux z F-Droidu (verze z obchodu Google Play je zastaralá a již není udržována), otevřete jej a poté nainstalujte požadované nástroje spuštěním následujícího příkazu v terminálu:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Uživatelé Windows: tento skript (aeslocker_recover.sh) spusťte v prostředí WSL (Windows Subsystem for Linux) nebo Git Bash. V příkazovém řádku ani PowerShellu jej nelze spustit přímo. Git Bash obsahuje vše, co tento skript potřebuje. WSL spouští skutečnou distribuci Linuxu, takže pokud se v něm zobrazí chyba \'xxd: command not found\', nainstalujte jej stejným způsobem jako uživatel Linuxu - například v Debianu nebo Ubuntu:\n\n    $ %1$s"</string>
+
+
+    <string name="toggle_theme">Přepnout motiv</string>
     <string name="share_button_label">SDÍLET</string>
     <string name="share_button_desc">Líbí se vám aplikace? Sdílejte ji s ostatními.</string>
     <string name="password_strength_weak">Slabé</string>
     <string name="password_strength_medium">Střední</string>
     <string name="password_strength_strong">Silné</string>
-    <string name="toast_select_file">Nejprve prosím vyberte soubor</string>
-    <string name="toast_enter_password">Zadejte prosím heslo</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Nejprve vyberte soubor</string>
+    <string name="toast_enter_password">Zadejte heslo</string>
     <string name="toast_encrypt_success">Úspěšně zašifrováno!</string>
     <string name="toast_decrypt_success">Úspěšně dešifrováno!</string>
-    <string name="toast_operation_failed">Operace selhala: Nesprávné heslo nebo poškozený soubor.</string>
-    <string name="toast_invalid_file">Nesprávné heslo nebo neplatný formát souboru OpenSSL.</string>
-    <string name="toast_enc_copied">Šifrovací příkaz zkopírován!</string>
-    <string name="toast_dec_copied">Dešifrovací příkaz zkopírován!</string>
+    <string name="toast_operation_failed">Operace se nezdařila: Nesprávné heslo nebo poškozený soubor.</string>
+
+    <string name="toast_invalid_file">Nesprávné heslo nebo se nejedná o platný soubor AESLocker.</string>
+    <string name="toast_kit_saved">Balíček pro obnovení byl uložen.</string>
+    <string name="toast_kit_save_failed">Balíček pro obnovení se nepodařilo uložit. Zkuste to prosím znovu.</string>
+
     <string name="toast_title_success">ÚSPĚCH</string>
     <string name="toast_title_notice">UPOZORNĚNÍ</string>
     <string name="toast_button_ok">OK</string>
-    <string name="theme_system">Výchozí systém</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Výchozí nastavení systému</string>
     <string name="theme_light">Světlý režim</string>
     <string name="theme_dark">Tmavý režim</string>
-    <string name="cd_switch_theme">Změnit motiv</string>
-    <string name="cd_switch_language">Změnit jazyk</string>
+    <string name="cd_switch_theme">Přepnout motiv</string>
+
+    <!-- Language Switcher -->
+    <string name="cd_switch_language">Přepnout jazyk</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Zobrazit heslo</string>
     <string name="cd_hide_password">Skrýt heslo</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Sledovat reklamu a stáhnout balíček pro obnovení</string>
+    <string name="recovery_kit_pro_promo">Získejte AESLocker Pro pro okamžité stahování bez reklam - a žádné reklamy nikde jinde v aplikaci.</string>
+    <string name="dialog_ad_unavailable_title">Žádná reklama není k dispozici</string>
+    <string name="dialog_ad_unavailable_desc">Reklamu se nyní nepodařilo načíst, ale balíček pro obnovení si stále můžete stáhnout zdarma. Získejte AESLocker Pro pro okamžité stahování bez reklam, navždy.</string>
+    <string name="btn_continue_download">Pokračovat ve stahování</string>
 </resources>

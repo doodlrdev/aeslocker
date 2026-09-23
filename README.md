@@ -38,45 +38,47 @@ The Pro version also includes a convenient link to this GitHub repository, allow
 
 ## Encryption
 
-AESLocker uses the following OpenSSL-compatible encryption scheme:
+AESLocker uses its own authenticated file format, built on standard AES-256:
 
-* **AES-256-CBC**
-* **PBKDF2-HMAC-SHA256**
-* **10,000 PBKDF2 iterations**
-* **8-byte random salt**
+* **AES-256-CBC** for encryption
+* **HMAC-SHA256** for integrity/tamper detection, computed over the file header and ciphertext
+* **PBKDF2-HMAC-SHA512**, 600,000 iterations, to derive key material from the password
+* A single PBKDF2 call produces 64 bytes of key material, split into a 32-byte AES key and a separate 32-byte HMAC key
+* A **16-byte random salt** and a **16-byte random IV**, both generated fresh per file and stored in the file header
 
-The encryption and decryption operations are compatible with the following OpenSSL commands:
-
-```text
-openssl enc -aes-256-cbc -salt -pbkdf2 -in [input.ext] -out output.aes
-
-openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out [output.ext]
-```
-
-This allows files encrypted by AESLocker to be decrypted using OpenSSL on other devices without requiring AESLocker itself.
+The HMAC covers the header and ciphertext, so any corruption or tampering is cryptographically detected before a password is even considered "correct" - this is a deliberate improvement over inferring password correctness from PKCS7 padding validity alone, which is a weaker signal.
 
 Encryption and decryption are performed locally on the device.
 
+**Note:** this format is not compatible with the plain `openssl enc` CLI. See [Compatibility](#compatibility) below for how to encrypt or decrypt AESLocker files without the app.
+
 ## File Format
 
-AESLocker encrypted files use the OpenSSL `Salted__` format.
+AESLocker encrypted files use AESLocker's own format (magic bytes `AESLOCK1`), not OpenSSL's `Salted__` format.
 
-The encrypted file contains:
+The encrypted file contains, in order:
 
-* The `Salted__` header
-* An 8-byte random salt
-* AES-256-CBC encrypted data
+| Field | Size | Description |
+|---|---|---|
+| Magic | 8 bytes | ASCII `AESLOCK1` |
+| Salt | 16 bytes | Random, unique per file |
+| IV | 16 bytes | Random, unique per file |
+| Ciphertext | Variable | AES-256-CBC encrypted data (PKCS7 padded) |
+| HMAC tag | 32 bytes | HMAC-SHA256 over (magic \|\| salt \|\| IV \|\| ciphertext) |
 
-Because AESLocker uses the standard OpenSSL encryption format, encrypted files can be decrypted independently of AESLocker using OpenSSL and the user's password.
+Because the full file layout, key derivation, and HMAC construction are documented here, encrypted files can still be decrypted independently of the AESLocker app itself - see below.
 
 ## Compatibility
 
-AESLocker encrypted files can be decrypted using OpenSSL on any device that has a terminal and OpenSSL installed.
+AESLocker encrypted files can be decrypted on any device with a terminal, OpenSSL 3.0+, and the [`aeslocker_recover.sh`](./app/src/main/res/raw/aeslocker_recover.sh) script from this repository.
 
-No AESLocker installation or access to the AESLocker source code is required for decryption. The password and the OpenSSL decryption command are sufficient.
+Unlike the older OpenSSL-compatible format AESLocker previously used, this format cannot be decrypted with a single `openssl enc` command - the HMAC verification step and the custom header require a short script rather than one CLI invocation. `aeslocker_recover.sh` implements the full format (see [File Format](#file-format) above) using only `openssl` and `dd`, so recovery never depends on the AESLocker app being installed, or even on this repository still existing once downloaded.
 
 ```text
-openssl enc -d -aes-256-cbc -pbkdf2 -in input.aes -out [output.ext]
+./aeslocker_recover.sh encrypt <input_file> <output_file>
+./aeslocker_recover.sh decrypt <input_file> <output_file>
 ```
 
-This provides a simple way to recover encrypted files independently of AESLocker, including on desktop and server environments.
+No AESLocker installation or access to the AESLocker app's source code is required for decryption - the password and this script are sufficient. The same script (bundled with a full-instructions README.txt) is also downloadable directly from within the app itself, as a "Recovery Kit," so users don't need to find this repository to recover their files.
+
+This provides a way to recover encrypted files independently of AESLocker, including on desktop and server environments, without relying on AESLocker's continued availability.

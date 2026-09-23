@@ -1,43 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">TITKOSÍTÁS</string>
-    <string name="tab_decrypt">DEKÓDOLÁS</string>
+    <string name="tab_decrypt">VISSZAFEJTÉS</string>
     <string name="select_file">Fájl kiválasztása</string>
-    <string name="no_file_selected">Nincs fájl kiválasztva</string>
+    <string name="no_file_selected">Nincs kiválasztott fájl</string>
     <string name="password_label">Jelszó</string>
     <string name="encrypt_file">Fájl titkosítása</string>
-    <string name="decrypt_file">Fájl dekódolása</string>
+    <string name="decrypt_file">Fájl visszafejtése</string>
     <string name="processing_progress">%1$d%% Feldolgozás...</string>
-    <string name="terminal_commands_title">Terminál parancsok (OpenSSL)</string>
-    <string name="encryption_cmd_label">Titkosítási parancs:</string>
-    <string name="decryption_cmd_label">Dekódolási parancs:</string>
-    <string name="encryption_cmd_sub">Cserélje ki az [input.ext] részt a fájl nevére és kiterjesztésére</string>
-    <string name="decryption_cmd_sub">Cserélje ki az [output.ext] részt az eredeti fájl nevére és kiterjesztésére</string>
-    <string name="important_notice">Másolja ki a fenti parancsokat, és mentse el egy biztonságos helyre, hogy használhassa őket, ha az alkalmazás a jövőben nem lenne elérhető. Ezek az OpenSSL parancsok közvetlenül futtathatók terminálban macOS, Linux, Windows (WSL-en vagy Git Bash-en keresztül) vagy parancssort támogató Android környezetben.</string>
-    <string name="copy_cmd_desc">Parancs másolása</string>
+    <string name="terminal_commands_title">Helyreállítás az alkalmazás nélkül</string>
+
+    <string name="terminal_commands_explanation">A fájlok AES-256 segítségével vannak titkosítva és HMAC-SHA256 segítségével hitelesítve, így minden módosítás vagy sérülés észlelhető. Töltse le az alábbi helyreállítási csomagot, hogy fájlokat titkosíthasson vagy fejthessen vissza parancssorból - az alkalmazás telepítése nélkül. Működik macOS, Linux, Windows (WSL vagy Git Bash használatával) és Android terminálkörnyezetekben. A teljes beállítási és használati útmutató a letöltésben található README.txt fájlban van.</string>
+    <string name="download_kit_button">Helyreállítási csomag letöltése</string>
+    <string name="download_kit_desc">Egy ZIP-fájl, amely tartalmazza a helyreállítási szkriptet és a teljes útmutatót. Letöltés után csomagolja ki, és a szkript futtatása előtt először olvassa el a README.txt fájlt. OpenSSL 3.0 vagy újabb verzió szükséges - a készletet az alkalmazástól független, biztonságos helyen tárolja.</string>
+    <string name="github_repo_label">A forráskód itt is elérhető: %1$s</string>
+    <string name="important_notice_script">Töltse le a helyreállítási csomagot, és tárolja biztonságos helyen - felhőmeghajtón, USB-meghajtón vagy bárhol, ahol nem fogja elveszíteni - hogy használhassa, ha az alkalmazás a jövőben elérhetetlenné válik.</string>
+
+    <string name="readme_title">AESLocker helyreállítási csomag</string>
+    <string name="readme_intro">Ezzel a csomaggal az AESLocker fájlokat parancssorból titkosíthatja vagy fejtheti vissza az alkalmazás telepítése nélkül. Két fájlt tartalmaz: aeslocker_recover.sh (a szkript) és ezt a README-t.</string>
+    <string name="readme_terminal_intro">Az útmutató minden parancsát terminálba (más néven parancssorba vagy shellbe) kell beírni, nem pedig dupla kattintással elindítani. macOS vagy Linux rendszeren nyissa meg a Terminal nevű alkalmazást. Windows rendszeren használja inkább a WSL-t (Windows Subsystem for Linux) vagy a Git Basht - a Command Prompt és a PowerShell nem fogja futtatni ezeket a parancsokat. Az alábbi parancsok mindegyike külön sorban jelenik meg, $ jellel kezdődve - a $ utáni teljes részt írja be (magát a $ jelet ne).</string>
+    <string name="readme_requirements_title">Követelmények</string>
+    <string name="readme_requirements_body">"Az OpenSSL 3.0 vagy újabb verziójának telepítve kell lennie. Az OpenSSL verziójának ellenőrzéséhez futtassa a következő parancsot a terminálban:\n\n    $ %1$s\n\nmacOS rendszeren a beépített \'openssl\' nem valódi OpenSSL, ezért nem fog működni. Működő verzió telepítéséhez futtassa a következő parancsot a terminálban:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">1. lépés: A szkript futtathatóvá tétele</string>
+    <string name="readme_chmod_body">"Mielőtt először futtatná a szkriptet, a rendszernek engedélyeznie kell annak végrehajtását. Abban a mappában, ahová kicsomagolta ezt a csomagot, futtassa a következő parancsot a terminálban:\n\n    $ %1$s\n\nEzt csak egyszer kell megtennie."</string>
+    <string name="readme_usage_title">2. lépés: A szkript futtatása</string>
+    <string name="readme_usage_encrypt">"Egy fájl titkosításához futtassa a következő parancsot a terminálban:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Egy fájl visszafejtéséhez futtassa a következő parancsot a terminálban:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">A rendszer megkéri, hogy közvetlenül a terminálba írja be a jelszavát. A jelszó soha nem jelenik meg a képernyőn, és sehol nem kerül mentésre. Ha elfelejti a jelszavát, ez a szkript nem tudja visszaállítani Önnek - tervezési okokból nincs mód ennek megkerülésére.</string>
+    <string name="readme_linux_note">"Linux-felhasználók: a legtöbb jelenlegi disztribúció már tartalmaz kompatibilis OpenSSL-t. Az OpenSSL-verzió ellenőrzéséhez futtassa a következő parancsot a terminálban:\n\n    $ %1$s\n\nHa a szkript futtatásakor a \'xxd: command not found\' hibaüzenetet kapja, telepítse a csomagkezelőjével - például Debian vagy Ubuntu alatt:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Android-felhasználók: ez a szkript egy olyan terminálalkalmazásban is futtatható, mint a Termux. Telepítse a Termuxot az F-Droidról (a Google Play Áruházban elérhető verzió elavult, és már nem karbantartják), nyissa meg, majd telepítse a szükséges eszközöket a következő parancs terminálban történő futtatásával:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Windows-felhasználók: ezt a szkriptet (aeslocker_recover.sh) WSL-ben (Windows Subsystem for Linux) vagy Git Bashben futtassa. Közvetlenül a Parancssorban vagy a PowerShellben nem fog futni. A Git Bash minden szükséges eszközt tartalmaz ehhez a szkripthez. A WSL egy valódi Linux-disztribúciót futtat, ezért ha ott a \'xxd: command not found\' hibaüzenetet kapja, ugyanúgy telepítse, mint egy Linux-felhasználó - például Debian vagy Ubuntu alatt:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">Téma váltása</string>
     <string name="share_button_label">MEGOSZTÁS</string>
-    <string name="share_button_desc">Tetszik az alkalmazás? Oszd meg másokkal is.</string>
+    <string name="share_button_desc">Tetszik az alkalmazás? Ossza meg másokkal.</string>
     <string name="password_strength_weak">Gyenge</string>
     <string name="password_strength_medium">Közepes</string>
     <string name="password_strength_strong">Erős</string>
-    <string name="toast_select_file">Kérjük, először válasszon ki egy fájlt</string>
-    <string name="toast_enter_password">Kérjük, adja meg a jelszót</string>
-    <string name="toast_encrypt_success">Sikeresen titkosítva!</string>
-    <string name="toast_decrypt_success">Sikeresen dekódolva!</string>
-    <string name="toast_operation_failed">A művelet sikertelen: Hibás jelszó vagy sérült fájl.</string>
-    <string name="toast_invalid_file">Hibás jelszó vagy érvénytelen OpenSSL fájlformátum.</string>
-    <string name="toast_enc_copied">Titkosítási parancs másolva!</string>
-    <string name="toast_dec_copied">Dekódolási parancs másolva!</string>
-    <string name="toast_title_success">SIKERES</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_select_file">Először válasszon ki egy fájlt</string>
+    <string name="toast_enter_password">Adjon meg egy jelszót</string>
+    <string name="toast_encrypt_success">Sikeres titkosítás!</string>
+    <string name="toast_decrypt_success">Sikeres visszafejtés!</string>
+    <string name="toast_operation_failed">A művelet sikertelen: helytelen jelszó vagy sérült fájl.</string>
+
+    <string name="toast_invalid_file">Helytelen jelszó, vagy ez nem érvényes AESLocker-fájl.</string>
+    <string name="toast_kit_saved">A helyreállítási csomag mentve.</string>
+    <string name="toast_kit_save_failed">A helyreállítási csomagot nem sikerült menteni. Próbálja újra.</string>
+
+    <string name="toast_title_success">SIKER</string>
     <string name="toast_title_notice">ÉRTESÍTÉS</string>
-    <string name="toast_button_ok">RENDBEN</string>
-    <string name="theme_system">Rendszeralapértelmezett</string>
+    <string name="toast_button_ok">OK</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Rendszer alapértelmezése</string>
     <string name="theme_light">Világos mód</string>
     <string name="theme_dark">Sötét mód</string>
     <string name="cd_switch_theme">Téma váltása</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">Nyelv váltása</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Jelszó megjelenítése</string>
     <string name="cd_hide_password">Jelszó elrejtése</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Nézzen meg egy hirdetést a helyreállítási csomag letöltéséhez</string>
+    <string name="recovery_kit_pro_promo">Szerezze be az AESLocker Prót azonnali, reklámmentes letöltésekhez - és az alkalmazásban sehol máshol sem lesznek hirdetések.</string>
+    <string name="dialog_ad_unavailable_title">Nincs elérhető hirdetés</string>
+    <string name="dialog_ad_unavailable_desc">Jelenleg nem sikerült betölteni egy hirdetést, de a helyreállítási csomagot továbbra is ingyen letöltheti. Szerezze be az AESLocker Prót azonnali, örökre reklámmentes letöltésekhez.</string>
+    <string name="btn_continue_download">Letöltés folytatása</string>
 </resources>

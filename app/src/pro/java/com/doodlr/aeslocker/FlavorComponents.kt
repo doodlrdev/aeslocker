@@ -64,3 +64,22 @@ fun SourceButton() {
         )
     }
 }
+
+/**
+ * Pro flavor: no ad gate - straight to the download, same as everything
+ * else in Pro.
+ */
+@Composable
+fun RecoveryKitButton(onDownload: () -> Unit) {
+    OutlinedButton(
+        onClick = onDownload,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Text(text = stringResource(R.string.download_kit_button))
+    }
+}
+
+@Composable
+fun RecoveryKitPromo() {
+    // No-op: nothing to promote - this IS Pro already
+}

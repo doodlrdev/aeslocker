@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
     <string name="tab_encrypt">SZYFRUJ</string>
-    <string name="tab_decrypt">ROZSZYFRUJ</string>
+    <string name="tab_decrypt">ODSZYFRUJ</string>
     <string name="select_file">Wybierz plik</string>
     <string name="no_file_selected">Nie wybrano pliku</string>
     <string name="password_label">Hasło</string>
     <string name="encrypt_file">Szyfruj plik</string>
-    <string name="decrypt_file">Rozszyfruj plik</string>
+    <string name="decrypt_file">Odszyfruj plik</string>
     <string name="processing_progress">%1$d%% Przetwarzanie...</string>
-    <string name="terminal_commands_title">Polecenia terminala (OpenSSL)</string>
-    <string name="encryption_cmd_label">Polecenie szyfrowania:</string>
-    <string name="decryption_cmd_label">Polecenie odszyfrowania:</string>
-    <string name="encryption_cmd_sub">Zastąp [input.ext] nazwą i rozszerzeniem swojego pliku</string>
-    <string name="decryption_cmd_sub">Zastąp [output.ext] nazwą i rozszerzeniem pliku wynikowego</string>
-    <string name="important_notice">Skopiuj powyższe polecenia i zapisz je w bezpiecznym miejscu, aby móc ich użyć, jeśli aplikacja nie będzie dostępna w przyszłości. Te polecenia OpenSSL można wykonać bezpośrednio w terminalu w systemie macOS, Linux, Windows (przez WSL lub Git Bash) lub w środowisku Android z obsługą wiersza poleceń.</string>
-    <string name="copy_cmd_desc">Kopiuj polecenie</string>
+    <string name="terminal_commands_title">Odzyskaj bez aplikacji</string>
+
+    <string name="terminal_commands_explanation">Pliki są szyfrowane za pomocą AES-256 i uwierzytelniane za pomocą HMAC-SHA256, dzięki czemu manipulacje lub uszkodzenia są zawsze wykrywane. Pobierz poniższy zestaw odzyskiwania, aby szyfrować lub odszyfrowywać pliki z wiersza poleceń - bez konieczności instalowania aplikacji. Działa na macOS, Linux, Windows (przez WSL lub Git Bash) oraz w środowiskach terminalowych Androida. Pełne instrukcje konfiguracji i użytkowania znajdują się w pliku README.txt w pobranym zestawie.</string>
+    <string name="download_kit_button">Pobierz zestaw odzyskiwania</string>
+    <string name="download_kit_desc">Plik ZIP zawierający skrypt odzyskiwania i pełne instrukcje. Po pobraniu rozpakuj go i przed uruchomieniem skryptu najpierw przeczytaj README.txt. Wymaga OpenSSL 3.0 lub nowszego - przechowuj zestaw w bezpiecznym miejscu, niezależnie od aplikacji.</string>
+    <string name="github_repo_label">Kod źródłowy opublikowano również na: %1$s</string>
+    <string name="important_notice_script">Pobierz zestaw odzyskiwania i przechowuj go w bezpiecznym miejscu - na dysku w chmurze, pamięci USB lub gdziekolwiek, gdzie go nie zgubisz - aby móc go użyć, jeśli aplikacja stanie się niedostępna w przyszłości.</string>
+
+    <string name="readme_title">Zestaw odzyskiwania AESLocker</string>
+    <string name="readme_intro">Ten zestaw umożliwia szyfrowanie lub odszyfrowywanie plików AESLocker z wiersza poleceń bez zainstalowanej aplikacji. Zawiera dwa pliki: aeslocker_recover.sh (skrypt) oraz ten plik README.</string>
+    <string name="readme_terminal_intro">Każde polecenie w tym przewodniku należy wpisać do terminala (zwanego również wierszem poleceń lub powłoką), a nie uruchamiać dwukrotnym kliknięciem. Na macOS lub Linux otwórz aplikację o nazwie Terminal. W systemie Windows użyj WSL (Windows Subsystem for Linux) lub Git Bash - Command Prompt i PowerShell nie uruchomią tych poleceń. Każde polecenie poniżej jest pokazane w osobnym wierszu i zaczyna się od znaku $ - wpisz wszystko po znaku $ (bez samego znaku $).</string>
+    <string name="readme_requirements_title">Wymagania</string>
+    <string name="readme_requirements_body">"Musisz mieć zainstalowany OpenSSL 3.0 lub nowszy. Aby sprawdzić wersję OpenSSL, wykonaj w terminalu następujące polecenie:\n\n    $ %1$s\n\nNa macOS wbudowany \'openssl\' nie jest prawdziwym OpenSSL i nie będzie działać. Aby zainstalować działającą wersję, wykonaj w terminalu następujące polecenie:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Krok 1: Nadaj skryptowi uprawnienia do uruchamiania</string>
+    <string name="readme_chmod_body">"Przed pierwszym uruchomieniem skryptu system musi mieć uprawnienia do jego wykonania. W folderze, do którego rozpakowano ten zestaw, wykonaj w terminalu następujące polecenie:\n\n    $ %1$s\n\nMusisz zrobić to tylko raz."</string>
+    <string name="readme_usage_title">Krok 2: Uruchom skrypt</string>
+    <string name="readme_usage_encrypt">"Aby zaszyfrować plik, wykonaj w terminalu następujące polecenie:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Aby odszyfrować plik, wykonaj w terminalu następujące polecenie:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Zostaniesz poproszony o wpisanie hasła bezpośrednio w terminalu. Hasło nigdy nie jest wyświetlane na ekranie ani nigdzie zapisywane. Jeśli zapomnisz hasła, ten skrypt nie może go odzyskać - zgodnie z założeniami nie ma możliwości obejścia tego ograniczenia.</string>
+    <string name="readme_linux_note">"Użytkownicy Linuksa: większość obecnych dystrybucji zawiera już zgodną wersję OpenSSL. Aby sprawdzić wersję OpenSSL, wykonaj w terminalu następujące polecenie:\n\n    $ %1$s\n\nJeśli podczas uruchamiania skryptu pojawi się błąd \'xxd: command not found\', zainstaluj go za pomocą menedżera pakietów - na przykład w Debianie lub Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Użytkownicy Androida: ten skrypt można uruchomić w aplikacji terminalowej, takiej jak Termux. Zainstaluj Termux z F-Droida (wersja ze Sklepu Google Play jest nieaktualna i nie jest już utrzymywana), otwórz go, a następnie zainstaluj wymagane narzędzia, wykonując w terminalu następujące polecenie:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Użytkownicy Windows: uruchom ten skrypt (aeslocker_recover.sh) w WSL (Windows Subsystem for Linux) lub Git Bash. Nie będzie działać bezpośrednio w wierszu polecenia ani w PowerShellu. Git Bash zawiera wszystko, czego potrzebuje ten skrypt. WSL uruchamia rzeczywistą dystrybucję Linuksa, więc jeśli pojawi się tam błąd \'xxd: command not found\', zainstaluj go w taki sam sposób jak użytkownik Linuksa - na przykład w Debianie lub Ubuntu:\n\n    $ %1$s"</string>
+
     <string name="toggle_theme">Zmień motyw</string>
     <string name="share_button_label">UDOSTĘPNIJ</string>
     <string name="share_button_desc">Podoba Ci się aplikacja? Udostępnij ją innym.</string>
     <string name="password_strength_weak">Słabe</string>
     <string name="password_strength_medium">Średnie</string>
     <string name="password_strength_strong">Silne</string>
+
+    <!-- Toast Messages -->
     <string name="toast_select_file">Najpierw wybierz plik</string>
     <string name="toast_enter_password">Wprowadź hasło</string>
     <string name="toast_encrypt_success">Pomyślnie zaszyfrowano!</string>
     <string name="toast_decrypt_success">Pomyślnie odszyfrowano!</string>
-    <string name="toast_operation_failed">Operacja nie powiodła się: Błędne hasło lub uszkodzony plik.</string>
-    <string name="toast_invalid_file">Błędne hasło lub nieprawidłowy format pliku OpenSSL.</string>
-    <string name="toast_enc_copied">Skopiowano polecenie szyfrowania!</string>
-    <string name="toast_dec_copied">Skopiowano polecenie odszyfrowania!</string>
+    <string name="toast_operation_failed">Operacja nie powiodła się: nieprawidłowe hasło lub uszkodzony plik.</string>
+
+    <string name="toast_invalid_file">Nieprawidłowe hasło lub nie jest to prawidłowy plik AESLocker.</string>
+    <string name="toast_kit_saved">Zestaw odzyskiwania zapisano.</string>
+    <string name="toast_kit_save_failed">Nie udało się zapisać zestawu odzyskiwania. Spróbuj ponownie.</string>
+
     <string name="toast_title_success">SUKCES</string>
     <string name="toast_title_notice">UWAGA</string>
     <string name="toast_button_ok">OK</string>
-    <string name="theme_system">Domyślny systemowy</string>
+
+    <!-- Theme Switcher -->
+    <string name="theme_system">Domyślny systemu</string>
     <string name="theme_light">Tryb jasny</string>
     <string name="theme_dark">Tryb ciemny</string>
     <string name="cd_switch_theme">Zmień motyw</string>
+
+    <!-- Language Switcher -->
     <string name="cd_switch_language">Zmień język</string>
+
+    <!-- Password Visibility -->
     <string name="cd_show_password">Pokaż hasło</string>
     <string name="cd_hide_password">Ukryj hasło</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Obejrzyj reklamę, aby pobrać zestaw odzyskiwania</string>
+    <string name="recovery_kit_pro_promo">Uzyskaj AESLocker Pro, aby pobierać natychmiast bez reklam - i bez reklam w żadnym innym miejscu aplikacji.</string>
+    <string name="dialog_ad_unavailable_title">Brak dostępnej reklamy</string>
+    <string name="dialog_ad_unavailable_desc">Nie udało się teraz załadować reklamy, ale nadal możesz bezpłatnie pobrać zestaw odzyskiwania. Uzyskaj AESLocker Pro, aby pobierać natychmiast i bez reklam.</string>
+    <string name="btn_continue_download">Kontynuuj pobieranie</string>
 </resources>

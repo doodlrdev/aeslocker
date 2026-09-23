@@ -1,44 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AESLocker</string>
-    <string name="tab_encrypt">FICHA</string>
-    <string name="tab_decrypt">FUNGUA</string>
+    <string name="tab_encrypt">SIMBA</string>
+    <string name="tab_decrypt">FICHUA</string>
     <string name="select_file">Chagua Faili</string>
     <string name="no_file_selected">Hakuna faili lililochaguliwa</string>
     <string name="password_label">Nenosiri</string>
-    <string name="encrypt_file">Ficha Faili</string>
-    <string name="decrypt_file">Fungua Faili</string>
+    <string name="encrypt_file">Simba Faili</string>
+    <string name="decrypt_file">Fichua Faili</string>
     <string name="processing_progress">%1$d%% Inachakata...</string>
-    <string name="terminal_commands_title">Amri za Teminaili (OpenSSL)</string>
-    <string name="encryption_cmd_label">Amri ya Kuficha:</string>
-    <string name="decryption_cmd_label">Amri ya Kufungua:</string>
-    <string name="encryption_cmd_sub">Badilisha [input.ext] na jina la faili lako pamoja na kilezi chake</string>
-    <string name="decryption_cmd_sub">Badilisha [output.ext] na jina la faili pamoja na kilezi cha faili la asili</string>
-    <string name="important_notice">Nakili amri hizi hapo juu na uzihifadhi mahali fulani ili uweze kuzitumia ikiwa programu haitapatikana tena hapo baadaye. Amri hizi za OpenSSL zinaweza kutekelezwa moja kwa moja kwenye teminaili ya macOS, Linux, Windows (kupitia WSL au Git Bash), au mazingira ya Android yenye usaidizi wa kiolesura cha mstari wa amri.</string>
-    <string name="copy_cmd_desc">Nakili amri</string>
+    <string name="terminal_commands_title">Rejesha Bila Programu</string>
+
+    <string name="terminal_commands_explanation">Faili zinasimbwa kwa AES-256 na kuthibitishwa kwa HMAC-SHA256, hivyo udukuzi au uharibifu wowote hugunduliwa kila wakati. Pakua kifurushi cha urejeshaji hapa chini ili kusimba au kufichua faili kupitia mstari wa amri — hakuna haja ya kusakinisha programu. Kinafanya kazi kwenye macOS, Linux, Windows (kupitia WSL au Git Bash), na mazingira ya terminal ya Android. Maelekezo kamili ya usanidi na matumizi yamejumuishwa katika README.txt ndani ya upakuaji.</string>
+    <string name="download_kit_button">Pakua Kifurushi cha Urejeshaji</string>
+    <string name="download_kit_desc">Faili ya ZIP iliyo na hati ya urejeshaji na maelekezo kamili. Baada ya kuipakua, ifungue na usome README.txt kwanza kabla ya kuendesha hati hiyo. Inahitaji OpenSSL 3.0 au toleo jipya zaidi - hifadhi kifurushi hiki mahali salama, tofauti na programu.</string>
+    <string name="github_repo_label">Msimbo chanzo pia umechapishwa kwenye: %1$s</string>
+    <string name="important_notice_script">Pakua kifurushi cha urejeshaji na ukihifadhi mahali salama — kwenye hifadhi ya wingu, USB, au mahali popote ambapo hutakipoteza — ili uweze kukitumia ikiwa programu haitapatikana tena baadaye.</string>
+
+    <string name="readme_title">Kifurushi cha Urejeshaji cha AESLocker</string>
+    <string name="readme_intro">Kifurushi hiki hukuwezesha kusimba au kufichua faili za AESLocker kupitia mstari wa amri bila programu kusakinishwa. Kina faili mbili: aeslocker_recover.sh (hati) na README hii.</string>
+    <string name="readme_terminal_intro">Kila amri katika mwongozo huu lazima iandikwe kwenye terminal (pia huitwa mstari wa amri au shell), si kubofya mara mbili. Kwenye macOS au Linux, fungua programu inayoitwa Terminal. Kwenye Windows, tumia WSL (Windows Subsystem for Linux) au Git Bash badala yake — Command Prompt na PowerShell hazitaendesha amri hizi. Kila amri hapa chini imeonyeshwa kwenye mstari wake, ikianza na alama ya $ — andika kila kitu baada ya $ (usiandike $ yenyewe).</string>
+    <string name="readme_requirements_title">Mahitaji</string>
+    <string name="readme_requirements_body">"Unahitaji kuwa na OpenSSL 3.0 au mpya zaidi iliyosakinishwa. Ili kuangalia toleo lako la OpenSSL, tekeleza amri ifuatayo kwenye terminal:\n\n    $ %1$s\n\nKwenye macOS, \'openssl\' iliyojengewa ndani si OpenSSL halisi na haitafanya kazi. Ili kusakinisha toleo linalofanya kazi, tekeleza amri ifuatayo kwenye terminal:\n\n    $ %2$s"</string>
+    <string name="readme_chmod_title">Hatua ya 1: Fanya hati iweze kutekelezwa</string>
+    <string name="readme_chmod_body">"Kabla ya kuendesha hati kwa mara ya kwanza, mfumo wako unahitaji ruhusa ya kuitekeleza. Kwenye folda ambako ulifungua kifurushi hiki, tekeleza amri ifuatayo kwenye terminal:\n\n    $ %1$s\n\nUnahitaji kufanya hivi mara moja tu."</string>
+    <string name="readme_usage_title">Hatua ya 2: Endesha hati</string>
+    <string name="readme_usage_encrypt">"Ili kusimba faili, tekeleza amri ifuatayo kwenye terminal:\n\n    $ %1$s"</string>
+    <string name="readme_usage_decrypt">"Ili kufichua faili, tekeleza amri ifuatayo kwenye terminal:\n\n    $ %1$s"</string>
+    <string name="readme_password_note">Utaombwa kuandika nenosiri lako moja kwa moja kwenye terminal. Halitaonyeshwa kamwe kwenye skrini wala kuhifadhiwa popote. Ukisahau nenosiri lako, hati hii haiwezi kulirejesha — hakuna njia ya kulipita, kwa muundo wa mfumo.</string>
+    <string name="readme_linux_note">"Watumiaji wa Linux: usambazaji mwingi wa sasa tayari una OpenSSL inayooana. Ili kuangalia toleo lako la OpenSSL, tekeleza amri ifuatayo kwenye terminali:\n\n    $ %1$s\n\nUkipata hitilafu ya \'xxd: command not found\' unapoendesha hati, isakinishe kwa kutumia kidhibiti cha vifurushi chako - kwa mfano, kwenye Debian au Ubuntu:\n\n    $ %2$s"</string>
+    <string name="readme_android_note">"Watumiaji wa Android: hati hii inaweza kuendeshwa ndani ya programu ya terminali kama vile Termux. Sakinisha Termux kutoka F-Droid (toleo la Google Play Store limepitwa na wakati na halitunzwa tena), ifungue, kisha sakinisha zana zinazohitajika kwa kutekeleza amri ifuatayo kwenye terminali:\n\n    $ %1$s"</string>
+    <string name="readme_windows_note">"Watumiaji wa Windows: endesha hati hii (aeslocker_recover.sh) ndani ya WSL (Windows Subsystem for Linux) au Git Bash. Haitafanya kazi moja kwa moja katika Command Prompt au PowerShell. Git Bash ina kila kitu ambacho hati hii inahitaji. WSL huendesha usambazaji halisi wa Linux, kwa hivyo ukipata hitilafu ya \'xxd: command not found\' humo, isakinishe kwa njia ileile ambayo mtumiaji wa Linux angeitumia - kwa mfano, kwenye Debian au Ubuntu:\n\n    $ %1$s"</string>
+
+
     <string name="toggle_theme">Badilisha Mandhari</string>
     <string name="share_button_label">SHIRIKI</string>
     <string name="share_button_desc">Unafurahia programu? Shiriki na wengine.</string>
     <string name="password_strength_weak">Dhaifu</string>
-    <string name="password_strength_medium">Kiasi</string>
+    <string name="password_strength_medium">Wastani</string>
     <string name="password_strength_strong">Imara</string>
 
     <!-- Toast Messages -->
     <string name="toast_select_file">Tafadhali chagua faili kwanza</string>
-    <string name="toast_enter_password">Tafadhali ingiza nenosiri</string>
-    <string name="toast_encrypt_success">Imefichwa kikamilifu!</string>
-    <string name="toast_decrypt_success">Imefunguliwa kikamilifu!</string>
-    <string name="toast_operation_failed">Oparesheni imefeli: Nenosiri si sahihi au faili limeharibika.</string>
-    <string name="toast_invalid_file">Nenosiri si sahihi au umbizo la faili la OpenSSL si sahihi.</string>
-    <string name="toast_enc_copied">Amri ya kuficha imenakiliwa!</string>
-    <string name="toast_dec_copied">Amri ya kufungua imenakiliwa!</string>
-    <string name="toast_title_success">MAFANIKIO</string>
+    <string name="toast_enter_password">Tafadhali weka nenosiri</string>
+    <string name="toast_encrypt_success">Imesimbwa kwa mafanikio!</string>
+    <string name="toast_decrypt_success">Imefichuliwa kwa mafanikio!</string>
+    <string name="toast_operation_failed">Operesheni imeshindwa: Nenosiri si sahihi au faili limeharibika.</string>
+
+    <string name="toast_invalid_file">Nenosiri si sahihi, au hili si faili halali la AESLocker.</string>
+    <string name="toast_kit_saved">Kifurushi cha urejeshaji kimehifadhiwa.</string>
+    <string name="toast_kit_save_failed">Haikuweza kuhifadhi kifurushi cha urejeshaji. Tafadhali jaribu tena.</string>
+
+    <string name="toast_title_success">IMEFAULU</string>
     <string name="toast_title_notice">TAARIFA</string>
     <string name="toast_button_ok">SAWA</string>
 
     <!-- Theme Switcher -->
-    <string name="theme_system">Chaguo Msingi la Mfumo</string>
-    <string name="theme_light">Hali ya Mwangaza</string>
+    <string name="theme_system">Chaguo-msingi la Mfumo</string>
+    <string name="theme_light">Hali ya Mwanga</string>
     <string name="theme_dark">Hali ya Giza</string>
     <string name="cd_switch_theme">Badilisha Mandhari</string>
 
@@ -48,4 +66,11 @@
     <!-- Password Visibility -->
     <string name="cd_show_password">Onyesha nenosiri</string>
     <string name="cd_hide_password">Ficha nenosiri</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Tazama Tangazo ili Kupakua Kifurushi cha Urejeshaji</string>
+    <string name="recovery_kit_pro_promo">Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo — na hakuna matangazo mahali pengine kwenye programu.</string>
+    <string name="dialog_ad_unavailable_title">Hakuna Tangazo Linalopatikana</string>
+    <string name="dialog_ad_unavailable_desc">Hatukuweza kupakia tangazo kwa sasa, lakini bado unaweza kupakua kifurushi cha urejeshaji bila malipo. Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo kabisa.</string>
+    <string name="btn_continue_download">Endelea Kupakua</string>
 </resources>
