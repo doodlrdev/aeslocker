@@ -3,4 +3,6 @@
     <string name="share_message">Xicyehyeco AESLocker Pro — xicchīhua ihuan xicpoloa in archivos ica AES-256, zan ipan moteléfono.\n\n%1$s</string>
     <string name="source_button_label">TLAHTOLLI</string>
     <string name="source_button_desc">Xiquitta in código fuente ipan GitHub.</string>
+    <string name="download_kit_button">Xictemō kit de recuperación</string>
+
 </resources>

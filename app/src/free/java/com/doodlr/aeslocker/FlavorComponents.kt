@@ -14,6 +14,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.PrivacyTip
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -33,6 +35,23 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.google.android.ump.ConsentInformation
+import com.google.android.ump.UserMessagingPlatform
+
+/**
+ * Whether the "Privacy options" (consent revocation) entry point should be
+ * shown. Per Google's own UMP guidance, this is NOT the same as "is the user
+ * in the EEA/UK" — it's ConsentInformation.privacyOptionsRequirementStatus,
+ * which is only REQUIRED when a consent form was actually shown (i.e. the
+ * user is in a region where GDPR-style consent applies AND ad personalization
+ * choices exist to revisit). Backed by mutableStateOf so LanguageSwitcherButton's
+ * sibling in the top bar recomposes automatically once ConsentAndAgeManager's
+ * async flow resolves this — at composition time (app cold start) it isn't
+ * known yet, so this defaults to hidden and appears only once determined.
+ */
+object PrivacyOptionsState {
+    var isRequired by mutableStateOf(false)
+}
 
 object FlavorComponents {
     fun initialize(activity: Activity) {
@@ -48,6 +67,15 @@ object FlavorComponents {
             MobileAds.initialize(activity) {
                 (activity as? AppCompatActivity)?.delegate?.applyDayNight()
             }
+
+            // gatherConsentAndAgeSignals's callback only fires once
+            // requestConsentInfoUpdate() - and, when required, the consent
+            // form itself - has already resolved, so this is the earliest
+            // point privacyOptionsRequirementStatus is guaranteed to be
+            // meaningful rather than UNKNOWN.
+            PrivacyOptionsState.isRequired =
+                UserMessagingPlatform.getConsentInformation(activity).privacyOptionsRequirementStatus ==
+                        ConsentInformation.PrivacyOptionsRequirementStatus.REQUIRED
         }
     }
 }
@@ -152,6 +180,40 @@ fun ProUpgradeButton() {
 @Composable
 fun SourceButton() {
     // No-op: Source link only shown in the Pro flavor
+}
+
+/**
+ * Lets a user revisit/withdraw their ad-consent choices after the fact, per
+ * UMP's "Privacy options" requirement. Google requires this entry point to
+ * be reachable at any time (not just on first launch) whenever
+ * ConsentInformation reports it's REQUIRED for this user's region - so
+ * unlike the initial consent form, this renders as a persistent, always-
+ * visible icon rather than a one-time dialog. Hidden entirely (renders
+ * nothing) everywhere else, including the Pro flavor, which never gathers
+ * ad consent in the first place and so never sets PrivacyOptionsState.isRequired.
+ */
+@Composable
+fun PrivacyOptionsButton() {
+    if (!PrivacyOptionsState.isRequired) return
+
+    val context = LocalContext.current
+
+    IconButton(
+        onClick = {
+            val activity = context as? Activity ?: return@IconButton
+            UserMessagingPlatform.showPrivacyOptionsForm(activity) { formError ->
+                // No corrective action needed on failure here: this is a
+                // revisit path only reachable after initial consent was
+                // already gathered by ConsentAndAgeManager, so there's no
+                // in-progress first-run flow this could leave stranded.
+            }
+        }
+    ) {
+        Icon(
+            imageVector = Icons.Default.PrivacyTip,
+            contentDescription = stringResource(R.string.cd_privacy_options)
+        )
+    }
 }
 
 /**

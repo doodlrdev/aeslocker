@@ -3,4 +3,6 @@
     <string name="share_message">Jaribu AESLocker Pro — ficha na fungua faili kwa AES-256, moja kwa moja kwenye simu yako.\n\n%1$s</string>
     <string name="source_button_label">CHANZO</string>
     <string name="source_button_desc">Tazama msimbo chanzo kwenye GitHub.</string>
+    <string name="download_kit_button">Pakua Kifurushi cha Urejeshaji</string>
+
 </resources>

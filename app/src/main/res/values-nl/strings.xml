@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Herstellen zonder de app</string>
 
     <string name="terminal_commands_explanation">Bestanden worden versleuteld met AES-256 en geauthenticeerd met HMAC-SHA256, zodat manipulatie of beschadiging altijd wordt gedetecteerd. Download de herstelkit hieronder om bestanden vanaf de opdrachtregel te versleutelen of te ontsleutelen - installatie van de app is niet nodig. De kit werkt op macOS, Linux, Windows (via WSL of Git Bash) en Android-terminalomgevingen. Volledige instructies voor installatie en gebruik staan in README.txt in de download.</string>
-    <string name="download_kit_button">Herstelkit downloaden</string>
     <string name="download_kit_desc">Een ZIP-bestand met het herstelscript en volledige instructies. Pak het na het downloaden uit en lees eerst README.txt voordat je het script uitvoert. Vereist OpenSSL 3.0 of hoger - bewaar de kit op een veilige plek, los van de app.</string>
     <string name="github_repo_label">Broncode ook gepubliceerd op: %1$s</string>
     <string name="important_notice_script">Download de herstelkit en bewaar deze op een veilige plaats - een cloudstation, USB-stick of waar je hem ook niet kwijtraakt - zodat je hem kunt gebruiken als de app in de toekomst niet meer beschikbaar is.</string>
@@ -66,10 +65,4 @@
     <string name="cd_show_password">Wachtwoord tonen</string>
     <string name="cd_hide_password">Wachtwoord verbergen</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Bekijk een advertentie om de herstelkit te downloaden</string>
-    <string name="recovery_kit_pro_promo">Neem AESLocker Pro voor directe downloads zonder advertenties - en nergens anders in de app advertenties.</string>
-    <string name="dialog_ad_unavailable_title">Geen advertentie beschikbaar</string>
-    <string name="dialog_ad_unavailable_desc">We konden nu geen advertentie laden, maar je kunt de herstelkit nog steeds gratis downloaden. Neem AESLocker Pro voor directe downloads zonder ooit advertenties te zien.</string>
-    <string name="btn_continue_download">Doorgaan met downloaden</string>
 </resources>

@@ -6,4 +6,15 @@
     <string name="btn_get_pro">HANKI PRO</string>
     <string name="btn_cancel">PERUUTA</string>
     <string name="share_message">Tutustu AESLockeriin — salaa ja pura tiedostojen salaus AES-256:lla suoraan puhelimellasi.\n\n%1$s</string>
+
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Hallitse tietosuoja-asetuksia</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Katso mainos ladataksesi palautuspaketin</string>
+    <string name="recovery_kit_pro_promo">Hanki AESLocker Pro välittömiä mainoksettomia latauksia varten - eikä sovelluksessa ole mainoksia muuallakaan.</string>
+    <string name="dialog_ad_unavailable_title">Mainosta ei ole saatavilla</string>
+    <string name="dialog_ad_unavailable_desc">Mainosta ei voitu ladata juuri nyt, mutta voit silti ladata palautuspaketin ilmaiseksi. Hanki AESLocker Pro välittömiä latauksia varten ilman mainoksia.</string>
+    <string name="btn_continue_download">Jatka lataamista</string>
 </resources>

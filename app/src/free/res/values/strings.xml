@@ -9,5 +9,15 @@
     <string name="btn_cancel">CANCEL</string>
     <string name="share_message">Check out AESLocker — encrypt and decrypt files with AES-256, right on your phone.\n\n%1$s</string>
 
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Manage privacy options</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Watch Ad to Download Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Get AESLocker Pro for instant, ad-free downloads - and no ads anywhere else in the app.</string>
+    <string name="dialog_ad_unavailable_title">No Ad Available</string>
+    <string name="dialog_ad_unavailable_desc">We couldn\'t load an ad right now, but you can still download the recovery kit for free. Get AESLocker Pro for instant downloads with no ads, ever.</string>
+    <string name="btn_continue_download">Continue to Download</string>
 
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Xicmopalehui ahmo ica in aplicación</string>
 
     <string name="terminal_commands_explanation">In tlahcuilōlmej tlatzintli ica AES-256 ihuan HMAC-SHA256, huāncān nochipa momachilia intla quipōhua noso mococoa. Xictemō in kit de recuperación tlatzintli para xictlakuiloa noso xictlakuiloā in tlahcuilōlmej ica línea de comandos - ahmo monequi xictlālia in aplicación. Tequiti ipan macOS, Linux, Windows (ica WSL noso Git Bash), ihuan Android terminal. Nochtin tlamachiliztli para tlatlālia ihuan quenin motequitia mocahua ipan README.txt.</string>
-    <string name="download_kit_button">Xictemō kit de recuperación</string>
     <string name="download_kit_desc">Se ZIP tlamamali tlen kipia in tlahtōlli tlen ika ticuepas ihuan nochi tlanonotzal. Ipan timochihua in temohua, xiccuepa in archivo ihuan xicmomachti README.txt achto tlen tictequitis in tlahtōlli. Monequi OpenSSL 3.0 o achi hueyi - xicpia in kit ipan ce tlatzintli temachtia, tlen amo ihuan in aplicación.</string>
     <string name="github_repo_label">In código fuente no ihuan mopanoltia ipan: %1$s</string>
     <string name="important_notice_script">Xictemō in kit de recuperación ihuan xicpīya ipan cē lugar cuali - ipan cloud, USB stick, noso campa ahmo ticpolōz - para hueliz tictequitis intla in aplicación ahmo occepa motēnēhua.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Xicnextia contraseña</string>
     <string name="cd_hide_password">Xictlāti contraseña</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Xictlachia anuncio para xictemō kit de recuperación</string>
-    <string name="recovery_kit_pro_promo">Xicpīya AESLocker Pro para descargas niman, ahmo ica anuncios - ihuan ahmo onca anuncios occepa ipan aplicación.</string>
-    <string name="dialog_ad_unavailable_title">Ahmo onca anuncio</string>
-    <string name="dialog_ad_unavailable_desc">Axcan ahmo hueliz tictemōz cē anuncio, pero no hueliz tictemō in kit de recuperación gratis. Xicpīya AESLocker Pro para descargas niman, ahmo quēman ica anuncios.</string>
-    <string name="btn_continue_download">Xicchīhua descarga</string>
+
 </resources>

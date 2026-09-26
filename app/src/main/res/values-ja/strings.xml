@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">アプリなしで復元</string>
 
     <string name="terminal_commands_explanation">ファイルはAES-256で暗号化され、HMAC-SHA256で認証されるため、改ざんや破損は必ず検出されます。以下のリカバリーキットをダウンロードすると、アプリをインストールせずにコマンドラインからファイルを暗号化または復号できます。macOS、Linux、Windows（WSLまたはGit Bash経由）、Androidのターミナル環境で動作します。セットアップと使用方法の完全な手順は、ダウンロード内のREADME.txtに記載されています。</string>
-    <string name="download_kit_button">リカバリーキットをダウンロード</string>
     <string name="download_kit_desc">復元スクリプトと完全な手順を含むZIPファイルです。ダウンロード後に解凍し、スクリプトを実行する前にまずREADME.txtをお読みください。OpenSSL 3.0以降が必要です - このキットはアプリとは別の安全な場所に保存してください。</string>
     <string name="github_repo_label">ソースコードの公開先: %1$s</string>
     <string name="important_notice_script">リカバリーキットをダウンロードして安全な場所に保存してください - クラウドドライブ、USBメモリなど、失くす心配のない場所に保存しておけば、将来アプリが利用できなくなった場合でも使用できます。</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">パスワードを表示</string>
     <string name="cd_hide_password">パスワードを非表示</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">広告を見てリカバリーキットをダウンロード</string>
-    <string name="recovery_kit_pro_promo">AESLocker Proなら、広告なしですぐにダウンロードできます - アプリ内の他の場所にも広告は表示されません。</string>
-    <string name="dialog_ad_unavailable_title">利用可能な広告がありません</string>
-    <string name="dialog_ad_unavailable_desc">現在広告を読み込めませんでしたが、リカバリーキットは無料でダウンロードできます。AESLocker Proなら、広告なしですぐにダウンロードできます。</string>
-    <string name="btn_continue_download">ダウンロードを続行</string>
+
 </resources>

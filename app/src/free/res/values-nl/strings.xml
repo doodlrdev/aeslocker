@@ -6,4 +6,14 @@
     <string name="btn_get_pro">ONTVANG PRO</string>
     <string name="btn_cancel">ANNULEREN</string>
     <string name="share_message">Ontdek AESLocker — versleutel en ontsleutel bestanden met AES-256, rechtstreeks op je telefoon.\n\n%1$s</string>
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Privacyopties beheren</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Bekijk een advertentie om de herstelkit te downloaden</string>
+    <string name="recovery_kit_pro_promo">Neem AESLocker Pro voor directe downloads zonder advertenties - en nergens anders in de app advertenties.</string>
+    <string name="dialog_ad_unavailable_title">Geen advertentie beschikbaar</string>
+    <string name="dialog_ad_unavailable_desc">We konden nu geen advertentie laden, maar je kunt de herstelkit nog steeds gratis downloaden. Neem AESLocker Pro voor directe downloads zonder ooit advertenties te zien.</string>
+    <string name="btn_continue_download">Doorgaan met downloaden</string>
 </resources>

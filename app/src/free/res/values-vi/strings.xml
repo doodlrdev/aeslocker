@@ -6,4 +6,12 @@
     <string name="btn_get_pro">NÂNG CẤP PRO</string>
     <string name="btn_cancel">HỦY</string>
     <string name="share_message">Khám phá AESLocker — mã hóa và giải mã tệp bằng AES-256 ngay trên điện thoại của bạn.\n\n%1$s</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Xem quảng cáo để tải bộ công cụ khôi phục</string>
+    <string name="recovery_kit_pro_promo">Nhận AESLocker Pro để tải xuống tức thì không có quảng cáo — và không có quảng cáo ở bất kỳ nơi nào khác trong ứng dụng.</string>
+    <string name="dialog_ad_unavailable_title">Không có quảng cáo</string>
+    <string name="dialog_ad_unavailable_desc">Hiện không thể tải quảng cáo, nhưng bạn vẫn có thể tải miễn phí bộ công cụ khôi phục. Nhận AESLocker Pro để tải xuống tức thì mà không bao giờ có quảng cáo.</string>
+    <string name="btn_continue_download">Tiếp tục tải xuống</string>
 </resources>

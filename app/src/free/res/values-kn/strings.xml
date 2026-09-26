@@ -6,4 +6,11 @@
     <string name="btn_get_pro">PRO ಪಡೆಯಿರಿ</string>
     <string name="btn_cancel">ರದ್ದುಗೊಳಿಸಿ</string>
     <string name="share_message">AESLocker ಪ್ರಯತ್ನಿಸಿ — ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ AES-256 ಬಳಸಿ ಫೈಲ್‌ಗಳನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮತ್ತು ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಿ.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ರಿಕವರಿ ಕಿಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಜಾಹೀರಾತು ವೀಕ್ಷಿಸಿ</string>
+    <string name="recovery_kit_pro_promo">ತಕ್ಷಣದ, ಜಾಹೀರಾತು-ಮುಕ್ತ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಗಾಗಿ AESLocker Pro ಪಡೆಯಿರಿ - ಮತ್ತು ಆ್ಯಪ್‌ನ ಬೇರೆ ಎಲ್ಲಿಯೂ ಜಾಹೀರಾತುಗಳಿಲ್ಲ.</string>
+    <string name="dialog_ad_unavailable_title">ಯಾವುದೇ ಜಾಹೀರಾತು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="dialog_ad_unavailable_desc">ಈಗ ಜಾಹೀರಾತನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಆದರೆ ನೀವು ಇನ್ನೂ ರಿಕವರಿ ಕಿಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು. ಯಾವುದೇ ಜಾಹೀರಾತುಗಳಿಲ್ಲದೆ ತಕ್ಷಣದ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಗಾಗಿ AESLocker Pro ಪಡೆಯಿರಿ.</string>
+    <string name="btn_continue_download">ಡೌನ್‌ಲೋಡ್ ಮುಂದುವರಿಸಿ</string>
 </resources>

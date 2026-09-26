@@ -6,4 +6,14 @@
     <string name="btn_get_pro">OBȚINE PRO</string>
     <string name="btn_cancel">ANULEAZĂ</string>
     <string name="share_message">Descoperă AESLocker — criptează și decriptează fișiere cu AES-256, direct pe telefonul tău.\n\n%1$s</string>
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Gestionați opțiunile de confidențialitate</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Urmărește o reclamă pentru a descărca kitul de recuperare</string>
+    <string name="recovery_kit_pro_promo">Obține AESLocker Pro pentru descărcări instantanee fără reclame - și fără reclame nicăieri în aplicație.</string>
+    <string name="dialog_ad_unavailable_title">Nicio reclamă disponibilă</string>
+    <string name="dialog_ad_unavailable_desc">Nu am putut încărca o reclamă acum, dar poți descărca în continuare kitul de recuperare gratuit. Obține AESLocker Pro pentru descărcări instantanee fără reclame, vreodată.</string>
+    <string name="btn_continue_download">Continuă descărcarea</string>
 </resources>

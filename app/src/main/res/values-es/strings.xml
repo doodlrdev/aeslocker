@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Recuperar sin la aplicación</string>
 
     <string name="terminal_commands_explanation">Los archivos se cifran con AES-256 y se autentican con HMAC-SHA256, por lo que cualquier manipulación o corrupción se detecta siempre. Descarga el kit de recuperación que aparece a continuación para cifrar o descifrar archivos desde la línea de comandos, sin necesidad de instalar la aplicación. Funciona en macOS, Linux, Windows (mediante WSL o Git Bash) y entornos de terminal de Android. Las instrucciones completas de configuración y uso están incluidas en el archivo README.txt dentro de la descarga.</string>
-    <string name="download_kit_button">Descargar kit de recuperación</string>
     <string name="download_kit_desc">Un archivo ZIP que contiene el script de recuperación y las instrucciones completas. Después de descargarlo, descomprímelo y lee primero README.txt antes de ejecutar el script. Requiere OpenSSL 3.0 o posterior - guarda el kit en un lugar seguro, independiente de la aplicación.</string>
     <string name="github_repo_label">Código fuente publicado también en: %1$s</string>
     <string name="important_notice_script">Descarga el kit de recuperación y guárdalo en un lugar seguro - una unidad en la nube, una memoria USB o cualquier otro lugar donde no lo pierdas - para poder usarlo si la aplicación deja de estar disponible en el futuro.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Mostrar contraseña</string>
     <string name="cd_hide_password">Ocultar contraseña</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Ver anuncio para descargar el kit de recuperación</string>
-    <string name="recovery_kit_pro_promo">Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios y sin anuncios en ningún otro lugar de la aplicación.</string>
-    <string name="dialog_ad_unavailable_title">No hay ningún anuncio disponible</string>
-    <string name="dialog_ad_unavailable_desc">No hemos podido cargar un anuncio en este momento, pero aún puedes descargar el kit de recuperación gratis. Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios, nunca.</string>
-    <string name="btn_continue_download">Continuar con la descarga</string>
+
 </resources>

@@ -6,4 +6,11 @@
     <string name="btn_get_pro">XICANA PRO</string>
     <string name="btn_cancel">XICAHCAUHA</string>
     <string name="share_message">Xicyehyeco AESLocker — xicchīhua ihuan xicpoloa in archivos ica AES-256, zan ipan moteléfono.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Xictlachia anuncio para xictemō kit de recuperación</string>
+    <string name="recovery_kit_pro_promo">Xicpīya AESLocker Pro para descargas niman, ahmo ica anuncios - ihuan ahmo onca anuncios occepa ipan aplicación.</string>
+    <string name="dialog_ad_unavailable_title">Ahmo onca anuncio</string>
+    <string name="dialog_ad_unavailable_desc">Axcan ahmo hueliz tictemōz cē anuncio, pero no hueliz tictemō in kit de recuperación gratis. Xicpīya AESLocker Pro para descargas niman, ahmo quēman ica anuncios.</string>
+    <string name="btn_continue_download">Xicchīhua descarga</string>
 </resources>

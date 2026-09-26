@@ -6,4 +6,11 @@
     <string name="btn_get_pro">PRO ترلاسه کړئ</string>
     <string name="btn_cancel">لغوه کول</string>
     <string name="share_message">AESLocker وازمویئ — په خپل تلیفون کې د AES-256 په وسیله فایلونه کوډ او ډیکوډ کړئ.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">د بیا ترلاسه کولو کټ د ډاونلوډ لپاره اعلان وګورئ</string>
+    <string name="recovery_kit_pro_promo">AESLocker Pro واخلئ څو سمدستي او له اعلانونو پرته ډاونلوډونه ولرئ - او په اپ کې بل ځای هم اعلانونه نه وي.</string>
+    <string name="dialog_ad_unavailable_title">هیڅ اعلان موجود نه دی</string>
+    <string name="dialog_ad_unavailable_desc">موږ اوس مهال اعلان نه شو پورته کولی، خو تاسو لا هم کولی شئ د بیا ترلاسه کولو کټ وړیا ډاونلوډ کړئ. AESLocker Pro واخلئ څو سمدستي ډاونلوډونه ولرئ، هېڅکله له اعلانونو پرته.</string>
+    <string name="btn_continue_download">ډاونلوډ ته دوام ورکړئ</string>
 </resources>

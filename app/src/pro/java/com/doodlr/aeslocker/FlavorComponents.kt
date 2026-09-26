@@ -83,3 +83,8 @@ fun RecoveryKitButton(onDownload: () -> Unit) {
 fun RecoveryKitPromo() {
     // No-op: nothing to promote - this IS Pro already
 }
+
+@Composable
+fun PrivacyOptionsButton() {
+    // No-op: Pro flavor never serves ads, so there's no ad consent to revisit
+}

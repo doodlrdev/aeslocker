@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Helyreállítás az alkalmazás nélkül</string>
 
     <string name="terminal_commands_explanation">A fájlok AES-256 segítségével vannak titkosítva és HMAC-SHA256 segítségével hitelesítve, így minden módosítás vagy sérülés észlelhető. Töltse le az alábbi helyreállítási csomagot, hogy fájlokat titkosíthasson vagy fejthessen vissza parancssorból - az alkalmazás telepítése nélkül. Működik macOS, Linux, Windows (WSL vagy Git Bash használatával) és Android terminálkörnyezetekben. A teljes beállítási és használati útmutató a letöltésben található README.txt fájlban van.</string>
-    <string name="download_kit_button">Helyreállítási csomag letöltése</string>
     <string name="download_kit_desc">Egy ZIP-fájl, amely tartalmazza a helyreállítási szkriptet és a teljes útmutatót. Letöltés után csomagolja ki, és a szkript futtatása előtt először olvassa el a README.txt fájlt. OpenSSL 3.0 vagy újabb verzió szükséges - a készletet az alkalmazástól független, biztonságos helyen tárolja.</string>
     <string name="github_repo_label">A forráskód itt is elérhető: %1$s</string>
     <string name="important_notice_script">Töltse le a helyreállítási csomagot, és tárolja biztonságos helyen - felhőmeghajtón, USB-meghajtón vagy bárhol, ahol nem fogja elveszíteni - hogy használhassa, ha az alkalmazás a jövőben elérhetetlenné válik.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Jelszó megjelenítése</string>
     <string name="cd_hide_password">Jelszó elrejtése</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Nézzen meg egy hirdetést a helyreállítási csomag letöltéséhez</string>
-    <string name="recovery_kit_pro_promo">Szerezze be az AESLocker Prót azonnali, reklámmentes letöltésekhez - és az alkalmazásban sehol máshol sem lesznek hirdetések.</string>
-    <string name="dialog_ad_unavailable_title">Nincs elérhető hirdetés</string>
-    <string name="dialog_ad_unavailable_desc">Jelenleg nem sikerült betölteni egy hirdetést, de a helyreállítási csomagot továbbra is ingyen letöltheti. Szerezze be az AESLocker Prót azonnali, örökre reklámmentes letöltésekhez.</string>
-    <string name="btn_continue_download">Letöltés folytatása</string>
+
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ಆ್ಯಪ್ ಇಲ್ಲದೆ ಮರುಪಡೆಯಿರಿ</string>
 
     <string name="terminal_commands_explanation">ಫೈಲ್‌ಗಳನ್ನು AES-256 ಬಳಸಿ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗುತ್ತದೆ ಮತ್ತು HMAC-SHA256 ಬಳಸಿ ದೃಢೀಕರಿಸಲಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಯಾವುದೇ ತಿದ್ದುಪಡಿ ಅಥವಾ ಹಾನಿ ಯಾವಾಗಲೂ ಪತ್ತೆಯಾಗುತ್ತದೆ. ಆ್ಯಪ್ ಅನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡದೆಯೇ ಕಮಾಂಡ್ ಲೈನ್‌ನಿಂದ ಫೈಲ್‌ಗಳನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಅಥವಾ ಡೀಕ್ರಿಪ್ಟ್ ಮಾಡಲು ಕೆಳಗಿನ ರಿಕವರಿ ಕಿಟ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ. ಇದು macOS, Linux, Windows (WSL ಅಥವಾ Git Bash ಮೂಲಕ) ಮತ್ತು Android ಟರ್ಮಿನಲ್ ಪರಿಸರಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಸಂಪೂರ್ಣ ಸೆಟಪ್ ಮತ್ತು ಬಳಕೆಯ ಸೂಚನೆಗಳನ್ನು ಡೌನ್‌ಲೋಡ್‌ನಲ್ಲಿರುವ README.txt ನಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ.</string>
-    <string name="download_kit_button">ರಿಕವರಿ ಕಿಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
     <string name="download_kit_desc">ರಿಕವರಿ ಸ್ಕ್ರಿಪ್ಟ್ ಮತ್ತು ಸಂಪೂರ್ಣ ಸೂಚನೆಗಳನ್ನು ಒಳಗೊಂಡ ZIP ಫೈಲ್. ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ನಂತರ ಅದನ್ನು ಅನ್ಜಿಪ್ ಮಾಡಿ ಮತ್ತು ಸ್ಕ್ರಿಪ್ಟ್ ಅನ್ನು ಚಲಾಯಿಸುವ ಮೊದಲು README.txt ಅನ್ನು ಮೊದಲು ಓದಿ. OpenSSL 3.0 ಅಥವಾ ನಂತರದ ಆವೃತ್ತಿ ಅಗತ್ಯವಿದೆ - ಕಿಟ್ ಅನ್ನು ಆ್ಯಪ್‌ನಿಂದ ಪ್ರತ್ಯೇಕವಾದ ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಉಳಿಸಿ.</string>
     <string name="github_repo_label">ಮೂಲ ಕೋಡ್ ಇಲ್ಲಿಯೂ ಪ್ರಕಟಿಸಲಾಗಿದೆ: %1$s</string>
     <string name="important_notice_script">ರಿಕವರಿ ಕಿಟ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಉಳಿಸಿ - ಕ್ಲೌಡ್ ಡ್ರೈವ್, USB ಸ್ಟಿಕ್ ಅಥವಾ ನೀವು ಕಳೆದುಕೊಳ್ಳದ ಯಾವುದೇ ಸ್ಥಳದಲ್ಲಿ - ಭವಿಷ್ಯದಲ್ಲಿ ಆ್ಯಪ್ ಲಭ್ಯವಿಲ್ಲದಿದ್ದರೆ ಅದನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">ಪಾಸ್‌ವರ್ಡ್ ತೋರಿಸಿ</string>
     <string name="cd_hide_password">ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">ರಿಕವರಿ ಕಿಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಜಾಹೀರಾತು ವೀಕ್ಷಿಸಿ</string>
-    <string name="recovery_kit_pro_promo">ತಕ್ಷಣದ, ಜಾಹೀರಾತು-ಮುಕ್ತ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಗಾಗಿ AESLocker Pro ಪಡೆಯಿರಿ - ಮತ್ತು ಆ್ಯಪ್‌ನ ಬೇರೆ ಎಲ್ಲಿಯೂ ಜಾಹೀರಾತುಗಳಿಲ್ಲ.</string>
-    <string name="dialog_ad_unavailable_title">ಯಾವುದೇ ಜಾಹೀರಾತು ಲಭ್ಯವಿಲ್ಲ</string>
-    <string name="dialog_ad_unavailable_desc">ಈಗ ಜಾಹೀರಾತನ್ನು ಲೋಡ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಆದರೆ ನೀವು ಇನ್ನೂ ರಿಕವರಿ ಕಿಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು. ಯಾವುದೇ ಜಾಹೀರಾತುಗಳಿಲ್ಲದೆ ತಕ್ಷಣದ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಗಾಗಿ AESLocker Pro ಪಡೆಯಿರಿ.</string>
-    <string name="btn_continue_download">ಡೌನ್‌ಲೋಡ್ ಮುಂದುವರಿಸಿ</string>
+
 </resources>

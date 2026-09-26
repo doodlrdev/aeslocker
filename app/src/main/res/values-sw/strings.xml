@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Rejesha Bila Programu</string>
 
     <string name="terminal_commands_explanation">Faili zinasimbwa kwa AES-256 na kuthibitishwa kwa HMAC-SHA256, hivyo udukuzi au uharibifu wowote hugunduliwa kila wakati. Pakua kifurushi cha urejeshaji hapa chini ili kusimba au kufichua faili kupitia mstari wa amri — hakuna haja ya kusakinisha programu. Kinafanya kazi kwenye macOS, Linux, Windows (kupitia WSL au Git Bash), na mazingira ya terminal ya Android. Maelekezo kamili ya usanidi na matumizi yamejumuishwa katika README.txt ndani ya upakuaji.</string>
-    <string name="download_kit_button">Pakua Kifurushi cha Urejeshaji</string>
     <string name="download_kit_desc">Faili ya ZIP iliyo na hati ya urejeshaji na maelekezo kamili. Baada ya kuipakua, ifungue na usome README.txt kwanza kabla ya kuendesha hati hiyo. Inahitaji OpenSSL 3.0 au toleo jipya zaidi - hifadhi kifurushi hiki mahali salama, tofauti na programu.</string>
     <string name="github_repo_label">Msimbo chanzo pia umechapishwa kwenye: %1$s</string>
     <string name="important_notice_script">Pakua kifurushi cha urejeshaji na ukihifadhi mahali salama — kwenye hifadhi ya wingu, USB, au mahali popote ambapo hutakipoteza — ili uweze kukitumia ikiwa programu haitapatikana tena baadaye.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Onyesha nenosiri</string>
     <string name="cd_hide_password">Ficha nenosiri</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Tazama Tangazo ili Kupakua Kifurushi cha Urejeshaji</string>
-    <string name="recovery_kit_pro_promo">Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo — na hakuna matangazo mahali pengine kwenye programu.</string>
-    <string name="dialog_ad_unavailable_title">Hakuna Tangazo Linalopatikana</string>
-    <string name="dialog_ad_unavailable_desc">Hatukuweza kupakia tangazo kwa sasa, lakini bado unaweza kupakua kifurushi cha urejeshaji bila malipo. Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo kabisa.</string>
-    <string name="btn_continue_download">Endelea Kupakua</string>
+
 </resources>

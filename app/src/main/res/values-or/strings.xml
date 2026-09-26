@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ଆପ୍ ବିନା ପୁନରୁଦ୍ଧାର କରନ୍ତୁ</string>
 
     <string name="terminal_commands_explanation">ଫାଇଲଗୁଡ଼ିକୁ AES-256 ଦ୍ୱାରା ଏନକ୍ରିପ୍ଟ ଏବଂ HMAC-SHA256 ଦ୍ୱାରା ଅଥେଣ୍ଟିକେଟ୍ କରାଯାଏ, ତେଣୁ ଯେକୌଣସି ହସ୍ତକ୍ଷେପ କିମ୍ବା କ୍ଷତି ସବୁବେଳେ ଚିହ୍ନଟ ହୁଏ। ଆପ୍ ଇନଷ୍ଟଲ୍ ନକରି କମାଣ୍ଡ ଲାଇନ୍‌ରୁ ଫାଇଲ୍ ଏନକ୍ରିପ୍ଟ କିମ୍ବା ଡିକ୍ରିପ୍ଟ କରିବା ପାଇଁ ନିମ୍ନରୁ ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଏହା macOS, Linux, Windows (WSL କିମ୍ବା Git Bash ମାଧ୍ୟମରେ) ଏବଂ Android ଟର୍ମିନାଲ୍ ପରିବେଶରେ କାମ କରେ। ସମ୍ପୂର୍ଣ୍ଣ ସେଟଅପ୍ ଏବଂ ବ୍ୟବହାର ନିର୍ଦ୍ଦେଶାବଳୀ ଡାଉନଲୋଡ୍ ଭିତରେ ଥିବା README.txt ରେ ଦିଆଯାଇଛି।</string>
-    <string name="download_kit_button">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ</string>
     <string name="download_kit_desc">ରିକଭରି ସ୍କ୍ରିପ୍ଟ ଏବଂ ସମ୍ପୂର୍ଣ୍ଣ ନିର୍ଦ୍ଦେଶାବଳୀ ଥିବା ଏକ ZIP ଫାଇଲ୍। ଡାଉନଲୋଡ୍ କରିବା ପରେ ଏହାକୁ ଅନଜିପ୍ କରନ୍ତୁ ଏବଂ ସ୍କ୍ରିପ୍ଟ ଚଲାଇବା ପୂର୍ବରୁ ପ୍ରଥମେ README.txt ପଢନ୍ତୁ। OpenSSL 3.0 କିମ୍ବା ପରବର୍ତ୍ତୀ ସଂସ୍କରଣ ଆବଶ୍ୟକ - କିଟ୍‌କୁ ଆପ୍‌ଠାରୁ ସ୍ୱାଧୀନ ଏକ ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଂରକ୍ଷଣ କରନ୍ତୁ।</string>
     <string name="github_repo_label">ସୋର୍ସ କୋଡ୍ ମଧ୍ୟ ଏଠାରେ ପ୍ରକାଶିତ: %1$s</string>
     <string name="important_notice_script">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରି ଏକ ସୁରକ୍ଷିତ ସ୍ଥାନରେ ସଞ୍ଚୟ କରନ୍ତୁ - କ୍ଲାଉଡ୍ ଡ୍ରାଇଭ୍, USB ଷ୍ଟିକ୍ କିମ୍ବା ଯେକୌଣସି ସ୍ଥାନ ଯେଉଁଠାରେ ଏହା ହଜିଯିବ ନାହିଁ - ଯାହାଦ୍ୱାରା ଭବିଷ୍ୟତରେ ଆପ୍ ଉପଲବ୍ଧ ନଥିଲେ ଆପଣ ଏହାକୁ ବ୍ୟବହାର କରିପାରିବେ।</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">ପାସୱାର୍ଡ ଦେଖାନ୍ତୁ</string>
     <string name="cd_hide_password">ପାସୱାର୍ଡ ଲୁଚାନ୍ତୁ</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">ରିକଭରି କିଟ୍ ଡାଉନଲୋଡ୍ କରିବା ପାଇଁ ବିଜ୍ଞାପନ ଦେଖନ୍ତୁ</string>
-    <string name="recovery_kit_pro_promo">ତୁରନ୍ତ, ବିଜ୍ଞାପନମୁକ୍ତ ଡାଉନଲୋଡ୍ ପାଇଁ AESLocker Pro ପାଆନ୍ତୁ - ଏବଂ ଆପ୍‌ର ଅନ୍ୟ କୌଣସି ସ୍ଥାନରେ ମଧ୍ୟ ବିଜ୍ଞାପନ ନାହିଁ।</string>
-    <string name="dialog_ad_unavailable_title">କୌଣସି ବିଜ୍ଞାପନ ଉପଲବ୍ଧ ନାହିଁ</string>
-    <string name="dialog_ad_unavailable_desc">ଆମେ ବର୍ତ୍ତମାନ ଏକ ବିଜ୍ଞାପନ ଲୋଡ୍ କରିପାରିଲୁ ନାହିଁ, କିନ୍ତୁ ଆପଣ ତଥାପି ରିକଭରି କିଟ୍ ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରିପାରିବେ। କେବେବି ବିଜ୍ଞାପନ ବିନା ତୁରନ୍ତ ଡାଉନଲୋଡ୍ ପାଇଁ AESLocker Pro ପାଆନ୍ତୁ।</string>
-    <string name="btn_continue_download">ଡାଉନଲୋଡ୍ ଜାରି ରଖନ୍ତୁ</string>
+
 </resources>

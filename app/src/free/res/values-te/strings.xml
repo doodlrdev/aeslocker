@@ -6,4 +6,12 @@
     <string name="btn_get_pro">PRO పొందండి</string>
     <string name="btn_cancel">రద్దు చేయి</string>
     <string name="share_message">AESLockerని ప్రయత్నించండి — మీ ఫోన్‌లోనే AES-256తో ఫైళ్లను ఎన్‌క్రిప్ట్ మరియు డీక్రిప్ట్ చేయండి.\n\n%1$s</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయడానికి ప్రకటనను చూడండి</string>
+    <string name="recovery_kit_pro_promo">తక్షణ, ప్రకటన రహిత డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి - మరియు యాప్‌లో మరెక్కడా కూడా ప్రకటనలు ఉండవు.</string>
+    <string name="dialog_ad_unavailable_title">ప్రకటన అందుబాటులో లేదు</string>
+    <string name="dialog_ad_unavailable_desc">ప్రస్తుతం మేము ప్రకటనను లోడ్ చేయలేకపోయాము, కానీ మీరు ఇప్పటికీ రికవరీ కిట్‌ను ఉచితంగా డౌన్‌లోడ్ చేసుకోవచ్చు. ఎప్పటికీ ప్రకటనలు లేకుండా తక్షణ డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి.</string>
+    <string name="btn_continue_download">డౌన్‌లోడ్ కొనసాగించండి</string>
 </resources>

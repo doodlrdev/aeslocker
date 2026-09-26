@@ -6,4 +6,11 @@
     <string name="btn_get_pro">PRO حاصل کریں</string>
     <string name="btn_cancel">منسوخ کریں</string>
     <string name="share_message">AESLocker آزمائیں — اپنے فون پر ہی AES-256 کے ذریعے فائلوں کو انکرپٹ اور ڈکرپٹ کریں۔\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ریکوری کٹ ڈاؤن لوڈ کرنے کے لیے اشتہار دیکھیں</string>
+    <string name="recovery_kit_pro_promo">فوری، اشتہار سے پاک ڈاؤن لوڈز کے لیے AESLocker Pro حاصل کریں — اور ایپ میں کہیں بھی اشتہارات نہیں۔</string>
+    <string name="dialog_ad_unavailable_title">کوئی اشتہار دستیاب نہیں</string>
+    <string name="dialog_ad_unavailable_desc">اس وقت اشتہار لوڈ نہیں ہو سکا، لیکن آپ پھر بھی ریکوری کٹ مفت ڈاؤن لوڈ کر سکتے ہیں۔ فوری ڈاؤن لوڈز اور ہمیشہ کے لیے اشتہارات سے پاک تجربے کے لیے AESLocker Pro حاصل کریں۔</string>
+    <string name="btn_continue_download">ڈاؤن لوڈ جاری رکھیں</string>
 </resources>

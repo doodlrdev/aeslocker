@@ -6,4 +6,11 @@
     <string name="btn_get_pro">OBTENER PRO</string>
     <string name="btn_cancel">CANCELAR</string>
     <string name="share_message">Descubre AESLocker — cifra y descifra archivos con AES-256, directamente en tu teléfono.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Ver anuncio para descargar el kit de recuperación</string>
+    <string name="recovery_kit_pro_promo">Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios, y sin anuncios en ningún otro lugar de la aplicación.</string>
+    <string name="dialog_ad_unavailable_title">No hay ningún anuncio disponible</string>
+    <string name="dialog_ad_unavailable_desc">No pudimos cargar un anuncio en este momento, pero aún puedes descargar el kit de recuperación gratis. Obtén AESLocker Pro para disfrutar de descargas instantáneas sin anuncios, nunca.</string>
+    <string name="btn_continue_download">Continuar con la descarga</string>
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Recover Without The App</string>
 
     <string name="terminal_commands_explanation">Files are encrypted with AES-256 and authenticated with HMAC-SHA256, so tampering or corruption is always detected. Download the recovery kit below to encrypt or decrypt files from the command line - no app install needed. It works on macOS, Linux, Windows (via WSL or Git Bash), and Android terminal environments. Full setup and usage instructions are included as README.txt inside the download.</string>
-    <string name="download_kit_button">Download Recovery Kit</string>
     <string name="download_kit_desc">A zip file containing the recovery script and full instructions. After downloading, unzip it and read README.txt first before running the script. Requires OpenSSL 3.0+ - save the kit somewhere safe, independent of the app.</string>
     <string name="github_repo_label">Source also published at: %1$s</string>
     <string name="important_notice_script">Download the recovery kit and save it somewhere safe - a cloud drive, a USB stick, wherever you won\'t lose it - so you can use it if the app becomes unavailable in the future.</string>
@@ -67,12 +66,5 @@
     <string name="cd_show_password">Show password</string>
     <string name="cd_hide_password">Hide password</string>
 
-
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Watch Ad to Download Recovery Kit</string>
-    <string name="recovery_kit_pro_promo">Get AESLocker Pro for instant, ad-free downloads - and no ads anywhere else in the app.</string>
-    <string name="dialog_ad_unavailable_title">No Ad Available</string>
-    <string name="dialog_ad_unavailable_desc">We couldn\'t load an ad right now, but you can still download the recovery kit for free. Get AESLocker Pro for instant downloads with no ads, ever.</string>
-    <string name="btn_continue_download">Continue to Download</string>
 
 </resources>

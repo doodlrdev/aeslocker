@@ -6,6 +6,13 @@
     <string name="btn_get_pro">PRO حاصل ڪريو</string>
     <string name="btn_cancel">منسوخ ڪريو</string>
     <string name="share_message">AESLocker آزمائي ڏسو — پنهنجي فون تي ئي AES-256 سان فائلن کي انڪرپٽ ۽ ڊڪرپٽ ڪريو.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">رڪوري ڪِٽ ڊائونلوڊ ڪرڻ لاءِ اشتهار ڏسو</string>
+    <string name="recovery_kit_pro_promo">فوري، اشتهار کان پاڪ ڊائونلوڊز لاءِ AESLocker Pro حاصل ڪريو - ۽ ايپ ۾ ڪٿي به اشتهار نه هوندا.</string>
+    <string name="dialog_ad_unavailable_title">ڪو اشتهار موجود ناهي</string>
+    <string name="dialog_ad_unavailable_desc">اسان هن وقت اشتهار لوڊ نه ڪري سگهياسين، پر توهان اڃا به رڪوري ڪِٽ مفت ۾ ڊائونلوڊ ڪري سگهو ٿا. AESLocker Pro حاصل ڪريو ته جيئن ڪڏهن به اشتهارن کان سواءِ فوري ڊائونلوڊز حاصل ڪري سگهو.</string>
+    <string name="btn_continue_download">ڊائونلوڊ جاري رکو</string>
 </resources>
 
 

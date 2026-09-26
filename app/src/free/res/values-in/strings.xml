@@ -6,4 +6,11 @@
     <string name="btn_get_pro">DAPATKAN PRO</string>
     <string name="btn_cancel">BATAL</string>
     <string name="share_message">Coba AESLocker — enkripsi dan dekripsi file dengan AES-256, langsung di ponsel Anda.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Tonton Iklan untuk Mengunduh Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan - dan tanpa iklan di bagian lain aplikasi.</string>
+    <string name="dialog_ad_unavailable_title">Tidak Ada Iklan Tersedia</string>
+    <string name="dialog_ad_unavailable_desc">Kami tidak dapat memuat iklan saat ini, tetapi Anda tetap dapat mengunduh recovery kit secara gratis. Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan, selamanya.</string>
+    <string name="btn_continue_download">Lanjutkan ke Unduhan</string>
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Mag-recover Nang Walang App</string>
 
     <string name="terminal_commands_explanation">Ang mga file ay ine-encrypt gamit ang AES-256 at ina-authenticate gamit ang HMAC-SHA256, kaya palaging natutukoy ang anumang pakikialam o pagkasira. I-download ang recovery kit sa ibaba para mag-encrypt o mag-decrypt ng mga file mula sa command line - hindi kailangan ng pag-install ng app. Gumagana ito sa macOS, Linux, Windows (sa pamamagitan ng WSL o Git Bash), at mga terminal environment sa Android. Ang kumpletong mga tagubilin sa pag-setup at paggamit ay kasama sa README.txt sa loob ng download.</string>
-    <string name="download_kit_button">I-download ang Recovery Kit</string>
     <string name="download_kit_desc">Isang ZIP file na naglalaman ng recovery script at kumpletong mga tagubilin. Pagkatapos i-download, i-unzip ito at basahin muna ang README.txt bago patakbuhin ang script. Nangangailangan ng OpenSSL 3.0 o mas bago - i-save ang kit sa isang ligtas na lugar na hiwalay sa app.</string>
     <string name="github_repo_label">Nai-publish din ang source sa: %1$s</string>
     <string name="important_notice_script">I-download ang recovery kit at itago ito sa isang ligtas na lugar - cloud drive, USB stick, o kahit saan na hindi mo ito mawawala - para magamit mo ito kung hindi na available ang app sa hinaharap.</string>
@@ -68,10 +67,5 @@
     <string name="cd_show_password">Ipakita ang password</string>
     <string name="cd_hide_password">Itago ang password</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Manood ng Ad para I-download ang Recovery Kit</string>
-    <string name="recovery_kit_pro_promo">Kunin ang AESLocker Pro para sa agarang, walang-ad na mga download - at walang ads saanman sa app.</string>
-    <string name="dialog_ad_unavailable_title">Walang Available na Ad</string>
-    <string name="dialog_ad_unavailable_desc">Hindi kami makapag-load ng ad ngayon, pero maaari mo pa ring i-download nang libre ang recovery kit. Kunin ang AESLocker Pro para sa agarang download na walang ads, kailanman.</string>
-    <string name="btn_continue_download">Magpatuloy sa Pag-download</string>
+
 </resources>

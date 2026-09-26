@@ -6,4 +6,14 @@
     <string name="btn_get_pro">PRO VERZIÓ</string>
     <string name="btn_cancel">MÉGSE</string>
     <string name="share_message">Próbáld ki az AESLockert — titkosítsd és fejtsd vissza fájljaidat AES-256-tal közvetlenül a telefonodon.\n\n%1$s</string>
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Adatvédelmi beállítások kezelése</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Nézzen meg egy hirdetést a helyreállítási csomag letöltéséhez</string>
+    <string name="recovery_kit_pro_promo">Szerezze be az AESLocker Prót azonnali, reklámmentes letöltésekhez - és az alkalmazásban sehol máshol sem lesznek hirdetések.</string>
+    <string name="dialog_ad_unavailable_title">Nincs elérhető hirdetés</string>
+    <string name="dialog_ad_unavailable_desc">Jelenleg nem sikerült betölteni egy hirdetést, de a helyreállítási csomagot továbbra is ingyen letöltheti. Szerezze be az AESLocker Prót azonnali, örökre reklámmentes letöltésekhez.</string>
+    <string name="btn_continue_download">Letöltés folytatása</string>
 </resources>

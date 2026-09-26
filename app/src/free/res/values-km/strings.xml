@@ -6,4 +6,11 @@
     <string name="btn_get_pro">ទទួលបាន PRO</string>
     <string name="btn_cancel">បោះបង់</string>
     <string name="share_message">សាកល្បង AESLocker — អ៊ិនគ្រីប និងឌិគ្រីបឯកសារដោយប្រើ AES-256 ដោយផ្ទាល់លើទូរស័ព្ទរបស់អ្នក។\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">មើលការផ្សាយពាណិជ្ជកម្មដើម្បីទាញយកកញ្ចប់ស្ដារឡើងវិញ</string>
+    <string name="recovery_kit_pro_promo">ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្ម - និងគ្មានការផ្សាយពាណិជ្ជកម្មនៅកន្លែងផ្សេងទៀតក្នុងកម្មវិធី។</string>
+    <string name="dialog_ad_unavailable_title">មិនមានការផ្សាយពាណិជ្ជកម្ម</string>
+    <string name="dialog_ad_unavailable_desc">យើងមិនអាចផ្ទុកការផ្សាយពាណិជ្ជកម្មបានទេនៅពេលនេះ ប៉ុន្តែអ្នកនៅតែអាចទាញយកកញ្ចប់ស្ដារឡើងវិញដោយឥតគិតថ្លៃ។ ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្មជារៀងរហូត។</string>
+    <string name="btn_continue_download">បន្តទាញយក</string>
 </resources>

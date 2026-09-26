@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Pulihake Tanpa Aplikasi</string>
 
     <string name="terminal_commands_explanation">File dienkripsi nganggo AES-256 lan diautentikasi nganggo HMAC-SHA256, mula manipulasi utawa kerusakan mesthi bisa dideteksi. Unduh recovery kit ing ngisor iki kanggo ngenkripsi utawa dekripsi file saka command line - ora perlu nginstal aplikasi. Bisa digunakake ing macOS, Linux, Windows (liwat WSL utawa Git Bash), lan lingkungan terminal Android. Pandhuan lengkap kanggo persiyapan lan panggunaan ana ing README.txt ing njero undhuhan.</string>
-    <string name="download_kit_button">Unduh Recovery Kit</string>
     <string name="download_kit_desc">Berkas ZIP sing ngemot skrip pemulihan lan pandhuan lengkap. Sawise diundhuh, ekstrak lan wacanen README.txt luwih dhisik sadurunge mbukak skrip. Mbutuhake OpenSSL 3.0 utawa luwih anyar - simpen kit iki ing panggonan sing aman, kapisah saka aplikasi.</string>
     <string name="github_repo_label">Source uga diterbitake ing: %1$s</string>
     <string name="important_notice_script">Unduh recovery kit lan simpen ing panggonan sing aman - cloud drive, USB stick, utawa ing endi wae supaya ora ilang - supaya bisa digunakake yen aplikasi wis ora kasedhiya ing mangsa ngarep.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Tampilake sandi</string>
     <string name="cd_hide_password">Singidake sandi</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Nonton Iklan kanggo Ngunduh Recovery Kit</string>
-    <string name="recovery_kit_pro_promo">Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan - lan ora ana iklan ing bagean liyane saka aplikasi.</string>
-    <string name="dialog_ad_unavailable_title">Ora Ana Iklan sing Kasedhiya</string>
-    <string name="dialog_ad_unavailable_desc">Saiki kita ora bisa ngemot iklan, nanging sampeyan isih bisa ngunduh recovery kit kanthi gratis. Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan, saklawase.</string>
-    <string name="btn_continue_download">Terusake Ngunduh</string>
+
 </resources>

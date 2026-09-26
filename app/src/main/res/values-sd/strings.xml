@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ايپ کان سواءِ بحال ڪريو</string>
 
     <string name="terminal_commands_explanation">فائلون AES-256 سان انڪرپٽ ۽ HMAC-SHA256 سان تصديق ٿيل آهن، تنهنڪري ڪنهن به ڇيڙڇاڙ يا خرابي جو هميشه پتو لڳي ويندو آهي. هيٺ ڏنل رڪوري ڪِٽ ڊائونلوڊ ڪريو ته جيئن ڪمانڊ لائن مان فائلن کي انڪرپٽ يا ڊيڪرپٽ ڪري سگهو - ايپ انسٽال ڪرڻ جي ضرورت ناهي. اهو macOS، Linux، Windows (WSL يا Git Bash ذريعي) ۽ Android ٽرمينل ماحولن تي ڪم ڪري ٿو. مڪمل سيٽ اپ ۽ استعمال جون هدايتون ڊائونلوڊ ۾ README.txt اندر شامل آهن.</string>
-    <string name="download_kit_button">رڪوري ڪِٽ ڊائونلوڊ ڪريو</string>
     <string name="download_kit_desc">هڪ ZIP فائل جنهن ۾ بحالي وارو اسڪرپٽ ۽ مڪمل هدايتون شامل آهن. ڊائون لوڊ ڪرڻ کان پوءِ ان کي ان زپ ڪريو ۽ اسڪرپٽ هلائڻ کان اڳ پهرين README.txt پڙهو. OpenSSL 3.0 يا ان کان نئين ورزن جي ضرورت آهي - ڪٽ کي ايپ کان الڳ ڪنهن محفوظ هنڌ تي محفوظ ڪريو.</string>
     <string name="github_repo_label">سورس ڪوڊ هتي پڻ شايع ٿيل آهي: %1$s</string>
     <string name="important_notice_script">رڪوري ڪِٽ ڊائونلوڊ ڪريو ۽ ان کي ڪنهن محفوظ هنڌ تي محفوظ ڪريو - ڪلائوڊ ڊرائيو، USB اسٽڪ، يا اهڙي ڪنهن به جاءِ تي جتي توهان ان کي نه وڃايو - ته جيئن مستقبل ۾ ايپ دستياب نه هجي ته توهان ان کي استعمال ڪري سگهو.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">پاسورڊ ڏيکاريو</string>
     <string name="cd_hide_password">پاسورڊ لڪايو</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">رڪوري ڪِٽ ڊائونلوڊ ڪرڻ لاءِ اشتهار ڏسو</string>
-    <string name="recovery_kit_pro_promo">فوري، اشتهار کان پاڪ ڊائونلوڊز لاءِ AESLocker Pro حاصل ڪريو - ۽ ايپ ۾ ڪٿي به اشتهار نه هوندا.</string>
-    <string name="dialog_ad_unavailable_title">ڪو اشتهار موجود ناهي</string>
-    <string name="dialog_ad_unavailable_desc">اسان هن وقت اشتهار لوڊ نه ڪري سگهياسين، پر توهان اڃا به رڪوري ڪِٽ مفت ۾ ڊائونلوڊ ڪري سگهو ٿا. AESLocker Pro حاصل ڪريو ته جيئن ڪڏهن به اشتهارن کان سواءِ فوري ڊائونلوڊز حاصل ڪري سگهو.</string>
-    <string name="btn_continue_download">ڊائونلوڊ جاري رکو</string>
+
 </resources>

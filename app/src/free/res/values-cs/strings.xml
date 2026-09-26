@@ -8,4 +8,14 @@
     <string name="btn_cancel">ZRUŠIT</string>
     <string name="share_message">Vyzkoušejte AESLocker — šifrujte a dešifrujte soubory pomocí AES-256 přímo ve svém telefonu.\n\n%1$s</string>
 
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Spravovat Možnosti Soukromí</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Sledovat reklamu a stáhnout balíček pro obnovení</string>
+    <string name="recovery_kit_pro_promo">Získejte AESLocker Pro pro okamžité stahování bez reklam - a žádné reklamy nikde jinde v aplikaci.</string>
+    <string name="dialog_ad_unavailable_title">Žádná reklama není k dispozici</string>
+    <string name="dialog_ad_unavailable_desc">Reklamu se nyní nepodařilo načíst, ale balíček pro obnovení si stále můžete stáhnout zdarma. Získejte AESLocker Pro pro okamžité stahování bez reklam, navždy.</string>
+    <string name="btn_continue_download">Pokračovat ve stahování</string>
 </resources>

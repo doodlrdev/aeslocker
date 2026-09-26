@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">অ্যাপ ছাড়াই পুনরুদ্ধার</string>
 
     <string name="terminal_commands_explanation">ফাইলগুলো AES-256 দিয়ে এনক্রিপ্ট এবং HMAC-SHA256 দিয়ে অথেন্টিকেট করা হয়, তাই কোনো পরিবর্তন বা ক্ষতি হলে তা সবসময় শনাক্ত করা যায়। নিচের রিকভারি কিট ডাউনলোড করে কমান্ড লাইন থেকে ফাইল এনক্রিপ্ট বা ডিক্রিপ্ট করুন - কোনো অ্যাপ ইনস্টল করার প্রয়োজন নেই। এটি macOS, Linux, Windows (WSL বা Git Bash-এর মাধ্যমে) এবং Android টার্মিনাল পরিবেশে কাজ করে। সম্পূর্ণ সেটআপ ও ব্যবহারের নির্দেশনা ডাউনলোডের ভেতরের README.txt-এ রয়েছে।</string>
-    <string name="download_kit_button">রিকভারি কিট ডাউনলোড করুন</string>
     <string name="download_kit_desc">একটি ZIP ফাইল যাতে রিকভারি স্ক্রিপ্ট এবং সম্পূর্ণ নির্দেশাবলী রয়েছে। ডাউনলোড করার পরে এটি আনজিপ করুন এবং স্ক্রিপ্ট চালানোর আগে প্রথমে README.txt পড়ুন। OpenSSL 3.0 বা পরবর্তী সংস্করণ প্রয়োজন - কিটটি অ্যাপ থেকে আলাদা কোনো নিরাপদ স্থানে সংরক্ষণ করুন।</string>
     <string name="github_repo_label">সোর্স এখানেও প্রকাশিত: %1$s</string>
     <string name="important_notice_script">রিকভারি কিট ডাউনলোড করে নিরাপদ কোনো স্থানে সংরক্ষণ করুন - ক্লাউড ড্রাইভ, USB স্টিক বা এমন যেকোনো জায়গায় যেখানে এটি হারাবেন না - যাতে ভবিষ্যতে অ্যাপটি অনুপলব্ধ হয়ে গেলে এটি ব্যবহার করতে পারেন।</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">পাসওয়ার্ড দেখান</string>
     <string name="cd_hide_password">পাসওয়ার্ড লুকান</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">রিকভারি কিট ডাউনলোড করতে বিজ্ঞাপন দেখুন</string>
-    <string name="recovery_kit_pro_promo">তাৎক্ষণিক, বিজ্ঞাপনমুক্ত ডাউনলোডের জন্য AESLocker Pro নিন - এবং অ্যাপের অন্য কোথাও কোনো বিজ্ঞাপন থাকবে না।</string>
-    <string name="dialog_ad_unavailable_title">কোনো বিজ্ঞাপন উপলব্ধ নেই</string>
-    <string name="dialog_ad_unavailable_desc">এই মুহূর্তে একটি বিজ্ঞাপন লোড করা যায়নি, তবে আপনি এখনও বিনামূল্যে রিকভারি কিট ডাউনলোড করতে পারেন। বিজ্ঞাপন ছাড়াই তাৎক্ষণিক ডাউনলোডের জন্য AESLocker Pro নিন।</string>
-    <string name="btn_continue_download">ডাউনলোড চালিয়ে যান</string>
+
 </resources>

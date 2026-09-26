@@ -6,4 +6,11 @@
     <string name="btn_get_pro">ENTOKAKE PRO</string>
     <string name="btn_cancel">BATAL</string>
     <string name="share_message">Coba AESLocker — enkripsi lan dekripsi file nganggo AES-256 langsung ing telpon sampeyan.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Nonton Iklan kanggo Ngunduh Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan - lan ora ana iklan ing bagean liyane saka aplikasi.</string>
+    <string name="dialog_ad_unavailable_title">Ora Ana Iklan sing Kasedhiya</string>
+    <string name="dialog_ad_unavailable_desc">Saiki kita ora bisa ngemot iklan, nanging sampeyan isih bisa ngunduh recovery kit kanthi gratis. Entuk AESLocker Pro kanggo undhuhan cepet tanpa iklan, saklawase.</string>
+    <string name="btn_continue_download">Terusake Ngunduh</string>
 </resources>

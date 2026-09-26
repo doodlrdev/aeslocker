@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">الاسترداد بدون التطبيق</string>
 
     <string name="terminal_commands_explanation">يتم تشفير الملفات باستخدام AES-256 والمصادقة عليها باستخدام HMAC-SHA256، لذلك يتم دائمًا اكتشاف أي عبث أو تلف. نزّل حزمة الاسترداد أدناه لتشفير الملفات أو فك تشفيرها من سطر الأوامر - دون الحاجة إلى تثبيت التطبيق. تعمل الحزمة على macOS وLinux وWindows (عبر WSL أو Git Bash) وبيئات الطرفية على Android. تتضمن تعليمات الإعداد والاستخدام الكاملة داخل ملف README.txt الموجود في التنزيل.</string>
-    <string name="download_kit_button">تنزيل حزمة الاسترداد</string>
     <string name="download_kit_desc">ملف ZIP يحتوي على برنامج الاسترداد النصي والتعليمات الكاملة. بعد التنزيل، فك ضغطه واقرأ README.txt أولاً قبل تشغيل البرنامج النصي. يتطلب OpenSSL 3.0 أو أحدث - احفظ حزمة الأدوات في مكان آمن ومستقل عن التطبيق.</string>
     <string name="github_repo_label">المصدر منشور أيضًا على: %1$s</string>
     <string name="important_notice_script">نزّل حزمة الاسترداد واحفظها في مكان آمن - على خدمة تخزين سحابية أو وحدة USB أو أي مكان لن تفقدها فيه - حتى تتمكن من استخدامها إذا أصبح التطبيق غير متاح في المستقبل.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">إظهار كلمة المرور</string>
     <string name="cd_hide_password">إخفاء كلمة المرور</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">شاهد إعلانًا لتنزيل حزمة الاسترداد</string>
-    <string name="recovery_kit_pro_promo">احصل على AESLocker Pro لتنزيلات فورية بدون إعلانات - وبدون إعلانات في أي مكان آخر في التطبيق.</string>
-    <string name="dialog_ad_unavailable_title">لا يوجد إعلان متاح</string>
-    <string name="dialog_ad_unavailable_desc">تعذر تحميل إعلان الآن، ولكن لا يزال بإمكانك تنزيل حزمة الاسترداد مجانًا. احصل على AESLocker Pro لتنزيلات فورية بدون إعلانات على الإطلاق.</string>
-    <string name="btn_continue_download">متابعة التنزيل</string>
+
 </resources>

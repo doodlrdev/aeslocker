@@ -6,4 +6,12 @@
     <string name="btn_get_pro">รับ PRO</string>
     <string name="btn_cancel">ยกเลิก</string>
     <string name="share_message">ลองใช้ AESLocker — เข้ารหัสและถอดรหัสไฟล์ด้วย AES-256 ได้โดยตรงบนโทรศัพท์ของคุณ\n\n%1$s</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ดูโฆษณาเพื่อดาวน์โหลดชุดกู้คืน</string>
+    <string name="recovery_kit_pro_promo">รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณา - และไม่มีโฆษณาที่อื่นในแอป</string>
+    <string name="dialog_ad_unavailable_title">ไม่มีโฆษณาให้บริการ</string>
+    <string name="dialog_ad_unavailable_desc">ขณะนี้เราไม่สามารถโหลดโฆษณาได้ แต่คุณยังสามารถดาวน์โหลดชุดกู้คืนได้ฟรี รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณาอีกต่อไป</string>
+    <string name="btn_continue_download">ดำเนินการดาวน์โหลดต่อ</string>
 </resources>

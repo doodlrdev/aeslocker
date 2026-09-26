@@ -6,4 +6,11 @@
     <string name="btn_get_pro">PRO ਪ੍ਰਾਪਤ ਕਰੋ</string>
     <string name="btn_cancel">ਰੱਦ ਕਰੋ</string>
     <string name="share_message">AESLocker ਅਜ਼ਮਾਓ — ਆਪਣੇ ਫ਼ੋਨ \'ਤੇ ਹੀ AES-256 ਨਾਲ ਫ਼ਾਈਲਾਂ ਨੂੰ ਇਨਕ੍ਰਿਪਟ ਅਤੇ ਡਿਕ੍ਰਿਪਟ ਕਰੋ।\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">ਰਿਕਵਰੀ ਕਿਟ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਵਿਗਿਆਪਨ ਦੇਖੋ</string>
+    <string name="recovery_kit_pro_promo">ਤੁਰੰਤ, ਵਿਗਿਆਪਨ-ਮੁਕਤ ਡਾਊਨਲੋਡ ਲਈ AESLocker Pro ਲਵੋ - ਅਤੇ ਐਪ ਵਿੱਚ ਹੋਰ ਕਿਤੇ ਵੀ ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ।</string>
+    <string name="dialog_ad_unavailable_title">ਕੋਈ ਵਿਗਿਆਪਨ ਉਪਲਬਧ ਨਹੀਂ</string>
+    <string name="dialog_ad_unavailable_desc">ਅਸੀਂ ਇਸ ਵੇਲੇ ਕੋਈ ਵਿਗਿਆਪਨ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇ, ਪਰ ਤੁਸੀਂ ਫਿਰ ਵੀ ਰਿਕਵਰੀ ਕਿਟ ਮੁਫ਼ਤ ਵਿੱਚ ਡਾਊਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ। AESLocker Pro ਲਵੋ ਅਤੇ ਬਿਨਾਂ ਕਿਸੇ ਵਿਗਿਆਪਨ ਦੇ ਤੁਰੰਤ ਡਾਊਨਲੋਡ ਕਰੋ।</string>
+    <string name="btn_continue_download">ਡਾਊਨਲੋਡ ਜਾਰੀ ਰੱਖੋ</string>
 </resources>

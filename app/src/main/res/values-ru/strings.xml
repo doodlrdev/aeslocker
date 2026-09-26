@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Восстановление без приложения</string>
 
     <string name="terminal_commands_explanation">Файлы шифруются с помощью AES-256 и проходят аутентификацию с помощью HMAC-SHA256, поэтому любые изменения или повреждения всегда обнаруживаются. Скачайте приведённый ниже комплект восстановления, чтобы шифровать или расшифровывать файлы из командной строки - установка приложения не требуется. Он работает в macOS, Linux, Windows (через WSL или Git Bash) и терминальных средах Android. Полные инструкции по настройке и использованию находятся в README.txt внутри загружаемого комплекта.</string>
-    <string name="download_kit_button">Скачать комплект восстановления</string>
     <string name="download_kit_desc">ZIP-файл, содержащий скрипт восстановления и полные инструкции. После загрузки распакуйте его и сначала прочитайте README.txt перед запуском скрипта. Требуется OpenSSL 3.0 или новее - сохраните комплект в безопасном месте отдельно от приложения.</string>
     <string name="github_repo_label">Исходный код также опубликован здесь: %1$s</string>
     <string name="important_notice_script">Скачайте комплект восстановления и сохраните его в безопасном месте - на облачном диске, USB-накопителе или где-либо ещё, где вы его не потеряете - чтобы использовать его, если приложение в будущем станет недоступно.</string>
@@ -66,10 +65,4 @@
     <string name="cd_show_password">Показать пароль</string>
     <string name="cd_hide_password">Скрыть пароль</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Посмотрите рекламу, чтобы скачать комплект восстановления</string>
-    <string name="recovery_kit_pro_promo">Получите AESLocker Pro для мгновенных загрузок без рекламы - и без рекламы в других разделах приложения.</string>
-    <string name="dialog_ad_unavailable_title">Реклама недоступна</string>
-    <string name="dialog_ad_unavailable_desc">Сейчас не удалось загрузить рекламу, но вы всё равно можете бесплатно скачать комплект восстановления. Получите AESLocker Pro для мгновенных загрузок без рекламы.</string>
-    <string name="btn_continue_download">Продолжить загрузку</string>
 </resources>

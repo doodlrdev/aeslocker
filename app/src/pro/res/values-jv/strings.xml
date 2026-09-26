@@ -3,4 +3,6 @@
     <string name="share_message">Coba AESLocker Pro — enkripsi lan dekripsi file nganggo AES-256 langsung ing telpon sampeyan.\n\n%1$s</string>
     <string name="source_button_label">SUMBER</string>
     <string name="source_button_desc">Deleng kode sumber ing GitHub.</string>
+    <string name="download_kit_button">Unduh Recovery Kit</string>
+
 </resources>

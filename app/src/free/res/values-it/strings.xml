@@ -6,4 +6,14 @@
     <string name="btn_get_pro">OTTIENI PRO</string>
     <string name="btn_cancel">ANNULLA</string>
     <string name="share_message">Scopri AESLocker — cifra e decifra i file con AES-256 direttamente sul tuo telefono.\n\n%1$s</string>
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Gestisci le opzioni di privacy</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Guarda un annuncio per scaricare il kit di recupero</string>
+    <string name="recovery_kit_pro_promo">Ottieni AESLocker Pro per download immediati senza pubblicità - e nessuna pubblicità in qualsiasi altra parte dell\'app.</string>
+    <string name="dialog_ad_unavailable_title">Nessun annuncio disponibile</string>
+    <string name="dialog_ad_unavailable_desc">Non è stato possibile caricare un annuncio al momento, ma puoi comunque scaricare gratuitamente il kit di recupero. Ottieni AESLocker Pro per download immediati senza pubblicità, mai.</string>
+    <string name="btn_continue_download">Continua il download</string>
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Uygulama Olmadan Kurtar</string>
 
     <string name="terminal_commands_explanation">Dosyalar AES-256 ile şifrelenir ve HMAC-SHA256 ile doğrulanır; böylece kurcalama veya bozulma her zaman tespit edilir. Uygulamayı yüklemeden komut satırından dosyaları şifrelemek veya şifrelerini çözmek için aşağıdaki kurtarma kitini indirin. macOS, Linux, Windows (WSL veya Git Bash aracılığıyla) ve Android terminal ortamlarında çalışır. Tam kurulum ve kullanım talimatları indirilen dosyanın içindeki README.txt dosyasında yer alır.</string>
-    <string name="download_kit_button">Kurtarma Kitini İndir</string>
     <string name="download_kit_desc">Kurtarma betiğini ve tüm talimatları içeren bir ZIP dosyasıdır. İndirdikten sonra dosyayı açın ve betiği çalıştırmadan önce README.txt dosyasını okuyun. OpenSSL 3.0 veya üzeri gereklidir - kiti uygulamadan bağımsız, güvenli bir yerde saklayın.</string>
     <string name="github_repo_label">Kaynak kodu ayrıca burada yayımlanmıştır: %1$s</string>
     <string name="important_notice_script">Kurtarma kitini indirin ve güvenli bir yerde saklayın - bir bulut sürücüsünde, USB bellekte veya kaybetmeyeceğiniz herhangi bir yerde - böylece uygulama gelecekte kullanılamaz hâle gelirse kiti kullanabilirsiniz.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Şifreyi göster</string>
     <string name="cd_hide_password">Şifreyi gizle</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Kurtarma Kitini İndirmek İçin Reklam İzle</string>
-    <string name="recovery_kit_pro_promo">Anında, reklamsız indirmeler için AESLocker Pro\'yu edinin - ayrıca uygulamanın başka hiçbir yerinde reklam yoktur.</string>
-    <string name="dialog_ad_unavailable_title">Reklam Yok</string>
-    <string name="dialog_ad_unavailable_desc">Şu anda bir reklam yükleyemedik, ancak kurtarma kitini yine de ücretsiz olarak indirebilirsiniz. AESLocker Pro\'yu edinin ve reklamsız anında indirmelerin keyfini çıkarın.</string>
-    <string name="btn_continue_download">İndirmeye Devam Et</string>
+
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ऐप के बिना रिकवर करें</string>
 
     <string name="terminal_commands_explanation">फ़ाइलें AES-256 से एन्क्रिप्ट और HMAC-SHA256 से ऑथेंटिकेट की जाती हैं, इसलिए किसी भी छेड़छाड़ या खराबी का हमेशा पता चल जाता है। कमांड लाइन से फ़ाइलों को एन्क्रिप्ट या डिक्रिप्ट करने के लिए नीचे दिया गया रिकवरी किट डाउनलोड करें - ऐप इंस्टॉल करने की आवश्यकता नहीं है। यह macOS, Linux, Windows (WSL या Git Bash के माध्यम से) और Android टर्मिनल वातावरण में काम करता है। सेटअप और उपयोग के पूरे निर्देश डाउनलोड के अंदर README.txt में दिए गए हैं।</string>
-    <string name="download_kit_button">रिकवरी किट डाउनलोड करें</string>
     <string name="download_kit_desc">रिकवरी स्क्रिप्ट और पूरी जानकारी वाली एक ZIP फ़ाइल। डाउनलोड करने के बाद इसे अनज़िप करें और स्क्रिप्ट चलाने से पहले README.txt को पढ़ें। OpenSSL 3.0 या उसके बाद का संस्करण आवश्यक है - किट को ऐप से अलग किसी सुरक्षित स्थान पर सेव करें।</string>
     <string name="github_repo_label">सोर्स यहाँ भी प्रकाशित है: %1$s</string>
     <string name="important_notice_script">रिकवरी किट डाउनलोड करें और इसे किसी सुरक्षित स्थान पर रखें - क्लाउड ड्राइव, USB स्टिक या ऐसी किसी भी जगह जहाँ आप इसे खोएँ नहीं - ताकि भविष्य में ऐप उपलब्ध न होने पर आप इसका उपयोग कर सकें।</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">पासवर्ड दिखाएँ</string>
     <string name="cd_hide_password">पासवर्ड छिपाएँ</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">रिकवरी किट डाउनलोड करने के लिए विज्ञापन देखें</string>
-    <string name="recovery_kit_pro_promo">तुरंत, विज्ञापन-मुक्त डाउनलोड के लिए AESLocker Pro प्राप्त करें - और ऐप में कहीं भी कोई विज्ञापन नहीं।</string>
-    <string name="dialog_ad_unavailable_title">कोई विज्ञापन उपलब्ध नहीं</string>
-    <string name="dialog_ad_unavailable_desc">हम अभी विज्ञापन लोड नहीं कर सके, लेकिन आप अभी भी रिकवरी किट मुफ़्त में डाउनलोड कर सकते हैं। बिना किसी विज्ञापन के तुरंत डाउनलोड के लिए AESLocker Pro प्राप्त करें।</string>
-    <string name="btn_continue_download">डाउनलोड जारी रखें</string>
+
 </resources>

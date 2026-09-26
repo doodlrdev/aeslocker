@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Wiederherstellung ohne die App</string>
 
     <string name="terminal_commands_explanation">Dateien werden mit AES-256 verschlüsselt und mit HMAC-SHA256 authentifiziert, sodass Manipulationen oder Beschädigungen immer erkannt werden. Laden Sie das untenstehende Wiederherstellungspaket herunter, um Dateien über die Befehlszeile zu verschlüsseln oder zu entschlüsseln - ohne dass die App installiert sein muss. Es funktioniert unter macOS, Linux, Windows (über WSL oder Git Bash) und in Android-Terminalumgebungen. Eine vollständige Anleitung zur Einrichtung und Verwendung befindet sich als README.txt im Download.</string>
-    <string name="download_kit_button">Wiederherstellungspaket herunterladen</string>
     <string name="download_kit_desc">Eine ZIP-Datei mit dem Wiederherstellungsskript und vollständigen Anweisungen. Entpacken Sie sie nach dem Herunterladen und lesen Sie README.txt, bevor Sie das Skript ausführen. Erfordert OpenSSL 3.0 oder höher - speichern Sie das Kit an einem sicheren Ort, unabhängig von der App.</string>
     <string name="github_repo_label">Quellcode auch veröffentlicht unter: %1$s</string>
     <string name="important_notice_script">Laden Sie das Wiederherstellungspaket herunter und bewahren Sie es an einem sicheren Ort auf - auf einem Cloud-Laufwerk, einem USB-Stick oder an einem anderen Ort, an dem Sie es nicht verlieren - damit Sie es verwenden können, falls die App in Zukunft nicht mehr verfügbar ist.</string>
@@ -67,10 +66,4 @@
     <string name="cd_show_password">Passwort anzeigen</string>
     <string name="cd_hide_password">Passwort ausblenden</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Werbung ansehen, um das Wiederherstellungspaket herunterzuladen</string>
-    <string name="recovery_kit_pro_promo">Holen Sie sich AESLocker Pro für sofortige Downloads ohne Werbung - und ohne Werbung an irgendeiner anderen Stelle der App.</string>
-    <string name="dialog_ad_unavailable_title">Keine Werbung verfügbar</string>
-    <string name="dialog_ad_unavailable_desc">Die Werbung konnte gerade nicht geladen werden, aber Sie können das Wiederherstellungspaket trotzdem kostenlos herunterladen. Holen Sie sich AESLocker Pro für sofortige Downloads ohne Werbung - jemals.</string>
-    <string name="btn_continue_download">Download fortsetzen</string>
 </resources>

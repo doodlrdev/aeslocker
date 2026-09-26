@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Obnovení bez aplikace</string>
 
     <string name="terminal_commands_explanation">Soubory jsou šifrovány pomocí AES-256 a autentizovány pomocí HMAC-SHA256, takže jakákoli manipulace nebo poškození jsou vždy odhaleny. Stáhněte si níže uvedený balíček pro obnovení a šifrujte nebo dešifrujte soubory z příkazového řádku - bez nutnosti instalovat aplikaci. Funguje v prostředích macOS, Linux, Windows (prostřednictvím WSL nebo Git Bash) a v terminálech Androidu. Kompletní pokyny k nastavení a použití jsou součástí souboru README.txt uvnitř staženého balíčku.</string>
-    <string name="download_kit_button">Stáhnout balíček pro obnovení</string>
     <string name="download_kit_desc">Soubor ZIP obsahující skript pro obnovení a kompletní pokyny. Po stažení jej rozbalte a před spuštěním skriptu si nejprve přečtěte README.txt. Vyžaduje OpenSSL 3.0 nebo novější - sadu nástrojů uložte na bezpečné místo nezávisle na aplikaci.</string>
     <string name="github_repo_label">Zdrojový kód je také zveřejněn na: %1$s</string>
     <string name="important_notice_script">Stáhněte si balíček pro obnovení a uložte jej na bezpečné místo - do cloudového úložiště, na USB flash disk nebo kamkoli, kde jej neztratíte - abyste jej mohli použít, pokud aplikace v budoucnu přestane být dostupná.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Zobrazit heslo</string>
     <string name="cd_hide_password">Skrýt heslo</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Sledovat reklamu a stáhnout balíček pro obnovení</string>
-    <string name="recovery_kit_pro_promo">Získejte AESLocker Pro pro okamžité stahování bez reklam - a žádné reklamy nikde jinde v aplikaci.</string>
-    <string name="dialog_ad_unavailable_title">Žádná reklama není k dispozici</string>
-    <string name="dialog_ad_unavailable_desc">Reklamu se nyní nepodařilo načíst, ale balíček pro obnovení si stále můžete stáhnout zdarma. Získejte AESLocker Pro pro okamžité stahování bez reklam, navždy.</string>
-    <string name="btn_continue_download">Pokračovat ve stahování</string>
+
 </resources>

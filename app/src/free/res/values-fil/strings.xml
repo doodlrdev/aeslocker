@@ -6,4 +6,11 @@
     <string name="btn_get_pro">KUNIN ANG PRO</string>
     <string name="btn_cancel">KANSELAHIN</string>
     <string name="share_message">Subukan ang AESLocker — mag-encrypt at mag-decrypt ng mga file gamit ang AES-256, direkta sa iyong telepono.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Manood ng Ad para I-download ang Recovery Kit</string>
+    <string name="recovery_kit_pro_promo">Kunin ang AESLocker Pro para sa agarang, walang-ad na mga download - at walang ads saanman sa app.</string>
+    <string name="dialog_ad_unavailable_title">Walang Available na Ad</string>
+    <string name="dialog_ad_unavailable_desc">Hindi kami makapag-load ng ad ngayon, pero maaari mo pa ring i-download nang libre ang recovery kit. Kunin ang AESLocker Pro para sa agarang download na walang ads, kailanman.</string>
+    <string name="btn_continue_download">Magpatuloy sa Pag-download</string>
 </resources>

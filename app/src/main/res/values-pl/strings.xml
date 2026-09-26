@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Odzyskaj bez aplikacji</string>
 
     <string name="terminal_commands_explanation">Pliki są szyfrowane za pomocą AES-256 i uwierzytelniane za pomocą HMAC-SHA256, dzięki czemu manipulacje lub uszkodzenia są zawsze wykrywane. Pobierz poniższy zestaw odzyskiwania, aby szyfrować lub odszyfrowywać pliki z wiersza poleceń - bez konieczności instalowania aplikacji. Działa na macOS, Linux, Windows (przez WSL lub Git Bash) oraz w środowiskach terminalowych Androida. Pełne instrukcje konfiguracji i użytkowania znajdują się w pliku README.txt w pobranym zestawie.</string>
-    <string name="download_kit_button">Pobierz zestaw odzyskiwania</string>
     <string name="download_kit_desc">Plik ZIP zawierający skrypt odzyskiwania i pełne instrukcje. Po pobraniu rozpakuj go i przed uruchomieniem skryptu najpierw przeczytaj README.txt. Wymaga OpenSSL 3.0 lub nowszego - przechowuj zestaw w bezpiecznym miejscu, niezależnie od aplikacji.</string>
     <string name="github_repo_label">Kod źródłowy opublikowano również na: %1$s</string>
     <string name="important_notice_script">Pobierz zestaw odzyskiwania i przechowuj go w bezpiecznym miejscu - na dysku w chmurze, pamięci USB lub gdziekolwiek, gdzie go nie zgubisz - aby móc go użyć, jeśli aplikacja stanie się niedostępna w przyszłości.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Pokaż hasło</string>
     <string name="cd_hide_password">Ukryj hasło</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Obejrzyj reklamę, aby pobrać zestaw odzyskiwania</string>
-    <string name="recovery_kit_pro_promo">Uzyskaj AESLocker Pro, aby pobierać natychmiast bez reklam - i bez reklam w żadnym innym miejscu aplikacji.</string>
-    <string name="dialog_ad_unavailable_title">Brak dostępnej reklamy</string>
-    <string name="dialog_ad_unavailable_desc">Nie udało się teraz załadować reklamy, ale nadal możesz bezpłatnie pobrać zestaw odzyskiwania. Uzyskaj AESLocker Pro, aby pobierać natychmiast i bez reklam.</string>
-    <string name="btn_continue_download">Kontynuuj pobieranie</string>
+
 </resources>

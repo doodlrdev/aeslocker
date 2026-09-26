@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ਐਪ ਤੋਂ ਬਿਨਾਂ ਰਿਕਵਰ ਕਰੋ</string>
 
     <string name="terminal_commands_explanation">ਫਾਈਲਾਂ ਨੂੰ AES-256 ਨਾਲ ਐਨਕ੍ਰਿਪਟ ਅਤੇ HMAC-SHA256 ਨਾਲ ਪ੍ਰਮਾਣਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਇਸ ਲਈ ਛੇੜਛਾੜ ਜਾਂ ਖਰਾਬੀ ਦਾ ਹਮੇਸ਼ਾ ਪਤਾ ਲੱਗ ਜਾਂਦਾ ਹੈ। ਐਪ ਇੰਸਟਾਲ ਕੀਤੇ ਬਿਨਾਂ ਕਮਾਂਡ ਲਾਈਨ ਤੋਂ ਫਾਈਲਾਂ ਨੂੰ ਐਨਕ੍ਰਿਪਟ ਜਾਂ ਡਿਕ੍ਰਿਪਟ ਕਰਨ ਲਈ ਹੇਠਾਂ ਦਿੱਤਾ ਰਿਕਵਰੀ ਕਿਟ ਡਾਊਨਲੋਡ ਕਰੋ। ਇਹ macOS, Linux, Windows (WSL ਜਾਂ Git Bash ਰਾਹੀਂ) ਅਤੇ Android ਟਰਮੀਨਲ ਵਾਤਾਵਰਣਾਂ \'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ। ਪੂਰੀ ਸੈੱਟਅੱਪ ਅਤੇ ਵਰਤੋਂ ਦੀਆਂ ਹਦਾਇਤਾਂ ਡਾਊਨਲੋਡ ਦੇ ਅੰਦਰ README.txt ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ।</string>
-    <string name="download_kit_button">ਰਿਕਵਰੀ ਕਿਟ ਡਾਊਨਲੋਡ ਕਰੋ</string>
     <string name="download_kit_desc">ਇੱਕ ZIP ਫਾਈਲ ਜਿਸ ਵਿੱਚ ਰਿਕਵਰੀ ਸਕ੍ਰਿਪਟ ਅਤੇ ਪੂਰੀਆਂ ਹਦਾਇਤਾਂ ਸ਼ਾਮਲ ਹਨ। ਡਾਊਨਲੋਡ ਕਰਨ ਤੋਂ ਬਾਅਦ ਇਸਨੂੰ ਅਨਜ਼ਿਪ ਕਰੋ ਅਤੇ ਸਕ੍ਰਿਪਟ ਚਲਾਉਣ ਤੋਂ ਪਹਿਲਾਂ README.txt ਨੂੰ ਪੜ੍ਹੋ। OpenSSL 3.0 ਜਾਂ ਇਸ ਤੋਂ ਨਵਾਂ ਵਰਜਨ ਲੋੜੀਂਦਾ ਹੈ - ਕਿਟ ਨੂੰ ਐਪ ਤੋਂ ਵੱਖਰੀ ਕਿਸੇ ਸੁਰੱਖਿਅਤ ਥਾਂ \'ਤੇ ਸੁਰੱਖਿਅਤ ਰੱਖੋ।</string>
     <string name="github_repo_label">ਸੋਰਸ ਕੋਡ ਇੱਥੇ ਵੀ ਪ੍ਰਕਾਸ਼ਿਤ ਹੈ: %1$s</string>
     <string name="important_notice_script">ਰਿਕਵਰੀ ਕਿਟ ਡਾਊਨਲੋਡ ਕਰੋ ਅਤੇ ਇਸਨੂੰ ਕਿਸੇ ਸੁਰੱਖਿਅਤ ਥਾਂ \'ਤੇ ਸੰਭਾਲ ਕੇ ਰੱਖੋ - ਕਲਾਊਡ ਡਰਾਈਵ, USB ਸਟਿਕ ਜਾਂ ਕਿਸੇ ਵੀ ਅਜਿਹੀ ਥਾਂ \'ਤੇ ਜਿੱਥੇ ਇਹ ਗੁੰਮ ਨਾ ਹੋਵੇ - ਤਾਂ ਜੋ ਭਵਿੱਖ ਵਿੱਚ ਐਪ ਉਪਲਬਧ ਨਾ ਹੋਣ \'ਤੇ ਤੁਸੀਂ ਇਸਨੂੰ ਵਰਤ ਸਕੋ।</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">ਪਾਸਵਰਡ ਦਿਖਾਓ</string>
     <string name="cd_hide_password">ਪਾਸਵਰਡ ਲੁਕਾਓ</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">ਰਿਕਵਰੀ ਕਿਟ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਵਿਗਿਆਪਨ ਦੇਖੋ</string>
-    <string name="recovery_kit_pro_promo">ਤੁਰੰਤ, ਵਿਗਿਆਪਨ-ਮੁਕਤ ਡਾਊਨਲੋਡ ਲਈ AESLocker Pro ਲਵੋ - ਅਤੇ ਐਪ ਵਿੱਚ ਹੋਰ ਕਿਤੇ ਵੀ ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ।</string>
-    <string name="dialog_ad_unavailable_title">ਕੋਈ ਵਿਗਿਆਪਨ ਉਪਲਬਧ ਨਹੀਂ</string>
-    <string name="dialog_ad_unavailable_desc">ਅਸੀਂ ਇਸ ਵੇਲੇ ਕੋਈ ਵਿਗਿਆਪਨ ਲੋਡ ਨਹੀਂ ਕਰ ਸਕੇ, ਪਰ ਤੁਸੀਂ ਫਿਰ ਵੀ ਰਿਕਵਰੀ ਕਿਟ ਮੁਫ਼ਤ ਵਿੱਚ ਡਾਊਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ। AESLocker Pro ਲਵੋ ਅਤੇ ਬਿਨਾਂ ਕਿਸੇ ਵਿਗਿਆਪਨ ਦੇ ਤੁਰੰਤ ਡਾਊਨਲੋਡ ਕਰੋ।</string>
-    <string name="btn_continue_download">ਡਾਊਨਲੋਡ ਜਾਰੀ ਰੱਖੋ</string>
+
 </resources>

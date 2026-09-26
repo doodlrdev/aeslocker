@@ -6,4 +6,11 @@
     <string name="btn_get_pro">PATA PRO</string>
     <string name="btn_cancel">GHAILISHA</string>
     <string name="share_message">Jaribu AESLocker — ficha na fungua faili kwa AES-256, moja kwa moja kwenye simu yako.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Tazama Tangazo ili Kupakua Kifurushi cha Urejeshaji</string>
+    <string name="recovery_kit_pro_promo">Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo — na hakuna matangazo mahali pengine kwenye programu.</string>
+    <string name="dialog_ad_unavailable_title">Hakuna Tangazo Linalopatikana</string>
+    <string name="dialog_ad_unavailable_desc">Hatukuweza kupakia tangazo kwa sasa, lakini bado unaweza kupakua kifurushi cha urejeshaji bila malipo. Pata AESLocker Pro kwa upakuaji wa papo hapo bila matangazo kabisa.</string>
+    <string name="btn_continue_download">Endelea Kupakua</string>
 </resources>

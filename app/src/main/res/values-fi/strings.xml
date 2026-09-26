@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Palauta ilman sovellusta</string>
 
     <string name="terminal_commands_explanation">Tiedostot salataan AES-256:lla ja todennetaan HMAC-SHA256:lla, joten luvaton muokkaus tai vioittuminen havaitaan aina. Lataa alla oleva palautuspaketti salataksesi tai purkaaksesi tiedostoja komentoriviltä - sovellusta ei tarvitse asentaa. Se toimii macOS-, Linux- ja Windows-järjestelmissä (WSL:n tai Git Bashin kautta) sekä Androidin pääteympäristöissä. Täydelliset asennus- ja käyttöohjeet sisältyvät ladattavan paketin README.txt-tiedostoon.</string>
-    <string name="download_kit_button">Lataa palautuspaketti</string>
     <string name="download_kit_desc">ZIP-tiedosto, joka sisältää palautusskriptin ja täydelliset ohjeet. Kun olet ladannut tiedoston, pura se ja lue ensin README.txt ennen skriptin suorittamista. Vaatii OpenSSL 3.0:n tai uudemman - säilytä paketti turvallisessa paikassa erillään sovelluksesta.</string>
     <string name="github_repo_label">Lähdekoodi on julkaistu myös osoitteessa: %1$s</string>
     <string name="important_notice_script">Lataa palautuspaketti ja säilytä se turvallisessa paikassa - pilvipalvelussa, USB-muistitikulla tai missä tahansa paikassa, jossa et menetä sitä - jotta voit käyttää sitä, jos sovellus ei ole tulevaisuudessa saatavilla.</string>
@@ -66,10 +65,4 @@
     <string name="cd_show_password">Näytä salasana</string>
     <string name="cd_hide_password">Piilota salasana</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Katso mainos ladataksesi palautuspaketin</string>
-    <string name="recovery_kit_pro_promo">Hanki AESLocker Pro välittömiä mainoksettomia latauksia varten - eikä sovelluksessa ole mainoksia muuallakaan.</string>
-    <string name="dialog_ad_unavailable_title">Mainosta ei ole saatavilla</string>
-    <string name="dialog_ad_unavailable_desc">Mainosta ei voitu ladata juuri nyt, mutta voit silti ladata palautuspaketin ilmaiseksi. Hanki AESLocker Pro välittömiä latauksia varten ilman mainoksia.</string>
-    <string name="btn_continue_download">Jatka lataamista</string>
 </resources>

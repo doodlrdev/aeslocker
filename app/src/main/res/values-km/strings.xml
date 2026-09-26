@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ស្ដារឡើងវិញដោយមិនប្រើកម្មវិធី</string>
 
     <string name="terminal_commands_explanation">ឯកសារត្រូវបានអ៊ិនគ្រីបដោយ AES-256 និងផ្ទៀងផ្ទាត់ដោយ HMAC-SHA256 ដូច្នេះការកែប្រែ ឬការខូចខាតត្រូវបានរកឃើញជានិច្ច។ ទាញយកកញ្ចប់ស្ដារឡើងវិញខាងក្រោម ដើម្បីអ៊ិនគ្រីប ឬឌិគ្រីបឯកសារពីបន្ទាត់ពាក្យបញ្ជា ដោយមិនចាំបាច់ដំឡើងកម្មវិធី។ វាដំណើរការលើ macOS, Linux, Windows (តាមរយៈ WSL ឬ Git Bash) និងបរិស្ថានស្ថានីយ Android។ សេចក្ដីណែនាំពេញលេញសម្រាប់ការដំឡើង និងការប្រើប្រាស់មាននៅក្នុង README.txt ខាងក្នុងឯកសារដែលបានទាញយក។</string>
-    <string name="download_kit_button">ទាញយកកញ្ចប់ស្ដារឡើងវិញ</string>
     <string name="download_kit_desc">ឯកសារ ZIP ដែលមានស្គ្រីបស្តារឡើងវិញ និងការណែនាំពេញលេញ។ បន្ទាប់ពីទាញយក សូមពន្លាឯកសារ ហើយអាន README.txt ជាមុនសិន មុនពេលដំណើរការស្គ្រីប។ ត្រូវការ OpenSSL 3.0 ឬថ្មីជាងនេះ - រក្សាទុកកញ្ចប់នេះនៅកន្លែងមានសុវត្ថិភាព ដែលដាច់ដោយឡែកពីកម្មវិធី។</string>
     <string name="github_repo_label">កូដប្រភពក៏បានផ្សព្វផ្សាយនៅ: %1$s</string>
     <string name="important_notice_script">ទាញយកកញ្ចប់ស្ដារឡើងវិញ ហើយរក្សាទុកវានៅកន្លែងមានសុវត្ថិភាព - ក្នុង cloud drive, USB stick ឬកន្លែងណាមួយដែលអ្នកមិនបាត់បង់វា - ដើម្បីឱ្យអ្នកអាចប្រើវាបាន ប្រសិនបើកម្មវិធីមិនអាចប្រើបាននៅពេលអនាគត។</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">បង្ហាញពាក្យសម្ងាត់</string>
     <string name="cd_hide_password">លាក់ពាក្យសម្ងាត់</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">មើលការផ្សាយពាណិជ្ជកម្មដើម្បីទាញយកកញ្ចប់ស្ដារឡើងវិញ</string>
-    <string name="recovery_kit_pro_promo">ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្ម - និងគ្មានការផ្សាយពាណិជ្ជកម្មនៅកន្លែងផ្សេងទៀតក្នុងកម្មវិធី។</string>
-    <string name="dialog_ad_unavailable_title">មិនមានការផ្សាយពាណិជ្ជកម្ម</string>
-    <string name="dialog_ad_unavailable_desc">យើងមិនអាចផ្ទុកការផ្សាយពាណិជ្ជកម្មបានទេនៅពេលនេះ ប៉ុន្តែអ្នកនៅតែអាចទាញយកកញ្ចប់ស្ដារឡើងវិញដោយឥតគិតថ្លៃ។ ទទួលបាន AESLocker Pro សម្រាប់ការទាញយកភ្លាមៗដោយគ្មានការផ្សាយពាណិជ្ជកម្មជារៀងរហូត។</string>
-    <string name="btn_continue_download">បន្តទាញយក</string>
+
 </resources>

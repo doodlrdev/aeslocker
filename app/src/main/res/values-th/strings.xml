@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">กู้คืนโดยไม่ใช้แอป</string>
 
     <string name="terminal_commands_explanation">ไฟล์จะถูกเข้ารหัสด้วย AES-256 และตรวจสอบความถูกต้องด้วย HMAC-SHA256 ดังนั้นการแก้ไขหรือความเสียหายจะถูกตรวจพบเสมอ ดาวน์โหลดชุดกู้คืนด้านล่างเพื่อเข้ารหัสหรือถอดรหัสไฟล์จากบรรทัดคำสั่ง โดยไม่ต้องติดตั้งแอป ใช้งานได้บน macOS, Linux, Windows (ผ่าน WSL หรือ Git Bash) และสภาพแวดล้อมเทอร์มินัลของ Android คำแนะนำการตั้งค่าและการใช้งานฉบับเต็มอยู่ใน README.txt ภายในไฟล์ที่ดาวน์โหลด</string>
-    <string name="download_kit_button">ดาวน์โหลดชุดกู้คืน</string>
     <string name="download_kit_desc">ไฟล์ ZIP ที่มีสคริปต์กู้คืนและคำแนะนำฉบับเต็ม หลังจากดาวน์โหลดแล้ว ให้แตกไฟล์และอ่าน README.txt ก่อนเรียกใช้สคริปต์ ต้องใช้ OpenSSL 3.0 ขึ้นไป - เก็บชุดเครื่องมือนี้ไว้ในที่ปลอดภัยและแยกจากแอป</string>
     <string name="github_repo_label">เผยแพร่ซอร์สโค้ดไว้ที่: %1$s</string>
     <string name="important_notice_script">ดาวน์โหลดชุดกู้คืนและเก็บไว้ในที่ปลอดภัย - ไดรฟ์คลาวด์ แฟลชไดรฟ์ USB หรือที่ใดก็ตามที่คุณจะไม่ทำหาย - เพื่อให้คุณใช้งานได้หากแอปไม่พร้อมใช้งานในอนาคต</string>
@@ -67,10 +66,4 @@
     <string name="cd_show_password">แสดงรหัสผ่าน</string>
     <string name="cd_hide_password">ซ่อนรหัสผ่าน</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">ดูโฆษณาเพื่อดาวน์โหลดชุดกู้คืน</string>
-    <string name="recovery_kit_pro_promo">รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณา - และไม่มีโฆษณาที่อื่นในแอป</string>
-    <string name="dialog_ad_unavailable_title">ไม่มีโฆษณาให้บริการ</string>
-    <string name="dialog_ad_unavailable_desc">ขณะนี้เราไม่สามารถโหลดโฆษณาได้ แต่คุณยังสามารถดาวน์โหลดชุดกู้คืนได้ฟรี รับ AESLocker Pro เพื่อดาวน์โหลดได้ทันทีโดยไม่มีโฆษณาอีกต่อไป</string>
-    <string name="btn_continue_download">ดำเนินการดาวน์โหลดต่อ</string>
 </resources>

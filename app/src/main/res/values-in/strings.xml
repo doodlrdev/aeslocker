@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Pulihkan Tanpa Aplikasi</string>
 
     <string name="terminal_commands_explanation">File dienkripsi dengan AES-256 dan diautentikasi dengan HMAC-SHA256, sehingga manipulasi atau kerusakan selalu dapat terdeteksi. Unduh recovery kit di bawah ini untuk mengenkripsi atau mendekripsi file dari command line - tanpa perlu menginstal aplikasi. Kit ini berfungsi di macOS, Linux, Windows (melalui WSL atau Git Bash), dan lingkungan terminal Android. Petunjuk lengkap untuk penyiapan dan penggunaan tersedia dalam README.txt di dalam unduhan.</string>
-    <string name="download_kit_button">Unduh Recovery Kit</string>
     <string name="download_kit_desc">File ZIP yang berisi skrip pemulihan dan petunjuk lengkap. Setelah mengunduh, ekstrak file tersebut dan baca README.txt terlebih dahulu sebelum menjalankan skrip. Memerlukan OpenSSL 3.0 atau yang lebih baru - simpan kit di tempat yang aman dan terpisah dari aplikasi.</string>
     <string name="github_repo_label">Source juga dipublikasikan di: %1$s</string>
     <string name="important_notice_script">Unduh recovery kit dan simpan di tempat yang aman - cloud drive, USB stick, atau di mana pun Anda tidak akan kehilangannya - agar dapat digunakan jika aplikasi tidak lagi tersedia di masa mendatang.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Tampilkan kata sandi</string>
     <string name="cd_hide_password">Sembunyikan kata sandi</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Tonton Iklan untuk Mengunduh Recovery Kit</string>
-    <string name="recovery_kit_pro_promo">Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan - dan tanpa iklan di bagian lain aplikasi.</string>
-    <string name="dialog_ad_unavailable_title">Tidak Ada Iklan Tersedia</string>
-    <string name="dialog_ad_unavailable_desc">Kami tidak dapat memuat iklan saat ini, tetapi Anda tetap dapat mengunduh recovery kit secara gratis. Dapatkan AESLocker Pro untuk unduhan instan tanpa iklan, selamanya.</string>
-    <string name="btn_continue_download">Lanjutkan ke Unduhan</string>
+
 </resources>

@@ -6,4 +6,11 @@
     <string name="btn_get_pro">ОТРИМАТИ PRO</string>
     <string name="btn_cancel">СКАСУВАТИ</string>
     <string name="share_message">Спробуйте AESLocker — шифруйте та розшифровуйте файли за допомогою AES-256 прямо на телефоні.\n\n%1$s</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Посмотреть рекламу для загрузки набора восстановления</string>
+    <string name="recovery_kit_pro_promo">Получите AESLocker Pro для мгновенной загрузки без рекламы — и без рекламы в остальных разделах приложения.</string>
+    <string name="dialog_ad_unavailable_title">Реклама недоступна</string>
+    <string name="dialog_ad_unavailable_desc">Не удалось загрузить рекламу прямо сейчас, но вы всё равно можете бесплатно загрузить набор восстановления. Получите AESLocker Pro для мгновенных загрузок без рекламы.</string>
+    <string name="btn_continue_download">Продолжить загрузку</string>
 </resources>

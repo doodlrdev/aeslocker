@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Recuperar sem o aplicativo</string>
 
     <string name="terminal_commands_explanation">Os arquivos são criptografados com AES-256 e autenticados com HMAC-SHA256, portanto qualquer adulteração ou corrupção é sempre detectada. Baixe o kit de recuperação abaixo para criptografar ou descriptografar arquivos pela linha de comando - sem precisar instalar o aplicativo. Ele funciona no macOS, Linux, Windows (via WSL ou Git Bash) e em ambientes de terminal do Android. As instruções completas de configuração e uso estão incluídas no README.txt dentro do download.</string>
-    <string name="download_kit_button">Baixar kit de recuperação</string>
     <string name="download_kit_desc">Um arquivo ZIP contendo o script de recuperação e instruções completas. Após o download, descompacte-o e leia primeiro o README.txt antes de executar o script. Requer OpenSSL 3.0 ou superior - salve o kit em um local seguro, independente do aplicativo.</string>
     <string name="github_repo_label">Código-fonte também publicado em: %1$s</string>
     <string name="important_notice_script">Baixe o kit de recuperação e salve-o em um local seguro - um drive na nuvem, um pendrive ou qualquer lugar onde você não o perca - para que possa usá-lo se o aplicativo ficar indisponível no futuro.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Mostrar senha</string>
     <string name="cd_hide_password">Ocultar senha</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Assista a um anúncio para baixar o kit de recuperação</string>
-    <string name="recovery_kit_pro_promo">Obtenha o AESLocker Pro para downloads instantâneos sem anúncios - e sem anúncios em nenhum outro lugar do aplicativo.</string>
-    <string name="dialog_ad_unavailable_title">Nenhum anúncio disponível</string>
-    <string name="dialog_ad_unavailable_desc">Não foi possível carregar um anúncio agora, mas você ainda pode baixar o kit de recuperação gratuitamente. Obtenha o AESLocker Pro para downloads instantâneos sem anúncios, nunca.</string>
-    <string name="btn_continue_download">Continuar para o download</string>
+
 </resources>

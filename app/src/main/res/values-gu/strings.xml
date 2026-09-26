@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">એપ વિના પુનઃપ્રાપ્ત કરો</string>
 
     <string name="terminal_commands_explanation">ફાઇલો AES-256 વડે એન્ક્રિપ્ટ અને HMAC-SHA256 વડે ઑથેન્ટિકેટ કરવામાં આવે છે, તેથી કોઈપણ છેડછાડ અથવા નુકસાન હંમેશા શોધી કાઢવામાં આવે છે. કમાન્ડ લાઇનમાંથી ફાઇલોને એન્ક્રિપ્ટ અથવા ડિક્રિપ્ટ કરવા માટે નીચેનું રિકવરી કિટ ડાઉનલોડ કરો - એપ ઇન્સ્ટોલ કરવાની જરૂર નથી. તે macOS, Linux, Windows (WSL અથવા Git Bash દ્વારા) અને Android ટર્મિનલ વાતાવરણમાં કાર્ય કરે છે. સંપૂર્ણ સેટઅપ અને ઉપયોગની સૂચનાઓ ડાઉનલોડની અંદર README.txt તરીકે સામેલ છે.</string>
-    <string name="download_kit_button">રિકવરી કિટ ડાઉનલોડ કરો</string>
     <string name="download_kit_desc">રિકવરી સ્ક્રિપ્ટ અને સંપૂર્ણ સૂચનાઓ ધરાવતી ZIP ફાઇલ. ડાઉનલોડ કર્યા પછી તેને અનઝિપ કરો અને સ્ક્રિપ્ટ ચલાવતા પહેલાં README.txt વાંચો. OpenSSL 3.0 અથવા તે પછીનું વર્ઝન જરૂરી છે - કિટને એપથી સ્વતંત્ર એવા સુરક્ષિત સ્થળે સાચવો.</string>
     <string name="github_repo_label">સોર્સ અહીં પણ પ્રકાશિત છે: %1$s</string>
     <string name="important_notice_script">રિકવરી કિટ ડાઉનલોડ કરો અને તેને સુરક્ષિત જગ્યાએ સાચવો - ક્લાઉડ ડ્રાઇવ, USB સ્ટિક અથવા એવી કોઈપણ જગ્યાએ જ્યાં તમે તેને ગુમાવશો નહીં - જેથી ભવિષ્યમાં એપ ઉપલબ્ધ ન રહે તો તેનો ઉપયોગ કરી શકો.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">પાસવર્ડ બતાવો</string>
     <string name="cd_hide_password">પાસવર્ડ છુપાવો</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">રિકવરી કિટ ડાઉનલોડ કરવા જાહેરાત જુઓ</string>
-    <string name="recovery_kit_pro_promo">ત્વરિત, જાહેરાતમુક્ત ડાઉનલોડ માટે AESLocker Pro મેળવો - અને એપમાં અન્ય ક્યાંય પણ જાહેરાતો નહીં.</string>
-    <string name="dialog_ad_unavailable_title">કોઈ જાહેરાત ઉપલબ્ધ નથી</string>
-    <string name="dialog_ad_unavailable_desc">અમે અત્યારે જાહેરાત લોડ કરી શક્યા નથી, પરંતુ તમે હજુ પણ રિકવરી કિટ મફતમાં ડાઉનલોડ કરી શકો છો. ક્યારેય કોઈ જાહેરાત વિના ત્વરિત ડાઉનલોડ માટે AESLocker Pro મેળવો.</string>
-    <string name="btn_continue_download">ડાઉનલોડ ચાલુ રાખો</string>
+
 </resources>

@@ -6,4 +6,12 @@
     <string name="btn_get_pro">获取 PRO</string>
     <string name="btn_cancel">取消</string>
     <string name="share_message">试试 AESLocker — 直接在手机上使用 AES-256 加密和解密文件。\n\n%1$s</string>
+
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">观看广告以下载恢复工具包</string>
+    <string name="recovery_kit_pro_promo">获取 AESLocker Pro，即可即时下载且无广告 — 应用中的其他位置也不会显示广告。</string>
+    <string name="dialog_ad_unavailable_title">暂无广告</string>
+    <string name="dialog_ad_unavailable_desc">目前无法加载广告，但您仍然可以免费下载恢复工具包。获取 AESLocker Pro，即可即时下载，永远没有广告。</string>
+    <string name="btn_continue_download">继续下载</string>
 </resources>

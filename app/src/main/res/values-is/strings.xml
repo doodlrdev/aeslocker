@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Endurheimt án forritsins</string>
 
     <string name="terminal_commands_explanation">Skrár eru dulkóðaðar með AES-256 og sannreyndar með HMAC-SHA256, þannig að alltaf er greint hvort átt hafi verið við þær eða þær skemmst. Sæktu endurheimtarsettið hér að neðan til að dulkóða eða afkóða skrár úr skipanalínunni - ekki þarf að setja upp forrit. Það virkar á macOS, Linux, Windows (með WSL eða Git Bash) og Android-skipanaumhverfi. Allar leiðbeiningar um uppsetningu og notkun eru í README.txt inni í niðurhalinu.</string>
-    <string name="download_kit_button">Sækja endurheimtarsett</string>
     <string name="download_kit_desc">ZIP-skrá sem inniheldur endurheimtuforskriftina og allar leiðbeiningar. Eftir niðurhal skaltu afþjappa hana og lesa README.txt fyrst áður en þú keyrir forskriftina. Krefst OpenSSL 3.0 eða nýrra - geymdu pakkann á öruggum stað, óháðum forritinu.</string>
     <string name="github_repo_label">Frumkóði einnig birtur á: %1$s</string>
     <string name="important_notice_script">Sæktu endurheimtarsettið og geymdu það á öruggum stað - í skýjageymslu, á USB-lykli eða hvar sem þú munt ekki týna því - svo þú getir notað það ef forritið verður óaðgengilegt í framtíðinni.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Sýna lykilorð</string>
     <string name="cd_hide_password">Fela lykilorð</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Horfa á auglýsingu til að sækja endurheimtarsett</string>
-    <string name="recovery_kit_pro_promo">Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga - og engar auglýsingar annars staðar í forritinu.</string>
-    <string name="dialog_ad_unavailable_title">Engin auglýsing í boði</string>
-    <string name="dialog_ad_unavailable_desc">Ekki tókst að hlaða auglýsingu núna, en þú getur samt sótt endurheimtarsettið ókeypis. Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga, alltaf.</string>
-    <string name="btn_continue_download">Halda áfram að sækja</string>
+
 </resources>

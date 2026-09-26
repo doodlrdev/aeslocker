@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">अॅपशिवाय पुनर्प्राप्त करा</string>
 
     <string name="terminal_commands_explanation">फाइल्स AES-256 वापरून एन्क्रिप्ट आणि HMAC-SHA256 वापरून ऑथेंटिकेट केल्या जातात, त्यामुळे छेडछाड किंवा नुकसान नेहमी शोधले जाते. अॅप इन्स्टॉल करण्याची गरज नसताना कमांड लाइनमधून फाइल्स एन्क्रिप्ट किंवा डिक्रिप्ट करण्यासाठी खालील रिकव्हरी किट डाउनलोड करा. हे macOS, Linux, Windows (WSL किंवा Git Bash द्वारे) आणि Android टर्मिनल वातावरणांवर कार्य करते. संपूर्ण सेटअप आणि वापराच्या सूचना डाउनलोडमधील README.txt मध्ये दिल्या आहेत.</string>
-    <string name="download_kit_button">रिकव्हरी किट डाउनलोड करा</string>
     <string name="download_kit_desc">रिकव्हरी स्क्रिप्ट आणि संपूर्ण सूचना असलेली ZIP फाइल. डाउनलोड केल्यानंतर ती अनझिप करा आणि स्क्रिप्ट चालवण्यापूर्वी प्रथम README.txt वाचा. OpenSSL 3.0 किंवा त्यानंतरची आवृत्ती आवश्यक आहे - किट ॲपपासून स्वतंत्र अशा सुरक्षित ठिकाणी जतन करा.</string>
     <string name="github_repo_label">सोर्स कोड येथेही प्रकाशित आहे: %1$s</string>
     <string name="important_notice_script">रिकव्हरी किट डाउनलोड करा आणि ते सुरक्षित ठिकाणी जतन करा - क्लाउड ड्राइव्ह, USB स्टिक किंवा जिथे ते हरवणार नाही अशा कोणत्याही ठिकाणी - जेणेकरून भविष्यात अॅप उपलब्ध नसल्यास तुम्ही ते वापरू शकाल.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">पासवर्ड दाखवा</string>
     <string name="cd_hide_password">पासवर्ड लपवा</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">रिकव्हरी किट डाउनलोड करण्यासाठी जाहिरात पहा</string>
-    <string name="recovery_kit_pro_promo">तत्काळ, जाहिरातमुक्त डाउनलोडसाठी AESLocker Pro मिळवा - आणि अॅपमध्ये इतरत्रही कोणत्याही जाहिराती नाहीत.</string>
-    <string name="dialog_ad_unavailable_title">जाहिरात उपलब्ध नाही</string>
-    <string name="dialog_ad_unavailable_desc">आत्ता जाहिरात लोड करता आली नाही, पण तुम्ही रिकव्हरी किट विनामूल्य डाउनलोड करू शकता. कधीही जाहिरातींशिवाय तत्काळ डाउनलोडसाठी AESLocker Pro मिळवा.</string>
-    <string name="btn_continue_download">डाउनलोड सुरू ठेवा</string>
+
 </resources>

@@ -365,6 +365,7 @@ fun MainScreen(
                     }
                 },
                 actions = {
+                    PrivacyOptionsButton()
                     LanguageSwitcherButton()
                     ThemeSwitcherButton(
                         currentMode = currentThemeMode,

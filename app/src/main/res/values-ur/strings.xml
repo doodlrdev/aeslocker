@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">ایپ کے بغیر بحالی</string>
 
     <string name="terminal_commands_explanation">فائلیں AES-256 کے ذریعے خفیہ اور HMAC-SHA256 کے ذریعے تصدیق شدہ ہوتی ہیں، اس لیے کسی بھی چھیڑ چھاڑ یا خرابی کا ہمیشہ پتہ چل جاتا ہے۔ کمانڈ لائن سے فائلوں کو خفیہ یا ڈکرپٹ کرنے کے لیے نیچے دیا گیا ریکوری کٹ ڈاؤن لوڈ کریں — ایپ انسٹال کرنے کی ضرورت نہیں۔ یہ macOS، Linux، Windows (WSL یا Git Bash کے ذریعے) اور Android کے ٹرمینل ماحول میں کام کرتا ہے۔ مکمل سیٹ اپ اور استعمال کی ہدایات ڈاؤن لوڈ کے اندر README.txt میں شامل ہیں۔</string>
-    <string name="download_kit_button">ریکوری کٹ ڈاؤن لوڈ کریں</string>
     <string name="download_kit_desc">ایک ZIP فائل جس میں ریکوری اسکرپٹ اور مکمل ہدایات شامل ہیں۔ ڈاؤن لوڈ کرنے کے بعد اسے اَن زِپ کریں اور اسکرپٹ چلانے سے پہلے README.txt کو پہلے پڑھیں۔ OpenSSL 3.0 یا اس کے بعد کا ورژن درکار ہے - کِٹ کو ایپ سے الگ کسی محفوظ جگہ پر محفوظ کریں۔</string>
     <string name="github_repo_label">سورس کوڈ یہاں بھی شائع کیا گیا ہے: %1$s</string>
     <string name="important_notice_script">ریکوری کٹ ڈاؤن لوڈ کریں اور اسے کسی محفوظ جگہ پر رکھیں — کلاؤڈ ڈرائیو، USB اسٹک یا کہیں بھی جہاں آپ اسے کھو نہ دیں — تاکہ مستقبل میں ایپ دستیاب نہ ہونے کی صورت میں اسے استعمال کر سکیں۔</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">پاس ورڈ دکھائیں</string>
     <string name="cd_hide_password">پاس ورڈ چھپائیں</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">ریکوری کٹ ڈاؤن لوڈ کرنے کے لیے اشتہار دیکھیں</string>
-    <string name="recovery_kit_pro_promo">فوری، اشتہار سے پاک ڈاؤن لوڈز کے لیے AESLocker Pro حاصل کریں — اور ایپ میں کہیں بھی اشتہارات نہیں۔</string>
-    <string name="dialog_ad_unavailable_title">کوئی اشتہار دستیاب نہیں</string>
-    <string name="dialog_ad_unavailable_desc">اس وقت اشتہار لوڈ نہیں ہو سکا، لیکن آپ پھر بھی ریکوری کٹ مفت ڈاؤن لوڈ کر سکتے ہیں۔ فوری ڈاؤن لوڈز اور ہمیشہ کے لیے اشتہارات سے پاک تجربے کے لیے AESLocker Pro حاصل کریں۔</string>
-    <string name="btn_continue_download">ڈاؤن لوڈ جاری رکھیں</string>
+
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">له اپ پرته بېرته ترلاسه کول</string>
 
     <string name="terminal_commands_explanation">فایلونه د AES-256 په وسیله کوډ کېږي او د HMAC-SHA256 په وسیله تصدیق کېږي، نو لاسوهنه یا خرابوالی تل کشفېږي. لاندې د بیا ترلاسه کولو کټ ډاونلوډ کړئ څو د کمانډ لاین له لارې فایلونه کوډ یا کوډ خلاص کړئ - د اپ نصبولو اړتیا نشته. دا په macOS، Linux، Windows (د WSL یا Git Bash له لارې) او د Android ټرمینل چاپېریالونو کې کار کوي. د بشپړ تنظیم او کارولو لارښوونې د ډاونلوډ دننه په README.txt کې شاملې دي.</string>
-    <string name="download_kit_button">د بیا ترلاسه کولو کټ ډاونلوډ کړئ</string>
     <string name="download_kit_desc">د ZIP فایل چې د بیا ترلاسه کولو سکریپټ او بشپړ لارښوونې پکې شاملې دي. له ډاونلوډ وروسته یې خلاص کړئ او د سکریپټ له چلولو مخکې لومړی README.txt ولولئ. OpenSSL 3.0 یا نوې نسخه ته اړتیا لري - کټ له اپلیکیشن څخه جلا په یوه خوندي ځای کې وساتئ.</string>
     <string name="github_repo_label">د سرچینې کوډ دلته هم خپور شوی: %1$s</string>
     <string name="important_notice_script">د بیا ترلاسه کولو کټ ډاونلوډ کړئ او په خوندي ځای کې یې وساتئ - کلاوډ ډرایو، USB سټیک یا هر هغه ځای کې چې له لاسه به یې ورنه کړئ - څو که په راتلونکي کې اپ موجود نه وي، تاسو یې وکارولی شئ.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">پټنوم ښکاره کړئ</string>
     <string name="cd_hide_password">پټنوم پټ کړئ</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">د بیا ترلاسه کولو کټ د ډاونلوډ لپاره اعلان وګورئ</string>
-    <string name="recovery_kit_pro_promo">AESLocker Pro واخلئ څو سمدستي او له اعلانونو پرته ډاونلوډونه ولرئ - او په اپ کې بل ځای هم اعلانونه نه وي.</string>
-    <string name="dialog_ad_unavailable_title">هیڅ اعلان موجود نه دی</string>
-    <string name="dialog_ad_unavailable_desc">موږ اوس مهال اعلان نه شو پورته کولی، خو تاسو لا هم کولی شئ د بیا ترلاسه کولو کټ وړیا ډاونلوډ کړئ. AESLocker Pro واخلئ څو سمدستي ډاونلوډونه ولرئ، هېڅکله له اعلانونو پرته.</string>
-    <string name="btn_continue_download">ډاونلوډ ته دوام ورکړئ</string>
+
 </resources>

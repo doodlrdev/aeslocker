@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Recuperează fără aplicație</string>
 
     <string name="terminal_commands_explanation">Fișierele sunt criptate cu AES-256 și autentificate cu HMAC-SHA256, astfel încât orice modificare sau deteriorare este detectată întotdeauna. Descarcă kitul de recuperare de mai jos pentru a cripta sau decripta fișiere din linia de comandă - fără a instala aplicația. Funcționează pe macOS, Linux, Windows (prin WSL sau Git Bash) și în mediile de terminal Android. Instrucțiunile complete de configurare și utilizare sunt incluse în README.txt din descărcare.</string>
-    <string name="download_kit_button">Descarcă kitul de recuperare</string>
     <string name="download_kit_desc">Un fișier ZIP care conține scriptul de recuperare și instrucțiunile complete. După descărcare, dezarhivează-l și citește mai întâi README.txt înainte de a rula scriptul. Necesită OpenSSL 3.0 sau o versiune ulterioară - păstrează kitul într-un loc sigur, independent de aplicație.</string>
     <string name="github_repo_label">Codul sursă este publicat și la: %1$s</string>
     <string name="important_notice_script">Descarcă kitul de recuperare și păstrează-l într-un loc sigur - pe un cloud drive, un stick USB sau oriunde nu îl vei pierde - pentru a-l putea folosi dacă aplicația devine indisponibilă în viitor.</string>
@@ -66,10 +65,4 @@
     <string name="cd_show_password">Afișează parola</string>
     <string name="cd_hide_password">Ascunde parola</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Urmărește o reclamă pentru a descărca kitul de recuperare</string>
-    <string name="recovery_kit_pro_promo">Obține AESLocker Pro pentru descărcări instantanee fără reclame - și fără reclame nicăieri în aplicație.</string>
-    <string name="dialog_ad_unavailable_title">Nicio reclamă disponibilă</string>
-    <string name="dialog_ad_unavailable_desc">Nu am putut încărca o reclamă acum, dar poți descărca în continuare kitul de recuperare gratuit. Obține AESLocker Pro pentru descărcări instantanee fără reclame, vreodată.</string>
-    <string name="btn_continue_download">Continuă descărcarea</string>
 </resources>

@@ -6,4 +6,14 @@
     <string name="btn_get_pro">FÁ PRO</string>
     <string name="btn_cancel">HÆTTA VIÐ</string>
     <string name="share_message">Prófaðu AESLocker — dulkóðaðu og afkóðaðu skrár með AES-256 beint í símanum þínum.\n\n%1$s</string>
+
+    //AdMob Consent Revocation Button Label - Only Translated to GDPR Region Languages.
+    <string name="cd_privacy_options">Sýsla með persónuverndarvalkosti</string>
+
+    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
+    <string name="download_kit_button_free">Horfa á auglýsingu til að sækja endurheimtarsett</string>
+    <string name="recovery_kit_pro_promo">Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga - og engar auglýsingar annars staðar í forritinu.</string>
+    <string name="dialog_ad_unavailable_title">Engin auglýsing í boði</string>
+    <string name="dialog_ad_unavailable_desc">Ekki tókst að hlaða auglýsingu núna, en þú getur samt sótt endurheimtarsettið ókeypis. Fáðu AESLocker Pro fyrir tafarlaust niðurhal án auglýsinga, alltaf.</string>
+    <string name="btn_continue_download">Halda áfram að sækja</string>
 </resources>

@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Récupérer sans l\'application</string>
 
     <string name="terminal_commands_explanation">Les fichiers sont chiffrés avec AES-256 et authentifiés avec HMAC-SHA256, ce qui permet de toujours détecter toute altération ou corruption. Téléchargez le kit de récupération ci-dessous pour chiffrer ou déchiffrer des fichiers depuis la ligne de commande - aucune installation de l\'application n\'est nécessaire. Il fonctionne sous macOS, Linux, Windows (via WSL ou Git Bash) et dans les environnements de terminal Android. Les instructions complètes d\'installation et d\'utilisation sont incluses dans le fichier README.txt du téléchargement.</string>
-    <string name="download_kit_button">Télécharger le kit de récupération</string>
     <string name="download_kit_desc">Un fichier ZIP contenant le script de récupération et les instructions complètes. Après le téléchargement, décompressez-le et lisez d’abord README.txt avant d’exécuter le script. Nécessite OpenSSL 3.0 ou une version ultérieure - conservez le kit dans un endroit sûr, indépendamment de l’application.</string>
     <string name="github_repo_label">Code source également publié sur : %1$s</string>
     <string name="important_notice_script">Téléchargez le kit de récupération et conservez-le dans un endroit sûr - un espace cloud, une clé USB ou tout autre endroit où vous ne risquez pas de le perdre - afin de pouvoir l\'utiliser si l\'application devient indisponible à l\'avenir.</string>
@@ -67,10 +66,5 @@
     <string name="cd_show_password">Afficher le mot de passe</string>
     <string name="cd_hide_password">Masquer le mot de passe</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Regarder une publicité pour télécharger le kit de récupération</string>
-    <string name="recovery_kit_pro_promo">Obtenez AESLocker Pro pour des téléchargements instantanés sans publicité - et aucune publicité ailleurs dans l\'application.</string>
-    <string name="dialog_ad_unavailable_title">Aucune publicité disponible</string>
-    <string name="dialog_ad_unavailable_desc">Nous n\'avons pas pu charger de publicité pour le moment, mais vous pouvez toujours télécharger gratuitement le kit de récupération. Obtenez AESLocker Pro pour des téléchargements instantanés sans aucune publicité.</string>
-    <string name="btn_continue_download">Continuer le téléchargement</string>
+
 </resources>

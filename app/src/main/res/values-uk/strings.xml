@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">Восстановление без приложения</string>
 
     <string name="terminal_commands_explanation">Файлы шифруются с помощью AES-256 и аутентифицируются с помощью HMAC-SHA256, поэтому любое изменение или повреждение всегда обнаруживается. Загрузите набор средств восстановления ниже, чтобы шифровать или расшифровывать файлы из командной строки — установка приложения не требуется. Он работает в macOS, Linux, Windows (через WSL или Git Bash) и терминальных средах Android. Полные инструкции по настройке и использованию находятся в файле README.txt внутри загруженного архива.</string>
-    <string name="download_kit_button">Загрузить набор восстановления</string>
     <string name="download_kit_desc">ZIP-файл, що містить скрипт відновлення та повні інструкції. Після завантаження розпакуйте його та спочатку прочитайте README.txt перед запуском скрипту. Потрібен OpenSSL 3.0 або новіший - зберігайте комплект у безпечному місці окремо від застосунку.</string>
     <string name="github_repo_label">Исходный код также опубликован на: %1$s</string>
     <string name="important_notice_script">Загрузите набор восстановления и сохраните его в безопасном месте — на облачном диске, USB-накопителе или где-либо ещё, где вы его не потеряете, — чтобы использовать его, если приложение в будущем станет недоступно.</string>
@@ -66,10 +65,5 @@
     <string name="cd_show_password">Показать пароль</string>
     <string name="cd_hide_password">Скрыть пароль</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">Посмотреть рекламу для загрузки набора восстановления</string>
-    <string name="recovery_kit_pro_promo">Получите AESLocker Pro для мгновенной загрузки без рекламы — и без рекламы в остальных разделах приложения.</string>
-    <string name="dialog_ad_unavailable_title">Реклама недоступна</string>
-    <string name="dialog_ad_unavailable_desc">Не удалось загрузить рекламу прямо сейчас, но вы всё равно можете бесплатно загрузить набор восстановления. Получите AESLocker Pro для мгновенных загрузок без рекламы.</string>
-    <string name="btn_continue_download">Продолжить загрузку</string>
+
 </resources>

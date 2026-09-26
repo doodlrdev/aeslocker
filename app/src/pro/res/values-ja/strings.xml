@@ -3,4 +3,6 @@
     <string name="share_message">AESLocker Proをお試しください — スマートフォン上でAES-256を使ってファイルを暗号化・復号できます。\n\n%1$s</string>
     <string name="source_button_label">ソース</string>
     <string name="source_button_desc">GitHubでソースコードを見る。</string>
+    <string name="download_kit_button">リカバリーキットをダウンロード</string>
+
 </resources>

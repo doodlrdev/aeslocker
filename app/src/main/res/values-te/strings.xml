@@ -11,7 +11,6 @@
     <string name="terminal_commands_title">యాప్ లేకుండా రికవర్ చేయండి</string>
 
     <string name="terminal_commands_explanation">ఫైళ్లు AES-256తో ఎన్‌క్రిప్ట్ చేయబడతాయి మరియు HMAC-SHA256తో ఆథెంటికేట్ చేయబడతాయి, కాబట్టి ఏదైనా తారుమారు లేదా నష్టం ఎల్లప్పుడూ గుర్తించబడుతుంది. యాప్‌ను ఇన్‌స్టాల్ చేయకుండా కమాండ్ లైన్ నుండి ఫైళ్లను ఎన్‌క్రిప్ట్ లేదా డీక్రిప్ట్ చేయడానికి దిగువ రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయండి. ఇది macOS, Linux, Windows (WSL లేదా Git Bash ద్వారా) మరియు Android టెర్మినల్ పరిసరాల్లో పనిచేస్తుంది. పూర్తి సెటప్ మరియు వినియోగ సూచనలు డౌన్‌లోడ్‌లోని README.txtలో ఉన్నాయి.</string>
-    <string name="download_kit_button">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయండి</string>
     <string name="download_kit_desc">రికవరీ స్క్రిప్ట్ మరియు పూర్తి సూచనలను కలిగి ఉన్న ZIP ఫైల్. డౌన్‌లోడ్ చేసిన తర్వాత దాన్ని అన్‌జిప్ చేసి, స్క్రిప్ట్‌ను అమలు చేయడానికి ముందు ముందుగా README.txt చదవండి. OpenSSL 3.0 లేదా తదుపరి వెర్షన్ అవసరం - కిట్‌ను యాప్‌కు స్వతంత్రంగా సురక్షితమైన ప్రదేశంలో భద్రపరచండి.</string>
     <string name="github_repo_label">సోర్స్ కోడ్ ఇక్కడ కూడా ప్రచురించబడింది: %1$s</string>
     <string name="important_notice_script">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేసి సురక్షితమైన ప్రదేశంలో సేవ్ చేయండి - క్లౌడ్ డ్రైవ్, USB స్టిక్ లేదా మీరు దాన్ని పోగొట్టుకోని ఎక్కడైనా - భవిష్యత్తులో యాప్ అందుబాటులో లేకపోతే దాన్ని ఉపయోగించడానికి.</string>
@@ -66,10 +65,4 @@
     <string name="cd_show_password">పాస్‌వర్డ్‌ను చూపించండి</string>
     <string name="cd_hide_password">పాస్‌వర్డ్‌ను దాచండి</string>
 
-    <!-- Recovery Kit - Free flavor only (rewarded-ad download gate) -->
-    <string name="download_kit_button_free">రికవరీ కిట్‌ను డౌన్‌లోడ్ చేయడానికి ప్రకటనను చూడండి</string>
-    <string name="recovery_kit_pro_promo">తక్షణ, ప్రకటన రహిత డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి - మరియు యాప్‌లో మరెక్కడా కూడా ప్రకటనలు ఉండవు.</string>
-    <string name="dialog_ad_unavailable_title">ప్రకటన అందుబాటులో లేదు</string>
-    <string name="dialog_ad_unavailable_desc">ప్రస్తుతం మేము ప్రకటనను లోడ్ చేయలేకపోయాము, కానీ మీరు ఇప్పటికీ రికవరీ కిట్‌ను ఉచితంగా డౌన్‌లోడ్ చేసుకోవచ్చు. ఎప్పటికీ ప్రకటనలు లేకుండా తక్షణ డౌన్‌లోడ్‌ల కోసం AESLocker Pro పొందండి.</string>
-    <string name="btn_continue_download">డౌన్‌లోడ్ కొనసాగించండి</string>
 </resources>
