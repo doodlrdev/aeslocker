@@ -8,7 +8,9 @@ All encryption and decryption takes place locally on the device. Your files are 
 
 AESLocker's source code is publicly available so that users, developers, and security researchers can inspect how the app works, including its encryption and file-processing implementation.
 
-AESLocker is licensed under the [PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0).
+AESLocker is licensed under the [AESLocker Software License 1.0.0](./LICENSE), a license derived from the structure of the PolyForm Strict License 1.0.0, with modified terms.
+
+This license permits using the software, including for commercial purposes, but does not permit modifying it, creating derivative works, or distributing your own builds (modified or not).
 
 ## Free and Pro Versions
 
